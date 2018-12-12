@@ -1,0 +1,32 @@
+<h2>Dialogs</h2>
+<p class="ias-page-instructions">
+    Dialogs allow for a system to overtly call the attention of the user away from the page to its content. A dialog's
+    content is always something a developer would like the user to do or know. Dialogs are tied to the current page to
+    keep information available to users as they interact with the component. Some usage examples could be a warning
+    message, instructions, or input fields necessary for progression.
+</p>
+
+<h3>Example</h3>
+
+<ng-template #template>
+    <div class="modal-header">
+        <h4 class="modal-title pull-left">Example Modal Dialog</h4>
+        <!--This is used in ux-aspects, but not Micro Focus theme:-->
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+            <span class="hpe-icon hpe-close"></span>
+        </button>
+    </div>
+    <div class="modal-body">
+        Terms of service (also known as terms of use and terms and conditions, commonly abbreviated as ToS or TOS and
+        TOU) are rules by which one must agree to abide in order to use a service.
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" (click)="modalRef.hide()">
+            Close
+        </button>
+    </div>
+</ng-template>
+
+<div class="btn-container">
+    <button type="button" class="btn btn-default" (click)="openModal(template)">Show Dialog</button>
+</div>

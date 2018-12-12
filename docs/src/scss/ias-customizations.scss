@@ -1,0 +1,20 @@
+$quantum-gray-1: #F1F2F3;
+
+body {
+    background-color: white;
+}
+
+ux-page-header > .page-header-secondary {
+    // Turn off animations on the secondary header, since we want it to always show
+    animation: none;
+    background-color: $quantum-gray-1;
+}
+
+// Why does the header need a top margin automatically?
+h2:first-child {
+    margin-top: 0;
+}
+
+p {
+    max-width: 700px;
+}
