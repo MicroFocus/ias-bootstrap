@@ -24,6 +24,7 @@ import { TabsExampleComponent } from './pages/components-page/components/tabs-ex
 import { TagsExampleComponent } from './pages/components-page/components/tags-example/tags-example.component';
 import { TilesExampleComponent } from './pages/components-page/components/tiles-example/tiles-example.component';
 import { TileGridsExampleComponent } from './pages/components-page/components/tile-grids-example/tile-grids-example.component';
+import { ProgressExampleComponent } from './pages/components-page/components/progress-example/progress-example.component';
 
 const routes: Routes = [
     { path: '', redirectTo: 'components', pathMatch: 'full' },
@@ -47,6 +48,7 @@ const routes: Routes = [
             { path: 'lists', component: ListsExampleComponent },
             { path: 'menu', component: MenuExampleComponent },
             { path: 'panels', component: PanelsExampleComponent },
+            { path: 'progress', component: ProgressExampleComponent },
             { path: 'side-navs', component: SideNavsExampleComponent },
             { path: 'status-messages', component: StatusMessagesExampleComponent },
             { path: 'table', component: TableExampleComponent },

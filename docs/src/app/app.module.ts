@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { ModalModule } from 'ngx-bootstrap/modal';
-import { DateTimePickerModule, PageHeaderModule } from '@ux-aspects/ux-aspects';
+import { DateTimePickerModule, PageHeaderModule, TabsetModule } from '@ux-aspects/ux-aspects';
 import { ComponentsPageComponent } from './pages/components-page/components-page.component';
 import { ButtonsExampleComponent } from './pages/components-page/components/buttons-example/buttons-example.component';
 import { AccordionExampleComponent } from './pages/components-page/components/accordion-example/accordion-example.component';
@@ -30,10 +30,15 @@ import { TabsExampleComponent } from './pages/components-page/components/tabs-ex
 import { TagsExampleComponent } from './pages/components-page/components/tags-example/tags-example.component';
 import { TilesExampleComponent } from './pages/components-page/components/tiles-example/tiles-example.component';
 import { TileGridsExampleComponent } from './pages/components-page/components/tile-grids-example/tile-grids-example.component';
+import { ButtonsExamplesModule } from './pages/components-page/components/buttons-example/examples/_examples.module';
+import { ProgressExampleComponent } from './pages/components-page/components/progress-example/progress-example.component';
+import { CodeComponent } from './components/code.component';
+import { CodeHighlightService } from './services/code-highlight.service';
 
 @NgModule({
     declarations: [
         AppComponent,
+        CodeComponent,
         ComponentsPageComponent,
         ButtonsExampleComponent,
         AccordionExampleComponent,
@@ -57,16 +62,21 @@ import { TileGridsExampleComponent } from './pages/components-page/components/ti
         TabsExampleComponent,
         TagsExampleComponent,
         TilesExampleComponent,
-        TileGridsExampleComponent
+        TileGridsExampleComponent,
+        ProgressExampleComponent
     ],
     imports: [
         BrowserModule,
         AppRoutingModule,
         PageHeaderModule,
         // DateTimePickerModule,
-        ModalModule.forRoot()
+        ButtonsExamplesModule,
+        ModalModule.forRoot(),
+        TabsetModule
     ],
-    providers: [],
+    providers: [
+        CodeHighlightService
+    ],
     bootstrap: [AppComponent]
 })
 export class AppModule {

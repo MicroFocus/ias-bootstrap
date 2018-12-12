@@ -2,3 +2,11 @@
 
 // Pull in Lynn's changes to ux-aspects / quantum:
 @import "../../styles/src/ias-bootstrap";
+
+// Import styles for Prism (a code block styling library)
+@import "~prismjs/plugins/toolbar/prism-toolbar.css";
+//@import "~prismjs/themes/prism-okaidia";
+@import "~prismjs/themes/prism.css";
+
+@import "./scss/app-tweaks";
+

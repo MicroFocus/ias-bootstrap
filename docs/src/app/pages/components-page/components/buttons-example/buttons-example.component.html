@@ -1,28 +1,34 @@
 <h2>Buttons</h2>
 <p class="ias-page-instructions">
-    IAS buttons are implemented by changing the theme for Bootstrap's standard button classes, such as: "btn",
-    "btn-primary", and "btn-outline-primary". You can simply use Bootstrap buttons as you normally would, as you can see
-    from the examples below.  Note: the IAS theme doesn't define buttons for for Bootstrap's secondary, success,
-    danger, warning, info, light, or dark predefined styles.  So no changes have been made for them.
+    The following tweaks were made to the standard buttons from ux-aspects to promote usability for IAS customers: (TODO...)
 </p>
 
 <h3>Text Buttons</h3>
-<div class="btn-container">
-    <button type="button" class="btn btn-default">Text Button</button>
-    <button type="button" class="btn btn-default" disabled>Disabled Text Button</button>
+<div class="panel panel-default">
+    <div class="panel-body">
+        <app-text-buttons></app-text-buttons>
+    </div>
+    <ux-tabset>
+        <ux-tab [heading]="textButtons.html.filename">
+            <app-ngbd-code [code]="textButtons.html.text" lang="markup"></app-ngbd-code>
+        </ux-tab>
+        <ux-tab [heading]="textButtons.ts.filename">
+            <app-ngbd-code [code]="textButtons.ts.text" lang="typescript"></app-ngbd-code>
+        </ux-tab>
+    </ux-tabset>
 </div>
 
 <h3>Special Text Buttons</h3>
-<div class="btn-container">
-    <button type="button" class="btn btn-primary">Special Text Button</button>
-    <button type="button" class="btn btn-primary" disabled>Disabled Special Text Button</button>
-</div>
-
 <div class="panel panel-default">
     <div class="panel-body">
-        <p>Lorem ipsum ...</p>
+        <app-special-text-buttons></app-special-text-buttons>
     </div>
-    <div class="panel-heading">
-        Default Panel
-    </div>
+    <ux-tabset>
+        <ux-tab [heading]="specialTextButtons.html.filename">
+            <app-ngbd-code [code]="specialTextButtons.html.text" lang="markup"></app-ngbd-code>
+        </ux-tab>
+        <ux-tab [heading]="specialTextButtons.ts.filename">
+            <app-ngbd-code [code]="specialTextButtons.ts.text" lang="typescript"></app-ngbd-code>
+        </ux-tab>
+    </ux-tabset>
 </div>
