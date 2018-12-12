@@ -12,14 +12,9 @@ export class AppComponent {
             title: '',
             selected: true,
             children: [
-                { title: 'Project', routerLink: '/project' },
                 { title: 'Components', routerLink: '/components' },
-                { title: 'Tips and Tricks' },
-                { title: 'Icons' }
-                // { title: 'Dashboard', routerLink: '/showcase/dashboard' },
-                // { title: 'Filtering', routerLink: '/showcase/filtering' },
-                // { title: 'Login 1', routerLink: '/showcase/login1' },
-                // { title: 'Login 2', routerLink: '/showcase/login2' }
+                { title: 'Getting Started', routerLink: '/getting-started' },
+                { title: 'Tips and Tricks', routerLink: '/tips-and-tricks' }
             ]
         }
     ];

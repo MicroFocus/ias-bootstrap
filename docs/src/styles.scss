@@ -1,3 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import "./scss/ias-customizations";
+// Pull in Lynn's changes to ux-aspects / quantum:
+@import "../../styles/src/ias-bootstrap";

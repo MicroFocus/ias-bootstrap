@@ -1,7 +1,7 @@
 :host {
     margin: 15px;
     display: grid;
-    grid-template-columns: 200px 1fr;
+    grid-template-columns: minmax(max-content, 200px) 1fr;
     grid-column-gap: 25px;
 
     > .nav-buttons {
