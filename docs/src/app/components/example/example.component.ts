@@ -12,7 +12,7 @@ export class ExampleComponent implements OnInit {
 
     @ContentChildren(ExampleFileComponent) files: QueryList<ExampleFileComponent>;
 
-    visible: boolean;
+    sidePanelOpen: boolean;
 
     constructor() {
     }

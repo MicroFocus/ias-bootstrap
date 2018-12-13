@@ -1,12 +1,30 @@
 <div class="code-heading-title">
     <h3>{{ heading }}</h3>
-    <button type="button" class="btn btn-link button-secondary" (click)="visible = !visible">
+    <button type="button" class="btn btn-link button-secondary" (click)="sidePanelOpen = !sidePanelOpen; $event.stopPropagation()">
         <span class="hpe-icon hpe-code" aria-hidden="true"></span> Code
     </button>
 </div>
 <ng-content select=":not(app-example-file)"></ng-content>
-<ux-tabset *ngIf="visible">
-    <ux-tab *ngFor="let file of files" [heading]="file.name">
-        <app-ngbd-code [code]="fileNameToContentsMap[file.name]" [lang]="file.lang"></app-ngbd-code>
-    </ux-tab>
-</ux-tabset>
+<ux-side-panel #sidePanel="ux-side-panel"
+               [(open)]="sidePanelOpen"
+               [closeOnExternalClick]="true">
+
+    <div class="ux-side-panel-header">
+        <h3>{{ heading }}</h3>
+        <button uxSidePanelClose type="button" class="btn btn-lg btn-link btn-icon button-secondary">
+            <span class="hpe-icon hpe-close"></span>
+        </button>
+    </div>
+    <div class="ux-side-panel-content">
+        <ux-tabset>
+            <ux-tab *ngFor="let file of files" [heading]="file.name">
+                <app-ngbd-code [code]="fileNameToContentsMap[file.name]" [lang]="file.lang"></app-ngbd-code>
+            </ux-tab>
+        </ux-tabset>
+    </div>
+    <div class="ux-side-panel-footer btn-container">
+        <button type="button" class="btn btn-default" (click)="sidePanel.closePanel()">
+            Close
+        </button>
+    </div>
+</ux-side-panel>
