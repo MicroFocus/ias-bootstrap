@@ -34,6 +34,8 @@ import { ButtonsExamplesModule } from './pages/components-page/components/button
 import { ProgressExampleComponent } from './pages/components-page/components/progress-example/progress-example.component';
 import { CodeComponent } from './components/code.component';
 import { CodeHighlightService } from './services/code-highlight.service';
+import { ExampleComponent } from './components/example/example.component';
+import { ExampleFileComponent } from './components/example-file/example-file.component';
 
 @NgModule({
     declarations: [
@@ -63,7 +65,9 @@ import { CodeHighlightService } from './services/code-highlight.service';
         TagsExampleComponent,
         TilesExampleComponent,
         TileGridsExampleComponent,
-        ProgressExampleComponent
+        ProgressExampleComponent,
+        ExampleComponent,
+        ExampleFileComponent
     ],
     imports: [
         BrowserModule,

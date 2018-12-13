@@ -1,0 +1,12 @@
+<div class="code-heading-title">
+    <h3>{{ heading }}</h3>
+    <button type="button" class="btn btn-link button-secondary" (click)="visible = !visible">
+        <span class="hpe-icon hpe-code" aria-hidden="true"></span> Code
+    </button>
+</div>
+<ng-content select=":not(app-example-file)"></ng-content>
+<ux-tabset *ngIf="visible">
+    <ux-tab *ngFor="let file of files" [heading]="file.name">
+        <app-ngbd-code [code]="fileNameToContentsMap[file.name]" [lang]="file.lang"></app-ngbd-code>
+    </ux-tab>
+</ux-tabset>

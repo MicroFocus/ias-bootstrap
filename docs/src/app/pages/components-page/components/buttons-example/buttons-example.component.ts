@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
 
 declare var require;
 
@@ -8,31 +7,15 @@ declare var require;
     templateUrl: './buttons-example.component.html',
     styleUrls: ['./buttons-example.component.scss']
 })
-export class ButtonsExampleComponent implements OnInit {
-    textButtons = {
-        html: {filename: 'text-buttons.html', text: require('!raw-loader!./examples/text-buttons.html')},
-        ts: {filename: 'text-buttons.ts', text: require('!raw-loader!./examples/text-buttons.ts')},
-        visible: false
+export class ButtonsExampleComponent {
+    exampleFiles = {
+        'text-buttons.html': require('!raw-loader!./examples/text-buttons.html'),
+        'text-buttons.ts': require('!raw-loader!./examples/text-buttons.ts'),
+        'special-text-buttons.html': require('!raw-loader!./examples/special-text-buttons.html'),
+        'special-text-buttons.ts': require('!raw-loader!./examples/special-text-buttons.ts'),
+        'icon-buttons.html': require('!raw-loader!./examples/icon-buttons.html'),
+        'icon-buttons.ts': require('!raw-loader!./examples/icon-buttons.ts'),
+        // 'special-icon-buttons.html': require('!raw-loader!./examples/special-icon-buttons.html'),
+        // 'special-icon-buttons.ts': require('!raw-loader!./examples/special-icon-buttons.ts')
     };
-    specialTextButtons = {
-        html: {filename: 'special-text-buttons.html', text: require('!raw-loader!./examples/special-text-buttons.html')},
-        ts: {filename: 'special-text-buttons.ts', text: require('!raw-loader!./examples/special-text-buttons.ts')},
-        visible: false
-    };
-    iconButtons = {
-        html: {filename: 'icon-buttons.html', text: require('!raw-loader!./examples/icon-buttons.html')},
-        ts: {filename: 'icon-buttons.ts', text: require('!raw-loader!./examples/icon-buttons.ts')},
-        visible: false
-    };
-    // specialIconButtons = {
-    //     html: {filename: 'special-icon-buttons.html', text: require('!raw-loader!./examples/special-icon-buttons.html')},
-    //     ts: {filename: 'special-icon-buttons.ts', text: require('!raw-loader!./examples/special-icon-buttons.ts')}
-    // };
-
-    constructor() {
-    }
-
-    ngOnInit() {
-    }
-
 }
