@@ -1,17 +1,10 @@
 @import "./quantum-variables";
-@import "./quantum-fixes";
+@import "./quantum-bugs";
+
+@import 'components/buttons';
+@import 'components/page-header';
 
 body {
+    // Use white for the page background, instead of $quantum-bright-gray
     background-color: $quantum-white;
-}
-
-ux-page-header > .page-header-secondary {
-    // Turn off animations on the secondary header, since we want it to always show
-    animation: none;
-    background-color: $quantum-bright-gray;
-}
-
-// Why does the header need a top margin automatically?
-h2:first-child {
-    margin-top: 0;
 }

@@ -1,3 +1,8 @@
+// Why does the header need a top margin automatically?
+h2:first-child {
+    margin-top: 0;
+}
+
 app-ngbd-code > pre[class*="language-"] {
     margin: 0;
 }

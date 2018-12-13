@@ -1,0 +1,7 @@
+ux-page-header > .page-header-secondary {
+    // Turn off animations on the secondary header (navigation bar below the masthead), since we want it to always show
+    animation: none;
+
+    // Use bright gray instead of white, since we want white to be the background of the entire page
+    background-color: $quantum-bright-gray;
+}
