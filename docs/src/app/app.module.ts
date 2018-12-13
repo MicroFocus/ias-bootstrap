@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { ModalModule } from 'ngx-bootstrap/modal';
-import { PageHeaderModule, TabsetModule, SidePanelModule } from '@ux-aspects/ux-aspects';
+import { PageHeaderModule, TabsetModule, SidePanelModule, NavigationModule } from '@ux-aspects/ux-aspects';
 import { ComponentsPageComponent } from './pages/components-page/components-page.component';
 import { ButtonsExampleComponent } from './pages/components-page/components/buttons-example/buttons-example.component';
 import { AccordionExampleComponent } from './pages/components-page/components/accordion-example/accordion-example.component';
@@ -74,6 +74,7 @@ import { ExampleFileComponent } from './components/example-file/example-file.com
         AppRoutingModule,
         PageHeaderModule,
         SidePanelModule,
+        NavigationModule,
         // DateTimePickerModule,
         ButtonsExamplesModule,
         ModalModule.forRoot(),
