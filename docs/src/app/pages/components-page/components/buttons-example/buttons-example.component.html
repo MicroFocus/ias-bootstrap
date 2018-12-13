@@ -3,32 +3,56 @@
     The following tweaks were made to the standard buttons from ux-aspects to promote usability for IAS customers: (TODO...)
 </p>
 
-<h3>Text Buttons</h3>
-<div class="panel panel-default">
-    <div class="panel-body">
-        <app-text-buttons></app-text-buttons>
+<ng-container *ngFor="let section of [textButtons]">
+    <div class="code-heading-title">
+        <h3>Text Buttons</h3>
+        <button type="button" class="btn btn-link button-secondary" (click)="section.visible = !section.visible">
+            <span class="hpe-icon hpe-code" aria-hidden="true"></span> Code
+        </button>
     </div>
-    <ux-tabset>
-        <ux-tab [heading]="textButtons.html.filename">
-            <app-ngbd-code [code]="textButtons.html.text" lang="markup"></app-ngbd-code>
+    <app-text-buttons></app-text-buttons>
+    <ux-tabset *ngIf="section.visible">
+        <ux-tab [heading]="section.html.filename">
+            <app-ngbd-code [code]="section.html.text" lang="markup"></app-ngbd-code>
         </ux-tab>
-        <ux-tab [heading]="textButtons.ts.filename">
-            <app-ngbd-code [code]="textButtons.ts.text" lang="typescript"></app-ngbd-code>
+        <ux-tab [heading]="section.ts.filename">
+            <app-ngbd-code [code]="section.ts.text" lang="typescript"></app-ngbd-code>
         </ux-tab>
     </ux-tabset>
-</div>
+</ng-container>
 
-<h3>Special Text Buttons</h3>
-<div class="panel panel-default">
-    <div class="panel-body">
-        <app-special-text-buttons></app-special-text-buttons>
+<ng-container *ngFor="let section of [specialTextButtons]">
+    <div class="code-heading-title">
+        <h3>Special Text Buttons</h3>
+        <button type="button" class="btn btn-link button-secondary" (click)="section.visible = !section.visible">
+            <span class="hpe-icon hpe-code" aria-hidden="true"></span> Code
+        </button>
     </div>
-    <ux-tabset>
-        <ux-tab [heading]="specialTextButtons.html.filename">
-            <app-ngbd-code [code]="specialTextButtons.html.text" lang="markup"></app-ngbd-code>
+    <app-special-text-buttons></app-special-text-buttons>
+    <ux-tabset *ngIf="section.visible">
+        <ux-tab [heading]="section.html.filename">
+            <app-ngbd-code [code]="section.html.text" lang="markup"></app-ngbd-code>
         </ux-tab>
-        <ux-tab [heading]="specialTextButtons.ts.filename">
-            <app-ngbd-code [code]="specialTextButtons.ts.text" lang="typescript"></app-ngbd-code>
+        <ux-tab [heading]="section.ts.filename">
+            <app-ngbd-code [code]="section.ts.text" lang="typescript"></app-ngbd-code>
         </ux-tab>
     </ux-tabset>
-</div>
+</ng-container>
+
+<ng-container *ngFor="let section of [iconButtons]">
+    <div class="code-heading-title">
+        <h3>Icon Buttons</h3>
+        <button type="button" class="btn btn-link button-secondary" (click)="section.visible = !section.visible">
+            <span class="hpe-icon hpe-code" aria-hidden="true"></span> Code
+        </button>
+    </div>
+    <app-icon-buttons></app-icon-buttons>
+    <ux-tabset *ngIf="section.visible">
+        <ux-tab [heading]="section.html.filename">
+            <app-ngbd-code [code]="section.html.text" lang="markup"></app-ngbd-code>
+        </ux-tab>
+        <ux-tab [heading]="section.ts.filename">
+            <app-ngbd-code [code]="section.ts.text" lang="typescript"></app-ngbd-code>
+        </ux-tab>
+    </ux-tabset>
+</ng-container>
