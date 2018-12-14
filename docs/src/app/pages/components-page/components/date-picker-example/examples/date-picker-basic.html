@@ -1,0 +1,28 @@
+<ng-template #popoverTemplate>
+    <ux-date-time-picker [showTime]="false" (dateChange)="date = $event; popover.hide();"></ux-date-time-picker>
+</ng-template>
+
+<div class="row">
+    <div class="col-sm-6 col-xs-12">
+        <div class="input-group date m-nil">
+            <span class="input-group-btn">
+                <button class="btn button-secondary" aria-label="Show Date Picker" (click)="popover.show()">
+                    <i class="hpe-icon hpe-calendar" aria-hidden="true"></i>
+                </button>
+            </span>
+            <input type="text" #input #popover="ux-popover"
+                   [ngModel]="date | date:'M/d/y'"
+                   [uxPopover]="popoverTemplate"
+                   placement="bottom"
+                   popoverClass="date-time-picker-popover"
+                   showTriggers="[]"
+                   class="form-control"
+                   aria-label="Selected date"
+            >
+        </div>
+
+        <p class="m-t">Selected date is:
+            <em>{{ date | date:'M/d/y' }}</em>
+        </p>
+    </div>
+</div>

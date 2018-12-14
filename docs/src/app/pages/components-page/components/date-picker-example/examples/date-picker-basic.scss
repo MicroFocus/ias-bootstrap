@@ -1,0 +1,10 @@
+// ::ng-deep is used so we don't have to disable view encapsulation, since the element using .date-time-picker-popover
+// isn't owned by this component.
+
+::ng-deep .date-time-picker-popover {
+    max-width: none;
+}
+
+::ng-deep .date-time-picker-popover .popover-content {
+    padding: 0;
+}
