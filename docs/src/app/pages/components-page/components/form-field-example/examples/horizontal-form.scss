@@ -1,0 +1,19 @@
+.horizontal-form {
+    display: grid;
+    grid-template-columns: 80px 300px;
+    grid-row-gap: 15px;
+    align-items: center;
+
+    > label {
+        margin: 0;
+    }
+
+    > ux-checkbox {
+        grid-column-start: 2;
+    }
+
+    > button {
+        grid-column-start: 2;
+        justify-self: start;
+    }
+}

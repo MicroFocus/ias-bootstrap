@@ -12,7 +12,7 @@ export class ComponentsPageComponent implements OnInit {
         { title: 'Accordion', routerLink: '/components/accordion' },
         { title: 'App Bar (Masthead)', routerLink: '/components/app-bar' },
         { title: 'Buttons', routerLink: '/components/buttons' },
-        { title: 'Comments', routerLink: '/components/comments' },
+        // { title: 'Comments', routerLink: '/components/comments' },
         { title: 'Date Picker', routerLink: '/components/date-picker' },
         { title: 'Dialogs (Modals)', routerLink: '/components/dialogs' },
         { title: 'Form Fields', routerLink: '/components/form-field' },

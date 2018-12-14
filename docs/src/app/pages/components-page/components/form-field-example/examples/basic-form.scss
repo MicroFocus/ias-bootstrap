@@ -1,0 +1,16 @@
+.basic-form {
+    display: grid;
+    grid-template-columns: 150px 150px;
+
+    > label, > input {
+        grid-column: 1 / span 2;
+    }
+
+    > input {
+        margin-bottom: 20px;
+    }
+
+    > button {
+        justify-self: end;
+    }
+}
