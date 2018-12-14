@@ -20,8 +20,6 @@ export class DatePickerAdvancedComponent implements AfterViewInit, OnDestroy {
     showSpinners = true;
     subscription: Subscription;
 
-    isOpened = false;
-
     ngAfterViewInit(): void {
         this.subscription = fromEvent(this.dateInput.nativeElement, 'input')
             .pipe(
@@ -42,16 +40,5 @@ export class DatePickerAdvancedComponent implements AfterViewInit, OnDestroy {
         if (!isNaN(date.getDate())) {
             this.date = date;
         }
-    }
-
-    onDateChanged(event, popover) {
-        console.log('event: %O', event);
-        console.log('popover: %O', popover);
-
-        // if (this.isOpened) {
-        //     (popover as any).hide();
-        // }
-        //
-        // this.isOpened = !this.isOpened;
     }
 }

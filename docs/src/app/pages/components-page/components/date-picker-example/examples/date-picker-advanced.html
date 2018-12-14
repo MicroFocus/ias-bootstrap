@@ -7,7 +7,6 @@
         [showSpinners]="showSpinners"
         [showTimezone]="showTimezones"
         (keydown.escape)="popover.hide(); input.focus()"
-        (dateChange)="onDateChanged($event, popover)"
     >
     </ux-date-time-picker>
 </ng-template>
@@ -25,9 +24,10 @@
                    [uxPopover]="popoverTemplate"
                    placement="bottom"
                    popoverClass="date-time-picker-popover"
+                   showTriggers="[]"
                    class="form-control"
                    aria-label="Selected date"
-                   (keydown.enter)="popover.show()">
+            >
         </div>
 
         <p class="m-t">Selected date is:
