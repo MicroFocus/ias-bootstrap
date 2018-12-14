@@ -1,0 +1,23 @@
+<ng-template #template>
+    <div class="modal-header">
+        <h4 class="modal-title pull-left">Example Modal Dialog</h4>
+        <!--This is used in ux-aspects, but not Micro Focus theme:-->
+        <button type="button" class="close pull-right btn btn-link btn-icon button-secondary" aria-label="Close" (click)="modalRef.hide()">
+            <span class="hpe-icon hpe-close" aria-hidden="true"></span>
+        </button>
+    </div>
+    <div class="modal-body">
+        Sed libero sem, sollicitudin nec est vitae, suscipit posuere mi. Curabitur placerat nulla id tempus ornare.
+        Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc mattis lectus vitae sem congue elementum.
+        Nullam sit amet scelerisque magna.
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" (click)="modalRef.hide()">
+            Close
+        </button>
+    </div>
+</ng-template>
+
+<div class="btn-container">
+    <button type="button" class="btn btn-default" (click)="openModal(template)">Show Dialog</button>
+</div>

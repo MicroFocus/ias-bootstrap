@@ -6,27 +6,8 @@
     message, instructions, or input fields necessary for progression.
 </p>
 
-<h3>Example</h3>
-
-<ng-template #template>
-    <div class="modal-header">
-        <h4 class="modal-title pull-left">Example Modal Dialog</h4>
-        <!--This is used in ux-aspects, but not Micro Focus theme:-->
-        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
-            <span class="hpe-icon hpe-close"></span>
-        </button>
-    </div>
-    <div class="modal-body">
-        Terms of service (also known as terms of use and terms and conditions, commonly abbreviated as ToS or TOS and
-        TOU) are rules by which one must agree to abide in order to use a service.
-    </div>
-    <div class="modal-footer">
-        <button type="button" class="btn btn-default" (click)="modalRef.hide()">
-            Close
-        </button>
-    </div>
-</ng-template>
-
-<div class="btn-container">
-    <button type="button" class="btn btn-default" (click)="openModal(template)">Show Dialog</button>
-</div>
+<app-example [heading]="'Basic Dialog'" [fileNameToContentsMap]="exampleFiles">
+    <app-dialog-basic></app-dialog-basic>
+    <app-example-file [name]="'dialog-basic.html'" [lang]="'markup'"></app-example-file>
+    <app-example-file [name]="'dialog-basic.ts'" [lang]="'typescript'"></app-example-file>
+</app-example>

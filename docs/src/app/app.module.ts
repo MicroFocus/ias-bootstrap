@@ -39,6 +39,7 @@ import { ExampleFileComponent } from './components/example-file/example-file.com
 import { AccordionExamplesModule } from './pages/components-page/components/accordion-example/examples/_examples.module';
 import { AppBarExamplesModule } from './pages/components-page/components/app-bar-example/examples/_examples.module';
 import { DatePickerExamplesModule } from './pages/components-page/components/date-picker-example/examples/_examples.module';
+import { DialogsExamplesModule } from './pages/components-page/components/dialogs-example/examples/_examples.module';
 
 @NgModule({
     declarations: [
@@ -86,7 +87,8 @@ import { DatePickerExamplesModule } from './pages/components-page/components/dat
         AccordionExamplesModule,
         AppBarExamplesModule,
         ButtonsExamplesModule,
-        DatePickerExamplesModule
+        DatePickerExamplesModule,
+        DialogsExamplesModule
     ],
     providers: [
         CodeHighlightService

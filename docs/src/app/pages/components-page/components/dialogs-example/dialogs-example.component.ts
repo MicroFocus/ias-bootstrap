@@ -1,5 +1,6 @@
-import { Component, OnInit, TemplateRef } from '@angular/core';
-import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
+import { Component, OnInit } from '@angular/core';
+
+declare var require;
 
 @Component({
     selector: 'app-dialogs-example',
@@ -7,18 +8,14 @@ import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
     styleUrls: ['./dialogs-example.component.scss']
 })
 export class DialogsExampleComponent implements OnInit {
+    exampleFiles = {
+        'dialog-basic.html': require('!raw-loader!./examples/dialog-basic.html'),
+        'dialog-basic.ts': require('!raw-loader!./examples/dialog-basic.ts'),
+    };
 
-    modalRef: BsModalRef;
-
-    constructor(private modalService: BsModalService) {
+    constructor() {
     }
 
     ngOnInit() {
-    }
-
-    openModal(template: TemplateRef<any>) {
-        this.modalRef = this.modalService.show(template, {
-            class: 'my-modal-wrapper'
-        });
     }
 }

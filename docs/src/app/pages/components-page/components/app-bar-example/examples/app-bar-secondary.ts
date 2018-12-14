@@ -11,9 +11,9 @@ export class AppBarSecondaryComponent {
             title: '',
             selected: true,
             children: [
-                { title: 'Link 1' },
-                { title: 'Link 2' },
-                { title: 'LInk 3' }
+                { title: 'Link 1' }, // { title: 'Link 1', routerLink: '/link1' },
+                { title: 'Link 2' }, // { title: 'Link 2', routerLink: '/link2' },
+                { title: 'LInk 3' }  // { title: 'LInk 3', routerLink: '/link3' }
             ]
         }
     ];
