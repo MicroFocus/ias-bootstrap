@@ -37,6 +37,7 @@ import { CodeHighlightService } from './services/code-highlight.service';
 import { ExampleComponent } from './components/example/example.component';
 import { ExampleFileComponent } from './components/example-file/example-file.component';
 import { AccordionExamplesModule } from './pages/components-page/components/accordion-example/examples/_examples.module';
+import { AppBarExamplesModule } from './pages/components-page/components/app-bar-example/examples/_examples.module';
 
 @NgModule({
     declarations: [
@@ -77,10 +78,13 @@ import { AccordionExamplesModule } from './pages/components-page/components/acco
         SidePanelModule,
         NavigationModule,
         // DateTimePickerModule,
-        ButtonsExamplesModule,
-        AccordionExamplesModule,
         ModalModule.forRoot(),
-        TabsetModule
+        TabsetModule,
+
+        // Component example modules:
+        AccordionExamplesModule,
+        AppBarExamplesModule,
+        ButtonsExamplesModule,
     ],
     providers: [
         CodeHighlightService
