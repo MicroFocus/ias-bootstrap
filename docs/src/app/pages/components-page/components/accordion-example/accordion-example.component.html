@@ -1,3 +1,10 @@
-<p>
-  accordion-example works!
+<h2>Accordion</h2>
+<p class="ias-page-instructions">
+    The following are standard ux-aspects accordions, with a few tweaks to improve usability for existing IAS customers.
 </p>
+
+<app-example [heading]="'Basic Accordion'" [fileNameToContentsMap]="exampleFiles">
+    <app-accordion-basic></app-accordion-basic>
+    <app-example-file [name]="'accordion-basic.html'" [lang]="'markup'"></app-example-file>
+    <app-example-file [name]="'accordion-basic.ts'" [lang]="'typescript'"></app-example-file>
+</app-example>
