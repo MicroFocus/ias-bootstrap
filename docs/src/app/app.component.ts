@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Renderer2 } from '@angular/core';
 import { PageHeaderIconMenu, PageHeaderNavigationItem } from '@ux-aspects/ux-aspects';
 
 @Component({
@@ -7,6 +7,11 @@ import { PageHeaderIconMenu, PageHeaderNavigationItem } from '@ux-aspects/ux-asp
     styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+    iasStyleActive = true;
+
+    constructor(private renderer: Renderer2) {
+    }
+
     navBarItems: PageHeaderNavigationItem[] = [
         {
             title: '',
@@ -21,13 +26,28 @@ export class AppComponent {
 
     iconMenus: PageHeaderIconMenu[] = [
         {
-            icon: 'hpe-help-circle hpe-lg',
-            label: 'Help',
-            dropdown: [
-                {
-                    title: 'About UX Aspects...'
+            icon: 'hpe-view-filled hpe-lg',
+            label: 'Toggle',
+            select: (menu: PageHeaderIconMenu) => {
+                this.iasStyleActive = !this.iasStyleActive;
+
+                if (this.iasStyleActive) {
+                    this.renderer.addClass(document.documentElement, 'ias-app');
+                    menu.icon = 'hpe-view-filled hpe-lg';
+                } else {
+                    this.renderer.removeClass(document.documentElement, 'ias-app');
+                    menu.icon = 'hpe-view hpe-lg';
                 }
-            ]
-        }
+            }
+        },
+        // {
+        //     icon: 'hpe-help-circle hpe-lg',
+        //     label: 'Help',
+        //     dropdown: [
+        //         {
+        //             title: 'About UX Aspects...'
+        //         }
+        //     ]
+        // }
     ];
 }
