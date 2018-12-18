@@ -41,6 +41,7 @@ import { AppBarExamplesModule } from './pages/components-page/components/app-bar
 import { DatePickerExamplesModule } from './pages/components-page/components/date-picker-example/examples/_examples.module';
 import { DialogsExamplesModule } from './pages/components-page/components/dialogs-example/examples/_examples.module';
 import { FormFieldsExamplesModule } from './pages/components-page/components/form-field-example/examples/_examples.module';
+import { FormValidationExamplesModule } from './pages/components-page/components/form-validation-example/examples/_examples.module';
 
 @NgModule({
     declarations: [
@@ -90,7 +91,8 @@ import { FormFieldsExamplesModule } from './pages/components-page/components/for
         ButtonsExamplesModule,
         DatePickerExamplesModule,
         DialogsExamplesModule,
-        FormFieldsExamplesModule
+        FormFieldsExamplesModule,
+        FormValidationExamplesModule
     ],
     providers: [
         CodeHighlightService

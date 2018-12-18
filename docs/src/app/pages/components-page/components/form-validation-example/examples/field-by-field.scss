@@ -1,0 +1,31 @@
+@import "../../../../../../../../styles/src/quantum-variables";
+
+form {
+    display: grid;
+    grid-template-columns: 350px;
+
+    label, button {
+        margin-top: 20px;
+    }
+
+    button {
+        justify-self: end;
+    }
+}
+
+// The Quantum style automatically shows the borders of invalid fields as red, but there are times when you would only
+// want this to happen when the after the field has been touched/visited.  This is to do that:
+textarea:invalid, input:invalid {
+    // Keep the border looking normal, even if the control is invalid
+    border-color: rgba($quantum-dim-gray, 0.64);
+
+    // Change the border to red only if the control is invalid AND has been touch (angular adds the ng-touched class)
+    &.ng-touched {
+        border-color: $quantum-crimson-negative;
+    }
+}
+
+// The color for .form-control-feedback overwrites the red from .validation-error-text.  This fixes that.
+form .form-control-feedback.validation-error-text {
+    color: $quantum-crimson-negative;
+}

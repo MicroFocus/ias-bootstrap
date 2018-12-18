@@ -1,0 +1,26 @@
+<form role="form" name="validationform" autocomplete="off">
+    <label class="form-label" for="projectName">Project name <span class="form-control-validation">*</span></label>
+    <input type="text" placeholder="Enter project name" id="projectName" name="projectName"
+           class="form-control" [(ngModel)]="projectName" #projectNameInput="ngModel" required>
+
+    <ng-container *ngIf="projectNameInput.invalid && (projectNameInput.dirty || projectNameInput.touched)">
+        <span class="validation-error-text hpe-icon hpe-alert form-control-feedback" aria-hidden="true"></span>
+        <span class="validation-error-text">Required - enter a project name</span>
+    </ng-container>
+
+    <label class="form-label">Description</label>
+    <textarea class="form-control" rows="4" placeholder="Enter description"></textarea>
+
+    <label class="form-label">Owner's email <span class="form-control-validation">*</span></label>
+    <input type="email" placeholder="Enter owner's email" class="form-control" name="owneremail"
+           [(ngModel)]="ownerEmail" #ownerEmailInput="ngModel" required>
+
+    <ng-container *ngIf="ownerEmailInput.invalid && (ownerEmailInput.dirty || ownerEmailInput.touched)">
+        <span class="validation-error-text hpe-icon hpe-alert form-control-feedback" aria-hidden="true"></span>
+        <span class="validation-error-text">Required - enter a valid email</span>
+    </ng-container>
+
+    <button class="btn button-primary pull-right" type="submit" [disabled]="projectNameInput.invalid || ownerEmailInput.invalid">
+        Submit
+    </button>
+</form>
