@@ -1,0 +1,11 @@
+accordion.panel-group > .accordion-chevron.panel-open .panel-heading:before,
+ux-accordion.panel-group > .accordion-chevron.panel-open .panel-heading:before {
+    font-family: 'ias-icons';
+    content: '\E903';
+}
+
+accordion.panel-group > .accordion-chevron .panel-heading:before,
+ux-accordion.panel-group > .accordion-chevron .panel-heading:before {
+    font-family: 'ias-icons';
+    content: '\E901';
+}
