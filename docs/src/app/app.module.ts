@@ -44,6 +44,7 @@ import { FormFieldsExamplesModule } from './pages/components-page/components/for
 import { FormValidationExamplesModule } from './pages/components-page/components/form-validation-example/examples/_examples.module';
 import { HeadersExamplesModule } from './pages/components-page/components/headers-example/examples/_examples.module';
 import { IconsExamplesModule } from './pages/components-page/components/icons-example/examples/_examples.module';
+import { LinksExamplesModule } from './pages/components-page/components/links-example/examples/_examples.module';
 
 @NgModule({
     declarations: [
@@ -96,7 +97,8 @@ import { IconsExamplesModule } from './pages/components-page/components/icons-ex
         FormFieldsExamplesModule,
         FormValidationExamplesModule,
         HeadersExamplesModule,
-        IconsExamplesModule
+        IconsExamplesModule,
+        LinksExamplesModule
     ],
     providers: [
         CodeHighlightService

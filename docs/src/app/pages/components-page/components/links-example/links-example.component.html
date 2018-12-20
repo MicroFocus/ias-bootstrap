@@ -1,3 +1,13 @@
-<p>
-  links-example works!
+<h2>Links</h2>
+<p class="ias-page-instructions">
+    Links are components used to aid in user navigation. They allow users to jump between different pages, sections of
+    the same page, outside URLs, and access files and emails. When creating links, make link text short and descriptive
+    to the action of the link.
 </p>
+
+<app-example [heading]="'Standard Links'" [fileNameToContentsMap]="exampleFiles">
+    <app-standard-links></app-standard-links>
+    <app-example-file [name]="'standard-links.html'" [lang]="'markup'"></app-example-file>
+    <app-example-file [name]="'standard-links.ts'" [lang]="'typescript'"></app-example-file>
+    <app-example-file [name]="'standard-links.scss'" [lang]="'scss'"></app-example-file>
+</app-example>
