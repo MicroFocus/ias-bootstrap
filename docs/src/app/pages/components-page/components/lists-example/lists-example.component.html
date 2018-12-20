@@ -1,3 +1,33 @@
-<p>
-  lists-example works!
+<h2>Lists</h2>
+<p class="ias-page-instructions">
+    Lists provide a way of visually grouping related information. Items within a list may also be paired with other
+    elements, such as icons and avatars, to differentiate similar information or show the current state of a list item.
 </p>
+
+<app-example [heading]="'List of Links'" [fileNameToContentsMap]="exampleFiles">
+    <app-items-as-links></app-items-as-links>
+    <app-example-file [name]="'items-as-links.html'" [lang]="'markup'"></app-example-file>
+    <app-example-file [name]="'items-as-links.ts'" [lang]="'typescript'"></app-example-file>
+    <app-example-file [name]="'items-as-links.scss'" [lang]="'scss'"></app-example-file>
+</app-example>
+
+<app-example [heading]="'List of Buttons'" [fileNameToContentsMap]="exampleFiles">
+    <app-items-as-buttons></app-items-as-buttons>
+    <app-example-file [name]="'items-as-buttons.html'" [lang]="'markup'"></app-example-file>
+    <app-example-file [name]="'items-as-buttons.ts'" [lang]="'typescript'"></app-example-file>
+    <app-example-file [name]="'items-as-buttons.scss'" [lang]="'scss'"></app-example-file>
+</app-example>
+
+<app-example [heading]="'Unordered List'" [fileNameToContentsMap]="exampleFiles">
+    <app-standard-lists></app-standard-lists>
+    <app-example-file [name]="'standard-lists.html'" [lang]="'markup'"></app-example-file>
+    <app-example-file [name]="'standard-lists.ts'" [lang]="'typescript'"></app-example-file>
+    <app-example-file [name]="'standard-lists.scss'" [lang]="'scss'"></app-example-file>
+</app-example>
+
+<app-example [heading]="'Unordered List With Icons'" [fileNameToContentsMap]="exampleFiles">
+    <app-list-with-icons></app-list-with-icons>
+    <app-example-file [name]="'list-with-icons.html'" [lang]="'markup'"></app-example-file>
+    <app-example-file [name]="'list-with-icons.ts'" [lang]="'typescript'"></app-example-file>
+    <app-example-file [name]="'list-with-icons.scss'" [lang]="'scss'"></app-example-file>
+</app-example>
