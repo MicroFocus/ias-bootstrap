@@ -1,3 +1,18 @@
-<p>
-  icons-example works!
+<h2>Icons</h2>
+<p class="ias-page-instructions">
+    Icons visually add continuity, branding, and flow to otherwise homogeneous data. The contrast added to the UI can
+    help make important data stand out. However, adding too many icons increases visual turbulence and will decrease the
+    icons' value.
 </p>
+<p>
+    Icons specifically designed for IAS products can be found here:
+    <a href="https://microfocus.github.io/ias-icons" target="_blank">https://microfocus.github.io/ias-icons</a>.
+</p>
+
+
+<app-example [heading]="'Icon Sizes'" [fileNameToContentsMap]="exampleFiles">
+    <app-icon-sizes></app-icon-sizes>
+    <app-example-file [name]="'icon-sizes.html'" [lang]="'markup'"></app-example-file>
+    <app-example-file [name]="'icon-sizes.ts'" [lang]="'typescript'"></app-example-file>
+    <app-example-file [name]="'icon-sizes.scss'" [lang]="'scss'"></app-example-file>
+</app-example>

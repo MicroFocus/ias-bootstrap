@@ -1,0 +1,19 @@
+$icon-size-avatar: 40px;
+$icon-size-small: 25px;
+$icon-size-medium: 50px;
+$icon-size-large: 75px;
+
+.ias-icon, .svg-icon {
+    @include square($icon-size-small);
+
+    color: inherit;
+    display: inline-block;
+
+    &.ias-medium {
+        @include square($icon-size-medium);
+    }
+
+    &.ias-large {
+        @include square($icon-size-large);
+    }
+}

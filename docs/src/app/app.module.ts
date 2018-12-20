@@ -42,6 +42,8 @@ import { DatePickerExamplesModule } from './pages/components-page/components/dat
 import { DialogsExamplesModule } from './pages/components-page/components/dialogs-example/examples/_examples.module';
 import { FormFieldsExamplesModule } from './pages/components-page/components/form-field-example/examples/_examples.module';
 import { FormValidationExamplesModule } from './pages/components-page/components/form-validation-example/examples/_examples.module';
+import { HeadersExamplesModule } from './pages/components-page/components/headers-example/examples/_examples.module';
+import { IconsExamplesModule } from './pages/components-page/components/icons-example/examples/_examples.module';
 
 @NgModule({
     declarations: [
@@ -92,7 +94,9 @@ import { FormValidationExamplesModule } from './pages/components-page/components
         DatePickerExamplesModule,
         DialogsExamplesModule,
         FormFieldsExamplesModule,
-        FormValidationExamplesModule
+        FormValidationExamplesModule,
+        HeadersExamplesModule,
+        IconsExamplesModule
     ],
     providers: [
         CodeHighlightService

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-declare var require;
+declare const require;
 
 @Component({
     selector: 'app-dialogs-example',

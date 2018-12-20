@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-declare var require;
+declare const require;
 
 @Component({
     selector: 'app-form-field-example',
@@ -15,6 +15,9 @@ export class FormFieldExampleComponent implements OnInit {
         'horizontal-form.html': require('!raw-loader!./examples/horizontal-form.html'),
         'horizontal-form.ts': require('!raw-loader!./examples/horizontal-form.ts'),
         'horizontal-form.scss': require('!raw-loader!./examples/horizontal-form.scss'),
+        'search-field.html': require('!raw-loader!./examples/search-field.html'),
+        'search-field.ts': require('!raw-loader!./examples/search-field.ts'),
+        'search-field.scss': require('!raw-loader!./examples/search-field.scss'),
     };
 
     constructor() {

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-declare var require;
+declare const require;
 
 @Component({
     selector: 'app-date-picker-example',

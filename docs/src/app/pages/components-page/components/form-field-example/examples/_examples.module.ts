@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 import { CheckboxModule } from '@ux-aspects/ux-aspects';
 import { BasicFormComponent } from './basic-form';
 import { HorizontalFormComponent } from './horizontal-form';
+import { SearchFieldComponent } from './search-field';
 
 @NgModule({
     declarations: [
         BasicFormComponent,
-        HorizontalFormComponent
+        HorizontalFormComponent,
+        SearchFieldComponent
     ],
     imports: [
         CommonModule,
@@ -15,7 +17,8 @@ import { HorizontalFormComponent } from './horizontal-form';
     ],
     exports: [
         BasicFormComponent,
-        HorizontalFormComponent
+        HorizontalFormComponent,
+        SearchFieldComponent
     ]
 })
 export class FormFieldsExamplesModule {

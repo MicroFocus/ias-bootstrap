@@ -1,8 +1,11 @@
 @import "./quantum-variables";
 @import "./quantum-bugs";
 
+@import "./size";
+
 @import 'components/accordion';
 @import 'components/buttons';
+@import 'components/icons';
 @import 'components/page-header';
 
 body {
