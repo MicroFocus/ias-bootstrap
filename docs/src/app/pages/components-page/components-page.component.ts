@@ -21,7 +21,7 @@ export class ComponentsPageComponent implements OnInit {
         { title: 'Icons', routerLink: '/components/icons' },
         { title: 'Links', routerLink: '/components/links' },
         { title: 'Lists', routerLink: '/components/lists' },
-        { title: 'Menus', routerLink: '/components/menu' },
+        { title: 'Menus (Dropdowns)', routerLink: '/components/menu' },
         { title: 'Panels', routerLink: '/components/panels' },
         { title: 'Progress', routerLink: '/components/progress' },
         { title: 'Side Navs', routerLink: '/components/side-navs' },

@@ -1,3 +1,19 @@
-<p>
-  menu-example works!
+<h2>Menus</h2>
+<p class="ias-page-instructions">
+    Menus are a toggleable component that provide the user with navigation, actions, options and information. Content
+    within a menu larger than three elements could benefit from grouping elements in logical sections.
 </p>
+
+<app-example [heading]="'Standard Menu'" [fileNameToContentsMap]="exampleFiles">
+    <app-standard-menus></app-standard-menus>
+    <app-example-file [name]="'standard-menus.html'" [lang]="'markup'"></app-example-file>
+    <app-example-file [name]="'standard-menus.ts'" [lang]="'typescript'"></app-example-file>
+    <app-example-file [name]="'standard-menus.scss'" [lang]="'scss'"></app-example-file>
+</app-example>
+
+<app-example [heading]="'Split Button Menu'" [fileNameToContentsMap]="exampleFiles">
+    <app-split-button-menus></app-split-button-menus>
+    <app-example-file [name]="'split-button-menus.html'" [lang]="'markup'"></app-example-file>
+    <app-example-file [name]="'split-button-menus.ts'" [lang]="'typescript'"></app-example-file>
+    <app-example-file [name]="'split-button-menus.scss'" [lang]="'scss'"></app-example-file>
+</app-example>
