@@ -1,0 +1,23 @@
+<ux-progress-bar [value]="value" [max]="max"></ux-progress-bar>
+
+<div class="ux-progress-text">
+    <span>{{value}}%</span>
+    <span>120KB/s</span>
+</div>
+
+<h4>Indeterminate</h4>
+
+<ux-progress-bar class="small" [indeterminate]="true"></ux-progress-bar>
+
+<h4>Attached</h4>
+
+<div class="page-content demo-page-content">
+    <div class="ebox">
+        <h4 class="m-t-nil">Determinate</h4>
+        <ux-progress-bar class="small attached" [value]="value" [max]="max"></ux-progress-bar>
+    </div>
+    <div class="ebox">
+        <h4 class="m-t-nil">Indeterminate</h4>
+        <ux-progress-bar class="small attached" [indeterminate]="true"></ux-progress-bar>
+    </div>
+</div>

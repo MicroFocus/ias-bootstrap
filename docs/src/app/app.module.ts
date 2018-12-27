@@ -48,6 +48,7 @@ import { LinksExamplesModule } from './pages/components-page/components/links-ex
 import { ListExamplesModule } from './pages/components-page/components/lists-example/examples/_examples.module';
 import { MenuExamplesModule } from './pages/components-page/components/menu-example/examples/_examples.module';
 import { PanelExamplesModule } from './pages/components-page/components/panels-example/examples/_examples.module';
+import { ProgressExamplesModule } from './pages/components-page/components/progress-example/examples/_examples.module';
 
 @NgModule({
     declarations: [
@@ -105,6 +106,7 @@ import { PanelExamplesModule } from './pages/components-page/components/panels-e
         ListExamplesModule,
         MenuExamplesModule,
         PanelExamplesModule,
+        ProgressExamplesModule,
     ],
     providers: [
         CodeHighlightService
