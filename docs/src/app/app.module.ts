@@ -47,6 +47,7 @@ import { IconsExamplesModule } from './pages/components-page/components/icons-ex
 import { LinksExamplesModule } from './pages/components-page/components/links-example/examples/_examples.module';
 import { ListExamplesModule } from './pages/components-page/components/lists-example/examples/_examples.module';
 import { MenuExamplesModule } from './pages/components-page/components/menu-example/examples/_examples.module';
+import { PanelExamplesModule } from './pages/components-page/components/panels-example/examples/_examples.module';
 
 @NgModule({
     declarations: [
@@ -102,7 +103,8 @@ import { MenuExamplesModule } from './pages/components-page/components/menu-exam
         IconsExamplesModule,
         LinksExamplesModule,
         ListExamplesModule,
-        MenuExamplesModule
+        MenuExamplesModule,
+        PanelExamplesModule,
     ],
     providers: [
         CodeHighlightService
