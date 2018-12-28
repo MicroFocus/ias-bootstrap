@@ -12,6 +12,9 @@ export class SideNavsExampleComponent implements OnInit {
         'standard-side-nav.html': require('!raw-loader!./examples/standard-side-nav.html'),
         'standard-side-nav.ts': require('!raw-loader!./examples/standard-side-nav.ts'),
         'standard-side-nav.scss': require('!raw-loader!./examples/standard-side-nav.scss'),
+        'toggle-side-nav.html': require('!raw-loader!./examples/toggle-side-nav.html'),
+        'toggle-side-nav.ts': require('!raw-loader!./examples/toggle-side-nav.ts'),
+        'toggle-side-nav.scss': require('!raw-loader!./examples/toggle-side-nav.scss'),
     };
 
     constructor() {
