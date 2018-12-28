@@ -1,3 +1,22 @@
-<p>
-  table-example works!
+<h2>Tables</h2>
+<p class="ias-page-instructions">
+
 </p>
+<p>
+    Status messages come from Bootstrap <a href="https://getbootstrap.com/docs/3.3/components/#alerts">Alerts</a>, and
+    are styled using Quantum's look and feel.
+</p>
+
+<app-example [heading]="'Standard Tables'" [fileNameToContentsMap]="exampleFiles">
+    <app-standard-tables></app-standard-tables>
+    <app-example-file [name]="'standard-tables.html'" [lang]="'markup'"></app-example-file>
+    <app-example-file [name]="'standard-tables.ts'" [lang]="'typescript'"></app-example-file>
+    <app-example-file [name]="'standard-tables.scss'" [lang]="'scss'"></app-example-file>
+</app-example>
+
+<app-example [heading]="'Column Resizing Tables'" [fileNameToContentsMap]="exampleFiles">
+    <app-column-resizing-tables></app-column-resizing-tables>
+    <app-example-file [name]="'column-resizing-tables.html'" [lang]="'markup'"></app-example-file>
+    <app-example-file [name]="'column-resizing-tables.ts'" [lang]="'typescript'"></app-example-file>
+    <app-example-file [name]="'column-resizing-tables.scss'" [lang]="'scss'"></app-example-file>
+</app-example>

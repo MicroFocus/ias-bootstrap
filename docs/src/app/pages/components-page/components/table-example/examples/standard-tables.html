@@ -1,0 +1,110 @@
+<div role="toolbar" class="ux-toolbar">
+    <div class="ux-toolbar-left">
+        <button type="button" class="btn btn-link btn-icon button-secondary" aria-label="Edit" title="Edit">
+            <span class="hpe-icon hpe-edit"></span>
+        </button>
+        <button type="button" class="btn btn-link btn-icon button-secondary" aria-label="Share" title="Share">
+            <span class="hpe-icon hpe-share"></span>
+        </button>
+        <button type="button" class="btn btn-link btn-icon button-secondary" aria-label="Delete" title="Delete">
+            <span class="hpe-icon hpe-trash"></span>
+        </button>
+        <button type="button" class="btn btn-link btn-icon button-secondary" aria-label="Flag" title="Flag">
+            <span class="hpe-icon hpe-flag"></span>
+        </button>
+    </div>
+    <div class="ux-toolbar-right">
+        <button type="button" class="btn btn-link btn-icon button-secondary"  aria-label="Configuration" title="Configuration">
+            <span class="hpe-icon hpe-configuration"></span>
+        </button>
+    </div>
+</div>
+<table class="table table-hover">
+    <thead>
+    <tr uxColumnSorting>
+        <th class="checkbox-column">
+            <ux-checkbox
+                aria-label="Toggle selection of all rows"
+                (valueChange)="$event ? select.selectAll() : select.deselectAll()">
+            </ux-checkbox>
+        </th>
+        <th class="clickable column-sorting"
+            tabindex="0"
+            [attr.aria-label]="getColumnAriaLabel('Name', nameColumn)"
+            [attr.aria-sort]="nameColumn.state"
+            (click)="changeState('Name', nameColumn)"
+            (keydown.enter)="changeState('Name', nameColumn)">
+            <div class="column-sorting-header">
+                <div>Name</div>
+                <ux-column-sorting #nameColumn="ux-column-sorting" key="name"></ux-column-sorting>
+            </div>
+        </th>
+        <th class="clickable column-sorting"
+            tabindex="0"
+            [attr.aria-label]="getColumnAriaLabel('Author', authorColumn)"
+            [attr.aria-sort]="authorColumn.state"
+            (click)="changeState('Author', authorColumn)"
+            (keydown.enter)="changeState('Author', authorColumn)">
+
+            <div class="column-sorting-header">
+                <div>Author</div>
+                <ux-column-sorting #authorColumn="ux-column-sorting" key="author"></ux-column-sorting>
+            </div>
+        </th>
+        <th class="clickable column-sorting"
+            tabindex="0"
+            [attr.aria-label]="getColumnAriaLabel('Date Modified', dateColumn)"
+            [attr.aria-sort]="dateColumn.state"
+            (click)="changeState('Date Modified', dateColumn)"
+            (keydown.enter)="changeState('Date Modified', dateColumn)">
+
+            <div class="column-sorting-header">
+                <div>Date Modified</div>
+                <ux-column-sorting #dateColumn="ux-column-sorting" key="date"></ux-column-sorting>
+            </div>
+        </th>
+        <th class="clickable column-sorting"
+            tabindex="0"
+            [attr.aria-label]="getColumnAriaLabel('Work Completed', completedColumn)"
+            [attr.aria-sort]="completedColumn.state"
+            (click)="changeState('Work Completed', completedColumn)"
+            (keydown.enter)="changeState('Work Completed', completedColumn)">
+            <div class="column-sorting-header">
+                <div>Work Completed</div>
+                <ux-column-sorting #completedColumn="ux-column-sorting" key="completed">
+                </ux-column-sorting>
+            </div>
+        </th>
+        <th class="text-center">Status</th>
+    </tr>
+    </thead>
+    <tbody #select="ux-selection" [(uxSelection)]="selection">
+    <tr *ngFor="let item of items"
+        class="clickable"
+        [class.active]="item.selected"
+        [attr.aria-selected]="item.selected"
+        [uxSelectionItem]="item"
+        [(selected)]="item.selected">
+
+        <td class="checkbox-column">
+            <ux-checkbox tabindex="-1" aria-hidden="true" [(value)]="item.selected"></ux-checkbox>
+        </td>
+        <td>{{ item.name }}</td>
+        <td>{{ item.author }}</td>
+        <td>{{ item.date }}</td>
+        <td>
+            <ux-spark theme="fuchsia"
+                      [value]="item.completed"
+                      [barHeight]="3"
+                      [inlineLabel]="getSparkLabel(item.completed)">
+            </ux-spark>
+        </td>
+        <td class="text-center">
+            <div class="hpe-icon"
+                 [class.hpe-checkmark]="item.active"
+                 [attr.aria-label]="item.active ? 'Approved' : 'Not approved'">
+            </div>
+        </td>
+    </tr>
+    </tbody>
+</table>
