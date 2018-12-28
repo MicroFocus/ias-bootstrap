@@ -53,6 +53,7 @@ import { SideNavExamplesModule } from './pages/components-page/components/side-n
 import { EmptyContentComponent } from './components/empty-content/empty-content.component';
 import { MessagesExamplesModule } from './pages/components-page/components/status-messages-example/examples/_examples.module';
 import { TablesExamplesModule } from './pages/components-page/components/table-example/examples/_examples.module';
+import { TabsExamplesModule } from './pages/components-page/components/tabs-example/examples/_examples.module';
 
 @NgModule({
     declarations: [
@@ -115,6 +116,7 @@ import { TablesExamplesModule } from './pages/components-page/components/table-e
         SideNavExamplesModule,
         MessagesExamplesModule,
         TablesExamplesModule,
+        TabsExamplesModule,
     ],
     providers: [
         CodeHighlightService
