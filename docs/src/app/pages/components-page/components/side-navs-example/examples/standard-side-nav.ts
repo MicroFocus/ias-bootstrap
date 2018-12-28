@@ -19,5 +19,3 @@ export class StandardSideNavComponent {
         { icon: 'hpe-help-circle hpe-lg', label: 'Help', dropdown: [{ title: 'About This Application...' }] }
     ];
 }
-
-// ['/speakers', {outlets: {'list': ['speakersList'], 'bio': ['none']}}]

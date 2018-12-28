@@ -51,6 +51,7 @@ import { PanelExamplesModule } from './pages/components-page/components/panels-e
 import { ProgressExamplesModule } from './pages/components-page/components/progress-example/examples/_examples.module';
 import { SideNavExamplesModule } from './pages/components-page/components/side-navs-example/examples/_examples.module';
 import { EmptyContentComponent } from './components/empty-content/empty-content.component';
+import { MessagesExamplesModule } from './pages/components-page/components/status-messages-example/examples/_examples.module';
 
 @NgModule({
     declarations: [
@@ -111,6 +112,7 @@ import { EmptyContentComponent } from './components/empty-content/empty-content.
         PanelExamplesModule,
         ProgressExamplesModule,
         SideNavExamplesModule,
+        MessagesExamplesModule,
     ],
     providers: [
         CodeHighlightService
