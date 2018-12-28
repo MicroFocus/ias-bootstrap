@@ -25,6 +25,7 @@ export class ComponentsPageComponent implements OnInit {
         { title: 'Panels', routerLink: '/components/panels' },
         { title: 'Progress', routerLink: '/components/progress' },
         { title: 'Side Navs', routerLink: '/components/side-navs' },
+        // { title: 'Side Panels', routerLink: '/components/side-panels' }, // This is what I'm using for code examples
         { title: 'Status Messages', routerLink: '/components/status-messages' },
         { title: 'Tables', routerLink: '/components/table' },
         { title: 'Tabs', routerLink: '/components/tabs' },

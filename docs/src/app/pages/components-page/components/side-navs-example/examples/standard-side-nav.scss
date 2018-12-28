@@ -1,0 +1,16 @@
+@import "../../../../../../../../styles/src/quantum-variables";
+
+:host {
+    border: 1px solid $quantum-bright-gray;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+
+    > ux-page-header {
+        grid-column: 1 / -1;
+        position: relative;
+    }
+
+    > .content-area {
+        margin: 15px;
+    }
+}

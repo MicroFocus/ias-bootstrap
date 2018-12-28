@@ -49,6 +49,8 @@ import { ListExamplesModule } from './pages/components-page/components/lists-exa
 import { MenuExamplesModule } from './pages/components-page/components/menu-example/examples/_examples.module';
 import { PanelExamplesModule } from './pages/components-page/components/panels-example/examples/_examples.module';
 import { ProgressExamplesModule } from './pages/components-page/components/progress-example/examples/_examples.module';
+import { SideNavExamplesModule } from './pages/components-page/components/side-navs-example/examples/_examples.module';
+import { EmptyContentComponent } from './components/empty-content/empty-content.component';
 
 @NgModule({
     declarations: [
@@ -80,7 +82,8 @@ import { ProgressExamplesModule } from './pages/components-page/components/progr
         TileGridsExampleComponent,
         ProgressExampleComponent,
         ExampleComponent,
-        ExampleFileComponent
+        ExampleFileComponent,
+        EmptyContentComponent
     ],
     imports: [
         BrowserModule,
@@ -107,6 +110,7 @@ import { ProgressExamplesModule } from './pages/components-page/components/progr
         MenuExamplesModule,
         PanelExamplesModule,
         ProgressExamplesModule,
+        SideNavExamplesModule,
     ],
     providers: [
         CodeHighlightService

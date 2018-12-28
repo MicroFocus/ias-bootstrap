@@ -25,6 +25,7 @@ import { TagsExampleComponent } from './pages/components-page/components/tags-ex
 import { TilesExampleComponent } from './pages/components-page/components/tiles-example/tiles-example.component';
 import { TileGridsExampleComponent } from './pages/components-page/components/tile-grids-example/tile-grids-example.component';
 import { ProgressExampleComponent } from './pages/components-page/components/progress-example/progress-example.component';
+import { EmptyContentComponent } from './components/empty-content/empty-content.component';
 
 const routes: Routes = [
     { path: '', redirectTo: 'components', pathMatch: 'full' },
@@ -49,7 +50,16 @@ const routes: Routes = [
             { path: 'menu', component: MenuExampleComponent },
             { path: 'panels', component: PanelsExampleComponent },
             { path: 'progress', component: ProgressExampleComponent },
-            { path: 'side-navs', component: SideNavsExampleComponent },
+            {
+                path: 'side-navs', component: SideNavsExampleComponent, children: [
+                    { path: 'standard/dashboard', component: EmptyContentComponent, data: { content: 'Content for the Dashboard page' } },
+                    { path: 'standard/products', component: EmptyContentComponent, data: { content: 'Content for the Products page' } },
+                    { path: 'standard/reports', component: EmptyContentComponent, data: { content: 'Content for the Reports page' } },
+                    { path: 'standard/alerts', component: EmptyContentComponent, data: { content: 'Content for the Alerts page' } },
+                    { path: 'standard/favorites', component: EmptyContentComponent, data: { content: 'Content for the Favorites page' } },
+                    { path: 'toggleable', component: AccordionExampleComponent, data: { content: 'Content for the Dashboard page' } },
+                ]
+            },
             { path: 'status-messages', component: StatusMessagesExampleComponent },
             { path: 'table', component: TableExampleComponent },
             { path: 'tabs', component: TabsExampleComponent },
