@@ -31,7 +31,6 @@ export class ComponentsPageComponent implements OnInit {
         { title: 'Tabs', routerLink: '/components/tabs' },
         { title: 'Tags', routerLink: '/components/tags' },
         { title: 'Tiles', routerLink: '/components/tiles' },
-        { title: 'Tile Grids', routerLink: '/components/tile-grids' },
     ];
 
     constructor() {

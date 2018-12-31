@@ -29,7 +29,6 @@ import { TableExampleComponent } from './pages/components-page/components/table-
 import { TabsExampleComponent } from './pages/components-page/components/tabs-example/tabs-example.component';
 import { TagsExampleComponent } from './pages/components-page/components/tags-example/tags-example.component';
 import { TilesExampleComponent } from './pages/components-page/components/tiles-example/tiles-example.component';
-import { TileGridsExampleComponent } from './pages/components-page/components/tile-grids-example/tile-grids-example.component';
 import { ButtonsExamplesModule } from './pages/components-page/components/buttons-example/examples/_examples.module';
 import { ProgressExampleComponent } from './pages/components-page/components/progress-example/progress-example.component';
 import { CodeComponent } from './components/code.component';
@@ -55,6 +54,7 @@ import { MessagesExamplesModule } from './pages/components-page/components/statu
 import { TablesExamplesModule } from './pages/components-page/components/table-example/examples/_examples.module';
 import { TabsExamplesModule } from './pages/components-page/components/tabs-example/examples/_examples.module';
 import { TagsExamplesModule } from './pages/components-page/components/tags-example/examples/_examples.module';
+import { TilesExamplesModule } from './pages/components-page/components/tiles-example/examples/_examples.module';
 
 @NgModule({
     declarations: [
@@ -83,7 +83,6 @@ import { TagsExamplesModule } from './pages/components-page/components/tags-exam
         TabsExampleComponent,
         TagsExampleComponent,
         TilesExampleComponent,
-        TileGridsExampleComponent,
         ProgressExampleComponent,
         ExampleComponent,
         ExampleFileComponent,
@@ -119,6 +118,7 @@ import { TagsExamplesModule } from './pages/components-page/components/tags-exam
         TablesExamplesModule,
         TabsExamplesModule,
         TagsExamplesModule,
+        TilesExamplesModule,
     ],
     providers: [
         CodeHighlightService

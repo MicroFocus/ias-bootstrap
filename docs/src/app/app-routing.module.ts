@@ -23,7 +23,6 @@ import { TableExampleComponent } from './pages/components-page/components/table-
 import { TabsExampleComponent } from './pages/components-page/components/tabs-example/tabs-example.component';
 import { TagsExampleComponent } from './pages/components-page/components/tags-example/tags-example.component';
 import { TilesExampleComponent } from './pages/components-page/components/tiles-example/tiles-example.component';
-import { TileGridsExampleComponent } from './pages/components-page/components/tile-grids-example/tile-grids-example.component';
 import { ProgressExampleComponent } from './pages/components-page/components/progress-example/progress-example.component';
 import { EmptyContentComponent } from './components/empty-content/empty-content.component';
 
@@ -79,7 +78,6 @@ const routes: Routes = [
             { path: 'tabs', component: TabsExampleComponent },
             { path: 'tags', component: TagsExampleComponent },
             { path: 'tiles', component: TilesExampleComponent },
-            { path: 'tile-grids', component: TileGridsExampleComponent }
         ]
     },
     { path: 'tips-and-tricks', component: TipsPageComponent }
