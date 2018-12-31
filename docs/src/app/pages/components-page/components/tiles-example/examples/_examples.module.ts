@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BasicTilesComponent } from './basic-tiles';
 import { TileGridComponent } from './tile-grid';
+import { AngularSplitModule } from 'angular-split';
 
 @NgModule({
     declarations: [
@@ -10,6 +11,7 @@ import { TileGridComponent } from './tile-grid';
     ],
     imports: [
         CommonModule,
+        AngularSplitModule,
     ],
     exports: [
         BasicTilesComponent,

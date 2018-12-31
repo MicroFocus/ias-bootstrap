@@ -1,5 +1,10 @@
 @import "../../../../../../../../styles/src/quantum-variables";
 
+:host {
+    display: block;
+    height: 600px;
+}
+
 $grid-tile-width: 160px;
 $grid-tile-height: 190px;
 
