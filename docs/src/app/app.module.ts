@@ -54,6 +54,7 @@ import { EmptyContentComponent } from './components/empty-content/empty-content.
 import { MessagesExamplesModule } from './pages/components-page/components/status-messages-example/examples/_examples.module';
 import { TablesExamplesModule } from './pages/components-page/components/table-example/examples/_examples.module';
 import { TabsExamplesModule } from './pages/components-page/components/tabs-example/examples/_examples.module';
+import { TagsExamplesModule } from './pages/components-page/components/tags-example/examples/_examples.module';
 
 @NgModule({
     declarations: [
@@ -117,6 +118,7 @@ import { TabsExamplesModule } from './pages/components-page/components/tabs-exam
         MessagesExamplesModule,
         TablesExamplesModule,
         TabsExamplesModule,
+        TagsExamplesModule,
     ],
     providers: [
         CodeHighlightService
