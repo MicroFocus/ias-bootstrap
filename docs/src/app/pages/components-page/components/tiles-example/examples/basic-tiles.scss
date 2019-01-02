@@ -1,0 +1,33 @@
+@import "../../../../../../../../styles/src/quantum-variables";
+
+// The internal styling for this tile element is arbitrary, since each product's needs are different.
+.app-action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 160px;
+    height: 190px;
+    padding: 10px;
+
+    > i {
+        color: $quantum-primary;
+    }
+
+    > div {
+        text-align: center;
+
+        &:first-of-type {
+            color: #3C515C;
+            font-size: 20px;
+            overflow: hidden;
+            margin-bottom: 2px;
+            text-overflow: ellipsis;
+        }
+
+        &:last-of-type {
+            font-size: 16px;
+            color: #abb5b7;
+            overflow: hidden;
+        }
+    }
+}

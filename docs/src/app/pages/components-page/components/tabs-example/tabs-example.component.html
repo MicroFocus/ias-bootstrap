@@ -1,3 +1,21 @@
-<p>
-  tabs-example works!
+<h2>Tabs</h2>
+<p class="ias-page-instructions">
+    A tab set is a navigational component that exists within a page and hides or displays content specific to each tab.
+    Tab sets are usually tied to a container that displays the information associated with individual tabs. Clicking a
+    tab will set it as activate and display its information in the associated container. Tabs work much like a
+    horizontal accordion control, however it can only have one active element at a time.
 </p>
+
+<app-example [heading]="'Primary Tabs'" [fileNameToContentsMap]="exampleFiles">
+    <app-primary-tabs></app-primary-tabs>
+    <app-example-file [name]="'primary-tabs.html'" [lang]="'markup'"></app-example-file>
+    <app-example-file [name]="'primary-tabs.ts'" [lang]="'typescript'"></app-example-file>
+    <app-example-file [name]="'primary-tabs.scss'" [lang]="'scss'"></app-example-file>
+</app-example>
+
+<app-example [heading]="'Secondary Tabs'" [fileNameToContentsMap]="exampleFiles">
+    <app-secondary-tabs></app-secondary-tabs>
+    <app-example-file [name]="'secondary-tabs.html'" [lang]="'markup'"></app-example-file>
+    <app-example-file [name]="'secondary-tabs.ts'" [lang]="'typescript'"></app-example-file>
+    <app-example-file [name]="'secondary-tabs.scss'" [lang]="'scss'"></app-example-file>
+</app-example>

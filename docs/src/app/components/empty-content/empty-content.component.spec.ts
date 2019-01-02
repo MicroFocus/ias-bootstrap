@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TileGridsExampleComponent } from './tile-grids-example.component';
+import { EmptyContentComponent } from './empty-content.component';
 
-describe('TileGridsExampleComponent', () => {
-  let component: TileGridsExampleComponent;
-  let fixture: ComponentFixture<TileGridsExampleComponent>;
+describe('EmptyContentComponent', () => {
+  let component: EmptyContentComponent;
+  let fixture: ComponentFixture<EmptyContentComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TileGridsExampleComponent ]
+      declarations: [ EmptyContentComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TileGridsExampleComponent);
+    fixture = TestBed.createComponent(EmptyContentComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

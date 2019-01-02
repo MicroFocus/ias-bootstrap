@@ -1,3 +1,29 @@
-<p>
-  tiles-example works!
+<h2>Tiles</h2>
+<p class="ias-page-instructions">
+    Tiles are a navigation component that allow a user to access pages, applications, and other data within a product.
+    At minimum, a tile should possess a recognizable avatar or icon image. Tiles may also be given titles, descriptions,
+    and a favorite icon depending on the size of the tile.
 </p>
+
+<app-example [heading]="'Basic Tile'" [fileNameToContentsMap]="exampleFiles">
+    <p>
+        By using the "ias-tile" class, you get the right background color, as well as the border color and cursor type
+        when you hover over the tile.  The styling of the elements within the tile is up to you.
+    </p>
+    <app-basic-tiles></app-basic-tiles>
+    <app-example-file [name]="'basic-tiles.html'" [lang]="'markup'"></app-example-file>
+    <app-example-file [name]="'basic-tiles.ts'" [lang]="'typescript'"></app-example-file>
+    <app-example-file [name]="'basic-tiles.scss'" [lang]="'scss'"></app-example-file>
+</app-example>
+
+<app-example [heading]="'Tile Grid'" [fileNameToContentsMap]="exampleFiles">
+    <p>
+        Tiles can be laid out in a wrapping grid using the CSS Grid layout.  See the definition for the "app-grid" class
+        for an example.  Use the slider bar to the right of the grid below to see the grid adjust to fill the available
+        space.
+    </p>
+    <app-tile-grid></app-tile-grid>
+    <app-example-file [name]="'tile-grid.html'" [lang]="'markup'"></app-example-file>
+    <app-example-file [name]="'tile-grid.ts'" [lang]="'typescript'"></app-example-file>
+    <app-example-file [name]="'tile-grid.scss'" [lang]="'scss'"></app-example-file>
+</app-example>

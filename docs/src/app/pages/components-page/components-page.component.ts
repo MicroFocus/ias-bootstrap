@@ -21,16 +21,16 @@ export class ComponentsPageComponent implements OnInit {
         { title: 'Icons', routerLink: '/components/icons' },
         { title: 'Links', routerLink: '/components/links' },
         { title: 'Lists', routerLink: '/components/lists' },
-        { title: 'Menus', routerLink: '/components/menu' },
+        { title: 'Menus (Dropdowns)', routerLink: '/components/menu' },
         { title: 'Panels', routerLink: '/components/panels' },
         { title: 'Progress', routerLink: '/components/progress' },
         { title: 'Side Navs', routerLink: '/components/side-navs' },
+        // { title: 'Side Panels', routerLink: '/components/side-panels' }, // This is what I'm using for code examples
         { title: 'Status Messages', routerLink: '/components/status-messages' },
         { title: 'Tables', routerLink: '/components/table' },
         { title: 'Tabs', routerLink: '/components/tabs' },
         { title: 'Tags', routerLink: '/components/tags' },
         { title: 'Tiles', routerLink: '/components/tiles' },
-        { title: 'Tile Grids', routerLink: '/components/tile-grids' },
     ];
 
     constructor() {

@@ -1,3 +1,21 @@
-<p>
-  side-navs-example works!
+<h2>Side Nav</h2>
+<p class="ias-page-instructions">
+    Side Navs work much like Nav Bars but are fixed to the side of a page instead of the top. Side Navs are used to
+    provide users with a form of navigation within an application. They can be made to be toggleable, allowing a user to
+    hide or show the Side Nav's content. Side Navs can make use of headings to separate listed items, as well as
+    implement avatars to make list items more expressive.
 </p>
+
+<app-example [heading]="'Standard Side Nav'" [fileNameToContentsMap]="exampleFiles">
+    <app-standard-side-nav></app-standard-side-nav>
+    <app-example-file [name]="'standard-side-nav.html'" [lang]="'markup'"></app-example-file>
+    <app-example-file [name]="'standard-side-nav.ts'" [lang]="'typescript'"></app-example-file>
+    <app-example-file [name]="'standard-side-nav.scss'" [lang]="'scss'"></app-example-file>
+</app-example>
+
+<app-example [heading]="'Toggleable Side Nav'" [fileNameToContentsMap]="exampleFiles">
+    <app-toggle-side-nav></app-toggle-side-nav>
+    <app-example-file [name]="'toggle-side-nav.html'" [lang]="'markup'"></app-example-file>
+    <app-example-file [name]="'toggle-side-nav.ts'" [lang]="'typescript'"></app-example-file>
+    <app-example-file [name]="'toggle-side-nav.scss'" [lang]="'scss'"></app-example-file>
+</app-example>

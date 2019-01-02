@@ -23,8 +23,8 @@ import { TableExampleComponent } from './pages/components-page/components/table-
 import { TabsExampleComponent } from './pages/components-page/components/tabs-example/tabs-example.component';
 import { TagsExampleComponent } from './pages/components-page/components/tags-example/tags-example.component';
 import { TilesExampleComponent } from './pages/components-page/components/tiles-example/tiles-example.component';
-import { TileGridsExampleComponent } from './pages/components-page/components/tile-grids-example/tile-grids-example.component';
 import { ProgressExampleComponent } from './pages/components-page/components/progress-example/progress-example.component';
+import { EmptyContentComponent } from './components/empty-content/empty-content.component';
 
 const routes: Routes = [
     { path: '', redirectTo: 'components', pathMatch: 'full' },
@@ -49,13 +49,35 @@ const routes: Routes = [
             { path: 'menu', component: MenuExampleComponent },
             { path: 'panels', component: PanelsExampleComponent },
             { path: 'progress', component: ProgressExampleComponent },
-            { path: 'side-navs', component: SideNavsExampleComponent },
+            {
+                path: 'side-navs', component: SideNavsExampleComponent, children: [
+                    {path: 'standard-dashboard', component: EmptyContentComponent, outlet: 'standard-outlet',
+                        data: { content: 'Content for the Dashboard page' } },
+                    {path: 'standard-products', component: EmptyContentComponent, outlet: 'standard-outlet',
+                        data: { content: 'Content for the Products page' } },
+                    {path: 'standard-reports', component: EmptyContentComponent, outlet: 'standard-outlet',
+                        data: { content: 'Content for the Reports page' } },
+                    {path: 'standard-alerts', component: EmptyContentComponent, outlet: 'standard-outlet',
+                        data: { content: 'Content for the Alerts page' } },
+                    {path: 'standard-favorites', component: EmptyContentComponent, outlet: 'standard-outlet',
+                        data: { content: 'Content for the Favorites page' } },
+                    {path: 'toggleable-dashboard', component: EmptyContentComponent, outlet: 'toggleable-outlet',
+                        data: {content: 'Content for the Dashboard page'}},
+                    {path: 'toggleable-products', component: EmptyContentComponent, outlet: 'toggleable-outlet',
+                        data: { content: 'Content for the Products page' } },
+                    {path: 'toggleable-reports', component: EmptyContentComponent, outlet: 'toggleable-outlet',
+                        data: { content: 'Content for the Reports page' } },
+                    {path: 'toggleable-alerts', component: EmptyContentComponent, outlet: 'toggleable-outlet',
+                        data: { content: 'Content for the Alerts page' } },
+                    {path: 'toggleable-favorites', component: EmptyContentComponent, outlet: 'toggleable-outlet',
+                        data: { content: 'Content for the Favorites page' } },
+                ]
+            },
             { path: 'status-messages', component: StatusMessagesExampleComponent },
             { path: 'table', component: TableExampleComponent },
             { path: 'tabs', component: TabsExampleComponent },
             { path: 'tags', component: TagsExampleComponent },
             { path: 'tiles', component: TilesExampleComponent },
-            { path: 'tile-grids', component: TileGridsExampleComponent }
         ]
     },
     { path: 'tips-and-tricks', component: TipsPageComponent }

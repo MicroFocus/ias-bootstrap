@@ -1,0 +1,9 @@
+.ias-tile {
+    background-color: $quantum-bright-gray;
+    border: 1px solid transparent;
+    cursor: pointer;
+
+    &:hover {
+        border: 1px solid $quantum-primary;
+    }
+}

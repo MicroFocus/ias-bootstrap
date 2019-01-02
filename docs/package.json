@@ -25,6 +25,7 @@
         "@micro-focus/ux-aspects": "^1.7.1",
         "@microfocus/ias-icons": "^1.0.1",
         "@ux-aspects/ux-aspects": "^1.7.2",
+        "chance": "^1.0.18",
         "core-js": "^2.5.4",
         "prismjs": "^1.15.0",
         "rxjs": "~6.3.3",

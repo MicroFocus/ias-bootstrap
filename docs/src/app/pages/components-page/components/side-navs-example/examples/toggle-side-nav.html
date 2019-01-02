@@ -1,0 +1,30 @@
+<ux-page-header header="UX"
+                logoBackground="Black"
+                logoForeground="White"
+                title="Application Title"
+                [iconMenus]="iconMenus"
+>
+</ux-page-header>
+<div class="page-main masthead-offset-primary">
+    <div class="ux-side-menu" [class.open]="sideMenuOpen" [class.minimized]="!sideMenuOpen">
+        <div class="ux-side-menu-content">
+
+            <ux-navigation [items]="navigation" [tree]="false">
+            </ux-navigation>
+
+            <button type="button"
+                    attr.aria-label="{{sideMenuOpen ? 'Collapse' : 'Expand'}} the side navigation panel."
+                    [attr.aria-expanded]="sideMenuOpen"
+                    class="ux-side-menu-minimize-button"
+                    (click)="toggleSideMenu()">
+                <span class="hpe-icon hpe-previous"></span>
+            </button>
+
+        </div>
+        <div class="page-content">
+        </div>
+    </div>
+</div>
+<div class="content-area">
+    <router-outlet name="toggleable-outlet"></router-outlet>
+</div>

@@ -1,0 +1,51 @@
+@import "../../../../../../../../styles/src/quantum-variables";
+
+:host {
+    display: block;
+    height: 600px;
+}
+
+$grid-tile-width: 160px;
+$grid-tile-height: 190px;
+
+// Notice the CSS grid is controlling the height and width of the tiles using column and row definitions
+.app-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, $grid-tile-width);
+    grid-auto-rows: $grid-tile-height;
+    grid-gap: 8px;
+}
+
+// The internal styling for this tile element is arbitrary, since each product's needs are different.
+.app-action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+
+    > i {
+        color: $quantum-primary;
+        margin-bottom: 10px;
+    }
+
+    > div {
+        text-align: center;
+
+        &:first-of-type {
+            color: #3C515C;
+            font-size: 20px;
+            line-height: 20px;
+            flex-shrink: 0;
+            overflow: hidden;
+            margin-bottom: 2px;
+            text-overflow: ellipsis;
+        }
+
+        &:last-of-type {
+            font-size: 16px;
+            line-height: 16px;
+            color: #abb5b7;
+            overflow: hidden;
+        }
+    }
+}

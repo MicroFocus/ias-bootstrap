@@ -18,6 +18,9 @@ export class FormFieldExampleComponent implements OnInit {
         'search-field.html': require('!raw-loader!./examples/search-field.html'),
         'search-field.ts': require('!raw-loader!./examples/search-field.ts'),
         'search-field.scss': require('!raw-loader!./examples/search-field.scss'),
+        'select-fields.html': require('!raw-loader!./examples/select-fields.html'),
+        'select-fields.ts': require('!raw-loader!./examples/select-fields.ts'),
+        'select-fields.scss': require('!raw-loader!./examples/select-fields.scss'),
     };
 
     constructor() {

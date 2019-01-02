@@ -1,0 +1,27 @@
+@import "../../../../../../../../styles/src/quantum-variables";
+
+:host {
+    border: 1px solid $quantum-bright-gray;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+
+    > ux-page-header {
+        grid-column: 1 / -1;
+        position: relative; // Need to do this because this header isn't located at the top of the page
+    }
+
+    > .content-area {
+        margin: 15px;
+    }
+
+    // Need to make these changes because the side menu isn't being used for the entire page
+    ::ng-deep .ux-side-menu {
+        padding-top: 0;
+        height: 100%;
+
+        > .ux-side-menu-content {
+            position: relative;
+            top: 0;
+        }
+    }
+}
