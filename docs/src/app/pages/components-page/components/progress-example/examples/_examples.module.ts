@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { ProgressBarComponent } from './progress-bar';
 import { ProgressBarModule } from '@ux-aspects/ux-aspects';
 import { ProgressSpinnerComponent } from './progress-spinner';
-import { ActivityModule } from '@micro-focus/ux-aspects';
 
 @NgModule({
     declarations: [
@@ -13,7 +12,6 @@ import { ActivityModule } from '@micro-focus/ux-aspects';
     imports: [
         CommonModule,
         ProgressBarModule,
-        ActivityModule,
     ],
     exports: [
         ProgressBarComponent,

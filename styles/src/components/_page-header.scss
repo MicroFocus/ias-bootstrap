@@ -1,7 +1,49 @@
-ux-page-header > .page-header-secondary {
-    // Turn off animations on the secondary header (navigation bar below the masthead), since we want it to always show
-    animation: none;
+$header-height: 56px;
 
-    // Use bright gray instead of white, since we want white to be the background of the entire page
-    background-color: $quantum-bright-gray;
+ux-page-header{
+    > .ux-page-header {
+        background-color: $quantum-primary;
+        height: $header-height;
+        padding: 0;
+
+        > .page-header-content {
+            display: grid;
+            grid-template-columns: max-content 1fr max-content 0px;
+            grid-column-gap: 15px;
+            align-items: center;
+
+            > * {
+                // We don't need absolute positioning.  We're using css grid.
+                position: relative;
+            }
+
+            > .page-header-logo-container {
+                height: $header-height;
+            }
+
+            > .page-header-subtitle-container {
+                display: flex;
+            }
+
+            > .page-header-icon-menus {
+                height: auto;
+            }
+
+            > .page-header-navigation {
+                // We don't use navigation in the page header.  We put it in the secondary navigation.
+                display: none;
+            }
+
+            > .page-header-state-container {
+                // We don't put breadcrumbs in the page header.
+                display: none;
+            }
+        }
+    }
+
+    > .page-header-secondary {
+        // Secondary navigation should have a gray background
+        background-color: $ias-panel-gray;
+    }
 }
+

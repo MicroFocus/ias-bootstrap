@@ -29,7 +29,6 @@
                         "styles": [
                             "node_modules/bootstrap/dist/css/bootstrap.css",
                             "node_modules/@ux-aspects/ux-aspects/styles/ux-aspects.css",
-                            "node_modules/@micro-focus/quantum-ux-aspects/dist/ux-aspects/css/main.css",
                             "node_modules/@microfocus/ias-icons/dist/ias-icons.css",
                             "src/styles.scss"
                         ],

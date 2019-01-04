@@ -1,6 +1,5 @@
 @import "./quantum-variables";
-@import "./quantum-bugs";
-
+@import "./ias-variables";
 @import "./size";
 
 @import 'components/accordion';
@@ -11,5 +10,5 @@
 
 body {
     // Use white for the page background, instead of $quantum-bright-gray
-    background-color: $quantum-white;
+    background-color: $ias-white;
 }
