@@ -1,16 +1,19 @@
 :host {
-    margin: 15px;
     display: grid;
-    grid-template-columns: minmax(max-content, 200px) 700px;
-    grid-column-gap: 25px;
+    grid-template-columns: minmax(max-content, 200px) 1fr;
+    overflow-y: auto;
 
-    > .nav-buttons {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+    // Show scrollbars for both the nav and the content areas
+    > ::ng-deep * {
+        overflow-y: auto;
+    }
 
-        > .nav-active {
-            background-color: rgba(0, 0, 0, 0.1);
+    > ux-navigation {
+        padding: 15px;
+
+        .nav-title {
+            // Don't wrap the text
+            white-space: nowrap;
         }
     }
 

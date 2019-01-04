@@ -25,3 +25,8 @@ app-ngbd-code > pre[class*="language-"] {
 .page-header-icon-menu > .dropdown-menu:empty {
     display: none;
 }
+
+.main-content {
+    margin: 15px;
+    max-width: 700px;
+}
