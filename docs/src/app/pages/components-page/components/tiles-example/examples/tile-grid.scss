@@ -1,4 +1,4 @@
-@import "../../../../../../../../styles/src/quantum-variables";
+@import "../../../../../../../../styles/src/ias-variables";
 
 :host {
     display: block;
@@ -24,7 +24,7 @@ $grid-tile-height: 190px;
     padding: 10px;
 
     > i {
-        color: $quantum-primary;
+        color: $microfocus-primary;
         margin-bottom: 10px;
     }
 
