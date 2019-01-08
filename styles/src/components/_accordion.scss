@@ -9,3 +9,12 @@ ux-accordion.panel-group > .accordion-chevron .panel-heading:before {
     font-family: 'ias-icons';
     content: '\E901';
 }
+
+ux-accordion-panel[disabled] {
+    > .panel-heading {
+        opacity: 0.4;
+    }
+    :hover {
+        cursor: not-allowed;
+    }
+}
