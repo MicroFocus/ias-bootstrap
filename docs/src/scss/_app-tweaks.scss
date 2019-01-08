@@ -12,10 +12,6 @@ app-ngbd-code > pre[class*="language-"] {
     grid-template-columns: max-content 1fr;
     margin-top: 40px;
 
-    > h3 {
-        margin: 0;
-    }
-
     > button {
         justify-self: end;
     }
