@@ -11,7 +11,7 @@
     > ux-navigation {
         padding: 15px;
 
-        .nav-title {
+        ::ng-deep .nav-title {
             // Don't wrap the text
             white-space: nowrap;
         }
