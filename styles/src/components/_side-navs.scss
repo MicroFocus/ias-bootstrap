@@ -1,0 +1,16 @@
+.nav > li {
+    > a {
+        border-radius: 3px;
+        color: $ias-dark-gray;
+        font-weight: normal;
+        padding: 5px 10px;
+
+        &:hover {
+            background-color: $ias-panel-gray;
+        }
+    }
+
+    &.active > a {
+        background-color: $ias-panel-gray;
+    }
+}
