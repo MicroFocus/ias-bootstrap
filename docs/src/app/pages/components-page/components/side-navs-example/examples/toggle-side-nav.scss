@@ -1,7 +1,5 @@
-@import "../../../../../../../../styles/src/quantum-variables";
-
 :host {
-    border: 1px solid $quantum-bright-gray;
+    border: 1px solid #eef2f2;
     display: grid;
     grid-template-columns: max-content 1fr;
 

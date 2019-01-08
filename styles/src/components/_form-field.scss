@@ -1,0 +1,7 @@
+.form-control {
+    border-radius: 3px;
+
+    &:focus {
+        border-color: $ias-blue-4;
+    }
+}
