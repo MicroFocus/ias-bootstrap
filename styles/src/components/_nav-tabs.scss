@@ -29,6 +29,10 @@ ux-page-header {
         padding: 5px 10px;
         color: $ias-dim-gray;
         font-weight: 400;
+
+        &.nav-link.highlighted {
+            outline: none;
+        }
     }
 
     .minimal-tab > li.active > a,
