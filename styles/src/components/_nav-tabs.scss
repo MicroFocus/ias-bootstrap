@@ -1,44 +1,49 @@
-ux-tabset {
-  .nav {
-    margin-left: 15px;
-  }
-  .nav.nav-tabs > li {
-    float: left;
-    margin-bottom: 0px;
-  }
-  .nav-tabs > li > a {
-    margin-right: 0px;
-    border: 0px;
-    height: 36px;
-  }
-}
+ux-page-header {
+    ux-tabset {
+        .nav {
+            margin-left: 15px;
+        }
 
-.minimal-tab > li {
-padding: 0px;
-}
+        .nav.nav-tabs > li {
+            float: left;
+            margin-bottom: 0px;
+        }
 
-.minimal-tab > li.active {
-    border-left: 1px solid $ias-border-gray;
-    border-right: 1px solid $ias-border-gray;
-}
+        .nav-tabs > li > a {
+            margin-right: 0px;
+            border: 0px;
+            height: 36px;
+        }
+    }
 
-.minimal-tab > li > a {
-  padding: 5px 10px;
-  color: $ias-dim-gray;
-  font-weight: 400;
-}
+    .minimal-tab > li {
+        padding: 0px;
+    }
 
-.minimal-tab > li.active > a,
-.minimal-tab > li.active > a:hover,
-.minimal-tab > li.active > a:focus {
-  border-bottom: 3px solid $ias-blue-4;
-  color: $ias-dark-gray;
-  font-weight: 600;
-  padding-left: 8px;
-  padding-right: 8px;
-  border-radius: 0;
-}
-.minimal-tab > li > a:hover,
-.minimal-tab > li > a:focus {
-  background-color: $ias-border-gray;
+    .minimal-tab > li.active {
+        border-left: 1px solid $ias-border-gray;
+        border-right: 1px solid $ias-border-gray;
+    }
+
+    .minimal-tab > li > a {
+        padding: 5px 10px;
+        color: $ias-dim-gray;
+        font-weight: 400;
+    }
+
+    .minimal-tab > li.active > a,
+    .minimal-tab > li.active > a:hover,
+    .minimal-tab > li.active > a:focus {
+        border-bottom: 3px solid $ias-blue-4;
+        color: $ias-dark-gray;
+        font-weight: 600;
+        padding-left: 8px;
+        padding-right: 8px;
+        border-radius: 0;
+    }
+
+    .minimal-tab > li > a:hover,
+    .minimal-tab > li > a:focus {
+        background-color: $ias-border-gray;
+    }
 }
