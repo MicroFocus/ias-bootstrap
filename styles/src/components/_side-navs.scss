@@ -1,20 +1,23 @@
 .ux-side-nav > .nav > li {
     > a {
         border-radius: 3px;
-        color: $ias-dark-gray;
+        color: $ias-dim-gray;
         font-weight: normal;
         padding: 5px 10px;
 
         &:hover {
-            background-color: $ias-panel-gray;
+          background-color: $ias-panel-gray;
+          color: $ias-dark-gray;
         }
 
         > .nav-icon + .nav-title {
-            margin-left: 10px;
+          margin-left: 10px;
         }
     }
 
     &.active > a {
-        background-color: $ias-panel-gray;
+      background-color: $ias-panel-gray;
+      color: $ias-dark-gray;
+      font-weight: 600;
     }
 }
