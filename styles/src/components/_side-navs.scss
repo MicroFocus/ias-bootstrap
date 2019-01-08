@@ -8,6 +8,10 @@
         &:hover {
             background-color: $ias-panel-gray;
         }
+
+        > .nav-icon + .nav-title {
+            margin-left: 10px;
+        }
     }
 
     &.active > a {

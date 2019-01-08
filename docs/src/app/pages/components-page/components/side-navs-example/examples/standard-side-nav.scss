@@ -10,6 +10,10 @@
         position: relative; // Need to do this because this header isn't located at the top of the page
     }
 
+    > ux-navigation {
+        margin: 10px;
+    }
+
     > .content-area {
         margin: 15px;
     }
