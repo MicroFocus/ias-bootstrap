@@ -13,6 +13,9 @@ ux-accordion.panel-group > .accordion-chevron .panel-heading:before {
 ux-accordion-panel[disabled] {
     > .panel-heading {
         opacity: 0.4;
+        &:focus {
+            outline: none;
+        }
     }
     :hover {
         cursor: not-allowed;
