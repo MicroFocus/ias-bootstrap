@@ -10,8 +10,9 @@
         margin-left: 10px;
     }
 
-    &:active:focus {
+    &:active, &:focus, &.focus {
         outline: none;
+        box-shadow: none;
     }
 
     &.btn-default {
