@@ -1,0 +1,120 @@
+ux-date-time-picker {
+    ux-date-time-picker-header .header {
+        .header-title {
+            color: #434c50;
+            font-weight: normal;
+        }
+
+        button {
+            border: 1px solid transparent;
+            border-radius: 2px;
+
+            &:focus {
+                outline: none;
+            }
+
+            &:hover:not(.header-title) {
+                background-color: #f6f9f8;
+                border: 1px solid #dae1e1;
+                color: #007cd0;
+            }
+
+            &.header-title:hover {
+                background-color: transparent;
+                color: #007cd0;
+            }
+        }
+    }
+
+    ux-date-time-picker-day-view .calendar {
+        .weekday {
+            color: #434c50;
+            font-weight: normal;
+            background-color: #eef2f2;
+        }
+
+        .date-button {
+            border: 1px solid transparent;
+            border-radius: 2px;
+
+            &:hover {
+                background-color: transparent;
+                border-color: #0090da;
+                color: #0090da;
+            }
+
+            &.current {
+                background-color: #f6f9f8;
+            }
+
+            &.active {
+                background-color: #dae1e1;
+                color: #434c50;
+                font-weight: 700;
+            }
+
+            &:focus {
+                color: #0090da;
+                border-color: #0090da;
+                outline: none;
+            }
+        }
+    }
+
+    ux-date-time-picker-month-view .calendar {
+        .calendar-item {
+            border: 1px solid transparent;
+            border-radius: 2px;
+
+            &:hover {
+                background-color: transparent;
+                border-color: #0090da;
+                color: #0090da;
+            }
+
+            &.active {
+                background-color: #dae1e1;
+                color: #434c50;
+                font-weight: 700;
+            }
+        }
+    }
+
+    ux-date-time-picker-time-view {
+        .spin-button {
+            &:focus {
+                outline: none;
+            }
+
+            > span {
+                &:hover {
+                    color: #007cd0;
+                }
+            }
+        }
+
+        .time-picker-meridian .button-toggle-accent {
+            &:hover {
+                color: #007cd0;
+            }
+
+            &.active, &:active {
+                background-color: #dae1e1;
+                border-color: #ccc;
+                box-shadow: none;
+                color: #434c50;
+            }
+        }
+    }
+
+    .now-button {
+        &:focus {
+            outline: none;
+        }
+
+        &:hover {
+            background-color: transparent;
+            color: #007cd0;
+        }
+    }
+}

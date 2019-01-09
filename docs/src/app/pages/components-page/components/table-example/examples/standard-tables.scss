@@ -2,6 +2,10 @@
     display: grid;
     grid-template-columns: max-content 1fr max-content;
     justify-items: end;
+
+    > * {
+        display: flex;
+    }
 }
 
 .checkbox-column {
