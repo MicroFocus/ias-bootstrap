@@ -5,7 +5,9 @@
 @import 'components/buttons';
 @import 'components/datepicker';
 @import 'components/form-field';
+@import 'components/headers';
 @import 'components/icons';
+@import 'components/main-content';
 @import 'components/nav-tabs';
 @import 'components/page-header';
 @import 'components/side-navs';
@@ -13,6 +15,9 @@
 @import 'components/tiles';
 
 body {
-    // Use white for the page background, instead of $quantum-bright-gray
-    background-color: $ias-white;
+  // Use white for the page background, instead of $quantum-bright-gray
+  background-color: $ias-white;
+  color: $ias-dark-gray;
+  font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif"
 }
+
