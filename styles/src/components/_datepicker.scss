@@ -1,7 +1,7 @@
 ux-date-time-picker {
     ux-date-time-picker-header .header {
         .header-title {
-            color: #434c50;
+            color: $ias-dark-gray;
             font-weight: normal;
         }
 
@@ -14,23 +14,23 @@ ux-date-time-picker {
             }
 
             &:hover:not(.header-title) {
-                background-color: #f6f9f8;
-                border: 1px solid #dae1e1;
-                color: #007cd0;
+                background-color: $ias-light-gray;
+                border: 1px solid $ias-border-gray;
+                color: $ias-blue-2;
             }
 
             &.header-title:hover {
                 background-color: transparent;
-                color: #007cd0;
+                color: $ias-blue-2;
             }
         }
     }
 
     ux-date-time-picker-day-view .calendar {
         .weekday {
-            color: #434c50;
+            color: $ias-dark-gray;
             font-weight: normal;
-            background-color: #eef2f2;
+            background-color: $ias-panel-gray;
         }
 
         .date-button {
@@ -39,23 +39,23 @@ ux-date-time-picker {
 
             &:hover {
                 background-color: transparent;
-                border-color: #0090da;
-                color: #0090da;
+                border-color: $ias-blue-3;
+                color: $ias-blue-3;
             }
 
             &.current {
-                background-color: #f6f9f8;
+                background-color: $ias-light-gray;
             }
 
             &.active {
-                background-color: #dae1e1;
-                color: #434c50;
+                background-color: $ias-border-gray;
+                color: $ias-dark-gray;
                 font-weight: 700;
             }
 
             &:focus {
-                color: #0090da;
-                border-color: #0090da;
+                color: $ias-blue-3;
+                border-color: $ias-blue-3;
                 outline: none;
             }
         }
@@ -68,13 +68,13 @@ ux-date-time-picker {
 
             &:hover {
                 background-color: transparent;
-                border-color: #0090da;
-                color: #0090da;
+                border-color: $ias-blue-3;
+                color: $ias-blue-3;
             }
 
             &.active {
-                background-color: #dae1e1;
-                color: #434c50;
+                background-color: $ias-border-gray;
+                color: $ias-dark-gray;
                 font-weight: 700;
             }
         }
@@ -88,21 +88,21 @@ ux-date-time-picker {
 
             > span {
                 &:hover {
-                    color: #007cd0;
+                    color: $ias-blue-2;
                 }
             }
         }
 
         .time-picker-meridian .button-toggle-accent {
             &:hover {
-                color: #007cd0;
+                color: $ias-blue-2;
             }
 
             &.active, &:active {
-                background-color: #dae1e1;
-                border-color: #ccc;
+                background-color: $ias-border-gray;
+                border-color: #ccc; // This color is to match the rest of the box, even though it's not an IAS color
                 box-shadow: none;
-                color: #434c50;
+                color: $ias-dark-gray;
             }
         }
     }
@@ -114,7 +114,7 @@ ux-date-time-picker {
 
         &:hover {
             background-color: transparent;
-            color: #007cd0;
+            color: $ias-blue-2;
         }
     }
 }

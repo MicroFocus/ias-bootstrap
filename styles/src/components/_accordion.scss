@@ -1,35 +1,42 @@
 ux-accordion-panel.accordion-chevron {
-  &.panel {
-    border-color: $ias-panel-gray;
-    border-radius: 3px;
-    &:hover {
-      border-color: $ias-blue-4;
+    &.panel {
+        border-color: $ias-panel-gray;
+        border-radius: 3px;
+
+        &:hover {
+            border-color: $ias-blue-4;
+        }
+
+        &.panel-open {
+            border-color: $ias-border-gray;
+
+            &:hover {
+                border-color: $ias-blue-4;
+            }
+        }
+
+        .panel-heading {
+            background-color: $ias-panel-gray;
+            border-radius: 3px;
+            padding: 10px 15px;
+
+            &:hover {
+                color: $ias-blue-2;
+            }
+        }
+
+        .panel-body {
+            border-top: 1px solid $ias-panel-gray;
+            padding: 15px;
+        }
     }
-    &.panel-open {
-      border-color: $ias-border-gray;
-      &:hover {
-        border-color: $ias-blue-4;
-      }
-    }
-   .panel-heading {
-      background-color: $ias-panel-gray;
-      border-radius: 3px;
-      padding: 10px 15px;     
-      &:hover {
-        color: $ias-blue-2;
-      }
-    }
-    .panel-body {
-      border-top: 1px solid $ias-panel-gray;
-      padding: 15px;
-    }
-  }
 }
 
 ux-accordion-panel[disabled] {
     > .panel-heading {
         opacity: 0.25;
     }
+
     :hover {
         cursor: not-allowed;
     }

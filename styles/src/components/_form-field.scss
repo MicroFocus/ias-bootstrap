@@ -1,27 +1,30 @@
 .form-control {
     border-radius: 3px;
+    border-color: $ias-border-gray;
 
     &:focus {
         border-color: $ias-blue-4;
     }
 }
 
-ux-checkbox {
-    .ux-checkbox {
-        &.ux-checkbox-checked .ux-checkbox-container,
-        &.ux-checkbox-indeterminate .ux-checkbox-container {
-            background-color: transparent;
-            color: #0090da;
-            border-color: #e5e6e7;
+ux-checkbox > .ux-checkbox {
+    > .ux-checkbox-container {
+        border-radius: 3px;
 
-            &:focus {
-                outline: none;
-            }
-        }
-
-        &.ux-checkbox-focused .ux-checkbox-container, &:hover .ux-checkbox-container {
-            border: 1px solid #01a9e7;
+        &:focus {
             outline: none;
         }
+    }
+
+    &.ux-checkbox-checked > .ux-checkbox-container,
+    &.ux-checkbox-indeterminate > .ux-checkbox-container {
+        background-color: transparent;
+        border-color: $ias-border-gray;
+        color: $ias-blue-3;
+    }
+
+    &.ux-checkbox-focused > .ux-checkbox-container, &:hover > .ux-checkbox-container {
+        border: 1px solid $ias-blue-4;
+        outline: none;
     }
 }
