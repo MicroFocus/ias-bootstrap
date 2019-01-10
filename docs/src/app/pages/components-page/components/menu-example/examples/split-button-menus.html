@@ -1,13 +1,13 @@
 <div class="btn-group" dropdown #dropdown="bs-dropdown" [autoClose]="true">
     <!-- Standalone Action Buttons -->
-    <button type="button" class="btn button-secondary">Action</button>
+    <button type="button" class="btn btn-default">Action</button>
 
     <!-- Dropdown Toggle Button -->
     <button #toggle
             id="split-button-toggle"
             dropdownToggle
             tabindex="0"
-            class="btn button-secondary dropdown-toggle"
+            class="btn btn-default dropdown-toggle"
             aria-label="Toggle Dropdown"
             aria-haspopup="true"
             [attr.aria-expanded]="dropdown.isOpen"
