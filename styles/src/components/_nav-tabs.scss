@@ -6,12 +6,14 @@ ux-page-header {
 
         .nav.nav-tabs > li {
             float: left;
-            margin-bottom: 0px;
+            margin-bottom: 0px;          
         }
 
         .nav-tabs > li > a {
             margin-right: 0px;
             border: 0px;
+            font-size: 15px;
+            font-family: inherit;
             height: 36px;
         }
     }
@@ -26,9 +28,9 @@ ux-page-header {
     }
 
     .minimal-tab > li > a {
-        padding: 5px 10px;
         color: $ias-dim-gray;
         font-weight: 400;
+        padding: 6px 10px;
 
         &.nav-link.highlighted {
             outline: none;
@@ -41,8 +43,9 @@ ux-page-header {
         border-bottom: 3px solid $ias-blue-4;
         color: $ias-dark-gray;
         font-weight: 600;
-        padding-left: 8px;
-        padding-right: 8px;
+        letter-spacing: .25px;
+        padding-left: 10px;
+        padding-right: 10px;
         border-radius: 0;
     }
 

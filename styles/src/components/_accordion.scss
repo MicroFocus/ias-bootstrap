@@ -1,91 +1,48 @@
-ux-accordion.panel-group > .panel {
-  margin-top: 0;
-  border-width: 1px;
-  margin-bottom: 8px;
-  border-radius: 3px;
-  border-color: $ias-panel-gray;
-
-  &:hover {
-    border: 1px solid $ias-blue-4;
-
-    .panel-heading:before {
-      color: $ias-blue-4;          
-    }
-  }
-  
-  .panel-heading {
-    position: relative;
-    height: auto;
-    padding: 5px 15px;
+ux-accordion-panel.accordion-chevron {
+  &.panel {
+    border-color: $ias-panel-gray;
     border-radius: 3px;
-    background-color: $ias-panel-gray;
-
     &:hover {
-      background-color: $ias-light-gray;
-      color: $ias-black;
-      border: 0px;
-      
-      .panel-title {
-        color: $ias-black;
-      }
-      
-    }
-    .panel-title {
-      color: $ias-dark-gray;
-      font-weight: 500;
-      text-transform: capitalize;
-      margin-top: 0;
-    }
-  }
-  
-  &.panel-disabled {
-    &:hover {
-      border: 1px solid transparent;
-    }
-
-    .panel-heading {
-      color: $ias-gray;
-    }
-  }
-}
-
-ux-accordion.panel-group {
-  > .accordion-chevron  {
-
-    .panel-heading:before {
-        font-family: 'ias-icons';
-        content: '\E901';
-        color: $ias-icon-gray;
+      border-color: $ias-blue-4;
     }
     &.panel-open {
-
-      border: 1px solid $ias-border-gray;
+      border-color: $ias-border-gray;
       &:hover {
-        border: 1px solid $ias-blue-4;
-        .panel-heading:before {
-          color: $ias-blue-4;          
-        }
-      }
-      .panel-heading:before {
-        font-family: 'ias-icons';
-        content: '\E903';
-        color: $ias-icon-gray;
+        border-color: $ias-blue-4;
       }
     }
+   .panel-heading {
+      background-color: $ias-panel-gray;
+      border-radius: 3px;
+      padding: 10px 15px;     
+      &:hover {
+        color: $ias-blue-2;
+      }
+    }
+    .panel-body {
+      border-top: 1px solid $ias-panel-gray;
+      padding: 15px;
+    }
   }
-  
-  .panel-heading + .panel-collapse > .panel-body,
-  .panel-group .panel-heading + .panel-collapse > .list-group {
-    border-top: 0;
-  }
-  
 }
 
 ux-accordion-panel[disabled] {
     > .panel-heading {
-        opacity: 0.4;
+        opacity: 0.25;
     }
     :hover {
         cursor: not-allowed;
     }
+}
+
+accordion.panel-group > .accordion-chevron.panel-open .panel-heading:before,
+ux-accordion.panel-group > .accordion-chevron.panel-open .panel-heading:before {
+    font: 22px 'ias-icons';
+    content: '\E903';
+}
+
+accordion.panel-group > .accordion-chevron .panel-heading:before,
+ux-accordion.panel-group > .accordion-chevron .panel-heading:before {
+    font: 22px 'ias-icons';
+    content: '\E901';
 }
