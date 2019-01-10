@@ -27,4 +27,8 @@ ux-checkbox > .ux-checkbox {
         border: 1px solid $ias-blue-4;
         outline: none;
     }
+
+    &:active > .ux-checkbox-container {
+        background-color: $ias-light-gray;
+    }
 }
