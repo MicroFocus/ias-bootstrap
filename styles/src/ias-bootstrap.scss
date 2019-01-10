@@ -8,7 +8,6 @@
 @import 'components/headers';
 @import 'components/icons';
 @import 'components/main-content';
-@import 'components/nav-tabs';
 @import 'components/page-header';
 @import 'components/head-nav';
 @import 'components/side-navs';
@@ -19,6 +18,6 @@ body {
   // Use white for the page background, instead of $quantum-bright-gray
   background-color: $ias-white;
   color: $ias-dark-gray;
-  font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif"
+  font-family: $ias-font-family;
 }
 

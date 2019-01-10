@@ -1,34 +1,49 @@
 ux-page-header {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  
-  .page-header-secondary {
-    height: 35px;
-    padding: 0 20px;
-    box-shadow: none;
-    background-color: $ias-panel-gray;
-    
-    .nav.nav-tabs li:not(.disabled) {
-      height: 35px;
+    font-family: $ias-font-family;
+    color: $ias-dim-gray;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+    letter-spacing: 0.3px;
+
+    .nav-tabs > li {
+        margin-bottom: 0;
+        border-style: solid;
+        border-width: 0 1px 2px;
+        border-color: transparent;
+
+        &:first-child {
+            margin-left: 15px;
+        }
+
+        &:hover, &:focus {
+            background-color: $ias-border-gray;
+        }
+
+        &.active {
+            border-left-color: $ias-border-gray;
+            border-right-color: $ias-border-gray;
+            border-bottom-color: $ias-blue-4;
+
+            > a.nav-link {
+                color: $ias-dark-gray;
+            }
+        }
+
+        > a.nav-link {
+            color: inherit;
+            font-weight: inherit;
+            font-family: inherit;
+            border: 0 none;
+            height: 35px;
+
+            &.highlighted {
+                outline: none;
+            }
+
+            &:hover, &:focus {
+                background-color: transparent;
+            }
+        }
     }
-    .nav.nav-tabs > li {
-      margin-left: 0px;
-      margin-right: 0px;
-    }    
-    .nav.nav-tabs > li > a {
-      height: 35px;
-      line-height: 30px;
-      padding: 0 10px;
-    }
-    .nav.nav-tabs li:not(.disabled) > a {
-      color: $ias-dark-gray;
-      border-bottom-width: 0;
-      font-size: 14px;
-      font-weight: 400;
-      text-transform: capitalize;
-      letter-spacing: 0.3px;
-      padding-top: 2px;
-    }
-  }
 }
-
-

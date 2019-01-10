@@ -8,6 +8,7 @@
 ux-accordion-panel.accordion-chevron {
     &.panel {
         border: 0 none;
+        border-radius: 3px;
 
         .panel-heading {
             background-color: $ias-panel-gray;
