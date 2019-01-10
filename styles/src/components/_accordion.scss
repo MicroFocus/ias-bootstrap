@@ -6,6 +6,10 @@
 }
 
 ux-accordion-panel.accordion-chevron {
+    &+ux-accordion-panel.accordion-chevron {
+        margin-top: 15px;
+    }
+
     &.panel {
         border: 0 none;
         border-radius: 3px;
