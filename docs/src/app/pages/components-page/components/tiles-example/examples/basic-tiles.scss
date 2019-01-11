@@ -1,33 +1,40 @@
-@import "../../../../../../../../styles/src/quantum-variables";
-
-// The internal styling for this tile element is arbitrary, since each product's needs are different.
-.app-action {
-    display: flex;
-    flex-direction: column;
+.ias-tile {
     align-items: center;
-    width: 160px;
+    background-color: #eef2f2;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    cursor: pointer;
+    display: inline-flex;
+    flex-direction: column;
+    flex-shrink: 0;
     height: 190px;
+    margin: 0 8px 10px 0;
     padding: 10px;
+    width: 160px;
 
     > i {
-        color: $quantum-primary;
+        color: #0073e7;
+        font-size: 50px;
+        margin-bottom: 10px;
     }
 
     > div {
+        overflow: hidden;
         text-align: center;
+        text-overflow: ellipsis;
 
         &:first-of-type {
             color: #3C515C;
-            font-size: 20px;
-            overflow: hidden;
-            margin-bottom: 2px;
-            text-overflow: ellipsis;
+            font-size: 18px;
+            line-height: 20px;
+            margin-bottom: 5px;
         }
 
         &:last-of-type {
-            font-size: 16px;
+            font-size: 14px;
+            line-height: 15px;
             color: #abb5b7;
-            overflow: hidden;
+            max-height: 60px;
         }
     }
 }

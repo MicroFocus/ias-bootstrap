@@ -3,11 +3,17 @@ import { CommonModule } from '@angular/common';
 import { BasicTilesComponent } from './basic-tiles';
 import { TileGridComponent } from './tile-grid';
 import { AngularSplitModule } from 'angular-split';
+import { SmallTilesComponent } from './small-tiles';
+import { MediumTilesComponent } from './medium-tiles';
+import { LargeTilesComponent } from './large-tiles';
 
 @NgModule({
     declarations: [
         BasicTilesComponent,
-        TileGridComponent,
+        LargeTilesComponent,
+        MediumTilesComponent,
+        SmallTilesComponent,
+        TileGridComponent
     ],
     imports: [
         CommonModule,
@@ -15,7 +21,10 @@ import { AngularSplitModule } from 'angular-split';
     ],
     exports: [
         BasicTilesComponent,
-        TileGridComponent,
+        LargeTilesComponent,
+        MediumTilesComponent,
+        SmallTilesComponent,
+        TileGridComponent
     ]
 })
 export class TilesExamplesModule {

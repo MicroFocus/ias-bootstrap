@@ -1,10 +1,97 @@
 .ias-tile {
+    align-items: center;
     background-color: $ias-panel-gray;
     border: 1px solid transparent;
+    border-radius: 3px;
     cursor: pointer;
+    display: inline-flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    height: 190px;
+    margin: 0 8px 10px 0;
+    padding: 10px;
+    width: 160px;
+
+    > i {
+        color: $quantum-primary;
+        font-size: 50px;
+        margin-bottom: 10px;
+    }
+
+    > div {
+        overflow: hidden;
+        text-align: center;
+        text-overflow: ellipsis;
+
+        &:first-of-type {
+            color: #3C515C;
+            font-size: 18px;
+            line-height: 20px;
+            margin-bottom: 5px;
+        }
+
+        &:last-of-type {
+            font-size: 14px;
+            line-height: 15px;
+            color: #abb5b7;
+            max-height: 60px;
+        }
+    }
+
+    &.ias-tile-small {
+        width: 76px;
+        height: 76px;
+
+        > i {
+            margin-bottom: 0;
+        }
+    }
+
+    &.ias-tile-medium {
+        flex-flow: row nowrap;
+        width: 244px;
+        height: 76px;
+
+        > i {
+            margin: 0 10px 0 0;
+        }
+
+        > div {
+            text-align: left;
+            color: #3C515C;
+            font-size: 18px;
+            line-height: 20px;
+            max-height: 50px;
+            margin-bottom: 0;
+        }
+    }
+
+    //&.ias-tile-large {
+    //    width: 244px;
+    //    height: 334px;
+    //
+    //    > i {
+    //        font-size: 80px;
+    //    }
+    //
+    //    > div {
+    //        &:first-of-type {
+    //            color: #3C515C;
+    //            font-size: 25px;
+    //            line-height: 28px;
+    //            max-height: 50px;
+    //        }
+    //        &:last-of-type {
+    //            font-size: 16px;
+    //            line-height: 18px;
+    //            color: #abb5b7;
+    //            max-height: 110px;
+    //        }
+    //    }
+    //}
 
     &:hover {
         background-color: $ias-light-gray;
-        border: 1px solid $quantum-primary;
+        border: 1px solid $ias-blue-4;
     }
 }
