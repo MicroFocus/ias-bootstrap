@@ -1,8 +1,3 @@
-// Why does the header need a top margin automatically?
-h2:first-child {
-    margin-top: 0;
-}
-
 app-ngbd-code > pre[class*="language-"] {
     margin: 0;
 }
@@ -12,7 +7,27 @@ app-ngbd-code > pre[class*="language-"] {
     display: none;
 }
 
-.main-content {
-    margin: 15px;
-    max-width: 700px;
+.page-with-nav {
+    display: grid;
+    grid-template-columns: minmax(max-content, 200px) 1fr;
+    overflow-y: auto;
+
+    // Show scrollbars for both the nav and the content areas
+    > * {
+        overflow-y: auto;
+        margin: 15px;
+
+        .main-content {
+            max-width: 700px;
+        }
+    }
+
+    > ux-navigation .nav-title {
+        // Don't wrap the text
+        white-space: nowrap;
+    }
+
+    > router-outlet {
+        order: 1;
+    }
 }
