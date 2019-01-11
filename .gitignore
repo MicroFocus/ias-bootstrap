@@ -5,3 +5,4 @@ docs/.idea
 *.css
 /styles/node_modules
 /styles/dist
+/styles/README.md
