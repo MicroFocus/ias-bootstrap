@@ -3,3 +3,5 @@ docs/.idea
 /styles/.idea
 /docs/dist
 *.css
+/styles/node_modules
+/styles/dist
