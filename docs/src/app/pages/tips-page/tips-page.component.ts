@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Host, HostBinding, OnInit } from '@angular/core';
 import { NavigationItem } from '@ux-aspects/ux-aspects';
 
 @Component({
@@ -7,6 +7,8 @@ import { NavigationItem } from '@ux-aspects/ux-aspects';
     styleUrls: ['./tips-page.component.scss']
 })
 export class TipsPageComponent implements OnInit {
+    @HostBinding('class.page-with-nav') someClass: Host = true;
+
     navigation: NavigationItem[] = [
         { title: 'Standard Layouts', routerLink: '/tips-and-tricks/standard-layout' },
         { title: 'Login Page', routerLink: '/tips-and-tricks/login-page' },
