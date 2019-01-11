@@ -1,10 +1,13 @@
+// Brand Blue
+$microfocus-primary: #0073e7;
+
 // IAS Colors
-$ias-blue-1: #0067ad;
-$ias-blue-2: #007cd0;
-$ias-blue-3: #0090da;
-$ias-blue-4: #01a9e7;
-$ias-blue-5: #29ceff;
-$ias-blue-6: #e4f9ff;
+$ias-blue-1: #0067ad; // darkest blue
+$ias-blue-2: #007cd0; // Primary blue
+$ias-blue-3: #0090da; // medium blue
+$ias-blue-4: #01a9e7; // Secondary blue
+$ias-blue-5: #29ceff; // light blue
+$ias-blue-6: #e4f9ff; // lightest blue
 
 // IAS Monochromatic Palette
 $ias-white: #ffffff;
@@ -17,7 +20,4 @@ $ias-dim-gray: #656668;
 $ias-dark-gray: #434c50;
 $ias-black: #000000;
 
-// Quantum Colors
-
-// Brand Blue
-$quantum-primary: #0073e7;
+$ias-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;

@@ -1,14 +1,24 @@
-@import "./quantum-variables";
 @import "./ias-variables";
 @import "./size";
 
 @import 'components/accordion';
 @import 'components/buttons';
+@import 'components/datepicker';
+@import 'components/dialogs';
+@import 'components/form-field';
+@import 'components/headers';
 @import 'components/icons';
+@import 'components/main-content';
 @import 'components/page-header';
+@import 'components/head-nav';
+@import 'components/side-navs';
+@import 'components/tabs';
 @import 'components/tiles';
 
 body {
-    // Use white for the page background, instead of $quantum-bright-gray
-    background-color: $ias-white;
+  // Use white for the page background, instead of $quantum-bright-gray
+  background-color: $ias-white;
+  color: $ias-dark-gray;
+  font-family: $ias-font-family;
 }
+

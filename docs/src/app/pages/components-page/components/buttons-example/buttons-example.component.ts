@@ -13,5 +13,7 @@ export class ButtonsExampleComponent {
         'text-buttons.ts': require('!raw-loader!./examples/text-buttons.ts'),
         'icon-buttons.html': require('!raw-loader!./examples/icon-buttons.html'),
         'icon-buttons.ts': require('!raw-loader!./examples/icon-buttons.ts'),
+        'icon-text-buttons.html': require('!raw-loader!./examples/icon-text-buttons.html'),
+        'icon-text-buttons.ts': require('!raw-loader!./examples/icon-text-buttons.ts'),
     };
 }

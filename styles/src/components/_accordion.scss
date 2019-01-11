@@ -1,23 +1,87 @@
+// For when a header has focus (this removes the green halo, and adds the IAS blue highlights)
+@mixin focused-header {
+    border-color: $ias-blue-4;
+    color: $ias-blue-2;
+    outline: none;
+}
+
+ux-accordion-panel.accordion-chevron {
+    &+ux-accordion-panel.accordion-chevron {
+        margin-top: 15px;
+    }
+
+    &.panel {
+        border: 0 none;
+        border-radius: 3px;
+
+        .panel-heading {
+            background-color: $ias-panel-gray;
+            border: 1px solid $ias-border-gray;
+            border-radius: 3px;
+            color: $ias-dark-gray;
+            padding: 10px 15px;
+
+            &:hover {
+                color: $ias-blue-2;
+                border-color: $ias-blue-4;
+            }
+
+            &.accordion-toggle:focus, &:focus, &.accordion-toggle a:focus, a:focus {
+                @include focused-header;
+            }
+        }
+
+        &.panel-open {
+            .panel-heading {
+                border-bottom-right-radius: 0;
+                border-bottom-left-radius: 0;
+                border-bottom-color: $ias-panel-gray;
+
+                &:hover {
+                    border-color: $ias-blue-4;
+                }
+
+                &.accordion-toggle:focus, &:focus, &.accordion-toggle a:focus, a:focus {
+                    @include focused-header;
+                }
+            }
+        }
+
+        .panel-collapse {
+            border: 1px solid $ias-border-gray;
+            border-top: 0 none;
+            border-bottom-right-radius: 3px;
+            border-bottom-left-radius: 3px;
+        }
+
+        .panel-body {
+            border-top: 0 none;
+            padding: 15px;
+        }
+    }
+}
+
+ux-accordion-panel.accordion-chevron[disabled] {
+    > .panel-heading, > .panel-heading:hover, > .panel-heading:focus {
+        background-color: $ias-panel-gray;
+        border-color: $ias-border-gray;
+        color: $ias-dark-gray;
+        cursor: not-allowed;
+        opacity: 0.60;
+    }
+    > .panel-heading:focus {
+        outline: none;
+    }
+}
+
 accordion.panel-group > .accordion-chevron.panel-open .panel-heading:before,
 ux-accordion.panel-group > .accordion-chevron.panel-open .panel-heading:before {
-    font-family: 'ias-icons';
+    font: 22px 'ias-icons';
     content: '\E903';
 }
 
 accordion.panel-group > .accordion-chevron .panel-heading:before,
 ux-accordion.panel-group > .accordion-chevron .panel-heading:before {
-    font-family: 'ias-icons';
+    font: 22px 'ias-icons';
     content: '\E901';
-}
-
-ux-accordion-panel[disabled] {
-    > .panel-heading {
-        opacity: 0.4;
-        &:focus {
-            outline: none;
-        }
-    }
-    :hover {
-        cursor: not-allowed;
-    }
 }

@@ -1,8 +1,70 @@
 .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    text-transform: none;
+
+    > * + * {
+        // Add a margin when you have multiple things within a button (such as text and an icon)
+        margin-left: 10px;
+    }
+
+    &:active, &:focus, &.focus {
+        outline: none;
+        box-shadow: none;
+    }
+
+    &.btn-default {
+        background-color: $ias-light-gray;
+        border: 1px solid $ias-border-gray;
+        color: $ias-dark-gray;
+
+        &:hover:not(:disabled) {
+            background-color: $ias-light-gray;
+            border-color: $ias-blue-4;
+            color: $ias-blue-2;
+        }
+    }
+
+    &.btn-primary {
+        background-color: $ias-blue-2;
+        border-color: $ias-blue-2;
+        color: $ias-light-gray;
+
+        &:hover:not(:disabled) {
+            background-color: $ias-light-gray;
+            border-color: $ias-blue-4;
+            color: $ias-blue-2;
+        }
+
+        &.btn-icon {
+            &:hover:not(:disabled) {
+                border-color: $ias-border-gray;
+            }
+        }
+    }
+
     &.ias-btn-icon {
         min-width: auto;
         padding: 0;
         width: 30px;
         height: 30px;
+
+        &.btn-default {
+            border-color: transparent;
+            background-color: transparent;
+        }
+
+        &.btn-primary {
+        }
+
+        &:hover:not(:disabled) {
+            border-color: $ias-border-gray;
+        }
     }
+}
+
+.btn-group {
+    display: flex;
 }

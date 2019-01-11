@@ -1,4 +1,8 @@
+@import "../../../../../../../../styles/src/ias-variables";
+
 .ias-tile {
+
+// The internal styling for this tile element is arbitrary, since each product's needs are different.
     align-items: center;
     background-color: #eef2f2;
     border: 1px solid transparent;
@@ -13,9 +17,9 @@
     width: 160px;
 
     > i {
-        color: #0073e7;
         font-size: 50px;
         margin-bottom: 10px;
+        color: $microfocus-primary;
     }
 
     > div {

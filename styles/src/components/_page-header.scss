@@ -1,8 +1,8 @@
-$header-height: 56px;
+$header-height: 50px;
 
 ux-page-header{
     > .ux-page-header {
-        background-color: $quantum-primary;
+        background-color: $microfocus-primary;
         height: $header-height;
         padding: 0;
 
@@ -15,6 +15,10 @@ ux-page-header{
             > * {
                 // We don't need absolute positioning.  We're using css grid.
                 position: relative;
+                top: auto;
+                right: auto;
+                display: initial;
+                line-height: 1rem;
             }
 
             > .page-header-logo-container {
@@ -23,6 +27,9 @@ ux-page-header{
 
             > .page-header-subtitle-container {
                 display: flex;
+                .page-header-subtitle {
+                  font-size: 20px;
+                }
             }
 
             > .page-header-icon-menus {

@@ -1,0 +1,120 @@
+ux-date-time-picker {
+    ux-date-time-picker-header .header {
+        .header-title {
+            color: $ias-dark-gray;
+            font-weight: normal;
+        }
+
+        button {
+            border: 1px solid transparent;
+            border-radius: 2px;
+
+            &:focus {
+                outline: none;
+            }
+
+            &:hover:not(.header-title) {
+                background-color: $ias-light-gray;
+                border: 1px solid $ias-border-gray;
+                color: $ias-blue-2;
+            }
+
+            &.header-title:hover {
+                background-color: transparent;
+                color: $ias-blue-2;
+            }
+        }
+    }
+
+    ux-date-time-picker-day-view .calendar {
+        .weekday {
+            color: $ias-dark-gray;
+            font-weight: normal;
+            background-color: $ias-panel-gray;
+        }
+
+        .date-button {
+            border: 1px solid transparent;
+            border-radius: 2px;
+
+            &:hover {
+                background-color: transparent;
+                border-color: $ias-blue-3;
+                color: $ias-blue-3;
+            }
+
+            &.current {
+                background-color: $ias-light-gray;
+            }
+
+            &.active {
+                background-color: $ias-border-gray;
+                color: $ias-dark-gray;
+                font-weight: 700;
+            }
+
+            &:focus {
+                color: $ias-blue-3;
+                border-color: $ias-blue-3;
+                outline: none;
+            }
+        }
+    }
+
+    ux-date-time-picker-month-view .calendar {
+        .calendar-item {
+            border: 1px solid transparent;
+            border-radius: 2px;
+
+            &:hover {
+                background-color: transparent;
+                border-color: $ias-blue-3;
+                color: $ias-blue-3;
+            }
+
+            &.active {
+                background-color: $ias-border-gray;
+                color: $ias-dark-gray;
+                font-weight: 700;
+            }
+        }
+    }
+
+    ux-date-time-picker-time-view {
+        .spin-button {
+            &:focus {
+                outline: none;
+            }
+
+            > span {
+                &:hover {
+                    color: $ias-blue-2;
+                }
+            }
+        }
+
+        .time-picker-meridian .button-toggle-accent {
+            &:hover {
+                color: $ias-blue-2;
+            }
+
+            &.active, &:active {
+                background-color: $ias-border-gray;
+                border-color: #ccc; // This color is to match the rest of the box, even though it's not an IAS color
+                box-shadow: none;
+                color: $ias-dark-gray;
+            }
+        }
+    }
+
+    .now-button {
+        &:focus {
+            outline: none;
+        }
+
+        &:hover {
+            background-color: transparent;
+            color: $ias-blue-2;
+        }
+    }
+}

@@ -1,7 +1,0 @@
-// The following are changes that seem to be overlooked by the quantum style when applied to bootstrap / ux-aspects.
-// These should be reported, and hopefully pushed into the quantum project at some point.
-
-.panel {
-    // Panels still have rounded corners, yet the rest of the quantum UI uses sharp corners, so remove border radius:
-    border-radius: 0;
-}

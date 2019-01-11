@@ -7,20 +7,6 @@ app-ngbd-code > pre[class*="language-"] {
     margin: 0;
 }
 
-.code-heading-title {
-    display: grid;
-    grid-template-columns: max-content 1fr;
-    margin-top: 40px;
-
-    > h3 {
-        margin: 0;
-    }
-
-    > button {
-        justify-self: end;
-    }
-}
-
 // Hide dropdown menus in the page header if they're empty
 .page-header-icon-menu > .dropdown-menu:empty {
     display: none;

@@ -1,0 +1,38 @@
+*:not(.page-header-secondary) > ux-tabset > .nav.minimal-tab {
+    border-color: $ias-icon-gray;
+    border-bottom-style: solid;
+
+    > li.nav-item {
+        padding: 0 1px;
+
+        &:first-of-type {
+            padding-left: 15px;
+        }
+
+        &.active {
+            > a.nav-link {
+                background-color: $ias-white;
+                border-bottom-color: transparent;
+            }
+        }
+
+        &:not(.active) {
+            > a.nav-link:hover {
+                border-top-color: $ias-blue-4;
+                border-left-color: $ias-blue-4;
+                border-right-color: $ias-blue-4;
+            }
+        }
+
+        > a.nav-link {
+            background-color: $ias-light-gray;
+            border: 1px solid $ias-icon-gray;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+            font-weight: normal;
+            outline: none;
+            padding: 2px 15px 0;
+            height: 30px;
+        }
+    }
+}

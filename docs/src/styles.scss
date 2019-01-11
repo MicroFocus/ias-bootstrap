@@ -7,7 +7,7 @@ html.ias-app {
 
 html:not(.ias-app) {
     // When we're not showing Lynn's changes, at least keep the layout of the page header the same, so the change isn't so jarring
-    $quantum-primary: #0c4751;
+    $microfocus-primary: #0c4751;
     $ias-panel-gray: transparent;
     @import "../../styles/src/components/page-header";
 }
