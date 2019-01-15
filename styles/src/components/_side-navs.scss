@@ -5,15 +5,12 @@
             color: $ias-dim-gray;
             font-size: 15px;
             font-weight: normal;
-            padding: 5px 10px;
+            padding: 8px 10px;
+            line-height: 1.2em;
 
             &:hover {
                 background-color: $ias-panel-gray;
                 color: $ias-dark-gray;
-            }
-
-            > .nav-title {
-                white-space: nowrap;
             }
 
             > .nav-icon + .nav-title {
