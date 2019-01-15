@@ -6,29 +6,3 @@ app-ngbd-code > pre[class*="language-"] {
 .page-header-icon-menu > .dropdown-menu:empty {
     display: none;
 }
-
-.page-with-nav {
-    display: grid;
-    grid-template-columns: minmax(max-content, 200px) 1fr;
-    overflow-y: auto;
-
-    // Show scrollbars for both the nav and the content areas, and give a little padding
-    > *:not(router-outlet) {
-        overflow-y: auto;
-        padding: 15px;
-    }
-
-    > ux-navigation .nav-title {
-        // Don't wrap the text in the side nav bar
-        white-space: nowrap;
-    }
-
-    // Move the router-outlet to the end of the list, so it doesn't interfere with the placement of the other components
-    > router-outlet {
-        order: 1;
-    }
-}
-
-.main-content {
-    max-width: 700px;
-}

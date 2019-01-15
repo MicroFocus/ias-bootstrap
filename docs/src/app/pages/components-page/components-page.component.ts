@@ -7,7 +7,7 @@ import { NavigationItem } from '@ux-aspects/ux-aspects';
     styleUrls: ['./components-page.component.scss'],
 })
 export class ComponentsPageComponent implements OnInit {
-    @HostBinding('class.page-with-nav') someClass: Host = true;
+    @HostBinding('class.has-left-nav') someClass: Host = true;
 
     navigation: NavigationItem[] = [
         { title: 'Accordion', routerLink: '/components/accordion' },

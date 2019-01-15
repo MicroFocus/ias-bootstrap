@@ -1,0 +1,50 @@
+$ias-content-padding: 25px;
+
+.ias-page {
+    // Using CSS grid for this page. Nav header take the maximum amount it needs, and the rest goes to the page body.
+    // The root page should take up 100% of the viewable area
+    display: grid;
+    grid-template-rows: max-content 1fr;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+
+    // ux-page-header doesn't need to be absolutely positioned, since we're using css grid.
+    > ux-page-header {
+        position: relative;
+    }
+
+    // Add some styles to the page content area (which element immediately follows angular's router-outlet tag)
+    > router-outlet {
+        // For standard pages, add some padding, and let the content scroll underneath the page header.
+        &+ *:not(.has-left-nav) {
+            overflow: auto;
+            padding: $ias-content-padding;
+        }
+
+        // For pages with a left nav, add the padding inside the child sections, so the content scrolls independently, and
+        // underneath the page header.
+        &+ .has-left-nav {
+            display: grid;
+            grid-template-columns: max-content 1fr; // Left side takes whatever it needs
+            overflow: auto;
+
+            > *:not(router-outlet) {
+                overflow: auto;
+                padding: $ias-content-padding; // Use padding so the scroll bars reach the edge of the available area.
+            }
+        }
+    }
+}
+
+// Provide a class for restricting to the maximum content width.
+.ias-max-content-width {
+    width: 700px;
+}
+
+// Setting the order to 1000 causes the router-outlet to jump to the end of the grid item placement.
+.ias-page > router-outlet, .ias-page > .has-left-nav > router-outlet {
+    order: 1000;
+}

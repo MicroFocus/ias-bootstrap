@@ -49,7 +49,8 @@ ux-page-header{
     }
 
     > .page-header-secondary {
-        // Secondary navigation should have a gray background
+        // Secondary navigation should have a gray background, and no animation
+        animation: none;
         background-color: $ias-panel-gray;
     }
 }
