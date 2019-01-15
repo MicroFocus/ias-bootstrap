@@ -82,14 +82,23 @@ ux-date-time-picker {
 
     ux-date-time-picker-time-view {
         .spin-button {
-            &:focus {
-                outline: none;
-            }
+            align-self: center;
+            padding: 0 5px;
 
-            > span {
-                &:hover {
+            border: 1px solid transparent;
+            border-radius: 2px;
+
+            &:hover {
+                background-color: $ias-light-gray;
+                border: 1px solid $ias-border-gray;
+
+                > span {
                     color: $ias-blue-2;
                 }
+            }
+
+            &:focus {
+                outline: none;
             }
         }
 
