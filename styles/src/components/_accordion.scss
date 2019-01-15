@@ -69,9 +69,6 @@ ux-accordion-panel.accordion-chevron[disabled] {
         cursor: not-allowed;
         opacity: 0.60;
     }
-    > .panel-heading:focus {
-        outline: none;
-    }
 }
 
 accordion.panel-group > .accordion-chevron.panel-open .panel-heading:before,

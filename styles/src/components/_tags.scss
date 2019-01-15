@@ -1,0 +1,30 @@
+ux-tag-input {
+  border-color: $ias-border-gray;
+  border-radius: 3px;
+
+  &:focus, &:hover {
+    border-color: $ias-blue-4;
+  }
+}
+.ux-tag {
+  align-items: center;
+  background-color: $ias-panel-gray;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  display: inline-flex;
+  flex-flow: row nowrap;
+  font-size: 12px;
+  min-width: 70px;
+  padding: 0 3px;
+
+  >.ux-tag-remove {
+    font-size: inherit;
+    opacity: inherit;
+  }
+
+  &:focus {
+    background-color: $ias-light-gray;
+    border: 1px solid $ias-blue-4;
+    color: $ias-blue-4;
+  }
+}
