@@ -1,0 +1,71 @@
+{
+    "id": "ias-bootstrap",
+    "viewports": [
+        {
+            "label": "minimal",
+            "width": 800,
+            "height": 600
+        }
+    ],
+    "onBeforeScript": "puppet/onBefore.js",
+    "onReadyScript": "puppet/onReady.js",
+    "misMatchThreshold": 0.0000000001,
+    "scenarios": [
+        {
+            "label": "text-buttons",
+            "url": "http://localhost:4200/ias-bootstrap/text-buttons"
+        },
+        {
+            "label": "text-buttons-hover-default",
+            "url": "http://localhost:4200/ias-bootstrap/text-buttons",
+            "hoverSelector": "app-text-buttons .btn-default:not(:disabled)",
+            "postInteractionWait": 200
+        },
+        {
+            "label": "text-buttons-hover-default-disabled",
+            "url": "http://localhost:4200/ias-bootstrap/text-buttons",
+            "hoverSelector": "app-text-buttons .btn-default:disabled",
+            "postInteractionWait": 200
+        },
+        {
+            "label": "text-buttons-hover-primary",
+            "url": "http://localhost:4200/ias-bootstrap/text-buttons",
+            "hoverSelector": "app-text-buttons .btn-primary:not(:disabled)",
+            "postInteractionWait": 200
+        },
+        {
+            "label": "text-buttons-hover-primary-disabled",
+            "url": "http://localhost:4200/ias-bootstrap/text-buttons",
+            "hoverSelector": "app-text-buttons .btn-primary:disabled",
+            "postInteractionWait": 200
+        },
+        {
+            "label": "icon-buttons",
+            "url": "http://localhost:4200/ias-bootstrap/icon-buttons"
+        },
+        {
+            "label": "icon-text-buttons",
+            "url": "http://localhost:4200/ias-bootstrap/icon-text-buttons"
+        }
+    ],
+    "paths": {
+        "bitmaps_reference": "backstop_data/bitmaps_reference",
+        "bitmaps_test": "backstop_data/bitmaps_test",
+        "engine_scripts": "backstop_data/engine_scripts",
+        "html_report": "backstop_data/html_report",
+        "ci_report": "backstop_data/ci_report"
+    },
+    "report": [
+        "browser"
+    ],
+    "engine": "puppeteer",
+    "engineOptions": {
+        "args": [
+            "--no-sandbox"
+        ]
+    },
+    "asyncCaptureLimit": 5,
+    "asyncCompareLimit": 50,
+    "debug": false,
+    "debugWindow": false
+}

@@ -7,3 +7,5 @@ docs/.idea
 /styles/node_modules
 /styles/dist
 /styles/README.md
+/docs/backstop_data/html_report
+/docs/backstop_data/bitmaps_test

@@ -4,10 +4,13 @@
     "scripts": {
         "ng": "ng",
         "start": "ng serve --serve-path ias-bootstrap",
+        "start:test": "ng serve --configuration test --serve-path ias-bootstrap",
         "build": "ng build",
         "test": "ng test",
         "lint": "ng lint",
         "e2e": "ng e2e",
+        "backstop:approve": "backstop approve",
+        "backstop:test": "backstop test",
         "update-gh-pages": "push-dir --dir=dist/docs --branch=gh-pages"
     },
     "private": true,
@@ -24,6 +27,7 @@
         "@angular/upgrade": "^7.1.3",
         "@microfocus/ias-icons": "^1.0.1",
         "@ux-aspects/ux-aspects": "^1.7.2",
+        "backstopjs": "^3.8.5",
         "chance": "^1.0.18",
         "core-js": "^2.5.4",
         "prismjs": "^1.15.0",
