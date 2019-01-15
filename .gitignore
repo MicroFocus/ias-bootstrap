@@ -1,5 +1,6 @@
 docs/node_modules
 docs/.idea
+.idea
 /styles/.idea
 /docs/dist
 *.css

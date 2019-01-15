@@ -1,0 +1,18 @@
+.ias-tile-medium {
+    flex-flow: row nowrap;
+    width: 244px;
+    height: 76px;
+
+    > i {
+        margin: 0 10px 0 0;
+    }
+
+    > div {
+        text-align: left;
+        color: #3C515C;
+        font-size: 18px;
+        line-height: 20px;
+        max-height: 50px;
+        margin-bottom: 0;
+    }
+}
