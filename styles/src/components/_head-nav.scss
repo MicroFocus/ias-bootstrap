@@ -26,7 +26,8 @@ ux-page-header {
             border-bottom-color: $ias-blue-4;
 
             > a.nav-link {
-                color: $ias-dark-gray;
+              color: $ias-dark-gray;
+              font-weight: 500;
             }
         }
 

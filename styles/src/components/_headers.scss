@@ -5,7 +5,7 @@ h1, h2, h3, h4, h5 {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    line-height: 1.2em;
+    line-height: 1.3em;
 
     // We don't need a top margin when the header is the first thing on the page
     &:first-child {
@@ -13,26 +13,30 @@ h1, h2, h3, h4, h5 {
     }
 }
 
+h1, h2 {color: $ias-darker-gray;}
+h3     {color: $ias-dark-gray;}
+h4, h5 {color: $ias-dim-gray;}
+h4     {text-transform: uppercase;}
+
 h1 {
-    font-size: 1.875rem;
+    font-size: 2rem;
     margin: 1rem 0 1rem;
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     margin: 2rem 0 1rem;
 }
 
 h3 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin: 2rem 0 1rem;
 }
 
 h4 {
     color: $ias-dim-gray;
     font-size: 1rem;
-    font-weight: bold;
-    margin: 10px 0 5px;
+    margin: 15px 0 5px;
 }
 
 h5 {

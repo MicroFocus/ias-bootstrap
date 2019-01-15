@@ -16,13 +16,14 @@ ux-accordion-panel.accordion-chevron {
 
         .panel-heading {
             background-color: $ias-panel-gray;
-            border: 1px solid $ias-border-gray;
+            border: 1px solid $ias-panel-gray;
             border-radius: 3px;
             color: $ias-dark-gray;
             padding: 10px 15px;
 
             &:hover {
                 color: $ias-blue-2;
+              background-color: $ias-light-gray;
                 border-color: $ias-blue-4;
             }
 
@@ -35,7 +36,7 @@ ux-accordion-panel.accordion-chevron {
             .panel-heading {
                 border-bottom-right-radius: 0;
                 border-bottom-left-radius: 0;
-                border-bottom-color: $ias-panel-gray;
+                border-bottom-color: $ias-border-gray;
 
                 &:hover {
                     border-color: $ias-blue-4;
@@ -64,10 +65,10 @@ ux-accordion-panel.accordion-chevron {
 ux-accordion-panel.accordion-chevron[disabled] {
     > .panel-heading, > .panel-heading:hover, > .panel-heading:focus {
         background-color: $ias-panel-gray;
-        border-color: $ias-border-gray;
+        border-color: $ias-panel-gray;
         color: $ias-dark-gray;
         cursor: not-allowed;
-        opacity: 0.60;
+        opacity: 0.40;
     }
 }
 
