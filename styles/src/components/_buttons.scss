@@ -4,6 +4,7 @@
     align-items: center;
     border-radius: 3px;
     text-transform: none;
+    font-size: .95rem;
 
     > * + * {
         // Add a margin when you have multiple things within a button (such as text and an icon)
@@ -13,6 +14,10 @@
     &:active, &:focus, &.focus {
         outline: none;
         box-shadow: none;
+    }
+    &[disabled] {
+      opacity: .5;
+      filter: alpha(opacity=50);
     }
 
     &.btn-default {

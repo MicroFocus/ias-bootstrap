@@ -1,8 +1,9 @@
 {
     "name": "@microfocus/ias-bootstrap",
-    "version": "1.0.0-alpha.4",
+    "version": "1.0.0-alpha.6",
     "scripts": {
-        "build": "node-sass ./src/ias-bootstrap.scss -o dist --source-map true --output-style compressed"
+        "build": "node-sass ./src/ias-bootstrap.scss -o dist --source-map true --output-style compressed",
+        "postbuild": "copyfiles ../README.md README.md"
     },
     "repository": {
         "type": "git",
@@ -19,6 +20,7 @@
         "@microfocus/ias-icons": "^1.0.1"
     },
     "devDependencies": {
+        "copyfiles": "^2.1.0",
         "node-sass": "^4.11.0"
     },
     "peerDependencies": {

@@ -1,30 +1,31 @@
 .ux-side-nav {
-  
-  margin-top: 10px;
-  
-   > .nav > li {
-      > a {
-          border-radius: 3px;
-          color: $ias-dim-gray;
-          font-size: 15px;
-          font-weight: normal;
-          padding: 5px 10px;
+    > .nav > li {
+        > a {
+            border-radius: 3px;
+            color: $ias-dim-gray;
+            font-size: 15px;
+            font-weight: normal;
+            padding: 5px 10px;
 
-          &:hover {
+            &:hover {
+                background-color: $ias-panel-gray;
+                color: $ias-dark-gray;
+            }
+
+            > .nav-title {
+                white-space: nowrap;
+            }
+
+            > .nav-icon + .nav-title {
+                margin-left: 10px;
+            }
+        }
+
+        &.active > a {
             background-color: $ias-panel-gray;
             color: $ias-dark-gray;
-          }
-
-          > .nav-icon + .nav-title {
-            margin-left: 10px;
-          }
-      }
-
-      &.active > a {
-        background-color: $ias-panel-gray;
-        color: $ias-dark-gray;
-        font-weight: 600;
-        letter-spacing: .25px;
-      }
-  }
+            font-weight: 600;
+            letter-spacing: .25px;
+        }
+    }
 }

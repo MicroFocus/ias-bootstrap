@@ -1,8 +1,3 @@
-// Why does the header need a top margin automatically?
-h2:first-child {
-    margin-top: 0;
-}
-
 app-ngbd-code > pre[class*="language-"] {
     margin: 0;
 }
@@ -10,9 +5,4 @@ app-ngbd-code > pre[class*="language-"] {
 // Hide dropdown menus in the page header if they're empty
 .page-header-icon-menu > .dropdown-menu:empty {
     display: none;
-}
-
-.main-content {
-    margin: 15px;
-    max-width: 700px;
 }

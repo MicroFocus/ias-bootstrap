@@ -1,4 +1,4 @@
-import { Component, Renderer2 } from '@angular/core';
+import { Component, Host, HostBinding, Renderer2 } from '@angular/core';
 import { PageHeaderIconMenu, PageHeaderNavigationItem } from '@ux-aspects/ux-aspects';
 
 @Component({
@@ -7,6 +7,8 @@ import { PageHeaderIconMenu, PageHeaderNavigationItem } from '@ux-aspects/ux-asp
     styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+    @HostBinding('class.ias-page') iasPage: Host = true;
+
     iasStyleActive = true;
 
     constructor(private renderer: Renderer2) {

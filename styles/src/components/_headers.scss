@@ -1,7 +1,46 @@
-h1, h2, h3, h4, h5, h6 {
-color: inherit;
-font-family: inherit;
-font-weight: normal;
+h1, h2, h3, h4, h5 {
+    color: inherit;
+    font-family: inherit;
+    font-weight: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 1.3em;
+
+    // We don't need a top margin when the header is the first thing on the page
+    &:first-child {
+        margin-top: 0;
+    }
 }
 
+h1, h2 {color: $ias-darker-gray;}
+h3     {color: $ias-dark-gray;}
+h4, h5 {color: $ias-dim-gray;}
+h4     {text-transform: uppercase;}
 
+h1 {
+    font-size: 2rem;
+    margin: 1rem 0 1rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+    margin: 2rem 0 1rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+    margin: 2rem 0 1rem;
+}
+
+h4 {
+    color: $ias-dim-gray;
+    font-size: 1rem;
+    margin: 15px 0 5px;
+}
+
+h5 {
+    color: $ias-icon-gray;
+    font-size: 1rem;
+    margin: 5px 0 5px;
+}

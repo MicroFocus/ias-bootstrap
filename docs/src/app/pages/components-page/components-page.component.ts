@@ -1,12 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Host, HostBinding, OnInit } from '@angular/core';
 import { NavigationItem } from '@ux-aspects/ux-aspects';
 
 @Component({
     selector: 'app-components-page',
     templateUrl: './components-page.component.html',
-    styleUrls: ['./components-page.component.scss']
+    styleUrls: ['./components-page.component.scss'],
 })
 export class ComponentsPageComponent implements OnInit {
+    @HostBinding('class.has-left-nav') someClass: Host = true;
 
     navigation: NavigationItem[] = [
         { title: 'Accordion', routerLink: '/components/accordion' },

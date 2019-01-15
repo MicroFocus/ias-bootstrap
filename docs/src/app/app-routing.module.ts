@@ -25,6 +25,8 @@ import { TagsExampleComponent } from './pages/components-page/components/tags-ex
 import { TilesExampleComponent } from './pages/components-page/components/tiles-example/tiles-example.component';
 import { ProgressExampleComponent } from './pages/components-page/components/progress-example/progress-example.component';
 import { EmptyContentComponent } from './components/empty-content/empty-content.component';
+import { StandardLayoutComponent } from './pages/tips-page/components/standard-layout/standard-layout.component';
+import { LoginPageComponent } from './pages/tips-page/components/login-page/login-page.component';
 
 const routes: Routes = [
     { path: '', redirectTo: 'components', pathMatch: 'full' },
@@ -80,7 +82,15 @@ const routes: Routes = [
             { path: 'tiles', component: TilesExampleComponent },
         ]
     },
-    { path: 'tips-and-tricks', component: TipsPageComponent }
+    {
+        path: 'tips-and-tricks',
+        component: TipsPageComponent,
+        children: [
+            { path: '', redirectTo: 'standard-layout', pathMatch: 'full' },
+            { path: 'standard-layout', component: StandardLayoutComponent },
+            { path: 'login-page', component: LoginPageComponent },
+        ]
+    }
 ];
 
 @NgModule({

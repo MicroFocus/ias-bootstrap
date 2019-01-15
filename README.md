@@ -42,8 +42,8 @@ Install ux-aspects and ias-bootstrap:
 $ npm install @ux-aspects/ux-aspects @microfocus/ias-bootstrap
 ```
 
-Open the file: angular.json, and add the following lines above
-`"src/styles.css"`:
+Open the file: angular.json, and add the following lines to the "styles"
+section (note: `"src/styles.css"` should already be there):
 ```
 "styles": [
   "node_modules/bootstrap/dist/css/bootstrap.css",

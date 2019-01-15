@@ -55,6 +55,10 @@ import { TablesExamplesModule } from './pages/components-page/components/table-e
 import { TabsExamplesModule } from './pages/components-page/components/tabs-example/examples/_examples.module';
 import { TagsExamplesModule } from './pages/components-page/components/tags-example/examples/_examples.module';
 import { TilesExamplesModule } from './pages/components-page/components/tiles-example/examples/_examples.module';
+import { StandardLayoutComponent } from './pages/tips-page/components/standard-layout/standard-layout.component';
+import { LoginPageComponent } from './pages/tips-page/components/login-page/login-page.component';
+import { LoginPageExamplesModule } from './pages/tips-page/components/login-page/examples/_examples.module';
+import { StandardLayoutsModule } from './pages/tips-page/components/standard-layout/examples/_examples.module';
 
 @NgModule({
     declarations: [
@@ -86,7 +90,9 @@ import { TilesExamplesModule } from './pages/components-page/components/tiles-ex
         ProgressExampleComponent,
         ExampleComponent,
         ExampleFileComponent,
-        EmptyContentComponent
+        EmptyContentComponent,
+        StandardLayoutComponent,
+        LoginPageComponent,
     ],
     imports: [
         BrowserModule,
@@ -119,6 +125,8 @@ import { TilesExamplesModule } from './pages/components-page/components/tiles-ex
         TabsExamplesModule,
         TagsExamplesModule,
         TilesExamplesModule,
+        LoginPageExamplesModule,
+        StandardLayoutsModule,
     ],
     providers: [
         CodeHighlightService
