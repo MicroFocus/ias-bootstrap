@@ -29,8 +29,8 @@ $ias-content-padding: 25px;
         > .ias-left-nav, ux-navigation {
             overflow: auto;
             // Use padding so the scroll bars reach the edge of the available area. The padding is a little tighter on
-            // the right side for the navigation pane.
-            padding: $ias-content-padding 10px $ias-content-padding $ias-content-padding;
+            // the right side for the navigation pane. The left side padding is 15px for the desired visual effect.
+            padding: $ias-content-padding 10px $ias-content-padding 15px;
         }
 
         // Style whatever component is being displayed on the right (anything but the ux-navigation or router-outlet tags)
