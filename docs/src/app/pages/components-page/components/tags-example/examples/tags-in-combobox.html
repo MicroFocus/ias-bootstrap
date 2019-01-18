@@ -1,4 +1,92 @@
-<ux-combobox [options]="options"
-             [multiple]="true"
-             [placeholder]="'Select a country'">
-</ux-combobox>
+<!--<ux-combobox [options]="options"-->
+             <!--[multiple]="true"-->
+             <!--[placeholder]="'Select a country'">-->
+<!--</ux-combobox>-->
+<form>
+    <ux-tag-input
+        [addOnPaste]="addOnPaste"
+        [disabled]="disabled"
+        [enforceTagLimits]="enforceTagLimits"
+        [freeInput]="freeInput"
+        [(input)]="input"
+        [maxTags]="maxTags"
+        [minTags]="minTags"
+        [placeholder]="placeholder"
+        [showTypeaheadOnClick]="showTypeaheadOnClick"
+        [(tags)]="selected"
+        [tagDelimiters]="tagDelimiters">
+
+        <ux-typeahead *ngIf="typeaheadEnabled"
+                      [filter]="input"
+                      [options]="options"
+                      [disabledOptions]="selected"
+                      [multiselectable]="true"
+                      [selectFirst]="selectFirst">
+        </ux-typeahead>
+    </ux-tag-input>
+</form>
+
+<!--Customize Example Accordion Code-->
+<div class="row uxd-customize-example">
+    <div class="col-md-12">
+        <ux-accordion>
+            <ux-accordion-panel class="accordion-chevron" heading="Customize Example...">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12">
+                        <ux-checkbox [(value)]="addOnPaste">addOnPaste</ux-checkbox>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <ux-checkbox [(value)]="disabled">disabled</ux-checkbox>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <ux-checkbox [(value)]="enforceTagLimits">enforceTagLimits</ux-checkbox>
+                    </div>
+                </div>
+                <div class="row m-t-md">
+                    <div class="col-md-4 col-sm-12">
+                        <label for="minTags">minTags</label>
+                        <ux-number-picker id="minTags" [(value)]="minTags" min="0" [max]="maxTags"></ux-number-picker>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <label for="maxTags">maxTags</label>
+                        <ux-number-picker id="maxTags" [(value)]="maxTags" [min]="minTags" max="1000"></ux-number-picker>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <label for="tagPattern">tagPattern</label>
+                        <input id="tagPattern" type="text" name="tagPattern" class="form-control" [(ngModel)]="tagPattern">
+                    </div>
+                </div>
+                <div class="row m-t-md">
+                    <div class="col-md-4 col-sm-12">
+                        <label for="placeholder">placeholder</label>
+                        <input id="placeholder" type="text" name="placeholder" class="form-control" [(ngModel)]="placeholder">
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <label for="tagDelimiters">tagDelimiters</label>
+                        <input id="tagDelimiters" type="text" name="tagDelimiters" class="form-control" [(ngModel)]="tagDelimiters">
+                    </div>
+                </div>
+                <div class="row m-t-md">
+                    <div class="col-sm-12">
+                        <ux-checkbox [(value)]="typeaheadEnabled">Enable Typeahead</ux-checkbox>
+                    </div>
+                </div>
+                <div class="row m-t-md">
+                    <div class="col-md-4 col-sm-12">
+                        <ux-checkbox [(value)]="freeInput" [disabled]="!typeaheadEnabled">freeInput</ux-checkbox>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <ux-checkbox [(value)]="selectFirst"
+                                     [disabled]="!typeaheadEnabled">selectFirst</ux-checkbox>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <ux-checkbox [(value)]="showTypeaheadOnClick"
+                                     [disabled]="!typeaheadEnabled">showTypeaheadOnClick</ux-checkbox>
+                    </div>
+                </div>
+            </ux-accordion-panel>
+        </ux-accordion>
+    </div>
+</div>
+
+

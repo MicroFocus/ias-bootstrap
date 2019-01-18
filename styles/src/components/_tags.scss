@@ -1,11 +1,20 @@
 ux-tag-input {
   border-color: $ias-border-gray;
   border-radius: 3px;
+  cursor: default;
 
   &:focus, &:hover {
     border-color: $ias-blue-4;
   }
 }
+
+ux-tag-input.disabled {
+  background-color: transparent;
+  border-color: $ias-border-gray;
+  opacity: 0.60;
+  outline: none;
+}
+
 .ux-tag {
   align-items: center;
   background-color: $ias-panel-gray;
@@ -14,8 +23,9 @@ ux-tag-input {
   display: inline-flex;
   flex-flow: row nowrap;
   font-size: 12px;
+  justify-content: space-around;
+  line-height: 22px;
   min-width: 70px;
-  padding: 0 3px;
 
   >.ux-tag-remove {
     font-size: inherit;
