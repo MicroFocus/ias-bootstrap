@@ -13,14 +13,14 @@ $ias-content-padding: 25px;
     top: 0;
 
     // Simple page (no nav).  Simply add some padding and let the content scroll underneath the page header.
-    > :not(.has-left-nav):not(ux-page-header):not(router-outlet) {
+    > :not(.content-with-left-nav):not(ux-page-header):not(router-outlet) {
         overflow: auto;
         padding: $ias-content-padding;
     }
 
     // Page with nav. For a page with a left nav, use css grid to define the columns, and add the padding inside the
     // child elements so the content scrolls independently, and underneath the page header.
-    > .has-left-nav {
+    > .content-with-left-nav {
         display: grid;
         grid-template-columns: 260px 1fr; // Left side navigation gets a fixed width of 260px, right side gets the rest.
         overflow: auto;
@@ -53,6 +53,6 @@ $ias-content-padding: 25px;
 
 // Setting the order to 1000 causes the router-outlet to "jump to the end of the line" so it doesn't interfere with css
 // grid placement.
-.ias-page > router-outlet, .ias-page > .has-left-nav > router-outlet {
+.ias-page > router-outlet, .ias-page > .content-with-left-nav > router-outlet {
     order: 1000;
 }

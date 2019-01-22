@@ -7,7 +7,7 @@ import { NavigationItem } from '@ux-aspects/ux-aspects';
     styleUrls: ['./tips-page.component.scss']
 })
 export class TipsPageComponent implements OnInit {
-    @HostBinding('class.has-left-nav') someClass: Host = true;
+    @HostBinding('class.content-with-left-nav') someClass: Host = true;
 
     navigation: NavigationItem[] = [
         { title: 'Standard Layouts', routerLink: '/tips-and-tricks/standard-layout' },
