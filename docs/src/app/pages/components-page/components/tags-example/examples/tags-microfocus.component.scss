@@ -1,0 +1,19 @@
+.tag-container, .tag-input-container {
+    display: inline-flex;
+    position: relative;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 3px;
+
+    > input {
+        font-size: 1rem;
+        margin-left: 10px;
+    }
+
+    > ol {
+        flex-wrap: wrap;
+        list-style-type: none;
+        margin: 0;
+        padding: 1px 3px;
+    }
+}
