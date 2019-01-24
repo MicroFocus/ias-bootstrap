@@ -8,11 +8,15 @@ ux-tag-input {
   }
 }
 
-ux-tag-input.disabled {
+ux-tag-input.disabled, ux-dropdown.disabled {
   background-color: transparent;
   border-color: $ias-border-gray;
   opacity: 0.60;
   outline: none;
+
+  &:focus, &:hover {
+    border-color: $ias-border-gray;
+  }
 }
 
 .ux-tag {
@@ -25,16 +29,39 @@ ux-tag-input.disabled {
   font-size: 12px;
   justify-content: space-around;
   line-height: 22px;
+  margin: 2px 3px;
   min-width: 70px;
+  padding: 0 5px;
 
   >.ux-tag-remove {
-    font-size: inherit;
-    opacity: inherit;
+    flex: 0 0 auto;
+    font-size: 80%;
+    opacity: 0.7;
+    background-color: transparent;
+    margin-left: 7px;
+    border: none;
+    padding: 0;
   }
 
-  &:focus {
+  &:focus, &:hover {
     background-color: $ias-light-gray;
     border: 1px solid $ias-blue-4;
     color: $ias-blue-4;
+  }
+  &.disabled {
+    background-color: $ias-panel-gray;
+    border: 1px solid transparent;
+    color: $ias-dark-gray;
+    outline: none;
+  }
+}
+.tag-container > ol > li.ux-tag {
+  &:focus, &:hover {
+    background-color: #f6f9f8;
+    border: 1px solid #01a9e7;
+    color: #01a9e7;
+  }
+  &.disabled {
+    cursor: not-allowed
   }
 }
