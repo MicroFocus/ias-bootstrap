@@ -1,12 +1,16 @@
-<ux-page-header header="UX"
-                logoBackground="Black"
-                logoForeground="White"
-                title="Application Title"
-                [iconMenus]="iconMenus"
->
-</ux-page-header>
-<ux-navigation [items]="navigation" [tree]="false">
-</ux-navigation>
-<div class="content-area">
-    <router-outlet name="standard-outlet"></router-outlet>
+<div class="ias-page">
+    <ux-page-header header="UX"
+                    logoBackground="Black"
+                    logoForeground="White"
+                    title="Application Title"
+                    [iconMenus]="iconMenus"
+    >
+    </ux-page-header>
+    <div class="content-with-left-nav">
+        <ux-navigation [items]="navigation" [tree]="false">
+        </ux-navigation>
+        <div>
+            <router-outlet name="standard-outlet"></router-outlet>
+        </div>
+    </div>
 </div>

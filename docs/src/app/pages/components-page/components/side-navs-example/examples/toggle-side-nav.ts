@@ -13,7 +13,7 @@ export class ToggleSideNavComponent {
             routerLink: ['/components/side-navs', {outlets: {'toggleable-outlet': ['toggleable-dashboard']}}],
         },
         {
-            title: 'Products', icon: 'hpe-service-business',
+            title: 'Products, with a long title causing the text to wrap', icon: 'hpe-service-business',
             routerLink: ['/components/side-navs', {outlets: {'toggleable-outlet': ['toggleable-products']}}],
         },
         {

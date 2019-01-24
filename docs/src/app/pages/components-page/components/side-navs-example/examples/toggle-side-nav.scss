@@ -1,29 +1,7 @@
+// These settings simply mimic a browser window for this example
 :host {
     border: 1px solid #eef2f2;
-    display: grid;
-    grid-template-columns: max-content 1fr;
-
-    > ux-page-header {
-        grid-column: 1 / -1;
-        position: relative; // Need to do this because this header isn't located at the top of the page
-    }
-
-    ux-navigation {
-        margin: 10px;
-    }
-
-    > .content-area {
-        margin: 15px;
-    }
-
-    // Need to make these changes because the side menu isn't being used for the entire page
-    ::ng-deep .ux-side-menu {
-        padding-top: 0;
-        height: 100%;
-
-        > .ux-side-menu-content {
-            position: relative;
-            top: 0;
-        }
-    }
+    display: flex;
+    height: 300px;
+    position: relative;
 }
