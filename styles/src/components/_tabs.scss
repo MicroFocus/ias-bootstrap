@@ -1,5 +1,5 @@
 *:not(.page-header-secondary) > ux-tabset > .nav.minimal-tab {
-    border-color: $ias-icon-gray;
+    border-color: $ias-dark-gray;
     border-bottom-style: solid;
 
     > li.nav-item {
@@ -11,13 +11,22 @@
 
         &.active {
             > a.nav-link {
+                color: $ias-darker-gray;
                 background-color: $ias-white;
                 border-bottom-color: transparent;
             }
         }
 
         &:not(.active) {
+            > a.nav-link {
+                color: $ias-dark-gray;
+                border-top-color: $ias-border-gray;
+                border-left-color: $ias-border-gray;
+                border-right-color: $ias-border-gray;
+            }
             > a.nav-link:hover {
+                background-color: $ias-white;
+                color: $ias-blue-2;
                 border-top-color: $ias-blue-4;
                 border-left-color: $ias-blue-4;
                 border-right-color: $ias-blue-4;
@@ -26,7 +35,7 @@
 
         > a.nav-link {
             background-color: $ias-light-gray;
-            border: 1px solid $ias-icon-gray;
+            border: 1px solid $ias-dark-gray;
             border-top-left-radius: 3px;
             border-top-right-radius: 3px;
             font-weight: normal;
