@@ -7,12 +7,13 @@
 
 ux-accordion-panel.accordion-chevron {
     &+ux-accordion-panel.accordion-chevron {
-        margin-top: 10px;
+      margin-top: 10px;
     }
 
     &.panel {
         border: 0 none;
         border-radius: 3px;
+        background: white;
 
         .panel-heading {
             background-color: $ias-panel-gray;
