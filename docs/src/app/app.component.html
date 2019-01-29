@@ -1,12 +1,25 @@
-<ux-page-header header="UX"
-                logo="/ias-bootstrap/assets/images/IAS_UX_100.png"
-                title="UX Aspects for IAS"
-                [items]="navBarItems"
-                [iconMenus]="iconMenus"
-                [secondaryNavigation]="true"
-                [secondaryNavigationAutoselect]="true"
-                [secondaryNavigationAlignment]="'left'"
->
-</ux-page-header>
+<div class="ias-page-header">
+    <div class="ias-header-bar">
+        <div class="ias-header-bar_icon"><img src="/ias-bootstrap/assets/images/IAS_UX_100.png" width="50" height="50"></div>
+        <!--Need to look into this for when the page is resized: https://css-tricks.com/flexbox-truncated-text/-->
+        <div class="ias-header-bar_title">UX Aspects for IAS</div>
+        <div class="ias-header-bar_menu" dropdown>
+            <a [routerLink]="" (click)="false" dropdownToggle>
+                <span>admin</span>
+                <span class="ias-icon ias-icon-down_thick" aria-hidden="true"></span>
+            </a>
+            <ul id="basic-link-dropdown" *dropdownMenu class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="basic-link">
+                <li><a [routerLink]="" (click)="toggleIasStyles();" class="dropdown-item">Toggle IAS Styles</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="ias-nav-bar">
+        <ul>
+            <li><a [routerLink]="'/components'" routerLinkActive="active"><span>Components</span></a></li>
+            <li><a [routerLink]="'/getting-started'" routerLinkActive="active"><span>Getting Started</span></a></li>
+            <li><a [routerLink]="'/tips-and-tricks'" routerLinkActive="active"><span>Tips and Tricks</span></a></li>
+        </ul>
+    </div>
+</div>
 
 <router-outlet></router-outlet>

@@ -1,4 +1,6 @@
 $ias-content-padding: 25px;
+$header-bar-height: 50px;
+$nav-bar-height: 38px;
 
 .ias-page {
     // Using CSS grid for this page. The nav header will take the maximum amount it needs, and the rest goes to the page body.
@@ -13,14 +15,14 @@ $ias-content-padding: 25px;
     top: 0;
 
     // Simple page (no nav).  Simply add some padding and let the content scroll underneath the page header.
-    > :not(.content-with-left-nav):not(ux-page-header):not(router-outlet) {
+    > .ias-content {
         overflow: auto;
         padding: $ias-content-padding;
     }
 
     // Page with nav. For a page with a left nav, use css grid to define the columns, and add the padding inside the
     // child elements so the content scrolls independently, and underneath the page header.
-    > .content-with-left-nav {
+    > .ias-content-with-nav {
         display: grid;
         grid-template-columns: 260px 1fr; // Left side navigation gets a fixed width of 260px, right side gets the rest.
         overflow: auto;
@@ -41,18 +43,99 @@ $ias-content-padding: 25px;
     }
 }
 
+.ias-page-header {
+    > .ias-header-bar {
+        background-color: $microfocus-primary;
+        color: white;
+        height: $header-bar-height;
+        margin: 0;
+        padding: 0;
+
+        display: flex;
+        align-items: center;
+
+        > .ias-header-bar_title {
+            flex-grow: 1;
+            font-size: 20px;
+            padding-left: 15px;
+        }
+
+        > .ias-header-bar_menu {
+            padding-right: 15px;
+            position: relative;
+
+            > a {
+                color: white;
+                display: flex;
+                align-items: center;
+
+                > .ias-icon {
+                    font-size: 16px;
+                    margin-left: 5px;
+                }
+            }
+
+            > .dropdown-menu {
+                overflow: hidden;
+
+                // This is a fix for the ux-aspects style overriding the dropdown-menu-right style:
+                &.dropdown-menu-right {
+                    left: auto;
+                    right: 0;
+                }
+            }
+        }
+    }
+
+    > .ias-nav-bar {
+        background-color: $ias-panel-gray;
+        color: $ias-dim-gray;
+        font-size: .95rem;
+        height: $nav-bar-height;
+        padding: 0 15px;
+
+        display: flex;
+        align-items: center;
+
+        > ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            > li {
+                display: inline-block;
+
+                > a {
+                    border-width: 0 1px 3px;
+                    border-style: solid;
+                    border-color: transparent;
+                    color: inherit;
+                    height: $nav-bar-height;
+                    padding: 0 10px;
+
+                    display: flex;
+                    align-items: center;
+
+                    &.active {
+                        color: $ias-dark-gray;
+                        border-left-color: $ias-border-gray;
+                        border-right-color: $ias-border-gray;
+                        border-bottom-color: $ias-blue-4;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}
+
 // Provide a class for restricting to the maximum content width.
 .ias-max-content-width {
     width: 700px;
 }
 
-// ux-page-header doesn't need to be absolutely positioned, since we're using css grid to place it on the page.
-.ias-page > ux-page-header {
-    position: relative;
-}
-
 // Setting the order to 1000 causes the router-outlet to "jump to the end of the line" so it doesn't interfere with css
 // grid placement.
-.ias-page > router-outlet, .ias-page > .content-with-left-nav > router-outlet {
+.ias-page > router-outlet, .ias-page > .ias-content-with-nav > router-outlet {
     order: 1000;
 }
