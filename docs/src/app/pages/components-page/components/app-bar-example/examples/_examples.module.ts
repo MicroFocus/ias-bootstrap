@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PageHeaderModule } from '@ux-aspects/ux-aspects';
 
 import { AppBarBasicComponent } from './app-bar-basic';
 import { AppBarSecondaryComponent } from './app-bar-secondary';
+import { AppRoutingModule } from '../../../../../app-routing.module';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 
 @NgModule({
     declarations: [
@@ -12,7 +13,8 @@ import { AppBarSecondaryComponent } from './app-bar-secondary';
     ],
     imports: [
         CommonModule,
-        PageHeaderModule
+        AppRoutingModule,
+        BsDropdownModule.forRoot(),
     ],
     exports: [
         AppBarBasicComponent,

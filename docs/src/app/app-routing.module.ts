@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ComponentsPageComponent } from './pages/components-page/components-page.component';
 import { AccordionExampleComponent } from './pages/components-page/components/accordion-example/accordion-example.component';
@@ -37,7 +37,14 @@ const routes: Routes = [
         children: [
             { path: '', redirectTo: 'accordion', pathMatch: 'full' },
             { path: 'accordion', component: AccordionExampleComponent },
-            { path: 'app-bar', component: AppBarExampleComponent },
+            {
+                path: 'app-bar', component: AppBarExampleComponent, children: [
+                    { path: '', redirectTo: 'link1', pathMatch: 'full' },
+                    { path: 'link1', children: [] },
+                    { path: 'link2', children: [] },
+                    { path: 'link3', children: [] },
+                ]
+            },
             { path: 'buttons', component: ButtonsExampleComponent },
             { path: 'comments', component: CommentsExampleComponent },
             { path: 'date-picker', component: DatePickerExampleComponent },

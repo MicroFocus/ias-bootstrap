@@ -116,6 +116,10 @@ $nav-bar-height: 38px;
                     display: flex;
                     align-items: center;
 
+                    &:hover {
+                        background-color: $ias-border-gray;
+                    }
+
                     &.active {
                         color: $ias-dark-gray;
                         border-left-color: $ias-border-gray;

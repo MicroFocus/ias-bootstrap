@@ -1,10 +1,24 @@
-<ux-page-header header="UX"
-                logo="/ias-bootstrap/assets/images/IAS_IG_100.png"
-                title="Application Title"
-                [items]="navBarItems"
-                [iconMenus]="iconMenus"
-                [secondaryNavigation]="true"
-                [secondaryNavigationAutoselect]="true"
-                [secondaryNavigationAlignment]="'left'"
->
-</ux-page-header>
+<div class="ias-page-header">
+    <div class="ias-header-bar">
+        <div class="ias-header-bar_logo">
+            <img src="/ias-bootstrap/assets/images/IAS_IG_100.png" width="50" height="50">
+        </div>
+        <div class="ias-header-bar_title">Application Title</div>
+        <div class="ias-header-bar_menu" dropdown>
+            <a [routerLink]="" (click)="false" dropdownToggle>
+                <span>admin</span>
+                <span class="ias-icon ias-icon-down_thick" aria-hidden="true"></span>
+            </a>
+            <ul id="basic-link-dropdown" *dropdownMenu class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="basic-link">
+                <li><a [routerLink]="" class="dropdown-item">About</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="ias-nav-bar">
+        <ul>
+            <li><a [routerLink]="'/components/app-bar/link1'" routerLinkActive="active"><span>Link 1</span></a></li>
+            <li><a [routerLink]="'/components/app-bar/link2'" routerLinkActive="active"><span>Link 2</span></a></li>
+            <li><a [routerLink]="'/components/app-bar/link3'" routerLinkActive="active"><span>Link 3</span></a></li>
+        </ul>
+    </div>
+</div>
