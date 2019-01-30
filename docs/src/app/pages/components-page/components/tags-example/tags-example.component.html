@@ -4,6 +4,12 @@
         Tags are a prevalent component used throughout applications. They can be found tied to search inputs as filters,
         within email messages as recipients, at the bottom of a product page as item identifiers and many other places.
     </p>
+    <!--<app-example [heading]="'Micro Focus Tags Example'" [fileNameToContentsMap]="exampleFiles">-->
+        <!--<app-tags-microfocus></app-tags-microfocus>-->
+        <!--<app-example-file [name]="'tags-microfocus.component.html'" [lang]="'markup'"></app-example-file>-->
+        <!--<app-example-file [name]="'tags-microfocus.component.ts'" [lang]="'typescript'"></app-example-file>-->
+        <!--<app-example-file [name]="'tags-microfocus.component.scss'" [lang]="'scss'"></app-example-file>-->
+    <!--</app-example>-->
 
     <app-example [heading]="'Tags within a combobox field'" [fileNameToContentsMap]="exampleFiles">
         <p class="ias-page-instructions">
@@ -11,7 +17,7 @@
             has an input form field, and allows for a drop-down element to see predetermined options.
         </p>
         <p class="ias-page-instructions">
-            The combobox allows for a number of different properties to be set for customization. Use the "Customize
+            The combobox offers a variety properties to be set for customization. Use the "Customize
             Example" accordion to see the effects of different values.
         </p>
         <app-tags-in-combobox></app-tags-in-combobox>
@@ -21,6 +27,11 @@
     </app-example>
 
     <app-example [heading]="'Tags within a dropdown menu'" [fileNameToContentsMap]="exampleFiles">
+        <p class="ias-page-instructions">
+            Dropdown menus have a similar appearance to a combobox, but their options are not as flexible.
+            Dropdowns only allow for a user to add tags from a predetermined list of values revealed by clicking on
+            the element.
+        </p>
         <app-tags-in-dropdown></app-tags-in-dropdown>
         <app-example-file [name]="'tags-in-dropdown.html'" [lang]="'markup'"></app-example-file>
         <app-example-file [name]="'tags-in-dropdown.ts'" [lang]="'typescript'"></app-example-file>

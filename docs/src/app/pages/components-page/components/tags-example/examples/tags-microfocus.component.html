@@ -1,0 +1,13 @@
+<form class="tag-input-container">
+    <button type="button" class="btn btn-default" (click)="toggleInput()">
+        <span>Tags</span>
+        <span class="ias-icon ias-btn-icon ias-icon-new_thick" aria-hidden="true"></span>
+    </button>
+    <input #tagInput class="form-control" type="text" [placeholder]="placeholder"
+           autocomplete="off" (keyup.enter)="addTag(tagInput.value)">
+</form>
+
+<div class="tag-container">
+    <ol id="microfocus-tag-list" role="combobox" aria-haspopup="listbox">
+    </ol>
+</div>
