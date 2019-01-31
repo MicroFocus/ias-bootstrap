@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { StandardTablesComponent } from './standard-tables';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -9,35 +8,40 @@ import {
     TableModule,
     FixedHeaderTableModule
 } from '@ux-aspects/ux-aspects';
-import { CheckboxModule, ColumnSortingModule, SparkModule, SelectionModule } from '@ux-aspects/ux-aspects';
+import { CheckboxModule, ColumnSortingModule, HoverActionModule, SparkModule, SelectionModule } from '@ux-aspects/ux-aspects';
 import { A11yModule } from '@angular/cdk/a11y';
-import { ColumnResizingTablesComponent } from './column-resizing-tables';
 import { ButtonsModule } from 'ngx-bootstrap/buttons';
+import { ColumnResizingTablesComponent } from './column-resizing-tables';
+import { HoverActionsTables } from './hover-actions-tables';
+import { StandardTablesComponent } from './standard-tables';
 
 @NgModule({
     declarations: [
         StandardTablesComponent,
         ColumnResizingTablesComponent,
+        HoverActionsTables,
     ],
     imports: [
-        CommonModule,
-        GlobalColorServiceModule,
-        BrowserModule,
-        FormsModule,
-        ReactiveFormsModule,
+        A11yModule,
         BrowserAnimationsModule,
+        BrowserModule,
+        ButtonsModule,
         CheckboxModule,
         ColumnSortingModule,
+        CommonModule,
+        FixedHeaderTableModule,
+        FormsModule,
+        GlobalColorServiceModule,
+        HoverActionModule,
+        ReactiveFormsModule,
         SparkModule,
         SelectionModule,
-        A11yModule,
         TableModule,
-        FixedHeaderTableModule,
-        ButtonsModule,
     ],
     exports: [
-        StandardTablesComponent,
         ColumnResizingTablesComponent,
+        HoverActionsTables,
+        StandardTablesComponent,
     ]
 })
 export class TablesExamplesModule {
