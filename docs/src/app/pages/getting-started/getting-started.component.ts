@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Host, HostBinding, OnInit } from '@angular/core';
 import * as stripIndent from 'strip-indent';
 
 @Component({
@@ -7,12 +7,16 @@ import * as stripIndent from 'strip-indent';
     styleUrls: ['./getting-started.component.scss']
 })
 export class GettingStartedComponent implements OnInit {
+    @HostBinding('class.ias-content') someClass: Host = true;
+
     codeBlock_installIasBootstrap = '$ npm install @microfocus/ias-bootstrap';
     codeBlock_createAngularProject = stripIndent(`
         $ ng new MyApp
         $ cd MyApp
     `);
-    codeBlock_installDeps = `$ npm install @ux-aspects/ux-aspects @microfocus/ias-bootstrap;`;
+    codeBlock_installDeps = stripIndent(`
+        $ npm install @microfocus/ias-bootstrap @ux-aspects/ux-aspects @angular/cdk @angular/upgrade rxjs-compat
+    `);
     codeBlock_addStyles = stripIndent(`
         "styles": [
             "node_modules/bootstrap/dist/css/bootstrap.css",

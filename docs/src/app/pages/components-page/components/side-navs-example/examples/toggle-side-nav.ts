@@ -30,14 +30,5 @@ export class ToggleSideNavComponent {
         },
     ];
 
-    iconMenus: PageHeaderIconMenu[] = [
-        { icon: 'hpe-help-circle hpe-lg', label: 'Help', dropdown: [{ title: 'About This Application...' }] }
-    ];
-
     active = this.navigation[0];
-    sideMenuOpen = true;
-
-    toggleSideMenu(): void {
-        this.sideMenuOpen = !this.sideMenuOpen;
-    }
 }

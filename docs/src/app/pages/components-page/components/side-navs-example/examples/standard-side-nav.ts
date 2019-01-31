@@ -29,8 +29,4 @@ export class StandardSideNavComponent {
             routerLink: ['/components/side-navs', {outlets: {'standard-outlet': ['standard-favorites']}}]
         },
     ];
-
-    iconMenus: PageHeaderIconMenu[] = [
-        { icon: 'hpe-help-circle hpe-lg', label: 'Help', dropdown: [{ title: 'About This Application...' }] }
-    ];
 }

@@ -15,6 +15,9 @@ export class MenuExampleComponent implements OnInit {
         'split-button-menus.html': require('!raw-loader!./examples/split-button-menus.html'),
         'split-button-menus.ts': require('!raw-loader!./examples/split-button-menus.ts'),
         'split-button-menus.scss': require('!raw-loader!./examples/split-button-menus.scss'),
+        'complex-menus.html': require('!raw-loader!./examples/complex-menus.html'),
+        'complex-menus.ts': require('!raw-loader!./examples/complex-menus.ts'),
+        'complex-menus.scss': require('!raw-loader!./examples/complex-menus.scss'),
     };
 
     constructor() {

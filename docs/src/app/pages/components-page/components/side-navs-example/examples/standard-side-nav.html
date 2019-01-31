@@ -1,12 +1,16 @@
 <div class="ias-page">
-    <ux-page-header header="UX"
-                    logoBackground="Black"
-                    logoForeground="White"
-                    title="Application Title"
-                    [iconMenus]="iconMenus"
-    >
-    </ux-page-header>
-    <div class="content-with-left-nav">
+    <div class="ias-page-header">
+        <div class="ias-header-bar">
+            <div class="ias-header-bar_logo">
+                <img src="/ias-bootstrap/assets/images/IAS_AM_100.png" width="50" height="50">
+            </div>
+            <div class="ias-header-bar_title">Application Title</div>
+            <div class="ias-header-bar_menu" dropdown>
+                <span>admin</span>
+            </div>
+        </div>
+    </div>
+    <div class="ias-content-with-nav">
         <ux-navigation [items]="navigation" [tree]="false">
         </ux-navigation>
         <div>
