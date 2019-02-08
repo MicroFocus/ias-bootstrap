@@ -2,14 +2,3 @@
     display: block;
     height: 600px;
 }
-
-$grid-tile-width: 160px;
-$grid-tile-height: 190px;
-
-// Notice the CSS grid is controlling the height and width of the tiles using column and row definitions
-.app-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, $grid-tile-width);
-    grid-auto-rows: $grid-tile-height;
-    grid-gap: 8px;
-}

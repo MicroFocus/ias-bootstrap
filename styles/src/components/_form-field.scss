@@ -1,3 +1,12 @@
+label {
+    color: $ias-medium-gray;
+    font-size: 13px;
+    line-height: 22px;
+    vertical-align: middle;
+    padding-right: 5px;
+    user-select: none;
+}
+
 .form-control {
     border-radius: 3px;
     border-color: $ias-border-gray;
