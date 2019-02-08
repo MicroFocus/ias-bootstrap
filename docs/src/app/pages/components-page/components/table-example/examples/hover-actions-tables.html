@@ -1,0 +1,49 @@
+<table class="table">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Author</th>
+        <th>Date</th>
+        <th>Work Completed</th>
+        <th></th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr class="hover-action-container" *ngFor="let document of documents" uxHoverActionContainer>
+        <td class="text-black">{{ document.name }}</td>
+        <td>{{ document.author }}</td>
+        <td>{{ document.date.toLocaleDateString() }}</td>
+        <td>
+            <ux-spark theme=""
+                      [value]="document.complete"
+                      [inlineLabel]="getSparkLabel(document.complete)"
+                      barHeight="3">
+            </ux-spark>
+        </td>
+        <td>
+            <button type="button"
+                    class="hover-action-btn"
+                    aria-label="Edit"
+                    [title]="'Edit'"
+                    uxHoverAction>
+                <i class="ias-icon ias-icon-edit_thick hover-action-icon"></i>
+            </button>
+            <button type="button"
+                    class="hover-action-btn"
+                    aria-label="Share"
+                    [title]="'Share'"
+                    uxHoverAction>
+                <i class="ias-icon ias-icon-share hover-action-icon"></i>
+            </button>
+            <button type="button"
+                    class="hover-action-btn"
+                    aria-label="Delete"
+                    [title]="'Delete'"
+                    uxHoverAction>
+                <i class="ias-icon ias-icon-delete_thick hover-action-icon"></i>
+            </button>
+        </td>
+    </tr>
+    </tbody>
+</table>
