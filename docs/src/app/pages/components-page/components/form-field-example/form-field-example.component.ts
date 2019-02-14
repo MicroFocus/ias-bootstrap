@@ -21,6 +21,12 @@ export class FormFieldExampleComponent implements OnInit {
         'select-fields.html': require('!raw-loader!./examples/select-fields.html'),
         'select-fields.ts': require('!raw-loader!./examples/select-fields.ts'),
         'select-fields.scss': require('!raw-loader!./examples/select-fields.scss'),
+        'checkboxes.html': require('!raw-loader!./examples/checkboxes.html'),
+        'checkboxes.ts': require('!raw-loader!./examples/checkboxes.ts'),
+        'checkboxes.scss': require('!raw-loader!./examples/checkboxes.scss'),
+        'radio-buttons.html': require('!raw-loader!./examples/radio-buttons.html'),
+        'radio-buttons.ts': require('!raw-loader!./examples/radio-buttons.ts'),
+        'radio-buttons.scss': require('!raw-loader!./examples/radio-buttons.scss'),
     };
 
     constructor() {

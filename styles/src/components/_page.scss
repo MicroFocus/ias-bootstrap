@@ -44,6 +44,8 @@ $nav-bar-height: 38px;
 }
 
 .ias-page-header {
+    min-width: 0; // This fixes problems with text truncation.  See: https://css-tricks.com/flexbox-truncated-text/
+
     > .ias-header-bar {
         background-color: $microfocus-primary;
         color: white;
@@ -58,6 +60,9 @@ $nav-bar-height: 38px;
             flex-grow: 1;
             font-size: 20px;
             margin-left: 15px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
         > .ias-header-bar_menu {

@@ -1,3 +1,8 @@
+.ias-tile-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .ias-tile {
     align-items: center;
     background-color: $ias-panel-gray;
@@ -30,7 +35,7 @@
             margin-bottom: 5px;
         }
 
-        &:last-of-type {
+        &+ div {
             font-size: 12px;
             line-height: 15px;
             color: #abb5b7;

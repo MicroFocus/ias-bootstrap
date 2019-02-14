@@ -6,7 +6,7 @@ modal-container.modal.fade {
     border-radius: 3px;
     box-shadow: none;
 
-    > .modal-header {
+    .modal-header {
         display: flex;
         align-items: flex-end;
         color: $ias-icon-gray;
@@ -18,7 +18,7 @@ modal-container.modal.fade {
         }
     }
 
-    > .modal-footer {
+    .modal-footer {
         border-top: 0 none;
     }
 }
