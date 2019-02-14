@@ -2,10 +2,8 @@
     <h2>Tables</h2>
     <p class="ias-page-instructions">
         Tables are lists in which the individual items have common elements with each other. The rows of a table
-        represent
-        each item of the list and its different elements. Item elements are divided into columns with descriptive
-        headings
-        that describe each column of information.
+        represent each item of the list and its different elements. Item elements are divided into columns with
+        descriptive headings that describe each column of information.
     </p>
 
     <app-example [heading]="'Standard Tables'" [fileNameToContentsMap]="exampleFiles">
@@ -15,10 +13,18 @@
         <app-example-file [name]="'standard-tables.scss'" [lang]="'scss'"></app-example-file>
     </app-example>
 
+    <app-example [heading]="'Hover Actions Tables'" [fileNameToContentsMap]="exampleFiles">
+        <app-hover-actions-tables></app-hover-actions-tables>
+        <app-example-file [name]="'hover-actions-tables.html'" [lang]="'markup'"></app-example-file>
+        <app-example-file [name]="'hover-actions-tables.ts'" [lang]="'typescript'"></app-example-file>
+        <app-example-file [name]="'hover-actions-tables.scss'" [lang]="'scss'"></app-example-file>
+    </app-example>
+
     <app-example [heading]="'Column Resizing Tables'" [fileNameToContentsMap]="exampleFiles">
         <app-column-resizing-tables></app-column-resizing-tables>
         <app-example-file [name]="'column-resizing-tables.html'" [lang]="'markup'"></app-example-file>
         <app-example-file [name]="'column-resizing-tables.ts'" [lang]="'typescript'"></app-example-file>
         <app-example-file [name]="'column-resizing-tables.scss'" [lang]="'scss'"></app-example-file>
     </app-example>
+
 </div>

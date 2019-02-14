@@ -1,0 +1,18 @@
+.hover-action-container {
+    outline: none;
+    &:active, &:focus, &:hover,
+    &.hover-action-container-active {
+        background-color: #f5f5f5;
+        .hover-action-btn {
+            color: #808080;
+        }
+    }
+}
+
+.hover-action-container .hover-action-btn {
+    margin-right: 10px;
+    .ias-icon, .hover-action-btn {
+        font-size: 1.3em;
+        vertical-align: middle;
+    }
+}

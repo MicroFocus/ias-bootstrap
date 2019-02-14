@@ -1,0 +1,42 @@
+.dropdown-menu {
+  background-color: $ias-dark-gray;
+  border: none;
+  box-shadow: none;
+  border-radius: 3px;
+  color: $ias-light-gray;
+  padding: 5px 0;
+  margin: 2px 0 0;
+
+    .divider {
+    background-color: $ias-medium-gray;
+  }
+  
+  h4 {
+    color: $ias-gray;
+    margin: 10px 15px;
+  }
+
+  li > a:hover {
+    background-color: $ias-darker-gray;
+    color: $ias-white;
+  }
+  
+  a.dropdown-menu-item {
+    align-items: center;
+    
+    .dropdown-menu-hint {
+      color: $ias-gray;
+    }
+
+   .ias-icon {
+      vertical-align: middle;
+    }
+
+  }
+}
+
+.dropdown-icon-inline {
+  padding-left: 8px;
+  padding-top: 2px;
+}
+

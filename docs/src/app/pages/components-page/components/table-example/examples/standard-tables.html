@@ -1,27 +1,27 @@
 <div role="toolbar" class="ux-toolbar">
     <div class="ux-toolbar-left">
-        <button type="button" class="btn btn-link btn-icon button-secondary" aria-label="Edit" title="Edit">
-            <span class="hpe-icon hpe-edit"></span>
+        <button type="button" class="btn btn-link ias-btn-icon btn-default" aria-label="Edit" title="Edit">
+            <span class="ias-icon ias-icon-edit_thick"></span>
         </button>
-        <button type="button" class="btn btn-link btn-icon button-secondary" aria-label="Share" title="Share">
-            <span class="hpe-icon hpe-share"></span>
+        <button type="button" class="btn btn-link ias-btn-icon btn-default" aria-label="Share" title="Share">
+            <span class="ias-icon ias-icon-share"></span>
         </button>
-        <button type="button" class="btn btn-link btn-icon button-secondary" aria-label="Delete" title="Delete">
-            <span class="hpe-icon hpe-trash"></span>
+        <button type="button" class="btn btn-link ias-btn-icon btn-default" aria-label="Delete" title="Delete">
+            <span class="ias-icon ias-icon-delete_thick"></span>
         </button>
-        <button type="button" class="btn btn-link btn-icon button-secondary" aria-label="Flag" title="Flag">
-            <span class="hpe-icon hpe-flag"></span>
+        <button type="button" class="btn btn-link ias-btn-icon btn-default" aria-label="Flag" title="Flag">
+            <span class="ias-icon ias-icon-bookmark_thick"></span>
         </button>
     </div>
     <div class="ux-toolbar-right">
-        <button type="button" class="btn btn-link btn-icon button-secondary"  aria-label="Configuration" title="Configuration">
-            <span class="hpe-icon hpe-configuration"></span>
+        <button type="button" class="btn btn-link ias-btn-icon btn-default"  aria-label="Configuration" title="Configuration">
+            <span class="ias-icon ias-icon-configure_thick"></span>
         </button>
     </div>
 </div>
 <table class="table table-hover">
     <thead>
-    <tr uxColumnSorting>
+    <tr uxColumnSorting [singleSort]="false">
         <th class="checkbox-column">
             <ux-checkbox
                 aria-label="Toggle selection of all rows"

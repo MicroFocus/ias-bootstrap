@@ -13,10 +13,9 @@ h1, h2, h3, h4, h5 {
     }
 }
 
-h1, h2 {color: $ias-darker-gray;}
-h3     {color: $ias-dark-gray;}
-h4, h5 {color: $ias-dim-gray;}
-h4     {text-transform: uppercase;}
+h1, h2     {color: $ias-darker-gray;}
+h3, h4, h5 {color: $ias-dark-gray;}
+h4         {text-transform: uppercase;}
 
 h1 {
     font-size: 2rem;
@@ -34,13 +33,11 @@ h3 {
 }
 
 h4 {
-    color: $ias-dim-gray;
-    font-size: 1rem;
+    font-size: .95rem;
     margin: 15px 0 5px;
 }
 
 h5 {
-    color: $ias-icon-gray;
-    font-size: 1rem;
+    font-size: .95rem;
     margin: 5px 0 5px;
 }

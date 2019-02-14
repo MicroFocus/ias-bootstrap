@@ -8,7 +8,44 @@
     }
 }
 
-.checkbox-column {
-    width: 48px;
-    text-align: center;
+table, .table, .table-hover, .ux-fixed-header-table {
+    thead > tr > th {
+        .column-sorting-header,
+        .ux-column-sorting,
+        ux-column-sorting {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+
+            > i.ux-column-sorting-icon {
+                padding: 0 5px;
+            }
+
+            > p.ux-column-sorting-number {
+                font-size: 12px;
+                align-self: inherit;
+            }
+        }
+    }
+
+    tbody {
+        > tr {
+            > td {
+                &.ux-selection-selected,
+                &.ux-selection-selected.ux-selection-focused {
+                    background-color: #f5f5f5;
+                    outline-color: #01a9e7;
+
+                    &:hover, &:focus {
+                        background-color: #e5e5e5;
+                    }
+                }
+            }
+        }
+
+        .checkbox-column {
+            width: 48px;
+            text-align: center;
+        }
+    }
 }

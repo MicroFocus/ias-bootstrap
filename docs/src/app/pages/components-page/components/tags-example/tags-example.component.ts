@@ -15,6 +15,9 @@ export class TagsExampleComponent implements OnInit {
         'tags-in-dropdown.html': require('!raw-loader!./examples/tags-in-dropdown.html'),
         'tags-in-dropdown.ts': require('!raw-loader!./examples/tags-in-dropdown.ts'),
         'tags-in-dropdown.scss': require('!raw-loader!./examples/tags-in-dropdown.scss'),
+        'tags-microfocus.component.html': require('!raw-loader!./examples/tags-microfocus.component.html'),
+        'tags-microfocus.component.ts': require('!raw-loader!./examples/tags-microfocus.component.ts'),
+        'tags-microfocus.component.scss': require('!raw-loader!./examples/tags-microfocus.component.scss'),
     };
 
     constructor() {

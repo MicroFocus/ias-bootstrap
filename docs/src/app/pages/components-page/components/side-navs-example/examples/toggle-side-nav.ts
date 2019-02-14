@@ -13,7 +13,7 @@ export class ToggleSideNavComponent {
             routerLink: ['/components/side-navs', {outlets: {'toggleable-outlet': ['toggleable-dashboard']}}],
         },
         {
-            title: 'Products', icon: 'hpe-service-business',
+            title: 'Products, with a long title causing the text to wrap', icon: 'hpe-service-business',
             routerLink: ['/components/side-navs', {outlets: {'toggleable-outlet': ['toggleable-products']}}],
         },
         {
@@ -30,14 +30,5 @@ export class ToggleSideNavComponent {
         },
     ];
 
-    iconMenus: PageHeaderIconMenu[] = [
-        { icon: 'hpe-help-circle hpe-lg', label: 'Help', dropdown: [{ title: 'About This Application...' }] }
-    ];
-
     active = this.navigation[0];
-    sideMenuOpen = true;
-
-    toggleSideMenu(): void {
-        this.sideMenuOpen = !this.sideMenuOpen;
-    }
 }

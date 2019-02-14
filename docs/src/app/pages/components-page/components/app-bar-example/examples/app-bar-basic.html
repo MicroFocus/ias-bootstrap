@@ -1,6 +1,17 @@
-<ux-page-header header="UX"
-                logo="/ias-bootstrap/assets/images/IAS_AM_100.png"
-                title="Application Title"
-                [iconMenus]="iconMenus"
->
-</ux-page-header>
+<div class="ias-page-header">
+    <div class="ias-header-bar">
+        <div class="ias-header-bar_logo">
+            <img src="/ias-bootstrap/assets/images/IAS_AM_100.png" width="50" height="50">
+        </div>
+        <div class="ias-header-bar_title">Application Title</div>
+        <div class="ias-header-bar_menu" dropdown>
+            <a [routerLink]="" (click)="false" dropdownToggle>
+                <span>admin</span>
+                <span class="ias-icon ias-icon-down_thick" aria-hidden="true"></span>
+            </a>
+            <ul id="basic-link-dropdown" *dropdownMenu class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="basic-link">
+                <li><a [routerLink]="" class="dropdown-item">Help</a></li>
+            </ul>
+        </div>
+    </div>
+</div>

@@ -5,13 +5,13 @@ import {AccordionModule, CheckboxModule, NumberPickerModule, RadioButtonModule, 
     TypeaheadModule } from '@ux-aspects/ux-aspects';
 import { TagsInComboboxComponent } from './tags-in-combobox';
 import { TagsInDropdownComponent } from './tags-in-dropdown';
-// import { TagsMicrofocusComponent } from './tags-microfocus.component';
+import { TagsMicrofocusComponent } from './tags-microfocus.component';
 
 @NgModule({
     declarations: [
         TagsInComboboxComponent,
         TagsInDropdownComponent,
-        // TagsMicrofocusComponent,
+        TagsMicrofocusComponent,
     ],
     imports: [
         AccordionModule,
@@ -27,7 +27,7 @@ import { TagsInDropdownComponent } from './tags-in-dropdown';
     exports: [
         TagsInComboboxComponent,
         TagsInDropdownComponent,
-        // TagsMicrofocusComponent
+        TagsMicrofocusComponent
     ]
 })
 export class TagsExamplesModule {

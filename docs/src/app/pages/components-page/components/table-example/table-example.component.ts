@@ -15,6 +15,9 @@ export class TableExampleComponent implements OnInit {
         'column-resizing-tables.html': require('!raw-loader!./examples/column-resizing-tables.html'),
         'column-resizing-tables.ts': require('!raw-loader!./examples/column-resizing-tables.ts'),
         'column-resizing-tables.scss': require('!raw-loader!./examples/column-resizing-tables.scss'),
+        'hover-actions-tables.html': require('!raw-loader!./examples/hover-actions-tables.html'),
+        'hover-actions-tables.ts': require('!raw-loader!./examples/hover-actions-tables.ts'),
+        'hover-actions-tables.scss': require('!raw-loader!./examples/hover-actions-tables.scss'),
     };
 
     constructor() {

@@ -8,14 +8,25 @@ import { NavigationItem, PageHeaderIconMenu } from '@ux-aspects/ux-aspects';
 })
 export class StandardSideNavComponent {
     navigation: NavigationItem[] = [
-        {title: 'Dashboard', routerLink: ['/components/side-navs', {outlets: {'standard-outlet': ['standard-dashboard']}}]},
-        {title: 'Products',  routerLink: ['/components/side-navs', {outlets: {'standard-outlet': ['standard-products']}}]},
-        {title: 'Reports',   routerLink: ['/components/side-navs', {outlets: {'standard-outlet': ['standard-reports']}}]},
-        {title: 'Alerts',    routerLink: ['/components/side-navs', {outlets: {'standard-outlet': ['standard-alerts']}}]},
-        {title: 'Favorites', routerLink: ['/components/side-navs', {outlets: {'standard-outlet': ['standard-favorites']}}]},
-    ];
-
-    iconMenus: PageHeaderIconMenu[] = [
-        { icon: 'hpe-help-circle hpe-lg', label: 'Help', dropdown: [{ title: 'About This Application...' }] }
+        {
+            title: 'Dashboard',
+            routerLink: ['/components/side-navs', {outlets: {'standard-outlet': ['standard-dashboard']}}]
+        },
+        {
+            title: 'Products, with a long title causing the text to wrap',
+            routerLink: ['/components/side-navs', {outlets: {'standard-outlet': ['standard-products']}}]
+        },
+        {
+            title: 'Reports',
+            routerLink: ['/components/side-navs', {outlets: {'standard-outlet': ['standard-reports']}}]
+        },
+        {
+            title: 'Alerts',
+            routerLink: ['/components/side-navs', {outlets: {'standard-outlet': ['standard-alerts']}}]
+        },
+        {
+            title: 'Favorites',
+            routerLink: ['/components/side-navs', {outlets: {'standard-outlet': ['standard-favorites']}}]
+        },
     ];
 }

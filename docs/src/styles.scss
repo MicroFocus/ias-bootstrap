@@ -7,10 +7,13 @@ html.ias-app {
 
 html:not(.ias-app) {
     // When we're not showing Lynn's changes, at least keep the layout of the page header the same, so the change isn't so jarring
+
+    // Make a few tweaks to the colors so they look more ux-aspects-ish
+    @import "../../styles/src/ias-variables";
     $microfocus-primary: #0c4751;
-    $ias-panel-gray: transparent;
+    $ias-border-gray: transparent;
+    $ias-blue-4: #00A5A1;
     @import "../../styles/src/components/page";
-    @import "../../styles/src/components/page-header";
 }
 
 // Import styles for Prism (a code block styling library)

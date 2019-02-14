@@ -59,6 +59,7 @@ import { StandardLayoutComponent } from './pages/tips-page/components/standard-l
 import { LoginPageComponent } from './pages/tips-page/components/login-page/login-page.component';
 import { LoginPageExamplesModule } from './pages/tips-page/components/login-page/examples/_examples.module';
 import { StandardLayoutsModule } from './pages/tips-page/components/standard-layout/examples/_examples.module';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 
 @NgModule({
     declarations: [
@@ -101,6 +102,7 @@ import { StandardLayoutsModule } from './pages/tips-page/components/standard-lay
         SidePanelModule,
         NavigationModule,
         // DateTimePickerModule,
+        BsDropdownModule.forRoot(),
         ModalModule.forRoot(),
         TabsetModule,
 

@@ -8,6 +8,10 @@
             padding: 8px 10px;
             line-height: 1.2em;
 
+            // Keeps things looking right when icons are present
+            display: flex;
+            align-items: baseline;
+
             &:hover {
                 background-color: $ias-panel-gray;
                 color: $ias-dark-gray;
