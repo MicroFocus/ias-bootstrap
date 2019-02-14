@@ -9,6 +9,8 @@ import { SelectFieldsComponent } from './select-fields';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CheckboxesComponent } from './checkboxes';
+import { RadioButtonsComponent } from './radio-buttons';
 
 @NgModule({
     declarations: [
@@ -16,6 +18,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
         HorizontalFormComponent,
         SearchFieldComponent,
         SelectFieldsComponent,
+        CheckboxesComponent,
+        RadioButtonsComponent,
     ],
     imports: [
         CommonModule,
@@ -35,6 +39,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
         HorizontalFormComponent,
         SearchFieldComponent,
         SelectFieldsComponent,
+        CheckboxesComponent,
+        RadioButtonsComponent,
     ]
 })
 export class FormFieldsExamplesModule {

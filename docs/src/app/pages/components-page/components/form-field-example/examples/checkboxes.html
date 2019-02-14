@@ -1,0 +1,22 @@
+<div class="checkbox-container">
+    <ux-checkbox [(value)]="checkModel.option1" [disabled]="checkboxesDisabled">
+        Option1
+    </ux-checkbox>
+    <ux-checkbox [(value)]="checkModel.option2"  [disabled]="checkboxesDisabled">
+        Option2
+    </ux-checkbox>
+    <ux-checkbox [(value)]="checkModel.option3"  [disabled]="checkboxesDisabled">
+        Option3
+    </ux-checkbox>
+    <ux-checkbox [(value)]="checkModel.option4"  [disabled]="checkboxesDisabled">
+        Onsectetur adipiscing elit.
+        Inte adipiscing elit onsectetur adipiscing elit. Inte adipiscing elit onsectetur adipiscing
+        elit. Inte adipiscing elit onsectetur adipiscing elit. Inte adipiscing elit onsectetur
+        adipiscing elit. Inte adipiscing elit onsectetur adipiscing elit.
+    </ux-checkbox>
+</div>
+<div class="btn-container">
+    <button class="btn btn-default" (click)="checkboxesDisabled = !checkboxesDisabled">
+        {{ checkboxesDisabled ? 'Enable' : 'Disable' }}
+    </button>
+</div>
