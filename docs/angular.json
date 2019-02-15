@@ -15,8 +15,12 @@
             },
             "architect": {
                 "build": {
-                    "builder": "@angular-devkit/build-angular:browser",
+                    "builder": "@angular-builders/custom-webpack:browser",
                     "options": {
+                        "customWebpackConfig": {
+                            "path": "./extra-webpack.config.js",
+                            "mergeStrategies": { "externals": "replace" }
+                        },
                         "outputPath": "dist/docs",
                         "index": "src/index.html",
                         "main": "src/main.ts",
@@ -25,14 +29,22 @@
                         "assets": [
                             "src/favicon.ico",
                             "src/404.html",
-                            "src/assets"
+                            "src/assets",
+                            { "glob": "**/*", "input": "node_modules/@microfocus/ias-icons/dist/fonts", "output": "/assets/ias-icons/fonts" },
+                            { "glob": "**/*", "input": "node_modules/bootstrap/dist/fonts", "output": "/assets/bootstrap/fonts" },
+                            { "glob": "**/*", "input": "node_modules/@ux-aspects/ux-aspects/img", "output": "/assets/ux-aspects/img" },
+                            { "glob": "**/*", "input": "node_modules/@ux-aspects/ux-aspects/fonts", "output": "/assets/ux-aspects/fonts" }
                         ],
                         "styles": [
-                            "node_modules/bootstrap/dist/css/bootstrap.css",
-                            "node_modules/@ux-aspects/ux-aspects/styles/ux-aspects.css",
-                            "node_modules/@microfocus/ias-icons/dist/ias-icons.css",
+                            "src/scss/third-party-wrappers/bootstrap.scss",
+                            "src/scss/third-party-wrappers/ux-aspects.scss",
+                            "src/scss/third-party-wrappers/ias-icons.scss",
+                            "src/scss/third-party-wrappers/ias-bootstrap.scss",
+                            "node_modules/prismjs/plugins/toolbar/prism-toolbar.css",
+                            "node_modules/prismjs/themes/prism.css",
                             "src/styles.scss"
                         ],
+                        "extractCss": true,
                         "scripts": []
                     },
                     "configurations": {
@@ -95,9 +107,10 @@
                     }
                 },
                 "serve": {
-                    "builder": "@angular-devkit/build-angular:dev-server",
+                    "builder": "@angular-builders/dev-server:generic",
                     "options": {
-                        "browserTarget": "docs:build"
+                        "browserTarget": "docs:build",
+                        "port": 4444
                     },
                     "configurations": {
                         "production": {

@@ -1,0 +1,15 @@
+// This provides a sass wrapper around the file: node_modules/@microfocus/ias-bootstrap/dist/ias-bootstrap.css
+//
+// ias-bootstrap doesn't provide any assets, so no file replacement is needed in: extra-webpack.config.js, nor asset
+// copying in the "assets" section in angular.json.
+
+// Use this line when you want all of ias-bootstrap:
+@import "../../../../styles/src/ias-bootstrap";
+
+// Comment out the line above and uncomment these lines if you don't want ias-bootstrap, but do want the same structured
+// header:
+//@import "../../../../styles/src/ias-variables";
+//$microfocus-primary: #0c4751;
+//$ias-border-gray: transparent;
+//$ias-blue-4: #00A5A1;
+//@import "../../../../styles/src/components/page";

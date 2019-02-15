@@ -33,6 +33,9 @@
             font-size: 16px;
             line-height: 18px;
             margin-bottom: 5px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 100%;
         }
 
         &+ div {

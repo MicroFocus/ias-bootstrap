@@ -1,25 +1,3 @@
 /* You can add global styles to this file, and also import other style files */
 
-html.ias-app {
-    // Pull in Lynn's changes to ux-aspects:
-    @import "../../styles/src/ias-bootstrap";
-}
-
-html:not(.ias-app) {
-    // When we're not showing Lynn's changes, at least keep the layout of the page header the same, so the change isn't so jarring
-
-    // Make a few tweaks to the colors so they look more ux-aspects-ish
-    @import "../../styles/src/ias-variables";
-    $microfocus-primary: #0c4751;
-    $ias-border-gray: transparent;
-    $ias-blue-4: #00A5A1;
-    @import "../../styles/src/components/page";
-}
-
-// Import styles for Prism (a code block styling library)
-@import "~prismjs/plugins/toolbar/prism-toolbar.css";
-//@import "~prismjs/themes/prism-okaidia";
-@import "~prismjs/themes/prism.css";
-
 @import "./scss/app-tweaks";
-

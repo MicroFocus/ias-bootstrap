@@ -18,8 +18,7 @@
     ],
     "license": "MIT",
     "bugs": "https://github.com/microfocus/ias-bootstrap/issues",
-    "dependencies": {
-    },
+    "dependencies": {},
     "devDependencies": {
         "copyfiles": "^2.1.0",
         "node-sass": "^4.11.0"
