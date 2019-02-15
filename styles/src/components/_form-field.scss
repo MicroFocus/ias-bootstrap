@@ -53,6 +53,8 @@ ux-checkbox > .ux-checkbox { // .ux-checkbox is the label element
 
     &:not(.ux-checkbox-disabled) {
         &.ux-checkbox-checked > .ux-checkbox-container {
+            background-color: transparent;
+            border-color: $ias-border-gray;
             color: $ias-blue-3;
         }
 
@@ -96,6 +98,8 @@ ux-radio-button > .ux-radio-button {
 
     &:not(.ux-radio-button-disabled) {
         &.ux-radio-button-checked > .ux-radio-button-container {
+            background-color: transparent;
+            border-color: $ias-border-gray;
             color: $ias-blue-3;
         }
 

@@ -9,7 +9,7 @@ ux-date-time-picker {
             border: 1px solid transparent;
             border-radius: 2px;
 
-            &:focus {
+            &:focus, &.header-title:focus {
                 outline: none;
             }
 
@@ -19,7 +19,7 @@ ux-date-time-picker {
                 color: $ias-blue-2;
             }
 
-            &.header-title:hover {
+            &.header-title:hover, &.header-title.active:hover {
                 background-color: transparent;
                 color: $ias-blue-2;
             }
@@ -33,49 +33,71 @@ ux-date-time-picker {
             background-color: $ias-panel-gray;
         }
 
-        .date-button {
-            border: 1px solid transparent;
-            border-radius: 2px;
+        .date-cell {
+            padding: 5px;
 
-            &:hover {
-                background-color: transparent;
-                border-color: $ias-blue-3;
-                color: $ias-blue-3;
-            }
+            .date-button {
+                border: 1px solid transparent;
+                border-radius: 2px;
+                height: 30px;
+                width: 30px;
 
-            &.current {
-                background-color: $ias-light-gray;
-            }
+                &:hover {
+                    background-color: transparent;
+                    border-color: $ias-blue-3;
+                    color: $ias-blue-3;
+                }
 
-            &.active {
-                background-color: $ias-border-gray;
-                color: $ias-dark-gray;
-                font-weight: 700;
-            }
+                &.current {
+                    background-color: $ias-light-gray;
 
-            &:focus {
-                color: $ias-blue-3;
-                border-color: $ias-blue-3;
-                outline: none;
+                    &:hover {
+                        background-color: $ias-light-gray;
+                        color: $ias-blue-3;
+                    }
+                }
+
+                &.active, &.current.active {
+                    background-color: $ias-border-gray;
+                    color: $ias-dark-gray;
+                    font-weight: 700;
+
+                    &:hover {
+                        background-color: $ias-border-gray;
+                        color: $ias-blue-3;
+                    }
+                }
+
+                &:focus {
+                    color: $ias-blue-3;
+                    border-color: $ias-blue-3;
+                    outline: none;
+                }
             }
         }
     }
 
-    ux-date-time-picker-month-view .calendar {
-        .calendar-item {
-            border: 1px solid transparent;
-            border-radius: 2px;
+    ux-date-time-picker-month-view, ux-date-time-picker-year-view {
+        .calendar .calendar-row {
+            .calendar-item {
+                border: 1px solid transparent;
+                border-radius: 2px;
 
-            &:hover {
-                background-color: transparent;
-                border-color: $ias-blue-3;
-                color: $ias-blue-3;
-            }
+                &:hover {
+                    background-color: transparent;
+                    border-color: $ias-blue-3;
+                    color: $ias-blue-3;
+                }
 
-            &.active {
-                background-color: $ias-border-gray;
-                color: $ias-dark-gray;
-                font-weight: 700;
+                &.active {
+                    background-color: $ias-border-gray;
+                    color: $ias-dark-gray;
+                    font-weight: 700;
+                }
+
+                &:focus {
+                    outline: none;
+                }
             }
         }
     }
@@ -112,6 +134,10 @@ ux-date-time-picker {
                 border-color: #ccc; // This color is to match the rest of the box, even though it's not an IAS color
                 box-shadow: none;
                 color: $ias-dark-gray;
+            }
+
+            &:focus {
+                outline: none;
             }
         }
     }
