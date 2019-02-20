@@ -1,6 +1,3 @@
-$check_icon: '\E908';
-$check_line_height: 24px;
-
 label {
     color: $ias-medium-gray;
     font-size: 13px;
@@ -9,7 +6,8 @@ label {
     padding-right: 5px;
     user-select: none;
 
-    &.disabled, > .disabled {
+    &.disabled {
+        cursor: default;
         opacity: $disabled-opacity;
     }
 }
@@ -28,19 +26,18 @@ label {
     opacity: $disabled-opacity;
 }
 
-.disabled-form {
-    label, h1, h2, h3, h4, h5 {
-        opacity: $disabled-opacity;
-    }
-}
-
-// Styling for standard checkboxes, i.e.:
+// Styling for standard checkboxes & radio buttons, i.e.:
 //<label class="ias-checkbox">
 //    <input type="checkbox" checked="checked">
 //    <span class="ias-icon ias-icon-check_thick"></span>
 //    <span>One</span>
 //</label>
-.ias-checkbox {
+//<label class="ias-radio-button">
+//    <input type="radio" name="text-after" checked="checked" [disabled]="radioButtonsDisabled">
+//    <span class="ias-icon ias-icon-check_thick"></span>
+//    <span>One</span>
+//</label>
+.ias-checkbox, .ias-radio-button {
     cursor: pointer;
     display: inline-flex;
     line-height: 24px;
@@ -64,30 +61,35 @@ label {
         }
     }
 
+    > input[type=radio] ~ .ias-icon {
+        // Border for a radio button should be a circle
+        border-radius: 50%;
+    }
+
     &:hover {
-        > input[type=checkbox]:not(:disabled) {
-            &+ .ias-icon {
-                border-color: $ias-blue-4;
+        > input[type=checkbox], > input[type=radio] {
+            &:not(:disabled) {
+                &+ .ias-icon {
+                    border-color: $ias-blue-4;
+                }
             }
         }
     }
 
-    > input[type=checkbox] {
+    > input[type=checkbox], > input[type=radio] {
         position: absolute;
         height: 0;
         width: 0;
 
         &:disabled {
+            cursor: default;
+
             &:checked ~ .ias-icon {
                 color: $ias-medium-gray;
             }
 
-            & ~ .ias-icon {
-                opacity: $disabled-opacity;
-            }
-
-            &~ span:not(.ias-icon) {
-                opacity: $disabled-opacity;
+            & ~ .ias-icon, &~ span:not(.ias-icon) {
+                cursor: default;
             }
         }
 
@@ -109,95 +111,3 @@ label {
     }
 }
 
-// Styling for ux-aspects checkboxes:
-ux-checkbox > .ux-checkbox { // .ux-checkbox is the label element
-    align-items: flex-start;
-    line-height: $check_line_height;
-
-    > .ux-checkbox-container { // .ux-checkbox-container has the border, and wraps the input[@type=checkbox]
-        background-color: transparent;
-        border: 1px solid $ias-medium-gray;
-        border-radius: 3px;
-        color: transparent;
-        font-family: 'ias-icons';
-        font-weight: 700;
-
-        &:before {
-            content: $check_icon;
-        }
-    }
-
-    &.ux-checkbox-disabled {
-        opacity: $disabled-opacity;
-
-        &.ux-checkbox-checked {
-            > .ux-checkbox-container {
-                background-color: transparent;
-                color: $ias-medium-gray;
-            }
-        }
-
-        &:hover > .ux-checkbox-container, > .ux-checkbox-container {
-            border: 1px solid $ias-medium-gray;
-        }
-    }
-
-    &:not(.ux-checkbox-disabled) {
-        &.ux-checkbox-checked > .ux-checkbox-container {
-            background-color: transparent;
-            border-color: $ias-medium-gray;
-            color: $ias-blue-3;
-        }
-
-        &.ux-checkbox-focused > .ux-checkbox-container, &:hover > .ux-checkbox-container, ux-checkbox-container:focus {
-            border: 1px solid $ias-blue-4;
-            outline: none;
-        }
-    }
-}
-
-// The styling is nearly identical to the ux-checkbox
-ux-radio-button > .ux-radio-button {
-    align-items: flex-start;
-    line-height: $check_line_height;
-
-    > .ux-radio-button-container {
-        background-color: transparent;
-        border: 1px solid $ias-medium-gray;
-        color: transparent;
-        font-family: 'ias-icons';
-        font-weight: 700;
-
-        &:before {
-            content: $check_icon;
-        }
-    }
-
-    &.ux-radio-button-disabled {
-        opacity: $disabled-opacity;
-
-        &.ux-radio-button-checked {
-            > .ux-radio-button-container {
-                background-color: transparent;
-                color: $ias-medium-gray;
-            }
-        }
-
-        &:hover > .ux-radio-button-container, > .ux-radio-button-container {
-            border: 1px solid $ias-medium-gray;
-        }
-    }
-
-    &:not(.ux-radio-button-disabled) {
-        &.ux-radio-button-checked > .ux-radio-button-container {
-            background-color: transparent;
-            border-color: $ias-medium-gray;
-            color: $ias-blue-3;
-        }
-
-        &.ux-radio-button-focused > .ux-radio-button-container, &:hover > .ux-radio-button-container, ux-radio-button-container:focus {
-            border: 1px solid $ias-blue-4;
-            outline: none;
-        }
-    }
-}

@@ -1,0 +1,95 @@
+$check_icon: '\E908';
+$check_line_height: 24px;
+
+// Styling for ux-aspects checkboxes:
+ux-checkbox > .ux-checkbox { // .ux-checkbox is the label element
+    align-items: flex-start;
+    line-height: $check_line_height;
+
+    > .ux-checkbox-container { // .ux-checkbox-container has the border, and wraps the input[@type=checkbox]
+        background-color: transparent;
+        border: 1px solid $ias-medium-gray;
+        border-radius: 3px;
+        color: transparent;
+        font-family: 'ias-icons';
+        font-weight: 700;
+
+        &:before {
+            content: $check_icon;
+        }
+    }
+
+    &.ux-checkbox-disabled {
+        opacity: $disabled-opacity;
+
+        &.ux-checkbox-checked {
+            > .ux-checkbox-container {
+                background-color: transparent;
+                color: $ias-medium-gray;
+            }
+        }
+
+        &:hover > .ux-checkbox-container, > .ux-checkbox-container {
+            border: 1px solid $ias-medium-gray;
+        }
+    }
+
+    &:not(.ux-checkbox-disabled) {
+        &.ux-checkbox-checked > .ux-checkbox-container {
+            background-color: transparent;
+            border-color: $ias-medium-gray;
+            color: $ias-blue-3;
+        }
+
+        &.ux-checkbox-focused > .ux-checkbox-container, &:hover > .ux-checkbox-container, ux-checkbox-container:focus {
+            border: 1px solid $ias-blue-4;
+            outline: none;
+        }
+    }
+}
+
+// The styling is nearly identical to the ux-checkbox
+ux-radio-button > .ux-radio-button {
+    align-items: flex-start;
+    line-height: $check_line_height;
+
+    > .ux-radio-button-container {
+        background-color: transparent;
+        border: 1px solid $ias-medium-gray;
+        color: transparent;
+        font-family: 'ias-icons';
+        font-weight: 700;
+
+        &:before {
+            content: $check_icon;
+        }
+    }
+
+    &.ux-radio-button-disabled {
+        opacity: $disabled-opacity;
+
+        &.ux-radio-button-checked {
+            > .ux-radio-button-container {
+                background-color: transparent;
+                color: $ias-medium-gray;
+            }
+        }
+
+        &:hover > .ux-radio-button-container, > .ux-radio-button-container {
+            border: 1px solid $ias-medium-gray;
+        }
+    }
+
+    &:not(.ux-radio-button-disabled) {
+        &.ux-radio-button-checked > .ux-radio-button-container {
+            background-color: transparent;
+            border-color: $ias-medium-gray;
+            color: $ias-blue-3;
+        }
+
+        &.ux-radio-button-focused > .ux-radio-button-container, &:hover > .ux-radio-button-container, ux-radio-button-container:focus {
+            border: 1px solid $ias-blue-4;
+            outline: none;
+        }
+    }
+}

@@ -1,11 +1,15 @@
-<form class="basic-form" [class.disabled-form]="formDisabled" role="form" novalidate>
-    <label for="basic-email">Email</label>
+<form class="basic-form" role="form" novalidate>
+    <label for="basic-email" [class.disabled]="formDisabled">Email</label>
     <input class="form-control" type="email" id="basic-email" placeholder="Enter email" [disabled]="formDisabled">
 
-    <label for="basic-password">Password</label>
+    <label for="basic-password" [class.disabled]="formDisabled">Password</label>
     <input class="form-control" type="password" id="basic-password" placeholder="Enter password" [disabled]="formDisabled">
 
-    <ux-checkbox ng-model="checked" [disabled]="formDisabled">Remember me</ux-checkbox>
+    <label class="ias-checkbox" [class.disabled]="formDisabled">
+        <input type="checkbox" [disabled]="formDisabled">
+        <span class="ias-icon ias-icon-check_thick"></span>
+        <span>Remember me</span>
+    </label>
 
     <button class="btn btn-default" (click)="formDisabled = !formDisabled">
         {{ formDisabled ? 'Enable' : 'Disable' }}

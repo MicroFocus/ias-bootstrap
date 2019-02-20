@@ -1,51 +1,29 @@
-<div role="radiogroup" class="radio-button-container">
-    <ux-radio-button [(value)]="radioButtonValue" [option]="radioOptions.option1" [disabled]="radioButtonsDisabled">
-        Option1
-    </ux-radio-button>
-
-    <ux-radio-button [(value)]="radioButtonValue" [option]="radioOptions.option2" [disabled]="radioButtonsDisabled">
-        Option2
-    </ux-radio-button>
-
-    <ux-radio-button [(value)]="radioButtonValue" [option]="radioOptions.option3" [disabled]="radioButtonsDisabled">
-        Option3
-    </ux-radio-button>
-
-    <ux-radio-button [(value)]="radioButtonValue" [option]="radioOptions.option4" [disabled]="radioButtonsDisabled">
-        Option four onsectetur adipiscing elit. Inte adipiscing elit onsectetur
-        adipiscing elit. Inte adipiscing elit onsectetur
-        adipiscing elit. Inte adipiscing elit onsectetur adipiscing elit.
-        Inte adipiscing elit onsectetur adipiscing elit.
-        Inte adipiscing elit onsectetur adipiscing elit.
-    </ux-radio-button>
-</div>
-
 <div class="standard-radio-buttons">
-    <h4>Text Before</h4>
-    <label class="ias-checkbox">
-        <span [class.disabled]="radioButtonsDisabled">One</span>
-        <input type="radio" [disabled]="radioButtonsDisabled">
+    <h4 [class.disabled]="radioButtonsDisabled">Text Before</h4>
+    <label class="ias-radio-button" [class.disabled]="radioButtonsDisabled">
+        <span>One</span>
+        <input type="radio" name="text-before" [disabled]="radioButtonsDisabled">
         <span class="ias-icon ias-icon-check_thick"></span>
     </label>
-    <label class="ias-checkbox">
-        <span [class.disabled]="radioButtonsDisabled">Two</span>
-        <input type="radio" checked="checked" [disabled]="radioButtonsDisabled">
+    <label class="ias-radio-button" [class.disabled]="radioButtonsDisabled">
+        <span>Two</span>
+        <input type="radio" name="text-before" checked="checked" [disabled]="radioButtonsDisabled">
         <span class="ias-icon ias-icon-check_thick"></span>
     </label>
 
-    <h4>Text After</h4>
-    <label class="ias-checkbox">
-        <input type="radio" checked="checked" [disabled]="radioButtonsDisabled">
+    <h4 [class.disabled]="radioButtonsDisabled">Text After</h4>
+    <label class="ias-radio-button" [class.disabled]="radioButtonsDisabled">
+        <input type="radio" name="text-after" checked="checked" [disabled]="radioButtonsDisabled">
         <span class="ias-icon ias-icon-check_thick"></span>
         <span>One</span>
     </label>
-    <label class="ias-checkbox">
-        <input type="radio" [disabled]="radioButtonsDisabled">
+    <label class="ias-radio-button" [class.disabled]="radioButtonsDisabled">
+        <input type="radio" name="text-after" [disabled]="radioButtonsDisabled">
         <span class="ias-icon ias-icon-check_thick"></span>
         <span>Two</span>
     </label>
-    <label class="ias-checkbox">
-        <input type="radio" [disabled]="radioButtonsDisabled">
+    <label class="ias-radio-button" [class.disabled]="radioButtonsDisabled">
+        <input type="radio" name="text-after" [disabled]="radioButtonsDisabled">
         <span class="ias-icon ias-icon-check_thick"></span>
         <span>Three - Onsectetur adipiscing elit.
         Inte adipiscing elit onsectetur adipiscing elit. Inte adipiscing elit onsectetur adipiscing

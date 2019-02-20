@@ -1,28 +1,28 @@
 <div class="standard-checkboxes">
-    <h4>Text Before</h4>
-    <label class="ias-checkbox">
-        <span [class.disabled]="checkboxesDisabled">One</span>
+    <h4 [class.disabled]="checkboxesDisabled">Text Before</h4>
+    <label class="ias-checkbox" [class.disabled]="checkboxesDisabled">
+        <span>One</span>
         <input type="checkbox" [disabled]="checkboxesDisabled">
         <span class="ias-icon ias-icon-check_thick"></span>
     </label>
-    <label class="ias-checkbox">
-        <span [class.disabled]="checkboxesDisabled">Two</span>
+    <label class="ias-checkbox" [class.disabled]="checkboxesDisabled">
+        <span>Two</span>
         <input type="checkbox" checked="checked" [disabled]="checkboxesDisabled">
         <span class="ias-icon ias-icon-check_thick"></span>
     </label>
 
-    <h4>Text After</h4>
-    <label class="ias-checkbox">
+    <h4 [class.disabled]="checkboxesDisabled">Text After</h4>
+    <label class="ias-checkbox" [class.disabled]="checkboxesDisabled">
         <input type="checkbox" checked="checked" [disabled]="checkboxesDisabled">
         <span class="ias-icon ias-icon-check_thick"></span>
         <span>One</span>
     </label>
-    <label class="ias-checkbox">
+    <label class="ias-checkbox" [class.disabled]="checkboxesDisabled">
         <input type="checkbox" [disabled]="checkboxesDisabled">
         <span class="ias-icon ias-icon-check_thick"></span>
         <span>Two</span>
     </label>
-    <label class="ias-checkbox">
+    <label class="ias-checkbox" [class.disabled]="checkboxesDisabled">
         <input type="checkbox" [disabled]="checkboxesDisabled">
         <span class="ias-icon ias-icon-check_thick"></span>
         <span>Three - Onsectetur adipiscing elit.
