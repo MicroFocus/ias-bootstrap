@@ -1,6 +1,5 @@
 $check_icon: '\E908';
 $check_line_height: 24px;
-$check_opacity: 0.4;
 
 label {
     color: $ias-medium-gray;
@@ -9,6 +8,10 @@ label {
     vertical-align: middle;
     padding-right: 5px;
     user-select: none;
+
+    &.disabled, > .disabled {
+        opacity: $disabled-opacity;
+    }
 }
 
 .form-control {
@@ -19,17 +22,105 @@ label {
         border-color: $ias-blue-4;
     }
 }
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+    background-color: transparent;
+    color: $ias-medium-gray;
+    opacity: $disabled-opacity;
+}
 
+.disabled-form {
+    label, h1, h2, h3, h4, h5 {
+        opacity: $disabled-opacity;
+    }
+}
+
+// Styling for standard checkboxes, i.e.:
+//<label class="ias-checkbox">
+//    <input type="checkbox" checked="checked">
+//    <span class="ias-icon ias-icon-check_thick"></span>
+//    <span>One</span>
+//</label>
+.ias-checkbox {
+    cursor: pointer;
+    display: inline-flex;
+    line-height: 24px;
+    position: relative;
+    user-select: none;
+
+    > .ias-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid $ias-medium-gray;
+        border-radius: 3px;
+        color: transparent;
+        font-size: 16px;
+        height: 24px;
+        width: 24px;
+        flex-shrink: 0;
+
+        &:before {
+            font-weight: bold;
+        }
+    }
+
+    &:hover {
+        > input[type=checkbox]:not(:disabled) {
+            &+ .ias-icon {
+                border-color: $ias-blue-4;
+            }
+        }
+    }
+
+    > input[type=checkbox] {
+        position: absolute;
+        height: 0;
+        width: 0;
+
+        &:disabled {
+            &:checked ~ .ias-icon {
+                color: $ias-medium-gray;
+            }
+
+            & ~ .ias-icon {
+                opacity: $disabled-opacity;
+            }
+
+            &~ span:not(.ias-icon) {
+                opacity: $disabled-opacity;
+            }
+        }
+
+        &:not(:disabled) {
+            &:checked ~ .ias-icon {
+                color: $ias-blue-3;
+            }
+        }
+    }
+
+    > span:not(.ias-icon) {
+        &:first-child {
+            margin-right: 7px;
+        }
+
+        &:last-child {
+            margin-left: 7px;
+        }
+    }
+}
+
+// Styling for ux-aspects checkboxes:
 ux-checkbox > .ux-checkbox { // .ux-checkbox is the label element
     align-items: flex-start;
     line-height: $check_line_height;
 
     > .ux-checkbox-container { // .ux-checkbox-container has the border, and wraps the input[@type=checkbox]
         background-color: transparent;
-        border: 1px solid $ias-border-gray;
+        border: 1px solid $ias-medium-gray;
         border-radius: 3px;
         color: transparent;
         font-family: 'ias-icons';
+        font-weight: 700;
 
         &:before {
             content: $check_icon;
@@ -37,24 +128,24 @@ ux-checkbox > .ux-checkbox { // .ux-checkbox is the label element
     }
 
     &.ux-checkbox-disabled {
-        opacity: $check_opacity;
+        opacity: $disabled-opacity;
 
         &.ux-checkbox-checked {
             > .ux-checkbox-container {
                 background-color: transparent;
-                color: $ias-border-gray;
+                color: $ias-medium-gray;
             }
         }
 
-        > .ux-checkbox-container {
-            border: 1px solid $ias-border-gray;
+        &:hover > .ux-checkbox-container, > .ux-checkbox-container {
+            border: 1px solid $ias-medium-gray;
         }
     }
 
     &:not(.ux-checkbox-disabled) {
         &.ux-checkbox-checked > .ux-checkbox-container {
             background-color: transparent;
-            border-color: $ias-border-gray;
+            border-color: $ias-medium-gray;
             color: $ias-blue-3;
         }
 
@@ -72,9 +163,10 @@ ux-radio-button > .ux-radio-button {
 
     > .ux-radio-button-container {
         background-color: transparent;
-        border: 1px solid $ias-border-gray;
+        border: 1px solid $ias-medium-gray;
         color: transparent;
         font-family: 'ias-icons';
+        font-weight: 700;
 
         &:before {
             content: $check_icon;
@@ -82,24 +174,24 @@ ux-radio-button > .ux-radio-button {
     }
 
     &.ux-radio-button-disabled {
-        opacity: $check_opacity;
+        opacity: $disabled-opacity;
 
         &.ux-radio-button-checked {
             > .ux-radio-button-container {
                 background-color: transparent;
-                color: $ias-border-gray;
+                color: $ias-medium-gray;
             }
         }
 
-        > .ux-radio-button-container {
-            border: 1px solid $ias-border-gray;
+        &:hover > .ux-radio-button-container, > .ux-radio-button-container {
+            border: 1px solid $ias-medium-gray;
         }
     }
 
     &:not(.ux-radio-button-disabled) {
         &.ux-radio-button-checked > .ux-radio-button-container {
             background-color: transparent;
-            border-color: $ias-border-gray;
+            border-color: $ias-medium-gray;
             color: $ias-blue-3;
         }
 

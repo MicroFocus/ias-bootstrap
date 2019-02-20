@@ -11,7 +11,7 @@
         margin-left: 10px;
     }
 
-    &:active, &:focus, &.focus {
+    &:focus, &.focus, &:active:focus, &:active.focus, &.active:focus, &.active.focus {
         outline: none;
         box-shadow: none;
     }

@@ -1,10 +1,13 @@
-<form class="basic-form" role="form" novalidate>
+<form class="basic-form" [class.disabled-form]="formDisabled" role="form" novalidate>
     <label for="basic-email">Email</label>
-    <input class="form-control" type="email" id="basic-email" placeholder="Enter email">
+    <input class="form-control" type="email" id="basic-email" placeholder="Enter email" [disabled]="formDisabled">
 
     <label for="basic-password">Password</label>
-    <input class="form-control" type="password" id="basic-password" placeholder="Enter password">
+    <input class="form-control" type="password" id="basic-password" placeholder="Enter password" [disabled]="formDisabled">
 
-    <ux-checkbox ng-model="checked">Remember me</ux-checkbox>
-    <button class="btn btn-default">Log in</button>
+    <ux-checkbox ng-model="checked" [disabled]="formDisabled">Remember me</ux-checkbox>
+
+    <button class="btn btn-default" (click)="formDisabled = !formDisabled">
+        {{ formDisabled ? 'Enable' : 'Disable' }}
+    </button>
 </form>

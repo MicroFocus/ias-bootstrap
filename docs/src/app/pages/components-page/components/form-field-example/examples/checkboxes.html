@@ -1,19 +1,35 @@
-<div class="checkbox-container">
-    <ux-checkbox [(value)]="checkModel.option1" [disabled]="checkboxesDisabled">
-        Option1
-    </ux-checkbox>
-    <ux-checkbox [(value)]="checkModel.option2"  [disabled]="checkboxesDisabled">
-        Option2
-    </ux-checkbox>
-    <ux-checkbox [(value)]="checkModel.option3"  [disabled]="checkboxesDisabled">
-        Option3
-    </ux-checkbox>
-    <ux-checkbox [(value)]="checkModel.option4"  [disabled]="checkboxesDisabled">
-        Onsectetur adipiscing elit.
+<div class="standard-checkboxes">
+    <h4>Text Before</h4>
+    <label class="ias-checkbox">
+        <span [class.disabled]="checkboxesDisabled">One</span>
+        <input type="checkbox" [disabled]="checkboxesDisabled">
+        <span class="ias-icon ias-icon-check_thick"></span>
+    </label>
+    <label class="ias-checkbox">
+        <span [class.disabled]="checkboxesDisabled">Two</span>
+        <input type="checkbox" checked="checked" [disabled]="checkboxesDisabled">
+        <span class="ias-icon ias-icon-check_thick"></span>
+    </label>
+
+    <h4>Text After</h4>
+    <label class="ias-checkbox">
+        <input type="checkbox" checked="checked" [disabled]="checkboxesDisabled">
+        <span class="ias-icon ias-icon-check_thick"></span>
+        <span>One</span>
+    </label>
+    <label class="ias-checkbox">
+        <input type="checkbox" [disabled]="checkboxesDisabled">
+        <span class="ias-icon ias-icon-check_thick"></span>
+        <span>Two</span>
+    </label>
+    <label class="ias-checkbox">
+        <input type="checkbox" [disabled]="checkboxesDisabled">
+        <span class="ias-icon ias-icon-check_thick"></span>
+        <span>Three - Onsectetur adipiscing elit.
         Inte adipiscing elit onsectetur adipiscing elit. Inte adipiscing elit onsectetur adipiscing
         elit. Inte adipiscing elit onsectetur adipiscing elit. Inte adipiscing elit onsectetur
-        adipiscing elit. Inte adipiscing elit onsectetur adipiscing elit.
-    </ux-checkbox>
+            adipiscing elit. Inte adipiscing elit onsectetur adipiscing elit.</span>
+    </label>
 </div>
 <div class="btn-container">
     <button class="btn btn-default" (click)="checkboxesDisabled = !checkboxesDisabled">

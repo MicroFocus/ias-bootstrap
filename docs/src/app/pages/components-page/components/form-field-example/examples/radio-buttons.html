@@ -20,6 +20,40 @@
     </ux-radio-button>
 </div>
 
+<div class="standard-radio-buttons">
+    <h4>Text Before</h4>
+    <label class="ias-checkbox">
+        <span [class.disabled]="radioButtonsDisabled">One</span>
+        <input type="radio" [disabled]="radioButtonsDisabled">
+        <span class="ias-icon ias-icon-check_thick"></span>
+    </label>
+    <label class="ias-checkbox">
+        <span [class.disabled]="radioButtonsDisabled">Two</span>
+        <input type="radio" checked="checked" [disabled]="radioButtonsDisabled">
+        <span class="ias-icon ias-icon-check_thick"></span>
+    </label>
+
+    <h4>Text After</h4>
+    <label class="ias-checkbox">
+        <input type="radio" checked="checked" [disabled]="radioButtonsDisabled">
+        <span class="ias-icon ias-icon-check_thick"></span>
+        <span>One</span>
+    </label>
+    <label class="ias-checkbox">
+        <input type="radio" [disabled]="radioButtonsDisabled">
+        <span class="ias-icon ias-icon-check_thick"></span>
+        <span>Two</span>
+    </label>
+    <label class="ias-checkbox">
+        <input type="radio" [disabled]="radioButtonsDisabled">
+        <span class="ias-icon ias-icon-check_thick"></span>
+        <span>Three - Onsectetur adipiscing elit.
+        Inte adipiscing elit onsectetur adipiscing elit. Inte adipiscing elit onsectetur adipiscing
+        elit. Inte adipiscing elit onsectetur adipiscing elit. Inte adipiscing elit onsectetur
+            adipiscing elit. Inte adipiscing elit onsectetur adipiscing elit.</span>
+    </label>
+</div>
+
 <div class="btn-container">
     <button class="btn btn-default" (click)="radioButtonsDisabled = !radioButtonsDisabled">
         {{ radioButtonsDisabled ? 'Enable' : 'Disable' }}

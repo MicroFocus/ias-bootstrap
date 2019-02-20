@@ -6,6 +6,8 @@ import { Component, OnInit, TemplateRef } from '@angular/core';
     styleUrls: ['./basic-form.scss']
 })
 export class BasicFormComponent implements OnInit {
+    formDisabled = false;
+
     constructor() {
     }
 
