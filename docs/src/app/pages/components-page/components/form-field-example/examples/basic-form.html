@@ -1,13 +1,13 @@
-<form class="basic-form" role="form" novalidate>
-    <label for="basic-email" [class.disabled]="formDisabled">Email</label>
+<form class="basic-form" [ngClass]="{'disable-labels disable-headers': formDisabled}" role="form" novalidate>
+    <label for="basic-email">Email</label>
     <input class="form-control" type="email" id="basic-email" placeholder="Enter email" [disabled]="formDisabled">
 
-    <label for="basic-password" [class.disabled]="formDisabled">Password</label>
+    <label for="basic-password">Password</label>
     <input class="form-control" type="password" id="basic-password" placeholder="Enter password" [disabled]="formDisabled">
 
-    <label class="ias-checkbox" [class.disabled]="formDisabled">
+    <label class="ias-checkbox">
         <input type="checkbox" [disabled]="formDisabled">
-        <span class="ias-icon ias-icon-check_thick"></span>
+        <i class="ias-icon ias-icon-check_thick"></i>
         <span>Remember me</span>
     </label>
 

@@ -1,30 +1,31 @@
-<div class="standard-checkboxes">
-    <h4 [class.disabled]="checkboxesDisabled">Text Before</h4>
-    <label class="ias-checkbox" [class.disabled]="checkboxesDisabled">
-        <span>One</span>
+<div class="standard-checkboxes" [ngClass]="{'disable-labels disable-headers': checkboxesDisabled}">
+    <h4>Text Before</h4>
+    <label>Choose one or more of the following:</label>
+    <label class="ias-checkbox">
         <input type="checkbox" [disabled]="checkboxesDisabled">
-        <span class="ias-icon ias-icon-check_thick"></span>
+        <span>One</span>
+        <i class="ias-icon ias-icon-check_thick"></i>
     </label>
-    <label class="ias-checkbox" [class.disabled]="checkboxesDisabled">
-        <span>Two</span>
+    <label class="ias-checkbox">
         <input type="checkbox" checked="checked" [disabled]="checkboxesDisabled">
-        <span class="ias-icon ias-icon-check_thick"></span>
+        <span>Two</span>
+        <i class="ias-icon ias-icon-check_thick"></i>
     </label>
 
-    <h4 [class.disabled]="checkboxesDisabled">Text After</h4>
-    <label class="ias-checkbox" [class.disabled]="checkboxesDisabled">
+    <h4>Text After</h4>
+    <label class="ias-checkbox">
         <input type="checkbox" checked="checked" [disabled]="checkboxesDisabled">
-        <span class="ias-icon ias-icon-check_thick"></span>
+        <i class="ias-icon ias-icon-check_thick"></i>
         <span>One</span>
     </label>
-    <label class="ias-checkbox" [class.disabled]="checkboxesDisabled">
+    <label class="ias-checkbox">
         <input type="checkbox" [disabled]="checkboxesDisabled">
-        <span class="ias-icon ias-icon-check_thick"></span>
+        <i class="ias-icon ias-icon-check_thick"></i>
         <span>Two</span>
     </label>
-    <label class="ias-checkbox" [class.disabled]="checkboxesDisabled">
+    <label class="ias-checkbox">
         <input type="checkbox" [disabled]="checkboxesDisabled">
-        <span class="ias-icon ias-icon-check_thick"></span>
+        <i class="ias-icon ias-icon-check_thick"></i>
         <span>Three - Onsectetur adipiscing elit.
         Inte adipiscing elit onsectetur adipiscing elit. Inte adipiscing elit onsectetur adipiscing
         elit. Inte adipiscing elit onsectetur adipiscing elit. Inte adipiscing elit onsectetur

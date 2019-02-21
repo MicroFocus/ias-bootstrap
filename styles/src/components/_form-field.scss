@@ -5,11 +5,13 @@ label {
     vertical-align: middle;
     padding-right: 5px;
     user-select: none;
+}
 
-    &.disabled {
-        cursor: default;
-        opacity: $disabled-opacity;
-    }
+// IF the label has the "disabled" class, or if it has a parent with the class: "disable-labels", then show as disabled.
+// checkboxes and radio-buttons are excluded, since they take care of their own labels.
+label.disabled, .disable-labels label:not(.ias-checkbox):not(.ias-radio-button) {
+    cursor: default;
+    opacity: $disabled-opacity;
 }
 
 .form-control {
@@ -41,6 +43,7 @@ label {
     cursor: pointer;
     display: inline-flex;
     line-height: 24px;
+    margin: 0 0 5px 0;
     position: relative;
     user-select: none;
 
@@ -81,6 +84,10 @@ label {
         height: 0;
         width: 0;
 
+        &+ * {
+            margin-right: 7px;
+        }
+
         &:disabled {
             cursor: default;
 
@@ -90,6 +97,7 @@ label {
 
             & ~ .ias-icon, &~ span:not(.ias-icon) {
                 cursor: default;
+                opacity: $disabled-opacity;
             }
         }
 
@@ -97,16 +105,6 @@ label {
             &:checked ~ .ias-icon {
                 color: $ias-blue-3;
             }
-        }
-    }
-
-    > span:not(.ias-icon) {
-        &:first-child {
-            margin-right: 7px;
-        }
-
-        &:last-child {
-            margin-left: 7px;
         }
     }
 }

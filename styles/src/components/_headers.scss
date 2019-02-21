@@ -17,6 +17,12 @@ h1, h2, h3, h4, h5 {
     }
 }
 
+.disable-headers {
+    h1, h2, h3, h4, h5 {
+        opacity: $disabled-opacity;
+    }
+}
+
 h1, h2     {color: $ias-darker-gray;}
 h3, h4, h5 {color: $ias-dark-gray;}
 h4         {text-transform: uppercase;}
