@@ -72,7 +72,7 @@ label.disabled, .disable-labels label:not(.ias-checkbox):not(.ias-radio-button) 
     &:hover {
         > input[type=checkbox], > input[type=radio] {
             &:not(:disabled) {
-                &+ .ias-icon {
+                &~ .ias-icon {
                     border-color: $ias-blue-4;
                 }
             }
