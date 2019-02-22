@@ -22,24 +22,15 @@ label.disabled, .disable-labels label:not(.ias-checkbox):not(.ias-radio-button) 
         border-color: $ias-blue-4;
     }
 }
+
 .form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
     background-color: transparent;
     color: $ias-medium-gray;
     opacity: $disabled-opacity;
 }
 
-// Styling for standard checkboxes & radio buttons, i.e.:
-//<label class="ias-checkbox">
-//    <input type="checkbox" checked="checked">
-//    <span class="ias-icon ias-icon-check_thick"></span>
-//    <span>One</span>
-//</label>
-//<label class="ias-radio-button">
-//    <input type="radio" name="text-after" checked="checked" [disabled]="radioButtonsDisabled">
-//    <span class="ias-icon ias-icon-check_thick"></span>
-//    <span>One</span>
-//</label>
-.ias-checkbox, .ias-radio-button {
+// Common code for checkboxes and radio buttons (things that have a "checked" state)
+@mixin checkable-type($input-type) {
     cursor: pointer;
     display: inline-flex;
     line-height: 24px;
@@ -64,13 +55,8 @@ label.disabled, .disable-labels label:not(.ias-checkbox):not(.ias-radio-button) 
         }
     }
 
-    > input[type=radio] ~ .ias-icon {
-        // Border for a radio button should be a circle
-        border-radius: 50%;
-    }
-
     &:hover {
-        > input[type=checkbox], > input[type=radio] {
+        > input[type=#{$input-type}] {
             &:not(:disabled) {
                 &~ .ias-icon {
                     border-color: $ias-blue-4;
@@ -79,7 +65,7 @@ label.disabled, .disable-labels label:not(.ias-checkbox):not(.ias-radio-button) 
         }
     }
 
-    > input[type=checkbox], > input[type=radio] {
+    > input[type=#{$input-type}] {
         opacity: 0;
         position: absolute;
         height: 0;
@@ -110,3 +96,27 @@ label.disabled, .disable-labels label:not(.ias-checkbox):not(.ias-radio-button) 
     }
 }
 
+// Styling for checkboxes, i.e.:
+//<label class="ias-checkbox">
+//    <input type="checkbox">
+//    <i class="ias-icon ias-icon-check_thick"></i>
+//    <span>Select Me</span>
+//</label>
+.ias-checkbox {
+    @include checkable-type('checkbox');
+}
+
+// Styling for radio buttons, i.e.:
+//<label class="ias-radio-button">
+//    <input type="radio" name="text-after">
+//    <i class="ias-icon ias-icon-check_thick"></i>
+//    <span>Select Me</span>
+//</label>
+.ias-radio-button {
+    @include checkable-type('radio');
+
+    > input[type=radio] ~ .ias-icon {
+        // Border for a radio button should be a circle
+        border-radius: 50%;
+    }
+}
