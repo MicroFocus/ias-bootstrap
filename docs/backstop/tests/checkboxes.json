@@ -1,0 +1,8 @@
+{
+    "scenarios": [
+        {
+            "label": "checkboxes",
+            "url": "http://localhost:4444/ias-bootstrap/checkboxes"
+        }
+    ]
+}

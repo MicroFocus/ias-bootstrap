@@ -4,13 +4,14 @@
     "scripts": {
         "ng": "ng",
         "start": "ng serve --serve-path ias-bootstrap",
-        "start:test": "ng serve --configuration test --serve-path ias-bootstrap",
+        "start:for-backstop-testing": "ng serve --configuration test --serve-path ias-bootstrap",
         "build": "ng build",
         "test": "ng test",
         "lint": "ng lint",
         "e2e": "ng e2e",
-        "backstop:approve": "backstop approve",
-        "backstop:test": "backstop test",
+        "backstop:approve": "node ./backstop/backstop-tests.js approve",
+        "backstop:test": "node ./backstop/backstop-tests.js test",
+        "backstop:test-specific": "npm run backstop:test -- text-buttons",
         "update-gh-pages": "push-dir --dir=dist/docs --branch=gh-pages"
     },
     "private": true,

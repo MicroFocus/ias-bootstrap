@@ -1,0 +1,32 @@
+{
+    "scenarios": [
+        {
+            "label": "text-buttons",
+            "url": "http://localhost:4444/ias-bootstrap/text-buttons"
+        },
+        {
+            "label": "text-buttons-hover-default",
+            "url": "http://localhost:4444/ias-bootstrap/text-buttons",
+            "hoverSelector": "app-text-buttons .btn-default:not(:disabled)",
+            "postInteractionWait": 200
+        },
+        {
+            "label": "text-buttons-hover-default-disabled",
+            "url": "http://localhost:4444/ias-bootstrap/text-buttons",
+            "hoverSelector": "app-text-buttons .btn-default:disabled",
+            "postInteractionWait": 200
+        },
+        {
+            "label": "text-buttons-hover-primary",
+            "url": "http://localhost:4444/ias-bootstrap/text-buttons",
+            "hoverSelector": "app-text-buttons .btn-primary:not(:disabled)",
+            "postInteractionWait": 200
+        },
+        {
+            "label": "text-buttons-hover-primary-disabled",
+            "url": "http://localhost:4444/ias-bootstrap/text-buttons",
+            "hoverSelector": "app-text-buttons .btn-primary:disabled",
+            "postInteractionWait": 200
+        }
+    ]
+}

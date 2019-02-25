@@ -21,9 +21,17 @@
     }
 
     &.btn-default {
-        background-color: $ias-light-gray;
-        border: 1px solid $ias-border-gray;
-        color: $ias-dark-gray;
+        @mixin default-look {
+            background-color: $ias-light-gray;
+            border: 1px solid $ias-border-gray;
+            color: $ias-dark-gray;
+        }
+
+        @include default-look;
+
+        &:disabled, &.disabled {
+            @include default-look;
+        }
 
         &:hover:not(:disabled) {
             background-color: $ias-light-gray;
@@ -33,9 +41,17 @@
     }
 
     &.btn-primary {
-        background-color: $ias-blue-2;
-        border-color: $ias-blue-2;
-        color: $ias-light-gray;
+        @mixin default-look {
+            background-color: $ias-blue-2;
+            border-color: $ias-blue-2;
+            color: $ias-light-gray;
+        }
+
+        @include default-look;
+
+        &:disabled, &.disabled {
+            @include default-look;
+        }
 
         &:hover:not(:disabled) {
             background-color: $ias-light-gray;

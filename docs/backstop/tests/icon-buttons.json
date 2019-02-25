@@ -1,0 +1,8 @@
+{
+    "scenarios": [
+        {
+            "label": "icon-buttons",
+            "url": "http://localhost:4444/ias-bootstrap/icon-buttons"
+        }
+    ]
+}
