@@ -2,39 +2,43 @@
     <h4>Text Before</h4>
     <label>Choose one of the following:</label>
     <label class="ias-radio-button">
-        <input type="radio" name="text-before" [disabled]="radioButtonsDisabled">
-        <span>One</span>
+        <input type="radio" name="text-before">
+        <span>Checked</span>
         <i class="ias-icon ias-icon-check_thick"></i>
     </label>
     <label class="ias-radio-button">
-        <input type="radio" name="text-before" checked="checked" [disabled]="radioButtonsDisabled">
-        <span>Two</span>
+        <input type="radio" name="text-before" checked="checked">
+        <span>Unchecked</span>
         <i class="ias-icon ias-icon-check_thick"></i>
     </label>
 
     <h4>Text After</h4>
-    <label class="ias-radio-button">
-        <input type="radio" name="text-after" checked="checked" [disabled]="radioButtonsDisabled">
+    <label class="ias-radio-button" id="checked-and-enabled">
+        <input type="radio" name="text-after" checked="checked">
         <i class="ias-icon ias-icon-check_thick"></i>
-        <span>One</span>
+        <span>Checked</span>
+    </label>
+    <label class="ias-radio-button" id="unchecked-and-enabled">
+        <input type="radio" name="text-after" [disabled]="radioButtonsDisabled">
+        <i class="ias-icon ias-icon-check_thick"></i>
+        <span>Unchecked</span>
     </label>
     <label class="ias-radio-button">
         <input type="radio" name="text-after" [disabled]="radioButtonsDisabled">
         <i class="ias-icon ias-icon-check_thick"></i>
-        <span>Two</span>
-    </label>
-    <label class="ias-radio-button">
-        <input type="radio" name="text-after" [disabled]="radioButtonsDisabled">
-        <i class="ias-icon ias-icon-check_thick"></i>
-        <span>Three - Onsectetur adipiscing elit.
+        <span>Wrapping text - onsectetur adipiscing elit.
         Inte adipiscing elit onsectetur adipiscing elit. Inte adipiscing elit onsectetur adipiscing
         elit. Inte adipiscing elit onsectetur adipiscing elit. Inte adipiscing elit onsectetur
             adipiscing elit. Inte adipiscing elit onsectetur adipiscing elit.</span>
     </label>
-</div>
-
-<div class="btn-container">
-    <button class="btn btn-default" (click)="radioButtonsDisabled = !radioButtonsDisabled">
-        {{ radioButtonsDisabled ? 'Enable' : 'Disable' }}
-    </button>
+    <label class="ias-radio-button" id="checked-and-disabled">
+        <input type="radio" name="text-after-disabled" checked="checked" [disabled]="true">
+        <i class="ias-icon ias-icon-check_thick"></i>
+        <span>Disabled and checked</span>
+    </label>
+    <label class="ias-radio-button" id="unchecked-and-disabled">
+        <input type="radio" name="text-after-disabled" [disabled]="true">
+        <i class="ias-icon ias-icon-check_thick"></i>
+        <span>Disabled and unchecked</span>
+    </label>
 </div>

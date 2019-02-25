@@ -2,38 +2,45 @@
     <h4>Text Before</h4>
     <label>Choose one or more of the following:</label>
     <label class="ias-checkbox">
-        <input type="checkbox" [disabled]="checkboxesDisabled">
-        <span>One</span>
+        <input type="checkbox" checked="checked">
+        <span>Checked</span>
         <i class="ias-icon ias-icon-check_thick"></i>
     </label>
     <label class="ias-checkbox">
-        <input type="checkbox" checked="checked" [disabled]="checkboxesDisabled">
-        <span>Two</span>
+        <input type="checkbox">
+        <span>Unchecked</span>
         <i class="ias-icon ias-icon-check_thick"></i>
     </label>
 
     <h4>Text After</h4>
-    <label class="ias-checkbox">
-        <input type="checkbox" checked="checked" [disabled]="checkboxesDisabled">
+    <label class="ias-checkbox" id="checked-and-enabled">
+        <input type="checkbox" checked="checked">
         <i class="ias-icon ias-icon-check_thick"></i>
-        <span>One</span>
+        <span>Checked</span>
+    </label>
+    <label class="ias-checkbox" id="unchecked-and-enabled">
+        <input type="checkbox">
+        <i class="ias-icon ias-icon-check_thick"></i>
+        <span>Unchecked</span>
     </label>
     <label class="ias-checkbox">
-        <input type="checkbox" [disabled]="checkboxesDisabled">
+        <input type="checkbox">
         <i class="ias-icon ias-icon-check_thick"></i>
-        <span>Two</span>
+        <span>
+            Wrapping text - onsectetur adipiscing elit.Inte adipiscing elit onsectetur adipiscing elit. Inte
+            adipiscing elit onsectetur adipiscingelit. Inte adipiscing elit onsectetur adipiscing elit. Inte adipiscing
+            elit onsecteturadipiscing elit. Inte adipiscing elit onsectetur adipiscing elit.
+        </span>
     </label>
-    <label class="ias-checkbox">
-        <input type="checkbox" [disabled]="checkboxesDisabled">
+    <label class="ias-checkbox" id="checked-and-disabled">
+        <input type="checkbox" [disabled]="true" checked="checked">
         <i class="ias-icon ias-icon-check_thick"></i>
-        <span>Three - Onsectetur adipiscing elit.
-        Inte adipiscing elit onsectetur adipiscing elit. Inte adipiscing elit onsectetur adipiscing
-        elit. Inte adipiscing elit onsectetur adipiscing elit. Inte adipiscing elit onsectetur
-            adipiscing elit. Inte adipiscing elit onsectetur adipiscing elit.</span>
+        <span>Disabled and checked</span>
+    </label>
+    <label class="ias-checkbox" id="unchecked-and-disabled">
+        <input type="checkbox" [disabled]="true">
+        <i class="ias-icon ias-icon-check_thick"></i>
+        <span>Disabled and unchecked</span>
     </label>
 </div>
-<div class="btn-container">
-    <button class="btn btn-default" (click)="checkboxesDisabled = !checkboxesDisabled">
-        {{ checkboxesDisabled ? 'Enable' : 'Disable' }}
-    </button>
-</div>
+

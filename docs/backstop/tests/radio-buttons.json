@@ -3,6 +3,30 @@
         {
             "label": "radio-buttons",
             "url": "http://localhost:4444/ias-bootstrap/radio-buttons"
+        },
+        {
+            "label": "radio-buttons_hover_checked-and-enabled",
+            "url": "http://localhost:4444/ias-bootstrap/radio-buttons",
+            "hoverSelector": "#checked-and-enabled",
+            "postInteractionWait": 200
+        },
+        {
+            "label": "radio-buttons_hover_unchecked-and-enabled",
+            "url": "http://localhost:4444/ias-bootstrap/radio-buttons",
+            "hoverSelector": "#unchecked-and-enabled",
+            "postInteractionWait": 200
+        },
+        {
+            "label": "radio-buttons_hover_checked-and-disabled",
+            "url": "http://localhost:4444/ias-bootstrap/radio-buttons",
+            "hoverSelector": "#checked-and-disabled",
+            "postInteractionWait": 200
+        },
+        {
+            "label": "radio-buttons_hover_unchecked-and-disabled",
+            "url": "http://localhost:4444/ias-bootstrap/radio-buttons",
+            "hoverSelector": "#unchecked-and-disabled",
+            "postInteractionWait": 200
         }
     ]
 }
