@@ -1,4 +1,4 @@
-<ux-accordion [collapseOthers]="collapseOthersOnOpen">
+<ux-accordion [collapseOthers]="collapseOthersOnOpen.value">
     <ux-accordion-panel class="accordion-chevron" heading="First Panel" [expanded]="true" id="expanded">
         Donec vitae mi eget arcu venenatis ullamcorper. Etiam ut pulvinar nibh. Aenean sit amet dolor quis magna
         posuereimperdiet quis a dolor. Praesent vitae lobortis eros. Aenean ultricies in quam at maximus. Maecenas
@@ -27,4 +27,8 @@
     </ux-accordion-panel>
 </ux-accordion>
 
-<ux-checkbox [(value)]="collapseOthersOnOpen">Collapse others when opening</ux-checkbox>
+<label class="ias-checkbox">
+    <input type="checkbox" [formControl]="collapseOthersOnOpen">
+    <i class="ias-icon ias-icon-check_thick"></i>
+    <span>Collapse others when opening</span>
+</label>

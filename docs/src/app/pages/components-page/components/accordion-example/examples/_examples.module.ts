@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AccordionBasicComponent } from './accordion-basic';
-import { AccordionModule, CheckboxModule } from '@ux-aspects/ux-aspects';
+import { AccordionModule } from '@ux-aspects/ux-aspects';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
     declarations: [
@@ -9,8 +10,8 @@ import { AccordionModule, CheckboxModule } from '@ux-aspects/ux-aspects';
     ],
     imports: [
         CommonModule,
+        ReactiveFormsModule,
         AccordionModule,
-        CheckboxModule
     ],
     exports: [
         AccordionBasicComponent
