@@ -16,7 +16,7 @@ ux-accordion.panel-group > ux-accordion-panel.panel {
     }
 
     &.panel-open {
-        .panel-heading {
+        > .panel-heading {
             border-bottom-right-radius: 0;
             border-bottom-left-radius: 0;
             border-bottom-color: $ias-border-gray;
