@@ -5,26 +5,23 @@
     outline: none;
 }
 
-ux-accordion-panel.accordion-chevron {
-    &+ux-accordion-panel.accordion-chevron {
-      margin-top: 10px;
+ux-accordion.panel-group > ux-accordion-panel.panel {
+    border: 0 none;
+    border-radius: 3px;
+    background: white;
+
+    &+ ux-accordion-panel.panel {
+        // Add a margin when an accordion panel is place below another one
+        margin-top: 10px;
     }
 
-    &.panel {
-        border: 0 none;
-        border-radius: 3px;
-        background: white;
-
+    &.panel-open {
         .panel-heading {
-            background-color: $ias-panel-gray;
-            border: 1px solid $ias-border-gray;
-            border-radius: 3px;
-            color: $ias-dark-gray;
-            padding: 10px 15px;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+            border-bottom-color: $ias-border-gray;
 
             &:hover {
-                color: $ias-blue-2;
-              background-color: $ias-light-gray;
                 border-color: $ias-blue-4;
             }
 
@@ -32,55 +29,56 @@ ux-accordion-panel.accordion-chevron {
                 @include focused-header;
             }
         }
+    }
 
-        &.panel-open {
-            .panel-heading {
-                border-bottom-right-radius: 0;
-                border-bottom-left-radius: 0;
-                border-bottom-color: $ias-border-gray;
+    > .panel-heading {
+        background-color: $ias-panel-gray;
+        border: 1px solid $ias-border-gray;
+        border-radius: 3px;
+        color: $ias-dark-gray;
+        padding: 10px 15px;
 
-                &:hover {
-                    border-color: $ias-blue-4;
-                }
-
-                &.accordion-toggle:focus, &:focus, &.accordion-toggle a:focus, a:focus {
-                    @include focused-header;
-                }
-            }
+        &:hover {
+            color: $ias-blue-2;
+            background-color: $ias-light-gray;
+            border-color: $ias-blue-4;
         }
 
-        .panel-collapse {
-            border: 1px solid $ias-border-gray;
+        &.accordion-toggle:focus, &:focus, &.accordion-toggle a:focus, a:focus {
+            @include focused-header;
+        }
+    }
+
+    > .panel-collapse {
+        border: 1px solid $ias-border-gray;
+        border-top: 0 none;
+        border-bottom-right-radius: 3px;
+        border-bottom-left-radius: 3px;
+
+        > .panel-body {
             border-top: 0 none;
-            border-bottom-right-radius: 3px;
-            border-bottom-left-radius: 3px;
-        }
-
-        .panel-body {
-            border-top: 0 none !important;
             padding: 15px;
         }
     }
-}
 
-ux-accordion-panel.accordion-chevron[disabled] {
-    > .panel-heading, > .panel-heading:hover, > .panel-heading:focus {
-        background-color: $ias-panel-gray;
-        border-color: $ias-panel-gray;
-        color: $ias-dark-gray;
-        cursor: not-allowed;
-        opacity: 0.40;
+    &[disabled] {
+        > .panel-heading, > .panel-heading:hover, > .panel-heading:focus {
+            background-color: $ias-panel-gray;
+            border-color: $ias-panel-gray;
+            color: $ias-dark-gray;
+            cursor: not-allowed;
+            opacity: $disabled-opacity;
+        }
     }
-}
 
-accordion.panel-group > .accordion-chevron.panel-open .panel-heading:before,
-ux-accordion.panel-group > .accordion-chevron.panel-open .panel-heading:before {
-    font: 22px 'ias-icons';
-    content: '\E903';
-}
+    &.accordion-chevron {
+        > .panel-heading:before {
+            font: 22px 'ias-icons';
+            content: '\E901';
+        }
 
-accordion.panel-group > .accordion-chevron .panel-heading:before,
-ux-accordion.panel-group > .accordion-chevron .panel-heading:before {
-    font: 22px 'ias-icons';
-    content: '\E901';
+        &.panel-open > .panel-heading:before {
+            content: '\E903';
+        }
+    }
 }
