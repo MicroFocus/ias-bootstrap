@@ -74,30 +74,8 @@
                         },
                         "test": {
                             "fileReplacements": [
-                                {
-                                    "replace": "src/index.html",
-                                    "with": "src/index.test.html"
-                                },
-                                {
-                                    "replace": "src/main.ts",
-                                    "with": "src/main.test.ts"
-                                }
-                            ],
-                            "optimization": false,
-                            "outputHashing": "all",
-                            "sourceMap": false,
-                            "extractCss": true,
-                            "namedChunks": false,
-                            "aot": true,
-                            "extractLicenses": true,
-                            "vendorChunk": false,
-                            "buildOptimizer": true,
-                            "budgets": [
-                                {
-                                    "type": "initial",
-                                    "maximumWarning": "2mb",
-                                    "maximumError": "5mb"
-                                }
+                                { "replace": "src/index.html", "with": "src/index.test.html" },
+                                { "replace": "src/main.ts",    "with": "src/main.test.ts" }
                             ]
                         }
                     }
