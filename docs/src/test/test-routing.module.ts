@@ -8,6 +8,7 @@ import { CheckboxesComponent } from '../app/pages/components-page/components/for
 import { RadioButtonsComponent } from '../app/pages/components-page/components/form-field-example/examples/radio-buttons';
 import { AccordionBasicComponent } from '../app/pages/components-page/components/accordion-example/examples/accordion-basic';
 import { PanelExamplesComponent } from '../app/pages/components-page/components/panels-example/examples/panel-examples';
+import { StandardTabsComponent } from '../app/pages/components-page/components/tabs-example/examples/standard-tabs';
 
 
 const routes: Routes = [
@@ -19,6 +20,7 @@ const routes: Routes = [
     { path: 'checkboxes', component: CheckboxesComponent },
     { path: 'panels', component: PanelExamplesComponent },
     { path: 'radio-buttons', component: RadioButtonsComponent },
+    { path: 'tabs', component: StandardTabsComponent },
 ];
 
 @NgModule({

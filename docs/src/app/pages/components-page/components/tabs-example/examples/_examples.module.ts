@@ -1,21 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PrimaryTabsComponent } from './primary-tabs';
 import { TabsetModule } from '@ux-aspects/ux-aspects';
-import { SecondaryTabsComponent } from './secondary-tabs';
+import { StandardTabsComponent } from './standard-tabs';
 
 @NgModule({
     declarations: [
-        PrimaryTabsComponent,
-        SecondaryTabsComponent,
+        StandardTabsComponent,
     ],
     imports: [
         CommonModule,
         TabsetModule,
     ],
     exports: [
-        PrimaryTabsComponent,
-        SecondaryTabsComponent,
+        StandardTabsComponent,
     ]
 })
 export class TabsExamplesModule {

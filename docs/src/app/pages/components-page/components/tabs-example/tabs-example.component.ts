@@ -9,12 +9,9 @@ declare const require;
 })
 export class TabsExampleComponent implements OnInit {
     exampleFiles = {
-        'primary-tabs.html': require('!raw-loader!./examples/primary-tabs.html'),
-        'primary-tabs.ts': require('!raw-loader!./examples/primary-tabs.ts'),
-        'primary-tabs.scss': require('!raw-loader!./examples/primary-tabs.scss'),
-        'secondary-tabs.html': require('!raw-loader!./examples/secondary-tabs.html'),
-        'secondary-tabs.ts': require('!raw-loader!./examples/secondary-tabs.ts'),
-        'secondary-tabs.scss': require('!raw-loader!./examples/secondary-tabs.scss'),
+        'standard-tabs.html': require('!raw-loader!./examples/standard-tabs.html'),
+        'standard-tabs.ts': require('!raw-loader!./examples/standard-tabs.ts'),
+        'standard-tabs.scss': require('!raw-loader!./examples/standard-tabs.scss'),
     };
 
     constructor() {

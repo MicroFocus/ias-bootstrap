@@ -10,6 +10,7 @@ import { AccordionExamplesModule } from '../app/pages/components-page/components
 import { ButtonsExamplesModule } from '../app/pages/components-page/components/buttons-example/examples/_examples.module';
 import { FormFieldsExamplesModule } from '../app/pages/components-page/components/form-field-example/examples/_examples.module';
 import { PanelExamplesModule } from '../app/pages/components-page/components/panels-example/examples/_examples.module';
+import { TabsExamplesModule } from '../app/pages/components-page/components/tabs-example/examples/_examples.module';
 
 @NgModule({
     declarations: [
@@ -24,6 +25,7 @@ import { PanelExamplesModule } from '../app/pages/components-page/components/pan
         ButtonsExamplesModule,
         FormFieldsExamplesModule,
         PanelExamplesModule,
+        TabsExamplesModule,
     ],
     providers: [
     ],

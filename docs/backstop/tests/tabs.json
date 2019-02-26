@@ -1,0 +1,13 @@
+{
+    "scenarios": [
+        {
+            "label": "tabs",
+            "url": "http://localhost:4444/ias-bootstrap/tabs"
+        }, {
+            "label": "tabs_hover",
+            "url": "http://localhost:4444/ias-bootstrap/tabs",
+            "hoverSelector": "#tab-two",
+            "postInteractionWait": 200
+        }
+    ]
+}
