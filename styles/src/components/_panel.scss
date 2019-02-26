@@ -1,36 +1,37 @@
-.panel {
-  margin-bottom: 20px;
-  background-color: $ias-panel-gray;
-  border-color: $ias-panel-gray;
-  border-radius: 3px;
-  
-  .panel-heading {
-    background: transparent;
-    border-bottom: 1px solid transparent;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    padding: 15px 15px 5px;    
-  }
-  
-  h4.panel-title {
-    color: $ias-medium-gray;
-    font-size: 16px;
-    margin: 0;
-  }
-    
-  .panel-body {
-    padding: 15px;
-  }
-  
-  .panel-footer {
-    color: $ias-medium-gray;
-    font-size: 14px;
-    margin: 0 15px 15px;
-    padding: 10px 0 0;
-    background: transparent;
-    border-top: 1px solid $ias-border-gray;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-  }
-}
+// Combining .panel with .ias-panel, because .panel is used in many other controls (such as accordion), and we don't
+// want any unexpected side effects.
+.panel.ias-panel {
+    margin-bottom: 20px;
+    background-color: $ias-panel-gray;
+    border-color: $ias-panel-gray;
+    border-radius: 3px;
 
+    .panel-heading {
+        background: transparent;
+        border-bottom: 1px solid transparent;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        padding: 15px 15px 5px;
+    }
+
+    h4.panel-title {
+        color: $ias-medium-gray;
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .panel-body {
+        padding: 15px;
+    }
+
+    .panel-footer {
+        color: $ias-medium-gray;
+        font-size: 14px;
+        margin: 0 15px 15px;
+        padding: 10px 0 0;
+        background: transparent;
+        border-top: 1px solid $ias-border-gray;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+}
