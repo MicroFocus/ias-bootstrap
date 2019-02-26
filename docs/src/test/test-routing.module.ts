@@ -7,6 +7,7 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { CheckboxesComponent } from '../app/pages/components-page/components/form-field-example/examples/checkboxes';
 import { RadioButtonsComponent } from '../app/pages/components-page/components/form-field-example/examples/radio-buttons';
 import { AccordionBasicComponent } from '../app/pages/components-page/components/accordion-example/examples/accordion-basic';
+import { PanelExamplesComponent } from '../app/pages/components-page/components/panels-example/examples/panel-examples';
 
 
 const routes: Routes = [
@@ -16,6 +17,7 @@ const routes: Routes = [
     { path: 'icon-buttons', component: IconButtonsComponent },
     { path: 'icon-text-buttons', component: IconTextButtonsComponent },
     { path: 'checkboxes', component: CheckboxesComponent },
+    { path: 'panels', component: PanelExamplesComponent },
     { path: 'radio-buttons', component: RadioButtonsComponent },
 ];
 

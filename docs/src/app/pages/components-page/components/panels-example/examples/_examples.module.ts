@@ -1,25 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { StandardPanelsComponent } from './standard-panels';
-import { PanelWithHeaderComponent } from './panel-with-header';
-import { PanelWithHeaderOnlyComponent } from './panel-with-header-only';
-import { PanelWithFooterComponent } from './panel-with-footer';
+import { PanelExamplesComponent } from './panel-examples';
 
 @NgModule({
     declarations: [
-        StandardPanelsComponent,
-        PanelWithHeaderComponent,
-        PanelWithHeaderOnlyComponent,
-        PanelWithFooterComponent,
+        PanelExamplesComponent,
     ],
     imports: [
         CommonModule,
     ],
     exports: [
-        StandardPanelsComponent,
-        PanelWithHeaderComponent,
-        PanelWithHeaderOnlyComponent,
-        PanelWithFooterComponent,
+        PanelExamplesComponent,
     ]
 })
 export class PanelExamplesModule {

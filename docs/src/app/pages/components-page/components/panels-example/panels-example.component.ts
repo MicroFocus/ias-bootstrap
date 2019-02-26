@@ -9,18 +9,9 @@ declare const require;
 })
 export class PanelsExampleComponent implements OnInit {
     exampleFiles = {
-        'standard-panels.html': require('!raw-loader!./examples/standard-panels.html'),
-        'standard-panels.ts': require('!raw-loader!./examples/standard-panels.ts'),
-        'standard-panels.scss': require('!raw-loader!./examples/standard-panels.scss'),
-        'panel-with-header.html': require('!raw-loader!./examples/panel-with-header.html'),
-        'panel-with-header.ts': require('!raw-loader!./examples/panel-with-header.ts'),
-        'panel-with-header.scss': require('!raw-loader!./examples/panel-with-header.scss'),
-        'panel-with-header-only.html': require('!raw-loader!./examples/panel-with-header-only.html'),
-        'panel-with-header-only.ts': require('!raw-loader!./examples/panel-with-header-only.ts'),
-        'panel-with-header-only.scss': require('!raw-loader!./examples/panel-with-header-only.scss'),
-        'panel-with-footer.html': require('!raw-loader!./examples/panel-with-footer.html'),
-        'panel-with-footer.ts': require('!raw-loader!./examples/panel-with-footer.ts'),
-        'panel-with-footer.scss': require('!raw-loader!./examples/panel-with-footer.scss'),
+        'panel-examples.html': require('!raw-loader!./examples/panel-examples.html'),
+        'panel-examples.ts': require('!raw-loader!./examples/panel-examples.ts'),
+        'panel-examples.scss': require('!raw-loader!./examples/panel-examples.scss'),
     };
 
     constructor() {

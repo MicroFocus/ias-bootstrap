@@ -1,5 +1,5 @@
 :host {
-    max-width: 700px;
     padding: 25px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 700px;
 }

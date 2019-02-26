@@ -1,0 +1,8 @@
+{
+    "scenarios": [
+        {
+            "label": "panels",
+            "url": "http://localhost:4444/ias-bootstrap/panels"
+        }
+    ]
+}

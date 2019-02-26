@@ -11,6 +11,7 @@ import { IconButtonsComponent } from '../app/pages/components-page/components/bu
 import { IconTextButtonsComponent } from '../app/pages/components-page/components/buttons-example/examples/icon-text-buttons';
 import { CheckboxesComponent } from '../app/pages/components-page/components/form-field-example/examples/checkboxes';
 import { RadioButtonsComponent } from '../app/pages/components-page/components/form-field-example/examples/radio-buttons';
+import { PanelExamplesComponent } from '../app/pages/components-page/components/panels-example/examples/panel-examples';
 
 @NgModule({
     declarations: [
@@ -21,7 +22,8 @@ import { RadioButtonsComponent } from '../app/pages/components-page/components/f
         IconButtonsComponent,
         IconTextButtonsComponent,
         CheckboxesComponent,
-        RadioButtonsComponent
+        RadioButtonsComponent,
+        PanelExamplesComponent,
     ],
     imports: [
         BrowserModule,
