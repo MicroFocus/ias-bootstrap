@@ -6,10 +6,12 @@ import { IconTextButtonsComponent } from '../app/pages/components-page/component
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { CheckboxesComponent } from '../app/pages/components-page/components/form-field-example/examples/checkboxes';
 import { RadioButtonsComponent } from '../app/pages/components-page/components/form-field-example/examples/radio-buttons';
+import { AccordionBasicComponent } from '../app/pages/components-page/components/accordion-example/examples/accordion-basic';
 
 
 const routes: Routes = [
     { path: '', component: LandingPageComponent },
+    { path: 'accordion', component: AccordionBasicComponent },
     { path: 'text-buttons', component: TextButtonsComponent },
     { path: 'icon-buttons', component: IconButtonsComponent },
     { path: 'icon-text-buttons', component: IconTextButtonsComponent },

@@ -105,8 +105,7 @@
                 "serve": {
                     "builder": "@angular-builders/dev-server:generic",
                     "options": {
-                        "browserTarget": "docs:build",
-                        "port": 4444
+                        "browserTarget": "docs:build"
                     },
                     "configurations": {
                         "production": {

@@ -3,8 +3,8 @@
     "version": "0.0.0",
     "scripts": {
         "ng": "ng",
-        "start": "ng serve --serve-path ias-bootstrap",
-        "start:for-backstop-testing": "ng serve --configuration test --serve-path ias-bootstrap",
+        "start": "ng serve --serve-path ias-bootstrap --port 8888",
+        "start:for-backstop-testing": "ng serve --configuration test --serve-path ias-bootstrap --port 4444",
         "build": "ng build",
         "test": "ng test",
         "lint": "ng lint",

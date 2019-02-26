@@ -1,0 +1,26 @@
+{
+    "scenarios": [
+        {
+            "label": "accordion",
+            "url": "http://localhost:4444/ias-bootstrap/accordion"
+        },
+        {
+            "label": "accordion_hover_expanded",
+            "url": "http://localhost:4444/ias-bootstrap/accordion",
+            "hoverSelector": "#expanded > .panel-heading",
+            "postInteractionWait": 200
+        },
+        {
+            "label": "accordion_hover_collapsed",
+            "url": "http://localhost:4444/ias-bootstrap/accordion",
+            "hoverSelector": "#collapsed",
+            "postInteractionWait": 200
+        },
+        {
+            "label": "accordion_hover_disabled",
+            "url": "http://localhost:4444/ias-bootstrap/accordion",
+            "hoverSelector": "#disabled",
+            "postInteractionWait": 200
+        }
+    ]
+}
