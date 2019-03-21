@@ -1,85 +1,89 @@
 table, .table, .table-hover, .ux-fixed-header-table {
-  tr {
-    min-height: 35px;
-    vertical-align: middle;
-  }
-
-  thead > tr > th {
-    color: $ias-medium-gray;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 12px;
-    font-weight: normal;
-    padding: 5px 10px;
-    vertical-align: middle;
-
-    .column-sorting-header,
-    .ux-column-sorting,
-    ux-column-sorting {
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-
-      > i.ux-column-sorting-icon {
-        padding: 0 5px;
-      }
-
-      > p.ux-column-sorting-number {
-        font-size: 12px;
-        align-self: inherit;
-      }
+    tr {
+        min-height: 35px;
+        vertical-align: middle;
     }
-  }
 
-  tbody {
-    > tr {
-      > td {
-        font-size: 15px;
+    thead > tr > th {
+        color: $ias-medium-gray;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 12px;
+        font-weight: normal;
         padding: 5px 10px;
         vertical-align: middle;
-      }
 
-      &.ux-selection-selected,
-      &.ux-selection-selected.ux-selection-focused {
-        background-color: #f5f5f5;
-        outline-color: $ias-blue-4;
-        &:hover, &:focus {
-          background-color: #e5e5e5;
+        .column-sorting-header,
+        .ux-column-sorting,
+        ux-column-sorting {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+
+            > i.ux-column-sorting-icon {
+                padding: 0 5px;
+            }
+
+            > p.ux-column-sorting-number {
+                font-size: 12px;
+                align-self: inherit;
+            }
         }
-      }
     }
-  }
 
-  .checkbox-column {
-    width: 48px;
-    text-align: center;
-  }
+    tbody {
+        > tr {
+            > td {
+                font-size: 15px;
+                padding: 5px 10px;
+                vertical-align: middle;
+            }
+
+            &.ux-selection-selected,
+            &.ux-selection-selected.ux-selection-focused {
+                background-color: #f5f5f5;
+                outline-color: $ias-blue-4;
+
+                &:hover, &:focus {
+                    background-color: #e5e5e5;
+                }
+            }
+        }
+    }
+
+    .checkbox-column {
+        width: 48px;
+        text-align: center;
+    }
 }
 
 div.ux-toolbar {
-  display: grid;
-  grid-template-columns: max-content 1fr max-content;
-  justify-items: end;
+    display: grid;
+    grid-template-columns: max-content 1fr max-content;
+    justify-items: end;
 
-  > * {
-    display: flex;
-  }
+    > * {
+        display: flex;
+    }
 }
 
 .hover-action-container {
-  outline: none;
-  &:active, &:focus, &:hover,
-  &.hover-action-container-active {
-    background-color: #f5f5f5;
-    .hover-action-btn {
-      color: $ias-medium-gray;
+    outline: none;
+
+    &:active, &:focus, &:hover,
+    &.hover-action-container-active {
+        background-color: #f5f5f5;
+
+        .hover-action-btn {
+            color: $ias-medium-gray;
+        }
     }
-  }
 }
 
 .hover-action-container .hover-action-btn {
-  margin-right: 10px;
-  .ias-icon, .hover-action-btn {
-    font-size: 1.3em;
-    vertical-align: middle;
-  }
+    margin-right: 10px;
+
+    .ias-icon, .hover-action-btn {
+        font-size: 1.3em;
+        vertical-align: middle;
+    }
 }

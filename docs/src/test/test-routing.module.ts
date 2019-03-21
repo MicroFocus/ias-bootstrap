@@ -9,6 +9,7 @@ import { RadioButtonsComponent } from '../app/pages/components-page/components/f
 import { AccordionBasicComponent } from '../app/pages/components-page/components/accordion-example/examples/accordion-basic';
 import { PanelExamplesComponent } from '../app/pages/components-page/components/panels-example/examples/panel-examples';
 import { StandardTabsComponent } from '../app/pages/components-page/components/tabs-example/examples/standard-tabs';
+import { SearchFieldComponent } from '../app/pages/components-page/components/form-field-example/examples/search-field';
 
 
 const routes: Routes = [
@@ -21,6 +22,9 @@ const routes: Routes = [
     { path: 'panels', component: PanelExamplesComponent },
     { path: 'radio-buttons', component: RadioButtonsComponent },
     { path: 'tabs', component: StandardTabsComponent },
+    { path: 'form-fields', children: [
+        { path: 'search-field', component: SearchFieldComponent },
+    ]},
 ];
 
 @NgModule({

@@ -1,0 +1,20 @@
+{
+    "scenarios": [
+        {
+            "label": "search-field",
+            "url": "http://localhost:4444/ias-bootstrap/form-fields/search-field"
+        },
+        {
+            "label": "search-field_with_cursor",
+            "url": "http://localhost:4444/ias-bootstrap/form-fields/search-field",
+            "clickSelector": "#search-text",
+            "postInteractionWait": 200
+        },
+        {
+            "label": "search-field_with_clear-button-hover",
+            "url": "http://localhost:4444/ias-bootstrap/form-fields/search-field",
+            "hoverSelector": "#clear-button",
+            "postInteractionWait": 200
+        }
+    ]
+}
