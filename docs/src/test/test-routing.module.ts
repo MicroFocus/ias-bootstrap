@@ -10,6 +10,7 @@ import { AccordionBasicComponent } from '../app/pages/components-page/components
 import { PanelExamplesComponent } from '../app/pages/components-page/components/panels-example/examples/panel-examples';
 import { StandardTabsComponent } from '../app/pages/components-page/components/tabs-example/examples/standard-tabs';
 import { SearchFieldComponent } from '../app/pages/components-page/components/form-field-example/examples/search-field';
+import { SimpleTableComponent } from '../app/pages/components-page/components/table-example/examples/simple-table';
 
 
 const routes: Routes = [
@@ -22,6 +23,9 @@ const routes: Routes = [
     { path: 'panels', component: PanelExamplesComponent },
     { path: 'radio-buttons', component: RadioButtonsComponent },
     { path: 'tabs', component: StandardTabsComponent },
+    { path: 'tables', children: [
+        { path: 'simple', component: SimpleTableComponent },
+    ]},
     { path: 'form-fields', children: [
         { path: 'search-field', component: SearchFieldComponent },
     ]},

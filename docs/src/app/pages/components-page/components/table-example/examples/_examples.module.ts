@@ -14,9 +14,11 @@ import { ButtonsModule } from 'ngx-bootstrap/buttons';
 import { ColumnResizingTablesComponent } from './column-resizing-tables';
 import { HoverActionsTables } from './hover-actions-tables';
 import { StandardTablesComponent } from './standard-tables';
+import { SimpleTableComponent } from './simple-table';
 
 @NgModule({
     declarations: [
+        SimpleTableComponent,
         StandardTablesComponent,
         ColumnResizingTablesComponent,
         HoverActionsTables,
@@ -39,9 +41,10 @@ import { StandardTablesComponent } from './standard-tables';
         TableModule,
     ],
     exports: [
+        SimpleTableComponent,
+        StandardTablesComponent,
         ColumnResizingTablesComponent,
         HoverActionsTables,
-        StandardTablesComponent,
     ]
 })
 export class TablesExamplesModule {

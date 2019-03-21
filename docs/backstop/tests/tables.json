@@ -1,0 +1,14 @@
+{
+    "scenarios": [
+        {
+            "label": "simple-table",
+            "url": "http://localhost:4444/ias-bootstrap/tables/simple"
+        },
+        {
+            "label": "simple-table_with-hover",
+            "url": "http://localhost:4444/ias-bootstrap/tables/simple",
+            "hoverSelector": "tbody > tr:nth-of-type(3) > td",
+            "postInteractionWait": 200
+        }
+    ]
+}

@@ -9,6 +9,9 @@ declare const require;
 })
 export class TableExampleComponent implements OnInit {
     exampleFiles = {
+        'simple-table.html': require('!raw-loader!./examples/simple-table.html'),
+        'simple-table.ts': require('!raw-loader!./examples/simple-table.ts'),
+        'simple-table.scss': require('!raw-loader!./examples/simple-table.scss'),
         'standard-tables.html': require('!raw-loader!./examples/standard-tables.html'),
         'standard-tables.ts': require('!raw-loader!./examples/standard-tables.ts'),
         'standard-tables.scss': require('!raw-loader!./examples/standard-tables.scss'),

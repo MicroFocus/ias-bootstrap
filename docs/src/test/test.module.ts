@@ -11,6 +11,7 @@ import { ButtonsExamplesModule } from '../app/pages/components-page/components/b
 import { FormFieldsExamplesModule } from '../app/pages/components-page/components/form-field-example/examples/_examples.module';
 import { PanelExamplesModule } from '../app/pages/components-page/components/panels-example/examples/_examples.module';
 import { TabsExamplesModule } from '../app/pages/components-page/components/tabs-example/examples/_examples.module';
+import { TablesExamplesModule } from '../app/pages/components-page/components/table-example/examples/_examples.module';
 
 @NgModule({
     declarations: [
@@ -26,6 +27,7 @@ import { TabsExamplesModule } from '../app/pages/components-page/components/tabs
         FormFieldsExamplesModule,
         PanelExamplesModule,
         TabsExamplesModule,
+        TablesExamplesModule
     ],
     providers: [
     ],

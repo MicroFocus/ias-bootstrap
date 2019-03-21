@@ -1,0 +1,16 @@
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>TV Show</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let character of cartoonCharacters">
+            <td>{{ character.name }}</td>
+            <td>{{ character.email }}</td>
+            <td>{{ character.tvShow }}</td>
+        </tr>
+    </tbody>
+</table>
