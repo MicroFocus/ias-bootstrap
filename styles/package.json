@@ -1,6 +1,6 @@
 {
     "name": "@microfocus/ias-bootstrap",
-    "version": "1.0.0-alpha.9",
+    "version": "1.0.0-alpha.10",
     "scripts": {
         "build": "node-sass --source-map true --output-style expanded ./src/ias-bootstrap.scss dist/ias-bootstrap.css",
         "build:minified": "node-sass --source-map true --output-style compressed ./src/ias-bootstrap.scss dist/ias-bootstrap.min.css",
