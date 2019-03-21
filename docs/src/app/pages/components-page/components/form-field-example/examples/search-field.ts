@@ -6,9 +6,15 @@ import { Component, OnInit, TemplateRef } from '@angular/core';
     styleUrls: ['./search-field.scss']
 })
 export class SearchFieldComponent implements OnInit {
+    searchText: string;
+
     constructor() {
     }
 
     ngOnInit() {
+    }
+
+    clear() {
+        this.searchText = '';
     }
 }

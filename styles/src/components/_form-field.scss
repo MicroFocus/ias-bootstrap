@@ -120,3 +120,32 @@ label.disabled, .disable-labels label:not(.ias-checkbox):not(.ias-radio-button) 
         border-radius: 50%;
     }
 }
+
+// Styling for the search input field
+.ias-search {
+    display: grid;
+    grid-template-columns: [left] 32px 1fr 32px [right];
+    align-items: center;
+
+    > .ias-icon {
+        order: 1;
+        grid-column-start: left;
+        grid-row: 1;
+        z-index: 10;
+        padding-left: 4px;
+    }
+
+    > input {
+        order: 2;
+        grid-column: left / right;
+        grid-row: 1;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    > button {
+        order: 3;
+        grid-row: 1;
+        grid-column-end: right;
+    }
+}
