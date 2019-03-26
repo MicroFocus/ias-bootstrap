@@ -2,7 +2,7 @@ import {Component} from '@angular/core';
 
 @Component({
     selector: 'app-text-buttons',
-    templateUrl: './text-buttons.html',
+    templateUrl: './text-buttons.component.html',
     styles: ['.results { margin-top: 20px; } ']
 })
 export class TextButtonsComponent {

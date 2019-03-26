@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { PageHeaderModule, TabsetModule, SidePanelModule, NavigationModule } from '@ux-aspects/ux-aspects';
 import { ComponentsPageComponent } from './pages/components-page/components-page.component';
-import { ButtonsExampleComponent } from './pages/components-page/components/buttons-example/buttons-example.component';
 import { DialogsExampleComponent } from './pages/components-page/components/dialogs-example/dialogs-example.component';
 import { DatePickerExampleComponent } from './pages/components-page/components/date-picker-example/date-picker-example.component';
 import { TipsPageComponent } from './pages/tips-page/tips-page.component';
@@ -26,7 +25,6 @@ import { TableExampleComponent } from './pages/components-page/components/table-
 import { TabsExampleComponent } from './pages/components-page/components/tabs-example/tabs-example.component';
 import { TagsExampleComponent } from './pages/components-page/components/tags-example/tags-example.component';
 import { TilesExampleComponent } from './pages/components-page/components/tiles-example/tiles-example.component';
-import { ButtonsExamplesModule } from './pages/components-page/components/buttons-example/examples/_examples.module';
 import { ProgressExampleComponent } from './pages/components-page/components/progress-example/progress-example.component';
 import { DatePickerExamplesModule } from './pages/components-page/components/date-picker-example/examples/_examples.module';
 import { DialogsExamplesModule } from './pages/components-page/components/dialogs-example/examples/_examples.module';
@@ -55,12 +53,12 @@ import { FormFieldExampleModule } from './pages/components-page/components/form-
 import { CommonComponentsModule } from './components/common-components.module';
 import { AccordionExampleModule } from './pages/components-page/components/accordion-example/accordion-example.module';
 import { AppBarExampleModule } from './pages/components-page/components/app-bar-example/app-bar-example.module';
+import { ButtonsExampleModule } from './pages/components-page/components/buttons-example/buttons-example.module';
 
 @NgModule({
     declarations: [
         AppComponent,
         ComponentsPageComponent,
-        ButtonsExampleComponent,
         DialogsExampleComponent,
         DatePickerExampleComponent,
         TipsPageComponent,
@@ -101,9 +99,9 @@ import { AppBarExampleModule } from './pages/components-page/components/app-bar-
         AccordionExampleModule,
         FormFieldExampleModule,
         AppBarExampleModule,
+        ButtonsExampleModule,
 
         // Component example modules:
-        ButtonsExamplesModule,
         DatePickerExamplesModule,
         DialogsExamplesModule,
         FormFieldsAdvancedExamplesModule,

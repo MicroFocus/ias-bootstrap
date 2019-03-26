@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { TextButtonsComponent } from '../app/pages/components-page/components/buttons-example/examples/text-buttons';
-import { IconButtonsComponent } from '../app/pages/components-page/components/buttons-example/examples/icon-buttons';
-import { IconTextButtonsComponent } from '../app/pages/components-page/components/buttons-example/examples/icon-text-buttons';
+import { TextButtonsComponent } from '../app/pages/components-page/components/buttons-example/examples/text-buttons.component';
+import { IconButtonsComponent } from '../app/pages/components-page/components/buttons-example/examples/icon-buttons.component';
+import { IconTextButtonsComponent } from '../app/pages/components-page/components/buttons-example/examples/icon-text-buttons.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { CheckboxesComponent } from '../app/pages/components-page/components/form-field-example/examples/checkboxes.component';
 import { RadioButtonsComponent } from '../app/pages/components-page/components/form-field-example/examples/radio-buttons.component';
