@@ -12,7 +12,6 @@ import { DialogsExampleComponent } from './pages/components-page/components/dial
 import { DatePickerExampleComponent } from './pages/components-page/components/date-picker-example/date-picker-example.component';
 import { TipsPageComponent } from './pages/tips-page/tips-page.component';
 import { GettingStartedComponent } from './pages/getting-started/getting-started.component';
-import { AppBarExampleComponent } from './pages/components-page/components/app-bar-example/app-bar-example.component';
 import { CommentsExampleComponent } from './pages/components-page/components/comments-example/comments-example.component';
 import { FormValidationExampleComponent } from './pages/components-page/components/form-validation-example/form-validation-example.component';
 import { HeadersExampleComponent } from './pages/components-page/components/headers-example/headers-example.component';
@@ -29,7 +28,6 @@ import { TagsExampleComponent } from './pages/components-page/components/tags-ex
 import { TilesExampleComponent } from './pages/components-page/components/tiles-example/tiles-example.component';
 import { ButtonsExamplesModule } from './pages/components-page/components/buttons-example/examples/_examples.module';
 import { ProgressExampleComponent } from './pages/components-page/components/progress-example/progress-example.component';
-import { AppBarExamplesModule } from './pages/components-page/components/app-bar-example/examples/_examples.module';
 import { DatePickerExamplesModule } from './pages/components-page/components/date-picker-example/examples/_examples.module';
 import { DialogsExamplesModule } from './pages/components-page/components/dialogs-example/examples/_examples.module';
 import { FormValidationExamplesModule } from './pages/components-page/components/form-validation-example/examples/_examples.module';
@@ -56,6 +54,7 @@ import { FormFieldsAdvancedExamplesModule } from './pages/components-page/compon
 import { FormFieldExampleModule } from './pages/components-page/components/form-field-example/form-field-example.module';
 import { CommonComponentsModule } from './components/common-components.module';
 import { AccordionExampleModule } from './pages/components-page/components/accordion-example/accordion-example.module';
+import { AppBarExampleModule } from './pages/components-page/components/app-bar-example/app-bar-example.module';
 
 @NgModule({
     declarations: [
@@ -66,7 +65,6 @@ import { AccordionExampleModule } from './pages/components-page/components/accor
         DatePickerExampleComponent,
         TipsPageComponent,
         GettingStartedComponent,
-        AppBarExampleComponent,
         CommentsExampleComponent,
         FormValidationExampleComponent,
         HeadersExampleComponent,
@@ -102,9 +100,9 @@ import { AccordionExampleModule } from './pages/components-page/components/accor
         // Component page examples modules
         AccordionExampleModule,
         FormFieldExampleModule,
+        AppBarExampleModule,
 
         // Component example modules:
-        AppBarExamplesModule,
         ButtonsExamplesModule,
         DatePickerExamplesModule,
         DialogsExamplesModule,
