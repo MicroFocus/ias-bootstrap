@@ -6,7 +6,7 @@ import { IconTextButtonsComponent } from '../app/pages/components-page/component
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { CheckboxesComponent } from '../app/pages/components-page/components/form-field-example/examples/checkboxes.component';
 import { RadioButtonsComponent } from '../app/pages/components-page/components/form-field-example/examples/radio-buttons.component';
-import { AccordionBasicComponent } from '../app/pages/components-page/components/accordion-example/examples/accordion-basic';
+import { AccordionBasicComponent } from '../app/pages/components-page/components/accordion-example/examples/accordion-basic.component';
 import { PanelExamplesComponent } from '../app/pages/components-page/components/panels-example/examples/panel-examples';
 import { StandardTabsComponent } from '../app/pages/components-page/components/tabs-example/examples/standard-tabs';
 import { SearchFieldComponent } from '../app/pages/components-page/components/form-field-example/examples/search-field.component';

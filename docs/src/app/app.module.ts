@@ -8,7 +8,6 @@ import { ModalModule } from 'ngx-bootstrap/modal';
 import { PageHeaderModule, TabsetModule, SidePanelModule, NavigationModule } from '@ux-aspects/ux-aspects';
 import { ComponentsPageComponent } from './pages/components-page/components-page.component';
 import { ButtonsExampleComponent } from './pages/components-page/components/buttons-example/buttons-example.component';
-import { AccordionExampleComponent } from './pages/components-page/components/accordion-example/accordion-example.component';
 import { DialogsExampleComponent } from './pages/components-page/components/dialogs-example/dialogs-example.component';
 import { DatePickerExampleComponent } from './pages/components-page/components/date-picker-example/date-picker-example.component';
 import { TipsPageComponent } from './pages/tips-page/tips-page.component';
@@ -30,7 +29,6 @@ import { TagsExampleComponent } from './pages/components-page/components/tags-ex
 import { TilesExampleComponent } from './pages/components-page/components/tiles-example/tiles-example.component';
 import { ButtonsExamplesModule } from './pages/components-page/components/buttons-example/examples/_examples.module';
 import { ProgressExampleComponent } from './pages/components-page/components/progress-example/progress-example.component';
-import { AccordionExamplesModule } from './pages/components-page/components/accordion-example/examples/_examples.module';
 import { AppBarExamplesModule } from './pages/components-page/components/app-bar-example/examples/_examples.module';
 import { DatePickerExamplesModule } from './pages/components-page/components/date-picker-example/examples/_examples.module';
 import { DialogsExamplesModule } from './pages/components-page/components/dialogs-example/examples/_examples.module';
@@ -57,13 +55,13 @@ import { FormFieldAdvancedExampleComponent } from './pages/components-page/compo
 import { FormFieldsAdvancedExamplesModule } from './pages/components-page/components/form-field-advanced-example/examples/_examples.module';
 import { FormFieldExampleModule } from './pages/components-page/components/form-field-example/form-field-example.module';
 import { CommonComponentsModule } from './components/common-components.module';
+import { AccordionExampleModule } from './pages/components-page/components/accordion-example/accordion-example.module';
 
 @NgModule({
     declarations: [
         AppComponent,
         ComponentsPageComponent,
         ButtonsExampleComponent,
-        AccordionExampleComponent,
         DialogsExampleComponent,
         DatePickerExampleComponent,
         TipsPageComponent,
@@ -102,10 +100,10 @@ import { CommonComponentsModule } from './components/common-components.module';
         CommonComponentsModule,
 
         // Component page examples modules
+        AccordionExampleModule,
         FormFieldExampleModule,
 
         // Component example modules:
-        AccordionExamplesModule,
         AppBarExamplesModule,
         ButtonsExamplesModule,
         DatePickerExamplesModule,
