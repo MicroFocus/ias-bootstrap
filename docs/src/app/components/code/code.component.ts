@@ -1,5 +1,5 @@
 import { AfterViewInit, ChangeDetectionStrategy, Component, ElementRef, Input, ViewChild } from '@angular/core';
-import { CodeHighlightService } from '../services/code-highlight.service';
+import { CodeHighlightService } from '../../services/code-highlight.service';
 
 @Component({
     selector: 'app-ngbd-code',

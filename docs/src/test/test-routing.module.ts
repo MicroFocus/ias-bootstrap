@@ -11,7 +11,7 @@ import { PanelExamplesComponent } from '../app/pages/components-page/components/
 import { StandardTabsComponent } from '../app/pages/components-page/components/tabs-example/examples/standard-tabs';
 import { SearchFieldComponent } from '../app/pages/components-page/components/form-field-example/examples/search-field';
 import { SimpleTableComponent } from '../app/pages/components-page/components/table-example/examples/simple-table';
-import { BasicFormComponent } from '../app/pages/components-page/components/form-field-example/examples/basic-form';
+import { BasicFormComponent } from '../app/pages/components-page/components/form-field-example/examples/basic-form.component';
 
 
 const routes: Routes = [

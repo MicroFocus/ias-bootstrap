@@ -3,8 +3,8 @@ import { FormControl } from '@angular/forms';
 
 @Component({
     selector: 'app-basic-form',
-    templateUrl: './basic-form.html',
-    styleUrls: ['./basic-form.scss']
+    templateUrl: './basic-form.component.html',
+    styleUrls: ['./basic-form.component.scss']
 })
 export class BasicFormComponent implements OnInit {
     nameFormControl: FormControl;

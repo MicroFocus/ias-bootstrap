@@ -9,9 +9,9 @@ declare const require;
 })
 export class FormFieldExampleComponent implements OnInit {
     exampleFiles = {
-        'basic-form.html': require('!raw-loader!./examples/basic-form.html'),
-        'basic-form.ts': require('!raw-loader!./examples/basic-form.ts'),
-        'basic-form.scss': require('!raw-loader!./examples/basic-form.scss'),
+        'basic-form.component.html': require('!raw-loader!./examples/basic-form.component.html'),
+        'basic-form.component.ts': require('!raw-loader!./examples/basic-form.component.ts'),
+        'basic-form.component.scss': require('!raw-loader!./examples/basic-form.component.scss'),
         'search-field.html': require('!raw-loader!./examples/search-field.html'),
         'search-field.ts': require('!raw-loader!./examples/search-field.ts'),
         'search-field.scss': require('!raw-loader!./examples/search-field.scss'),

@@ -15,7 +15,6 @@ import { TipsPageComponent } from './pages/tips-page/tips-page.component';
 import { GettingStartedComponent } from './pages/getting-started/getting-started.component';
 import { AppBarExampleComponent } from './pages/components-page/components/app-bar-example/app-bar-example.component';
 import { CommentsExampleComponent } from './pages/components-page/components/comments-example/comments-example.component';
-import { FormFieldExampleComponent } from './pages/components-page/components/form-field-example/form-field-example.component';
 import { FormValidationExampleComponent } from './pages/components-page/components/form-validation-example/form-validation-example.component';
 import { HeadersExampleComponent } from './pages/components-page/components/headers-example/headers-example.component';
 import { IconsExampleComponent } from './pages/components-page/components/icons-example/icons-example.component';
@@ -31,15 +30,10 @@ import { TagsExampleComponent } from './pages/components-page/components/tags-ex
 import { TilesExampleComponent } from './pages/components-page/components/tiles-example/tiles-example.component';
 import { ButtonsExamplesModule } from './pages/components-page/components/buttons-example/examples/_examples.module';
 import { ProgressExampleComponent } from './pages/components-page/components/progress-example/progress-example.component';
-import { CodeComponent } from './components/code.component';
-import { CodeHighlightService } from './services/code-highlight.service';
-import { ExampleComponent } from './components/example/example.component';
-import { ExampleFileComponent } from './components/example-file/example-file.component';
 import { AccordionExamplesModule } from './pages/components-page/components/accordion-example/examples/_examples.module';
 import { AppBarExamplesModule } from './pages/components-page/components/app-bar-example/examples/_examples.module';
 import { DatePickerExamplesModule } from './pages/components-page/components/date-picker-example/examples/_examples.module';
 import { DialogsExamplesModule } from './pages/components-page/components/dialogs-example/examples/_examples.module';
-import { FormFieldsExamplesModule } from './pages/components-page/components/form-field-example/examples/_examples.module';
 import { FormValidationExamplesModule } from './pages/components-page/components/form-validation-example/examples/_examples.module';
 import { HeadersExamplesModule } from './pages/components-page/components/headers-example/examples/_examples.module';
 import { IconsExamplesModule } from './pages/components-page/components/icons-example/examples/_examples.module';
@@ -49,7 +43,6 @@ import { MenuExamplesModule } from './pages/components-page/components/menu-exam
 import { PanelExamplesModule } from './pages/components-page/components/panels-example/examples/_examples.module';
 import { ProgressExamplesModule } from './pages/components-page/components/progress-example/examples/_examples.module';
 import { SideNavExamplesModule } from './pages/components-page/components/side-navs-example/examples/_examples.module';
-import { EmptyContentComponent } from './components/empty-content/empty-content.component';
 import { MessagesExamplesModule } from './pages/components-page/components/status-messages-example/examples/_examples.module';
 import { TablesExamplesModule } from './pages/components-page/components/table-example/examples/_examples.module';
 import { TabsExamplesModule } from './pages/components-page/components/tabs-example/examples/_examples.module';
@@ -62,11 +55,12 @@ import { StandardLayoutsModule } from './pages/tips-page/components/standard-lay
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { FormFieldAdvancedExampleComponent } from './pages/components-page/components/form-field-advanced-example/form-field-advanced-example.component';
 import { FormFieldsAdvancedExamplesModule } from './pages/components-page/components/form-field-advanced-example/examples/_examples.module';
+import { FormFieldExampleModule } from './pages/components-page/components/form-field-example/form-field-example.module';
+import { CommonComponentsModule } from './components/common-components.module';
 
 @NgModule({
     declarations: [
         AppComponent,
-        CodeComponent,
         ComponentsPageComponent,
         ButtonsExampleComponent,
         AccordionExampleComponent,
@@ -76,7 +70,6 @@ import { FormFieldsAdvancedExamplesModule } from './pages/components-page/compon
         GettingStartedComponent,
         AppBarExampleComponent,
         CommentsExampleComponent,
-        FormFieldExampleComponent,
         FormValidationExampleComponent,
         HeadersExampleComponent,
         IconsExampleComponent,
@@ -91,9 +84,6 @@ import { FormFieldsAdvancedExamplesModule } from './pages/components-page/compon
         TagsExampleComponent,
         TilesExampleComponent,
         ProgressExampleComponent,
-        ExampleComponent,
-        ExampleFileComponent,
-        EmptyContentComponent,
         StandardLayoutComponent,
         LoginPageComponent,
         FormFieldAdvancedExampleComponent,
@@ -109,13 +99,17 @@ import { FormFieldsAdvancedExamplesModule } from './pages/components-page/compon
         ModalModule.forRoot(),
         TabsetModule,
 
+        CommonComponentsModule,
+
+        // Component page examples modules
+        FormFieldExampleModule,
+
         // Component example modules:
         AccordionExamplesModule,
         AppBarExamplesModule,
         ButtonsExamplesModule,
         DatePickerExamplesModule,
         DialogsExamplesModule,
-        FormFieldsExamplesModule,
         FormFieldsAdvancedExamplesModule,
         FormValidationExamplesModule,
         HeadersExamplesModule,
@@ -135,7 +129,6 @@ import { FormFieldsAdvancedExamplesModule } from './pages/components-page/compon
         StandardLayoutsModule,
     ],
     providers: [
-        CodeHighlightService
     ],
     bootstrap: [AppComponent]
 })
