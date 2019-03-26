@@ -10,17 +10,24 @@ declare const require;
 export class FormFieldExampleComponent implements OnInit {
     exampleFiles = {
         'basic-form.component.html': require('!raw-loader!./examples/basic-form.component.html'),
-        'basic-form.component.ts': require('!raw-loader!./examples/basic-form.component.ts'),
         'basic-form.component.scss': require('!raw-loader!./examples/basic-form.component.scss'),
-        'search-field.html': require('!raw-loader!./examples/search-field.html'),
-        'search-field.ts': require('!raw-loader!./examples/search-field.ts'),
-        'search-field.scss': require('!raw-loader!./examples/search-field.scss'),
-        'checkboxes.html': require('!raw-loader!./examples/checkboxes.html'),
-        'checkboxes.ts': require('!raw-loader!./examples/checkboxes.ts'),
-        'checkboxes.scss': require('!raw-loader!./examples/checkboxes.scss'),
-        'radio-buttons.html': require('!raw-loader!./examples/radio-buttons.html'),
-        'radio-buttons.ts': require('!raw-loader!./examples/radio-buttons.ts'),
-        'radio-buttons.scss': require('!raw-loader!./examples/radio-buttons.scss'),
+        'basic-form.component.ts': require('!raw-loader!./examples/basic-form.component.ts'),
+        'basic-form.module.ts': require('!raw-loader!./examples/basic-form.module.ts'),
+
+        'search-field.component.html': require('!raw-loader!./examples/search-field.component.html'),
+        'search-field.component.scss': require('!raw-loader!./examples/search-field.component.scss'),
+        'search-field.component.ts': require('!raw-loader!./examples/search-field.component.ts'),
+        'search-field.module.ts': require('!raw-loader!./examples/search-field.module.ts'),
+
+        'checkboxes.component.html': require('!raw-loader!./examples/checkboxes.component.html'),
+        'checkboxes.component.scss': require('!raw-loader!./examples/checkboxes.component.scss'),
+        'checkboxes.component.ts': require('!raw-loader!./examples/checkboxes.component.ts'),
+        'checkboxes.module.ts': require('!raw-loader!./examples/checkboxes.module.ts'),
+
+        'radio-buttons.component.html': require('!raw-loader!./examples/radio-buttons.component.html'),
+        'radio-buttons.component.scss': require('!raw-loader!./examples/radio-buttons.component.scss'),
+        'radio-buttons.component.ts': require('!raw-loader!./examples/radio-buttons.component.ts'),
+        'radio-buttons.module.ts': require('!raw-loader!./examples/radio-buttons.module.ts'),
     };
 
     constructor() {
@@ -28,5 +35,4 @@ export class FormFieldExampleComponent implements OnInit {
 
     ngOnInit() {
     }
-
 }

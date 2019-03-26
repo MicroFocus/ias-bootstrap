@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { BasicFormComponent } from './basic-form.component';
@@ -11,7 +10,6 @@ import { BasicFormComponent } from './basic-form.component';
     ],
     imports: [
         CommonModule,
-        BrowserModule,
         ReactiveFormsModule,
         FormsModule,
     ],

@@ -4,12 +4,12 @@ import { TextButtonsComponent } from '../app/pages/components-page/components/bu
 import { IconButtonsComponent } from '../app/pages/components-page/components/buttons-example/examples/icon-buttons';
 import { IconTextButtonsComponent } from '../app/pages/components-page/components/buttons-example/examples/icon-text-buttons';
 import { LandingPageComponent } from './landing-page/landing-page.component';
-import { CheckboxesComponent } from '../app/pages/components-page/components/form-field-example/examples/checkboxes';
-import { RadioButtonsComponent } from '../app/pages/components-page/components/form-field-example/examples/radio-buttons';
+import { CheckboxesComponent } from '../app/pages/components-page/components/form-field-example/examples/checkboxes.component';
+import { RadioButtonsComponent } from '../app/pages/components-page/components/form-field-example/examples/radio-buttons.component';
 import { AccordionBasicComponent } from '../app/pages/components-page/components/accordion-example/examples/accordion-basic';
 import { PanelExamplesComponent } from '../app/pages/components-page/components/panels-example/examples/panel-examples';
 import { StandardTabsComponent } from '../app/pages/components-page/components/tabs-example/examples/standard-tabs';
-import { SearchFieldComponent } from '../app/pages/components-page/components/form-field-example/examples/search-field';
+import { SearchFieldComponent } from '../app/pages/components-page/components/form-field-example/examples/search-field.component';
 import { SimpleTableComponent } from '../app/pages/components-page/components/table-example/examples/simple-table';
 import { BasicFormComponent } from '../app/pages/components-page/components/form-field-example/examples/basic-form.component';
 
