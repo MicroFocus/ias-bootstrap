@@ -17,6 +17,7 @@ export class ComponentsPageComponent implements OnInit {
         { title: 'Date Picker', routerLink: '/components/date-picker' },
         { title: 'Dialogs (Modals)', routerLink: '/components/dialogs' },
         { title: 'Form Fields', routerLink: '/components/form-field' },
+        { title: 'Form Fields (Advanced)', routerLink: '/components/form-field-advanced' },
         { title: 'Form Validation', routerLink: '/components/form-validation' },
         { title: 'Headers', routerLink: '/components/headers' },
         { title: 'Icons', routerLink: '/components/icons' },

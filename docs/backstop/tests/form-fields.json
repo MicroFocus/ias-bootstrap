@@ -1,6 +1,16 @@
 {
     "scenarios": [
         {
+            "label": "basic-form",
+            "url": "http://localhost:4444/ias-bootstrap/form-fields/basic-form"
+        },
+        {
+            "label": "basic-form_disabled",
+            "url": "http://localhost:4444/ias-bootstrap/form-fields/basic-form",
+            "clickSelector": "#disable-basic-form",
+            "postInteractionWait": 200
+        },
+        {
             "label": "search-field",
             "url": "http://localhost:4444/ias-bootstrap/form-fields/search-field"
         },

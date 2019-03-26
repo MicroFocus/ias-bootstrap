@@ -1,50 +1,36 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ColorServiceModule as GlobalColorServiceModule, colorSets, ColorService } from '@ux-aspects/ux-aspects';
-import { SelectModule, CheckboxModule, RadioButtonModule, NumberPickerModule, AccordionModule } from '@ux-aspects/ux-aspects';
-import { BasicFormComponent } from './basic-form';
-import { HorizontalFormComponent } from './horizontal-form';
-import { SearchFieldComponent } from './search-field';
-import { SelectFieldsComponent } from './select-fields';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+import { BasicFormComponent } from './basic-form';
 import { CheckboxesComponent } from './checkboxes';
 import { RadioButtonsComponent } from './radio-buttons';
+import { SearchFieldComponent } from './search-field';
 
 @NgModule({
     declarations: [
         BasicFormComponent,
-        HorizontalFormComponent,
         SearchFieldComponent,
-        SelectFieldsComponent,
         CheckboxesComponent,
         RadioButtonsComponent,
     ],
     imports: [
         CommonModule,
-        GlobalColorServiceModule,
         BrowserModule,
         FormsModule,
         ReactiveFormsModule,
         BrowserAnimationsModule,
-        SelectModule,
-        CheckboxModule,
-        RadioButtonModule,
-        NumberPickerModule,
-        AccordionModule
     ],
     exports: [
         BasicFormComponent,
-        HorizontalFormComponent,
         SearchFieldComponent,
-        SelectFieldsComponent,
         CheckboxesComponent,
         RadioButtonsComponent,
     ]
 })
 export class FormFieldsExamplesModule {
-    constructor(colorService: ColorService) {
-        colorService.setColorSet(colorSets.microFocus);
+    constructor() {
     }
 }

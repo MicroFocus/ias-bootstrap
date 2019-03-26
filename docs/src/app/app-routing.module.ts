@@ -27,6 +27,7 @@ import { ProgressExampleComponent } from './pages/components-page/components/pro
 import { EmptyContentComponent } from './components/empty-content/empty-content.component';
 import { StandardLayoutComponent } from './pages/tips-page/components/standard-layout/standard-layout.component';
 import { LoginPageComponent } from './pages/tips-page/components/login-page/login-page.component';
+import { FormFieldAdvancedExampleComponent } from './pages/components-page/components/form-field-advanced-example/form-field-advanced-example.component';
 
 const routes: Routes = [
     { path: '', redirectTo: 'components', pathMatch: 'full' },
@@ -50,6 +51,7 @@ const routes: Routes = [
             { path: 'date-picker', component: DatePickerExampleComponent },
             { path: 'dialogs', component: DialogsExampleComponent },
             { path: 'form-field', component: FormFieldExampleComponent },
+            { path: 'form-field-advanced', component: FormFieldAdvancedExampleComponent },
             { path: 'form-validation', component: FormValidationExampleComponent },
             { path: 'headers', component: HeadersExampleComponent },
             { path: 'icons', component: IconsExampleComponent },

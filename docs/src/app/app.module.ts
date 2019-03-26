@@ -60,6 +60,8 @@ import { LoginPageComponent } from './pages/tips-page/components/login-page/logi
 import { LoginPageExamplesModule } from './pages/tips-page/components/login-page/examples/_examples.module';
 import { StandardLayoutsModule } from './pages/tips-page/components/standard-layout/examples/_examples.module';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { FormFieldAdvancedExampleComponent } from './pages/components-page/components/form-field-advanced-example/form-field-advanced-example.component';
+import { FormFieldsAdvancedExamplesModule } from './pages/components-page/components/form-field-advanced-example/examples/_examples.module';
 
 @NgModule({
     declarations: [
@@ -94,6 +96,7 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
         EmptyContentComponent,
         StandardLayoutComponent,
         LoginPageComponent,
+        FormFieldAdvancedExampleComponent,
     ],
     imports: [
         BrowserModule,
@@ -113,6 +116,7 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
         DatePickerExamplesModule,
         DialogsExamplesModule,
         FormFieldsExamplesModule,
+        FormFieldsAdvancedExamplesModule,
         FormValidationExamplesModule,
         HeadersExamplesModule,
         IconsExamplesModule,

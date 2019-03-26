@@ -1,16 +1,14 @@
 .basic-form {
-    display: grid;
-    grid-template-columns: 150px 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 300px;
 
-    > label, > input {
-        grid-column: 1 / span 2;
+    > select {
+        width: auto;
     }
 
-    > input {
+    > input, select, .ias-checkbox {
         margin-bottom: 20px;
-    }
-
-    > button {
-        justify-self: end;
     }
 }

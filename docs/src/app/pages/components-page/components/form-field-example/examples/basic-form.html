@@ -1,17 +1,25 @@
 <form class="basic-form" [ngClass]="{'disable-labels disable-headers': formDisabled}" role="form" novalidate>
-    <label for="basic-email">Email</label>
-    <input class="form-control" type="email" id="basic-email" placeholder="Enter email" [disabled]="formDisabled">
+    <label for="name">Name</label>
+    <input class="form-control" type="email" id="name" placeholder="Enter name" [formControl]="nameFormControl">
 
-    <label for="basic-password">Password</label>
-    <input class="form-control" type="password" id="basic-password" placeholder="Enter password" [disabled]="formDisabled">
+    <label for="email">Email</label>
+    <input class="form-control" type="email" id="email" placeholder="Enter email" [formControl]="emailFormControl">
+
+    <label for="choose-region">Region</label>
+    <select class="form-control" id="choose-region" [formControl]="regionFormControl">
+        <option value="north">North</option>
+        <option value="east">East</option>
+        <option value="west">West</option>
+        <option value="south">South</option>
+    </select>
 
     <label class="ias-checkbox">
-        <input type="checkbox" [disabled]="formDisabled">
+        <input type="checkbox" [formControl]="rememberMeFormControl">
         <i class="ias-icon ias-icon-check_thick"></i>
         <span>Remember me</span>
     </label>
 
-    <button class="btn btn-default" (click)="formDisabled = !formDisabled">
+    <button class="btn btn-default" id="disable-basic-form" (click)="toggleFormEnabled()">
         {{ formDisabled ? 'Enable' : 'Disable' }}
     </button>
 </form>
