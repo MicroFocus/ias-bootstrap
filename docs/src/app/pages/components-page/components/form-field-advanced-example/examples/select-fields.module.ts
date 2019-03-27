@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ColorServiceModule as GlobalColorServiceModule, colorSets, ColorService } from '@ux-aspects/ux-aspects';
 import { SelectModule, CheckboxModule, RadioButtonModule, NumberPickerModule, AccordionModule } from '@ux-aspects/ux-aspects';
-import { SelectFieldsComponent } from './select-fields';
+import { SelectFieldsComponent } from './select-fields.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -28,7 +28,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
         SelectFieldsComponent,
     ]
 })
-export class FormFieldsAdvancedExamplesModule {
+export class SelectFieldsModule {
     constructor(colorService: ColorService) {
         colorService.setColorSet(colorSets.microFocus);
     }

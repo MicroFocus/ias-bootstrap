@@ -8,6 +8,7 @@ import { AppBarExampleModule } from './components/app-bar-example/app-bar-exampl
 import { ButtonsExampleModule } from './components/buttons-example/buttons-example.module';
 import { DatePickerExampleModule } from './components/date-picker-example/date-picker-example.module';
 import { DialogsExampleModule } from './components/dialogs-example/dialogs-example.module';
+import { FormFieldAdvancedExampleModule } from './components/form-field-advanced-example/form-field-advanced-example.module';
 
 @NgModule({
     declarations: [
@@ -22,6 +23,7 @@ import { DialogsExampleModule } from './components/dialogs-example/dialogs-examp
         ButtonsExampleModule,
         DatePickerExampleModule,
         DialogsExampleModule,
+        FormFieldAdvancedExampleModule,
         FormFieldExampleModule,
     ],
     exports: [

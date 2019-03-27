@@ -5,8 +5,8 @@ import { Subject } from 'rxjs/Subject';
 
 @Component({
     selector: 'app-select-fields',
-    templateUrl: './select-fields.html',
-    styleUrls: ['./select-fields.scss']
+    templateUrl: './select-fields.component.html',
+    styleUrls: ['./select-fields.component.scss']
 })
 export class SelectFieldsComponent implements OnInit, OnDestroy {
     // ux-select configuration properties

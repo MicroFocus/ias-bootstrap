@@ -42,8 +42,6 @@ import { LoginPageComponent } from './pages/tips-page/components/login-page/logi
 import { LoginPageExamplesModule } from './pages/tips-page/components/login-page/examples/_examples.module';
 import { StandardLayoutsModule } from './pages/tips-page/components/standard-layout/examples/_examples.module';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
-import { FormFieldAdvancedExampleComponent } from './pages/components-page/components/form-field-advanced-example/form-field-advanced-example.component';
-import { FormFieldsAdvancedExamplesModule } from './pages/components-page/components/form-field-advanced-example/examples/_examples.module';
 import { CommonComponentsModule } from './components/common-components.module';
 import { ComponentsPageModule } from './pages/components-page/components-page.module';
 
@@ -69,7 +67,6 @@ import { ComponentsPageModule } from './pages/components-page/components-page.mo
         ProgressExampleComponent,
         StandardLayoutComponent,
         LoginPageComponent,
-        FormFieldAdvancedExampleComponent,
     ],
     imports: [
         BrowserModule,
@@ -85,7 +82,6 @@ import { ComponentsPageModule } from './pages/components-page/components-page.mo
         ComponentsPageModule,
 
         // Component example modules:
-        FormFieldsAdvancedExamplesModule,
         FormValidationExamplesModule,
         HeadersExamplesModule,
         IconsExamplesModule,

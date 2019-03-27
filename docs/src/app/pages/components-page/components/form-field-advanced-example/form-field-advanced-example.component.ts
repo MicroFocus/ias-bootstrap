@@ -9,10 +9,11 @@ declare const require;
 })
 export class FormFieldAdvancedExampleComponent implements OnInit {
     exampleFiles = {
-        'select-fields.html': require('!raw-loader!./examples/select-fields.html'),
-        'select-fields.ts': require('!raw-loader!./examples/select-fields.ts'),
-        'select-fields.scss': require('!raw-loader!./examples/select-fields.scss'),
-    }
+        'select-fields.component.html': require('!raw-loader!./examples/select-fields.component.html'),
+        'select-fields.component.scss': require('!raw-loader!./examples/select-fields.component.scss'),
+        'select-fields.component.ts': require('!raw-loader!./examples/select-fields.component.ts'),
+        'select-fields.module.ts': require('!raw-loader!./examples/select-fields.module.ts'),
+    };
 
     constructor() {
     }
