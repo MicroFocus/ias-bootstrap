@@ -3,10 +3,10 @@ import * as Chance from 'chance';
 
 @Component({
   selector: 'app-hover-actions-tables',
-  templateUrl: './hover-actions-tables.html',
-  styleUrls: ['./hover-actions-tables.scss']
+  templateUrl: './hover-actions-tables.component.html',
+  styleUrls: ['./hover-actions-tables.component.scss']
 })
-export class HoverActionsTables{
+export class HoverActionsTablesComponent{
     documents: HoverActionDocument[] = [];
     chance = new Chance();
 

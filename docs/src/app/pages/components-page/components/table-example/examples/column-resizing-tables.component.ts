@@ -3,8 +3,8 @@ import * as Chance from 'chance';
 
 @Component({
     selector: 'app-column-resizing-tables',
-    templateUrl: './column-resizing-tables.html',
-    styleUrls: ['./column-resizing-tables.scss']
+    templateUrl: './column-resizing-tables.component.html',
+    styleUrls: ['./column-resizing-tables.component.scss']
 })
 export class ColumnResizingTablesComponent {
     type: string = 'table';

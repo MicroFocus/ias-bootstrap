@@ -19,6 +19,7 @@ import { PanelsExampleModule } from './components/panels-example/panels-example.
 import { ProgressExampleModule } from './components/progress-example/progress-example.module';
 import { SideNavsExampleModule } from './components/side-navs-example/side-navs-example.module';
 import { StatusMessagesExampleModule } from './components/status-messages-example/status-messages-example.module';
+import { TableExampleModule } from './components/table-example/table-example.module';
 
 @NgModule({
     declarations: [
@@ -45,6 +46,7 @@ import { StatusMessagesExampleModule } from './components/status-messages-exampl
         ProgressExampleModule,
         SideNavsExampleModule,
         StatusMessagesExampleModule,
+        TableExampleModule,
     ],
     exports: [
     ]

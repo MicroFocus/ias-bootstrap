@@ -5,8 +5,8 @@ import * as Chance from 'chance';
 
 @Component({
     selector: 'app-standard-tables',
-    templateUrl: './standard-tables.html',
-    styleUrls: ['./standard-tables.scss']
+    templateUrl: './standard-tables.component.html',
+    styleUrls: ['./standard-tables.component.scss']
 })
 export class StandardTablesComponent implements OnDestroy {
 

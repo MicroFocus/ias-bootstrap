@@ -9,18 +9,25 @@ declare const require;
 })
 export class TableExampleComponent implements OnInit {
     exampleFiles = {
-        'simple-table.html': require('!raw-loader!./examples/simple-table.html'),
-        'simple-table.ts': require('!raw-loader!./examples/simple-table.ts'),
-        'simple-table.scss': require('!raw-loader!./examples/simple-table.scss'),
-        'standard-tables.html': require('!raw-loader!./examples/standard-tables.html'),
-        'standard-tables.ts': require('!raw-loader!./examples/standard-tables.ts'),
-        'standard-tables.scss': require('!raw-loader!./examples/standard-tables.scss'),
-        'column-resizing-tables.html': require('!raw-loader!./examples/column-resizing-tables.html'),
-        'column-resizing-tables.ts': require('!raw-loader!./examples/column-resizing-tables.ts'),
-        'column-resizing-tables.scss': require('!raw-loader!./examples/column-resizing-tables.scss'),
-        'hover-actions-tables.html': require('!raw-loader!./examples/hover-actions-tables.html'),
-        'hover-actions-tables.ts': require('!raw-loader!./examples/hover-actions-tables.ts'),
-        'hover-actions-tables.scss': require('!raw-loader!./examples/hover-actions-tables.scss'),
+        'simple-table.component.html': require('!raw-loader!./examples/simple-table.component.html'),
+        'simple-table.component.scss': require('!raw-loader!./examples/simple-table.component.scss'),
+        'simple-table.component.ts': require('!raw-loader!./examples/simple-table.component.ts'),
+        'simple-table.module.ts': require('!raw-loader!./examples/simple-table.module.ts'),
+
+        'standard-tables.component.html': require('!raw-loader!./examples/standard-tables.component.html'),
+        'standard-tables.component.scss': require('!raw-loader!./examples/standard-tables.component.scss'),
+        'standard-tables.component.ts': require('!raw-loader!./examples/standard-tables.component.ts'),
+        'standard-tables.module.ts': require('!raw-loader!./examples/standard-tables.module.ts'),
+
+        'column-resizing-tables.component.html': require('!raw-loader!./examples/column-resizing-tables.component.html'),
+        'column-resizing-tables.component.scss': require('!raw-loader!./examples/column-resizing-tables.component.scss'),
+        'column-resizing-tables.component.ts': require('!raw-loader!./examples/column-resizing-tables.component.ts'),
+        'column-resizing-tables.module.ts': require('!raw-loader!./examples/column-resizing-tables.module.ts'),
+
+        'hover-actions-tables.component.html': require('!raw-loader!./examples/hover-actions-tables.component.html'),
+        'hover-actions-tables.component.scss': require('!raw-loader!./examples/hover-actions-tables.component.scss'),
+        'hover-actions-tables.component.ts': require('!raw-loader!./examples/hover-actions-tables.component.ts'),
+        'hover-actions-tables.module.ts': require('!raw-loader!./examples/hover-actions-tables.module.ts'),
     };
 
     constructor() {

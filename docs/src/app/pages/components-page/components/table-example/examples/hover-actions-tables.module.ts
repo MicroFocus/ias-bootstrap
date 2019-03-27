@@ -4,24 +4,22 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {
+    CheckboxModule,
     ColorServiceModule as GlobalColorServiceModule,
-    TableModule,
-    FixedHeaderTableModule
+    ColumnSortingModule,
+    FixedHeaderTableModule,
+    HoverActionModule,
+    SelectionModule,
+    SparkModule,
+    TableModule
 } from '@ux-aspects/ux-aspects';
-import { CheckboxModule, ColumnSortingModule, HoverActionModule, SparkModule, SelectionModule } from '@ux-aspects/ux-aspects';
 import { A11yModule } from '@angular/cdk/a11y';
 import { ButtonsModule } from 'ngx-bootstrap/buttons';
-import { ColumnResizingTablesComponent } from './column-resizing-tables';
-import { HoverActionsTables } from './hover-actions-tables';
-import { StandardTablesComponent } from './standard-tables';
-import { SimpleTableComponent } from './simple-table';
+import { HoverActionsTablesComponent } from './hover-actions-tables.component';
 
 @NgModule({
     declarations: [
-        SimpleTableComponent,
-        StandardTablesComponent,
-        ColumnResizingTablesComponent,
-        HoverActionsTables,
+        HoverActionsTablesComponent,
     ],
     imports: [
         A11yModule,
@@ -41,11 +39,8 @@ import { SimpleTableComponent } from './simple-table';
         TableModule,
     ],
     exports: [
-        SimpleTableComponent,
-        StandardTablesComponent,
-        ColumnResizingTablesComponent,
-        HoverActionsTables,
+        HoverActionsTablesComponent,
     ]
 })
-export class TablesExamplesModule {
+export class HoverActionsTablesModule {
 }

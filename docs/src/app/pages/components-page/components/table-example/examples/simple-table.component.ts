@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'app-simple-table',
-    templateUrl: './simple-table.html',
-    styleUrls: ['./simple-table.scss']
+    templateUrl: './simple-table.component.html',
+    styleUrls: ['./simple-table.component.scss']
 })
 export class SimpleTableComponent {
     cartoonCharacters = [
