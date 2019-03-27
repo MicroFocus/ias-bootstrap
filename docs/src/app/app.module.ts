@@ -49,11 +49,8 @@ import { StandardLayoutsModule } from './pages/tips-page/components/standard-lay
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { FormFieldAdvancedExampleComponent } from './pages/components-page/components/form-field-advanced-example/form-field-advanced-example.component';
 import { FormFieldsAdvancedExamplesModule } from './pages/components-page/components/form-field-advanced-example/examples/_examples.module';
-import { FormFieldExampleModule } from './pages/components-page/components/form-field-example/form-field-example.module';
 import { CommonComponentsModule } from './components/common-components.module';
-import { AccordionExampleModule } from './pages/components-page/components/accordion-example/accordion-example.module';
-import { AppBarExampleModule } from './pages/components-page/components/app-bar-example/app-bar-example.module';
-import { ButtonsExampleModule } from './pages/components-page/components/buttons-example/buttons-example.module';
+import { ComponentsPageModule } from './pages/components-page/components-page.module';
 
 @NgModule({
     declarations: [
@@ -94,12 +91,7 @@ import { ButtonsExampleModule } from './pages/components-page/components/buttons
         TabsetModule,
 
         CommonComponentsModule,
-
-        // Component page examples modules
-        AccordionExampleModule,
-        FormFieldExampleModule,
-        AppBarExampleModule,
-        ButtonsExampleModule,
+        ComponentsPageModule,
 
         // Component example modules:
         DatePickerExamplesModule,
