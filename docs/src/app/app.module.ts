@@ -9,9 +9,7 @@ import { PageHeaderModule, TabsetModule, SidePanelModule, NavigationModule } fro
 import { ComponentsPageComponent } from './pages/components-page/components-page.component';
 import { TipsPageComponent } from './pages/tips-page/tips-page.component';
 import { GettingStartedComponent } from './pages/getting-started/getting-started.component';
-import { TagsExampleComponent } from './pages/components-page/components/tags-example/tags-example.component';
 import { TilesExampleComponent } from './pages/components-page/components/tiles-example/tiles-example.component';
-import { TagsExamplesModule } from './pages/components-page/components/tags-example/examples/_examples.module';
 import { TilesExamplesModule } from './pages/components-page/components/tiles-example/examples/_examples.module';
 import { StandardLayoutComponent } from './pages/tips-page/components/standard-layout/standard-layout.component';
 import { LoginPageComponent } from './pages/tips-page/components/login-page/login-page.component';
@@ -27,7 +25,6 @@ import { ComponentsPageModule } from './pages/components-page/components-page.mo
         ComponentsPageComponent,
         TipsPageComponent,
         GettingStartedComponent,
-        TagsExampleComponent,
         TilesExampleComponent,
         StandardLayoutComponent,
         LoginPageComponent,
@@ -46,7 +43,6 @@ import { ComponentsPageModule } from './pages/components-page/components-page.mo
         ComponentsPageModule,
 
         // Component example modules:
-        TagsExamplesModule,
         TilesExamplesModule,
         LoginPageExamplesModule,
         StandardLayoutsModule,

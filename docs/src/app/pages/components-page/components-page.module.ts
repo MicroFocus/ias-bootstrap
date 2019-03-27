@@ -21,6 +21,7 @@ import { SideNavsExampleModule } from './components/side-navs-example/side-navs-
 import { StatusMessagesExampleModule } from './components/status-messages-example/status-messages-example.module';
 import { TableExampleModule } from './components/table-example/table-example.module';
 import { TabsExampleModule } from './components/tabs-example/tabs-example.module';
+import { TagsExampleModule } from './components/tags-example/tags-example.module';
 
 @NgModule({
     declarations: [
@@ -49,6 +50,7 @@ import { TabsExampleModule } from './components/tabs-example/tabs-example.module
         StatusMessagesExampleModule,
         TableExampleModule,
         TabsExampleModule,
+        TagsExampleModule,
     ],
     exports: [
     ]

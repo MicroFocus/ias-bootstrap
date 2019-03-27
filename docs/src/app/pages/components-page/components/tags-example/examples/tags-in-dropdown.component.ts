@@ -1,25 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'app-tags-in-combobox',
-    templateUrl: './tags-in-combobox.html',
-    styleUrls: ['./tags-in-combobox.scss']
+    selector: 'app-tags-in-dropdown',
+    templateUrl: './tags-in-dropdown.component.html',
+    styleUrls: ['./tags-in-dropdown.component.scss']
 })
-export class TagsInComboboxComponent {
-    addOnPaste = true;
-    disabled = false;
-    enforceTagLimits = false;
-    freeInput = true;
-    input: string;
-    maxTags = 10;
-    minTags = 0;
-    placeholder = 'Select a country';
-    selectFirst = true;
-    showTypeaheadOnClick = false;
-    tagDelimiters: string;
-    typeaheadEnabled = true;
-
-    selected: string[] = ['United States', 'Canada'];
+export class TagsInDropdownComponent {
     options: string[] = ['United States', 'United Kingdom', 'Afghanistan', 'Aland Islands', 'Albania', 'Algeria',
         'American Samoa', 'Andorra', 'Angola', 'Anguilla', 'Antarctica', 'Antigua and Barbuda', 'Argentina', 'Armenia',
         'Aruba', 'Australia', 'Austria', 'Azerbaijan', 'Bahamas', 'Bahrain', 'Bangladesh', 'Barbados', 'Belarus',
