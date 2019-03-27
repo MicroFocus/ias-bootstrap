@@ -3,8 +3,8 @@ import { NavigationItem, PageHeaderIconMenu } from '@ux-aspects/ux-aspects';
 
 @Component({
     selector: 'app-standard-side-nav',
-    templateUrl: './standard-side-nav.html',
-    styleUrls: ['./standard-side-nav.scss']
+    templateUrl: './standard-side-nav.component.html',
+    styleUrls: ['./standard-side-nav.component.scss']
 })
 export class StandardSideNavComponent {
     navigation: NavigationItem[] = [

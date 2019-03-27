@@ -3,8 +3,8 @@ import { NavigationItem, PageHeaderIconMenu } from '@ux-aspects/ux-aspects';
 
 @Component({
     selector: 'app-toggle-side-nav',
-    templateUrl: './toggle-side-nav.html',
-    styleUrls: ['./toggle-side-nav.scss']
+    templateUrl: './toggle-side-nav.component.html',
+    styleUrls: ['./toggle-side-nav.component.scss']
 })
 export class ToggleSideNavComponent {
     navigation: NavigationItem[] = [

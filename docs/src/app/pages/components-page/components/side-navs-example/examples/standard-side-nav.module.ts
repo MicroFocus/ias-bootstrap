@@ -1,14 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { StandardSideNavComponent } from './standard-side-nav';
+import { StandardSideNavComponent } from './standard-side-nav.component';
 import { NavigationModule, PageHeaderModule, SidePanelModule } from '@ux-aspects/ux-aspects';
-import { ToggleSideNavComponent } from './toggle-side-nav';
 import { AppRoutingModule } from '../../../../../app-routing.module';
 
 @NgModule({
     declarations: [
         StandardSideNavComponent,
-        ToggleSideNavComponent,
     ],
     imports: [
         CommonModule,
@@ -19,8 +17,7 @@ import { AppRoutingModule } from '../../../../../app-routing.module';
     ],
     exports: [
         StandardSideNavComponent,
-        ToggleSideNavComponent,
     ]
 })
-export class SideNavExamplesModule {
+export class StandardSideNavModule {
 }

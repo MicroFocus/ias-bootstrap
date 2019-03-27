@@ -9,12 +9,15 @@ declare const require;
 })
 export class SideNavsExampleComponent implements OnInit {
     exampleFiles = {
-        'standard-side-nav.html': require('!raw-loader!./examples/standard-side-nav.html'),
-        'standard-side-nav.ts': require('!raw-loader!./examples/standard-side-nav.ts'),
-        'standard-side-nav.scss': require('!raw-loader!./examples/standard-side-nav.scss'),
-        'toggle-side-nav.html': require('!raw-loader!./examples/toggle-side-nav.html'),
-        'toggle-side-nav.ts': require('!raw-loader!./examples/toggle-side-nav.ts'),
-        'toggle-side-nav.scss': require('!raw-loader!./examples/toggle-side-nav.scss'),
+        'standard-side-nav.component.html': require('!raw-loader!./examples/standard-side-nav.component.html'),
+        'standard-side-nav.component.scss': require('!raw-loader!./examples/standard-side-nav.component.scss'),
+        'standard-side-nav.component.ts': require('!raw-loader!./examples/standard-side-nav.component.ts'),
+        'standard-side-nav.module.ts': require('!raw-loader!./examples/standard-side-nav.module.ts'),
+
+        'toggle-side-nav.component.html': require('!raw-loader!./examples/toggle-side-nav.component.html'),
+        'toggle-side-nav.component.scss': require('!raw-loader!./examples/toggle-side-nav.component.scss'),
+        'toggle-side-nav.component.ts': require('!raw-loader!./examples/toggle-side-nav.component.ts'),
+        'toggle-side-nav.module.ts': require('!raw-loader!./examples/toggle-side-nav.module.ts'),
     };
 
     constructor() {
