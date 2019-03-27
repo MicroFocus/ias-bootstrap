@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CheckboxModule } from '@ux-aspects/ux-aspects';
-import { FieldByFieldComponent } from './field-by-field';
+import { FieldByFieldComponent } from './field-by-field.component';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
@@ -10,12 +9,11 @@ import { FormsModule } from '@angular/forms';
     ],
     imports: [
         CommonModule,
-        CheckboxModule,
         FormsModule
     ],
     exports: [
         FieldByFieldComponent
     ]
 })
-export class FormValidationExamplesModule {
+export class FieldByFieldModule {
 }

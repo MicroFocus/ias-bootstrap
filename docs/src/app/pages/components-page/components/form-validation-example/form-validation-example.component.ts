@@ -10,9 +10,10 @@ declare const require;
 export class FormValidationExampleComponent implements OnInit {
 
     exampleFiles = {
-        'field-by-field.html': require('!raw-loader!./examples/field-by-field.html'),
-        'field-by-field.ts': require('!raw-loader!./examples/field-by-field.ts'),
-        'field-by-field.scss': require('!raw-loader!./examples/field-by-field.scss'),
+        'field-by-field.component.html': require('!raw-loader!./examples/field-by-field.component.html'),
+        'field-by-field.component.scss': require('!raw-loader!./examples/field-by-field.component.scss'),
+        'field-by-field.component.ts': require('!raw-loader!./examples/field-by-field.component.ts'),
+        'field-by-field.module.ts': require('!raw-loader!./examples/field-by-field.module.ts'),
     };
 
     constructor() {
