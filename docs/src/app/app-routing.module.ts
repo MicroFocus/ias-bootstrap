@@ -8,7 +8,6 @@ import { DatePickerExampleComponent } from './pages/components-page/components/d
 import { GettingStartedComponent } from './pages/getting-started/getting-started.component';
 import { TipsPageComponent } from './pages/tips-page/tips-page.component';
 import { AppBarExampleComponent } from './pages/components-page/components/app-bar-example/app-bar-example.component';
-import { CommentsExampleComponent } from './pages/components-page/components/comments-example/comments-example.component';
 import { FormFieldExampleComponent } from './pages/components-page/components/form-field-example/form-field-example.component';
 import { FormValidationExampleComponent } from './pages/components-page/components/form-validation-example/form-validation-example.component';
 import { HeadersExampleComponent } from './pages/components-page/components/headers-example/headers-example.component';
@@ -47,7 +46,6 @@ const routes: Routes = [
                 ]
             },
             { path: 'buttons', component: ButtonsExampleComponent },
-            { path: 'comments', component: CommentsExampleComponent },
             { path: 'date-picker', component: DatePickerExampleComponent },
             { path: 'dialogs', component: DialogsExampleComponent },
             { path: 'form-field', component: FormFieldExampleComponent },

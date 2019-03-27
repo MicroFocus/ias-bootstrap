@@ -9,11 +9,14 @@ declare const require;
 })
 export class DatePickerExampleComponent {
     exampleFiles = {
-        'date-picker-basic.html': require('!raw-loader!./examples/date-picker-basic.html'),
-        'date-picker-basic.ts': require('!raw-loader!./examples/date-picker-basic.ts'),
-        'date-picker-basic.scss': require('!raw-loader!./examples/date-picker-basic.scss'),
-        'date-picker-advanced.html': require('!raw-loader!./examples/date-picker-advanced.html'),
-        'date-picker-advanced.ts': require('!raw-loader!./examples/date-picker-advanced.ts'),
-        'date-picker-advanced.scss': require('!raw-loader!./examples/date-picker-advanced.scss'),
+        'date-picker-basic.component.html': require('!raw-loader!./examples/date-picker-basic.component.html'),
+        'date-picker-basic.component.scss': require('!raw-loader!./examples/date-picker-basic.component.scss'),
+        'date-picker-basic.component.ts': require('!raw-loader!./examples/date-picker-basic.component.ts'),
+        'date-picker-basic.module.ts': require('!raw-loader!./examples/date-picker-basic.module.ts'),
+
+        'date-picker-advanced.component.html': require('!raw-loader!./examples/date-picker-advanced.component.html'),
+        'date-picker-advanced.component.scss': require('!raw-loader!./examples/date-picker-advanced.component.scss'),
+        'date-picker-advanced.component.ts': require('!raw-loader!./examples/date-picker-advanced.component.ts'),
+        'date-picker-advanced.module.ts': require('!raw-loader!./examples/date-picker-advanced.module.ts'),
     };
 }

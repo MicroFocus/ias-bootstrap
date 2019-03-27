@@ -6,6 +6,7 @@ import { AccordionExampleModule } from './components/accordion-example/accordion
 import { FormFieldExampleModule } from './components/form-field-example/form-field-example.module';
 import { AppBarExampleModule } from './components/app-bar-example/app-bar-example.module';
 import { ButtonsExampleModule } from './components/buttons-example/buttons-example.module';
+import { DatePickerExampleModule } from './components/date-picker-example/date-picker-example.module';
 
 @NgModule({
     declarations: [
@@ -18,6 +19,7 @@ import { ButtonsExampleModule } from './components/buttons-example/buttons-examp
         AccordionExampleModule,
         AppBarExampleModule,
         ButtonsExampleModule,
+        DatePickerExampleModule,
         FormFieldExampleModule,
     ],
     exports: [

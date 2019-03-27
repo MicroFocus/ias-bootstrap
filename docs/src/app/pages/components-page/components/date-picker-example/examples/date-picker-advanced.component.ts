@@ -5,8 +5,8 @@ import { debounce } from 'rxjs/operators';
 
 @Component({
     selector: 'app-date-picker-advanced',
-    templateUrl: './date-picker-advanced.html',
-    styleUrls: ['./date-picker-advanced.scss']
+    templateUrl: './date-picker-advanced.component.html',
+    styleUrls: ['./date-picker-advanced.component.scss']
 })
 export class DatePickerAdvancedComponent implements AfterViewInit, OnDestroy {
     @ViewChild('input') dateInput: ElementRef;

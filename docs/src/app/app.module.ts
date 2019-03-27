@@ -8,10 +8,8 @@ import { ModalModule } from 'ngx-bootstrap/modal';
 import { PageHeaderModule, TabsetModule, SidePanelModule, NavigationModule } from '@ux-aspects/ux-aspects';
 import { ComponentsPageComponent } from './pages/components-page/components-page.component';
 import { DialogsExampleComponent } from './pages/components-page/components/dialogs-example/dialogs-example.component';
-import { DatePickerExampleComponent } from './pages/components-page/components/date-picker-example/date-picker-example.component';
 import { TipsPageComponent } from './pages/tips-page/tips-page.component';
 import { GettingStartedComponent } from './pages/getting-started/getting-started.component';
-import { CommentsExampleComponent } from './pages/components-page/components/comments-example/comments-example.component';
 import { FormValidationExampleComponent } from './pages/components-page/components/form-validation-example/form-validation-example.component';
 import { HeadersExampleComponent } from './pages/components-page/components/headers-example/headers-example.component';
 import { IconsExampleComponent } from './pages/components-page/components/icons-example/icons-example.component';
@@ -26,7 +24,6 @@ import { TabsExampleComponent } from './pages/components-page/components/tabs-ex
 import { TagsExampleComponent } from './pages/components-page/components/tags-example/tags-example.component';
 import { TilesExampleComponent } from './pages/components-page/components/tiles-example/tiles-example.component';
 import { ProgressExampleComponent } from './pages/components-page/components/progress-example/progress-example.component';
-import { DatePickerExamplesModule } from './pages/components-page/components/date-picker-example/examples/_examples.module';
 import { DialogsExamplesModule } from './pages/components-page/components/dialogs-example/examples/_examples.module';
 import { FormValidationExamplesModule } from './pages/components-page/components/form-validation-example/examples/_examples.module';
 import { HeadersExamplesModule } from './pages/components-page/components/headers-example/examples/_examples.module';
@@ -57,10 +54,8 @@ import { ComponentsPageModule } from './pages/components-page/components-page.mo
         AppComponent,
         ComponentsPageComponent,
         DialogsExampleComponent,
-        DatePickerExampleComponent,
         TipsPageComponent,
         GettingStartedComponent,
-        CommentsExampleComponent,
         FormValidationExampleComponent,
         HeadersExampleComponent,
         IconsExampleComponent,
@@ -85,7 +80,6 @@ import { ComponentsPageModule } from './pages/components-page/components-page.mo
         PageHeaderModule,
         SidePanelModule,
         NavigationModule,
-        // DateTimePickerModule,
         BsDropdownModule.forRoot(),
         ModalModule.forRoot(),
         TabsetModule,
@@ -94,7 +88,6 @@ import { ComponentsPageModule } from './pages/components-page/components-page.mo
         ComponentsPageModule,
 
         // Component example modules:
-        DatePickerExamplesModule,
         DialogsExamplesModule,
         FormFieldsAdvancedExamplesModule,
         FormValidationExamplesModule,
