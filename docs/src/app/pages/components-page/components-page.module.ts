@@ -10,6 +10,7 @@ import { DatePickerExampleModule } from './components/date-picker-example/date-p
 import { DialogsExampleModule } from './components/dialogs-example/dialogs-example.module';
 import { FormFieldAdvancedExampleModule } from './components/form-field-advanced-example/form-field-advanced-example.module';
 import { FormValidationExampleModule } from './components/form-validation-example/form-validation-example.module';
+import { HeadersExampleModule } from './components/headers-example/headers-example.module';
 
 @NgModule({
     declarations: [
@@ -27,6 +28,7 @@ import { FormValidationExampleModule } from './components/form-validation-exampl
         FormFieldAdvancedExampleModule,
         FormFieldExampleModule,
         FormValidationExampleModule,
+        HeadersExampleModule,
     ],
     exports: [
     ]

@@ -9,9 +9,10 @@ declare const require;
 })
 export class HeadersExampleComponent implements OnInit {
     exampleFiles = {
-        'standard-headers.html': require('!raw-loader!./examples/standard-headers.html'),
-        'standard-headers.ts': require('!raw-loader!./examples/standard-headers.ts'),
-        'standard-headers.scss': require('!raw-loader!./examples/standard-headers.scss'),
+        'standard-headers.component.html': require('!raw-loader!./examples/standard-headers.component.html'),
+        'standard-headers.component.scss': require('!raw-loader!./examples/standard-headers.component.scss'),
+        'standard-headers.component.ts': require('!raw-loader!./examples/standard-headers.component.ts'),
+        'standard-headers.module.ts': require('!raw-loader!./examples/standard-headers.module.ts'),
     };
 
     constructor() {
