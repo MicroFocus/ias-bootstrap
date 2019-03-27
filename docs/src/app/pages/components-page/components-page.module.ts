@@ -18,6 +18,7 @@ import { MenuExampleModule } from './components/menu-example/menu-example.module
 import { PanelsExampleModule } from './components/panels-example/panels-example.module';
 import { ProgressExampleModule } from './components/progress-example/progress-example.module';
 import { SideNavsExampleModule } from './components/side-navs-example/side-navs-example.module';
+import { StatusMessagesExampleModule } from './components/status-messages-example/status-messages-example.module';
 
 @NgModule({
     declarations: [
@@ -43,6 +44,7 @@ import { SideNavsExampleModule } from './components/side-navs-example/side-navs-
         PanelsExampleModule,
         ProgressExampleModule,
         SideNavsExampleModule,
+        StatusMessagesExampleModule,
     ],
     exports: [
     ]

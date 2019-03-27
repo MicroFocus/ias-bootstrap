@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { StandardMessagesComponent } from './standard-messages';
+import { StandardMessagesComponent } from './standard-messages.component';
 
 @NgModule({
     declarations: [
@@ -13,5 +13,5 @@ import { StandardMessagesComponent } from './standard-messages';
         StandardMessagesComponent
     ]
 })
-export class MessagesExamplesModule {
+export class StandardMessagesModule {
 }
