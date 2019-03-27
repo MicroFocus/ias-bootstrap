@@ -15,8 +15,6 @@ import { TableExampleComponent } from './pages/components-page/components/table-
 import { TabsExampleComponent } from './pages/components-page/components/tabs-example/tabs-example.component';
 import { TagsExampleComponent } from './pages/components-page/components/tags-example/tags-example.component';
 import { TilesExampleComponent } from './pages/components-page/components/tiles-example/tiles-example.component';
-import { ProgressExampleComponent } from './pages/components-page/components/progress-example/progress-example.component';
-import { ProgressExamplesModule } from './pages/components-page/components/progress-example/examples/_examples.module';
 import { SideNavExamplesModule } from './pages/components-page/components/side-navs-example/examples/_examples.module';
 import { MessagesExamplesModule } from './pages/components-page/components/status-messages-example/examples/_examples.module';
 import { TablesExamplesModule } from './pages/components-page/components/table-example/examples/_examples.module';
@@ -43,7 +41,6 @@ import { ComponentsPageModule } from './pages/components-page/components-page.mo
         TabsExampleComponent,
         TagsExampleComponent,
         TilesExampleComponent,
-        ProgressExampleComponent,
         StandardLayoutComponent,
         LoginPageComponent,
     ],
@@ -61,7 +58,6 @@ import { ComponentsPageModule } from './pages/components-page/components-page.mo
         ComponentsPageModule,
 
         // Component example modules:
-        ProgressExamplesModule,
         SideNavExamplesModule,
         MessagesExamplesModule,
         TablesExamplesModule,

@@ -9,12 +9,15 @@ declare const require;
 })
 export class ProgressExampleComponent implements OnInit {
     exampleFiles = {
-        'progress-bar.html': require('!raw-loader!./examples/progress-bar.html'),
-        'progress-bar.ts': require('!raw-loader!./examples/progress-bar.ts'),
-        'progress-bar.scss': require('!raw-loader!./examples/progress-bar.scss'),
-        'progress-spinner.html': require('!raw-loader!./examples/progress-spinner.html'),
-        'progress-spinner.ts': require('!raw-loader!./examples/progress-spinner.ts'),
-        'progress-spinner.scss': require('!raw-loader!./examples/progress-spinner.scss'),
+        'progress-bar.component.html': require('!raw-loader!./examples/progress-bar.component.html'),
+        'progress-bar.component.scss': require('!raw-loader!./examples/progress-bar.component.scss'),
+        'progress-bar.component.ts': require('!raw-loader!./examples/progress-bar.component.ts'),
+        'progress-bar.module.ts': require('!raw-loader!./examples/progress-bar.module.ts'),
+
+        'progress-spinner.component.html': require('!raw-loader!./examples/progress-spinner.component.html'),
+        'progress-spinner.component.scss': require('!raw-loader!./examples/progress-spinner.component.scss'),
+        'progress-spinner.component.ts': require('!raw-loader!./examples/progress-spinner.component.ts'),
+        'progress-spinner.module.ts': require('!raw-loader!./examples/progress-spinner.module.ts'),
     };
 
     constructor() {
