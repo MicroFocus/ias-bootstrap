@@ -14,6 +14,7 @@ import { HeadersExampleModule } from './components/headers-example/headers-examp
 import { IconsExampleModule } from './components/icons-example/icons-example.module';
 import { LinksExampleModule } from './components/links-example/links-example.module';
 import { ListsExampleModule } from './components/lists-example/lists-example.module';
+import { MenuExampleModule } from './components/menu-example/menu-example.module';
 
 @NgModule({
     declarations: [
@@ -35,6 +36,7 @@ import { ListsExampleModule } from './components/lists-example/lists-example.mod
         IconsExampleModule,
         LinksExampleModule,
         ListsExampleModule,
+        MenuExampleModule,
     ],
     exports: [
     ]

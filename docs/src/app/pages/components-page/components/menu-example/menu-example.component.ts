@@ -9,15 +9,20 @@ declare const require;
 })
 export class MenuExampleComponent implements OnInit {
     exampleFiles = {
-        'standard-menus.html': require('!raw-loader!./examples/standard-menus.html'),
-        'standard-menus.ts': require('!raw-loader!./examples/standard-menus.ts'),
-        'standard-menus.scss': require('!raw-loader!./examples/standard-menus.scss'),
-        'split-button-menus.html': require('!raw-loader!./examples/split-button-menus.html'),
-        'split-button-menus.ts': require('!raw-loader!./examples/split-button-menus.ts'),
-        'split-button-menus.scss': require('!raw-loader!./examples/split-button-menus.scss'),
-        'complex-menus.html': require('!raw-loader!./examples/complex-menus.html'),
-        'complex-menus.ts': require('!raw-loader!./examples/complex-menus.ts'),
-        'complex-menus.scss': require('!raw-loader!./examples/complex-menus.scss'),
+        'standard-menus.component.html': require('!raw-loader!./examples/standard-menus.component.html'),
+        'standard-menus.component.scss': require('!raw-loader!./examples/standard-menus.component.scss'),
+        'standard-menus.component.ts': require('!raw-loader!./examples/standard-menus.component.ts'),
+        'standard-menus.module.ts': require('!raw-loader!./examples/standard-menus.module.ts'),
+
+        'split-button-menus.component.html': require('!raw-loader!./examples/split-button-menus.component.html'),
+        'split-button-menus.component.scss': require('!raw-loader!./examples/split-button-menus.component.scss'),
+        'split-button-menus.component.ts': require('!raw-loader!./examples/split-button-menus.component.ts'),
+        'split-button-menus.module.ts': require('!raw-loader!./examples/split-button-menus.module.ts'),
+
+        'complex-menus.component.html': require('!raw-loader!./examples/complex-menus.component.html'),
+        'complex-menus.component.scss': require('!raw-loader!./examples/complex-menus.component.scss'),
+        'complex-menus.component.ts': require('!raw-loader!./examples/complex-menus.component.ts'),
+        'complex-menus.module.ts': require('!raw-loader!./examples/complex-menus.module.ts'),
     };
 
     constructor() {

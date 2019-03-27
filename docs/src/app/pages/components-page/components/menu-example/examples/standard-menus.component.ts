@@ -1,11 +1,11 @@
 import { Component, OnInit, TemplateRef } from '@angular/core';
 
 @Component({
-    selector: 'app-complex-menus',
-    templateUrl: './complex-menus.html',
-    styleUrls: ['./complex-menus.scss']
+    selector: 'app-standard-menus',
+    templateUrl: './standard-menus.component.html',
+    styleUrls: ['./standard-menus.component.scss']
 })
-export class ComplexMenusComponent implements OnInit {
+export class StandardMenusComponent implements OnInit {
     cases = [
         'Alpha',
         'Beta',
