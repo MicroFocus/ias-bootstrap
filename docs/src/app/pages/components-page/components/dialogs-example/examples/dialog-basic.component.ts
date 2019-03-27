@@ -3,7 +3,7 @@ import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
 
 @Component({
     selector: 'app-dialog-basic',
-    templateUrl: './dialog-basic.html'
+    templateUrl: './dialog-basic.component.html'
 })
 export class DialogBasicComponent implements OnInit {
     modalRef: BsModalRef;

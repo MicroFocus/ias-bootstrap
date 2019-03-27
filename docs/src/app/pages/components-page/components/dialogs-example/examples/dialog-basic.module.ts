@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DialogBasicComponent } from './dialog-basic';
+import { DialogBasicComponent } from './dialog-basic.component';
 
 
 @NgModule({
@@ -14,5 +14,5 @@ import { DialogBasicComponent } from './dialog-basic';
         DialogBasicComponent
     ]
 })
-export class DialogsExamplesModule {
+export class DialogBasicModule {
 }

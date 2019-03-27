@@ -7,6 +7,7 @@ import { FormFieldExampleModule } from './components/form-field-example/form-fie
 import { AppBarExampleModule } from './components/app-bar-example/app-bar-example.module';
 import { ButtonsExampleModule } from './components/buttons-example/buttons-example.module';
 import { DatePickerExampleModule } from './components/date-picker-example/date-picker-example.module';
+import { DialogsExampleModule } from './components/dialogs-example/dialogs-example.module';
 
 @NgModule({
     declarations: [
@@ -20,6 +21,7 @@ import { DatePickerExampleModule } from './components/date-picker-example/date-p
         AppBarExampleModule,
         ButtonsExampleModule,
         DatePickerExampleModule,
+        DialogsExampleModule,
         FormFieldExampleModule,
     ],
     exports: [

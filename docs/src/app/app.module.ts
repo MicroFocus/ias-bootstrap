@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { PageHeaderModule, TabsetModule, SidePanelModule, NavigationModule } from '@ux-aspects/ux-aspects';
 import { ComponentsPageComponent } from './pages/components-page/components-page.component';
-import { DialogsExampleComponent } from './pages/components-page/components/dialogs-example/dialogs-example.component';
 import { TipsPageComponent } from './pages/tips-page/tips-page.component';
 import { GettingStartedComponent } from './pages/getting-started/getting-started.component';
 import { FormValidationExampleComponent } from './pages/components-page/components/form-validation-example/form-validation-example.component';
@@ -24,7 +23,6 @@ import { TabsExampleComponent } from './pages/components-page/components/tabs-ex
 import { TagsExampleComponent } from './pages/components-page/components/tags-example/tags-example.component';
 import { TilesExampleComponent } from './pages/components-page/components/tiles-example/tiles-example.component';
 import { ProgressExampleComponent } from './pages/components-page/components/progress-example/progress-example.component';
-import { DialogsExamplesModule } from './pages/components-page/components/dialogs-example/examples/_examples.module';
 import { FormValidationExamplesModule } from './pages/components-page/components/form-validation-example/examples/_examples.module';
 import { HeadersExamplesModule } from './pages/components-page/components/headers-example/examples/_examples.module';
 import { IconsExamplesModule } from './pages/components-page/components/icons-example/examples/_examples.module';
@@ -53,7 +51,6 @@ import { ComponentsPageModule } from './pages/components-page/components-page.mo
     declarations: [
         AppComponent,
         ComponentsPageComponent,
-        DialogsExampleComponent,
         TipsPageComponent,
         GettingStartedComponent,
         FormValidationExampleComponent,
@@ -88,7 +85,6 @@ import { ComponentsPageModule } from './pages/components-page/components-page.mo
         ComponentsPageModule,
 
         // Component example modules:
-        DialogsExamplesModule,
         FormFieldsAdvancedExamplesModule,
         FormValidationExamplesModule,
         HeadersExamplesModule,

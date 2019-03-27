@@ -9,8 +9,9 @@ declare const require;
 })
 export class DialogsExampleComponent implements OnInit {
     exampleFiles = {
-        'dialog-basic.html': require('!raw-loader!./examples/dialog-basic.html'),
-        'dialog-basic.ts': require('!raw-loader!./examples/dialog-basic.ts'),
+        'dialog-basic.component.html': require('!raw-loader!./examples/dialog-basic.component.html'),
+        'dialog-basic.component.ts': require('!raw-loader!./examples/dialog-basic.component.ts'),
+        'dialog-basic.module.ts': require('!raw-loader!./examples/dialog-basic.module.ts'),
     };
 
     constructor() {
