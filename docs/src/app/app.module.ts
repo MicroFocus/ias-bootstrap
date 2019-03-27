@@ -9,7 +9,6 @@ import { PageHeaderModule, TabsetModule, SidePanelModule, NavigationModule } fro
 import { ComponentsPageComponent } from './pages/components-page/components-page.component';
 import { TipsPageComponent } from './pages/tips-page/tips-page.component';
 import { GettingStartedComponent } from './pages/getting-started/getting-started.component';
-import { IconsExampleComponent } from './pages/components-page/components/icons-example/icons-example.component';
 import { LinksExampleComponent } from './pages/components-page/components/links-example/links-example.component';
 import { ListsExampleComponent } from './pages/components-page/components/lists-example/lists-example.component';
 import { MenuExampleComponent } from './pages/components-page/components/menu-example/menu-example.component';
@@ -21,7 +20,6 @@ import { TabsExampleComponent } from './pages/components-page/components/tabs-ex
 import { TagsExampleComponent } from './pages/components-page/components/tags-example/tags-example.component';
 import { TilesExampleComponent } from './pages/components-page/components/tiles-example/tiles-example.component';
 import { ProgressExampleComponent } from './pages/components-page/components/progress-example/progress-example.component';
-import { IconsExamplesModule } from './pages/components-page/components/icons-example/examples/_examples.module';
 import { LinksExamplesModule } from './pages/components-page/components/links-example/examples/_examples.module';
 import { ListExamplesModule } from './pages/components-page/components/lists-example/examples/_examples.module';
 import { MenuExamplesModule } from './pages/components-page/components/menu-example/examples/_examples.module';
@@ -47,7 +45,6 @@ import { ComponentsPageModule } from './pages/components-page/components-page.mo
         ComponentsPageComponent,
         TipsPageComponent,
         GettingStartedComponent,
-        IconsExampleComponent,
         LinksExampleComponent,
         ListsExampleComponent,
         MenuExampleComponent,
@@ -76,7 +73,6 @@ import { ComponentsPageModule } from './pages/components-page/components-page.mo
         ComponentsPageModule,
 
         // Component example modules:
-        IconsExamplesModule,
         LinksExamplesModule,
         ListExamplesModule,
         MenuExamplesModule,

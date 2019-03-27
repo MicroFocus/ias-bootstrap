@@ -11,6 +11,7 @@ import { DialogsExampleModule } from './components/dialogs-example/dialogs-examp
 import { FormFieldAdvancedExampleModule } from './components/form-field-advanced-example/form-field-advanced-example.module';
 import { FormValidationExampleModule } from './components/form-validation-example/form-validation-example.module';
 import { HeadersExampleModule } from './components/headers-example/headers-example.module';
+import { IconsExampleModule } from './components/icons-example/icons-example.module';
 
 @NgModule({
     declarations: [
@@ -29,6 +30,7 @@ import { HeadersExampleModule } from './components/headers-example/headers-examp
         FormFieldExampleModule,
         FormValidationExampleModule,
         HeadersExampleModule,
+        IconsExampleModule
     ],
     exports: [
     ]

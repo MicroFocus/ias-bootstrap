@@ -9,9 +9,10 @@ declare const require;
 })
 export class IconsExampleComponent implements OnInit {
     exampleFiles = {
-        'icon-sizes.html': require('!raw-loader!./examples/icon-sizes.html'),
-        'icon-sizes.ts': require('!raw-loader!./examples/icon-sizes.ts'),
-        'icon-sizes.scss': require('!raw-loader!./examples/icon-sizes.scss'),
+        'icon-sizes.component.html': require('!raw-loader!./examples/icon-sizes.component.html'),
+        'icon-sizes.component.scss': require('!raw-loader!./examples/icon-sizes.component.scss'),
+        'icon-sizes.component.ts': require('!raw-loader!./examples/icon-sizes.component.ts'),
+        'icon-sizes.module.ts': require('!raw-loader!./examples/icon-sizes.module.ts'),
     };
 
     constructor() {

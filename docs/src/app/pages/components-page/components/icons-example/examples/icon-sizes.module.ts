@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { IconSizesComponent } from './icon-sizes';
+import { IconSizesComponent } from './icon-sizes.component';
 
 @NgModule({
     declarations: [
@@ -13,5 +13,5 @@ import { IconSizesComponent } from './icon-sizes';
         IconSizesComponent
     ]
 })
-export class IconsExamplesModule {
+export class IconSizesModule {
 }
