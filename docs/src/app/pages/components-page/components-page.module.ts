@@ -20,6 +20,7 @@ import { ProgressExampleModule } from './components/progress-example/progress-ex
 import { SideNavsExampleModule } from './components/side-navs-example/side-navs-example.module';
 import { StatusMessagesExampleModule } from './components/status-messages-example/status-messages-example.module';
 import { TableExampleModule } from './components/table-example/table-example.module';
+import { TabsExampleModule } from './components/tabs-example/tabs-example.module';
 
 @NgModule({
     declarations: [
@@ -47,6 +48,7 @@ import { TableExampleModule } from './components/table-example/table-example.mod
         SideNavsExampleModule,
         StatusMessagesExampleModule,
         TableExampleModule,
+        TabsExampleModule,
     ],
     exports: [
     ]

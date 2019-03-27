@@ -7,11 +7,11 @@ import { TestComponent } from './test.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 
 import { PanelExamplesModule } from '../app/pages/components-page/components/panels-example/examples/panel-examples.module';
-import { TabsExamplesModule } from '../app/pages/components-page/components/tabs-example/examples/_examples.module';
 import { FormFieldExampleModule } from '../app/pages/components-page/components/form-field-example/form-field-example.module';
 import { AccordionBasicModule } from '../app/pages/components-page/components/accordion-example/examples/accordion-basic.module';
 import { ButtonsExampleModule } from '../app/pages/components-page/components/buttons-example/buttons-example.module';
 import { TableExampleModule } from '../app/pages/components-page/components/table-example/table-example.module';
+import { TabsExampleModule } from '../app/pages/components-page/components/tabs-example/tabs-example.module';
 
 @NgModule({
     declarations: [
@@ -23,7 +23,7 @@ import { TableExampleModule } from '../app/pages/components-page/components/tabl
         ReactiveFormsModule,
         TestRoutingModule,
         PanelExamplesModule,
-        TabsExamplesModule,
+        TabsExampleModule,
         TableExampleModule,
 
         FormFieldExampleModule,

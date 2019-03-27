@@ -8,7 +8,7 @@ import { CheckboxesComponent } from '../app/pages/components-page/components/for
 import { RadioButtonsComponent } from '../app/pages/components-page/components/form-field-example/examples/radio-buttons.component';
 import { AccordionBasicComponent } from '../app/pages/components-page/components/accordion-example/examples/accordion-basic.component';
 import { PanelExamplesComponent } from '../app/pages/components-page/components/panels-example/examples/panel-examples.component';
-import { StandardTabsComponent } from '../app/pages/components-page/components/tabs-example/examples/standard-tabs';
+import { StandardTabsComponent } from '../app/pages/components-page/components/tabs-example/examples/standard-tabs.component';
 import { SearchFieldComponent } from '../app/pages/components-page/components/form-field-example/examples/search-field.component';
 import { SimpleTableComponent } from '../app/pages/components-page/components/table-example/examples/simple-table.component';
 import { BasicFormComponent } from '../app/pages/components-page/components/form-field-example/examples/basic-form.component';

@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TabsetModule } from '@ux-aspects/ux-aspects';
-import { StandardTabsComponent } from './standard-tabs';
+import { StandardTabsComponent } from './standard-tabs.component';
 
 @NgModule({
     declarations: [
@@ -15,5 +15,5 @@ import { StandardTabsComponent } from './standard-tabs';
         StandardTabsComponent,
     ]
 })
-export class TabsExamplesModule {
+export class StandardTabsModule {
 }
