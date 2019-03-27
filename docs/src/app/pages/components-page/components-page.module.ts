@@ -13,6 +13,7 @@ import { FormValidationExampleModule } from './components/form-validation-exampl
 import { HeadersExampleModule } from './components/headers-example/headers-example.module';
 import { IconsExampleModule } from './components/icons-example/icons-example.module';
 import { LinksExampleModule } from './components/links-example/links-example.module';
+import { ListsExampleModule } from './components/lists-example/lists-example.module';
 
 @NgModule({
     declarations: [
@@ -33,6 +34,7 @@ import { LinksExampleModule } from './components/links-example/links-example.mod
         HeadersExampleModule,
         IconsExampleModule,
         LinksExampleModule,
+        ListsExampleModule,
     ],
     exports: [
     ]

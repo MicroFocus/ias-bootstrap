@@ -9,18 +9,25 @@ declare var require;
 })
 export class ListsExampleComponent implements OnInit {
     exampleFiles = {
-        'standard-lists.html': require('!raw-loader!./examples/standard-lists.html'),
-        'standard-lists.ts': require('!raw-loader!./examples/standard-lists.ts'),
-        'standard-lists.scss': require('!raw-loader!./examples/standard-lists.scss'),
-        'list-with-icons.html': require('!raw-loader!./examples/list-with-icons.html'),
-        'list-with-icons.ts': require('!raw-loader!./examples/list-with-icons.ts'),
-        'list-with-icons.scss': require('!raw-loader!./examples/list-with-icons.scss'),
-        'items-as-links.html': require('!raw-loader!./examples/items-as-links.html'),
-        'items-as-links.ts': require('!raw-loader!./examples/items-as-links.ts'),
-        'items-as-links.scss': require('!raw-loader!./examples/items-as-links.scss'),
-        'items-as-buttons.html': require('!raw-loader!./examples/items-as-buttons.html'),
-        'items-as-buttons.ts': require('!raw-loader!./examples/items-as-buttons.ts'),
-        'items-as-buttons.scss': require('!raw-loader!./examples/items-as-buttons.scss'),
+        'standard-lists.component.html': require('!raw-loader!./examples/standard-lists.component.html'),
+        'standard-lists.component.scss': require('!raw-loader!./examples/standard-lists.component.scss'),
+        'standard-lists.component.ts': require('!raw-loader!./examples/standard-lists.component.ts'),
+        'standard-lists.module.ts': require('!raw-loader!./examples/standard-lists.module.ts'),
+
+        'list-with-icons.component.html': require('!raw-loader!./examples/list-with-icons.component.html'),
+        'list-with-icons.component.scss': require('!raw-loader!./examples/list-with-icons.component.scss'),
+        'list-with-icons.component.ts': require('!raw-loader!./examples/list-with-icons.component.ts'),
+        'list-with-icons.module.ts': require('!raw-loader!./examples/list-with-icons.module.ts'),
+
+        'items-as-links.component.html': require('!raw-loader!./examples/items-as-links.component.html'),
+        'items-as-links.component.scss': require('!raw-loader!./examples/items-as-links.component.scss'),
+        'items-as-links.component.ts': require('!raw-loader!./examples/items-as-links.component.ts'),
+        'items-as-links.module.ts': require('!raw-loader!./examples/items-as-links.module.ts'),
+
+        'items-as-buttons.component.html': require('!raw-loader!./examples/items-as-buttons.component.html'),
+        'items-as-buttons.component.scss': require('!raw-loader!./examples/items-as-buttons.component.scss'),
+        'items-as-buttons.component.ts': require('!raw-loader!./examples/items-as-buttons.component.ts'),
+        'items-as-buttons.module.ts': require('!raw-loader!./examples/items-as-buttons.module.ts'),
     };
 
     constructor() {

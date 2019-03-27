@@ -2,8 +2,8 @@ import { Component, OnInit, TemplateRef } from '@angular/core';
 
 @Component({
     selector: 'app-items-as-buttons',
-    templateUrl: './items-as-buttons.html',
-    styleUrls: ['./items-as-buttons.scss']
+    templateUrl: './items-as-buttons.component.html',
+    styleUrls: ['./items-as-buttons.component.scss']
 })
 export class ItemsAsButtonsComponent implements OnInit {
     selectedItem: number;
