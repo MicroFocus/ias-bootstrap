@@ -6,7 +6,7 @@ import { TestRoutingModule } from './test-routing.module';
 import { TestComponent } from './test.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 
-import { PanelExamplesModule } from '../app/pages/components-page/components/panels-example/examples/_examples.module';
+import { PanelExamplesModule } from '../app/pages/components-page/components/panels-example/examples/panel-examples.module';
 import { TabsExamplesModule } from '../app/pages/components-page/components/tabs-example/examples/_examples.module';
 import { TablesExamplesModule } from '../app/pages/components-page/components/table-example/examples/_examples.module';
 import { FormFieldExampleModule } from '../app/pages/components-page/components/form-field-example/form-field-example.module';

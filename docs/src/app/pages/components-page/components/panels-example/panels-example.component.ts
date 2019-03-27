@@ -9,9 +9,10 @@ declare const require;
 })
 export class PanelsExampleComponent implements OnInit {
     exampleFiles = {
-        'panel-examples.html': require('!raw-loader!./examples/panel-examples.html'),
-        'panel-examples.ts': require('!raw-loader!./examples/panel-examples.ts'),
-        'panel-examples.scss': require('!raw-loader!./examples/panel-examples.scss'),
+        'panel-examples.component.html': require('!raw-loader!./examples/panel-examples.component.html'),
+        'panel-examples.component.scss': require('!raw-loader!./examples/panel-examples.component.scss'),
+        'panel-examples.component.ts': require('!raw-loader!./examples/panel-examples.component.ts'),
+        'panel-examples.module.ts': require('!raw-loader!./examples/panel-examples.module.ts'),
     };
 
     constructor() {

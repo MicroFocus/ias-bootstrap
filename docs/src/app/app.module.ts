@@ -9,7 +9,6 @@ import { PageHeaderModule, TabsetModule, SidePanelModule, NavigationModule } fro
 import { ComponentsPageComponent } from './pages/components-page/components-page.component';
 import { TipsPageComponent } from './pages/tips-page/tips-page.component';
 import { GettingStartedComponent } from './pages/getting-started/getting-started.component';
-import { PanelsExampleComponent } from './pages/components-page/components/panels-example/panels-example.component';
 import { SideNavsExampleComponent } from './pages/components-page/components/side-navs-example/side-navs-example.component';
 import { StatusMessagesExampleComponent } from './pages/components-page/components/status-messages-example/status-messages-example.component';
 import { TableExampleComponent } from './pages/components-page/components/table-example/table-example.component';
@@ -17,7 +16,6 @@ import { TabsExampleComponent } from './pages/components-page/components/tabs-ex
 import { TagsExampleComponent } from './pages/components-page/components/tags-example/tags-example.component';
 import { TilesExampleComponent } from './pages/components-page/components/tiles-example/tiles-example.component';
 import { ProgressExampleComponent } from './pages/components-page/components/progress-example/progress-example.component';
-import { PanelExamplesModule } from './pages/components-page/components/panels-example/examples/_examples.module';
 import { ProgressExamplesModule } from './pages/components-page/components/progress-example/examples/_examples.module';
 import { SideNavExamplesModule } from './pages/components-page/components/side-navs-example/examples/_examples.module';
 import { MessagesExamplesModule } from './pages/components-page/components/status-messages-example/examples/_examples.module';
@@ -39,7 +37,6 @@ import { ComponentsPageModule } from './pages/components-page/components-page.mo
         ComponentsPageComponent,
         TipsPageComponent,
         GettingStartedComponent,
-        PanelsExampleComponent,
         SideNavsExampleComponent,
         StatusMessagesExampleComponent,
         TableExampleComponent,
@@ -64,7 +61,6 @@ import { ComponentsPageModule } from './pages/components-page/components-page.mo
         ComponentsPageModule,
 
         // Component example modules:
-        PanelExamplesModule,
         ProgressExamplesModule,
         SideNavExamplesModule,
         MessagesExamplesModule,

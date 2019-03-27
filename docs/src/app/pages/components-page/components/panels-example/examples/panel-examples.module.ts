@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PanelExamplesComponent } from './panel-examples';
+import { PanelExamplesComponent } from './panel-examples.component';
 
 @NgModule({
     declarations: [
