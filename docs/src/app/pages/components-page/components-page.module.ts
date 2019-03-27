@@ -12,6 +12,7 @@ import { FormFieldAdvancedExampleModule } from './components/form-field-advanced
 import { FormValidationExampleModule } from './components/form-validation-example/form-validation-example.module';
 import { HeadersExampleModule } from './components/headers-example/headers-example.module';
 import { IconsExampleModule } from './components/icons-example/icons-example.module';
+import { LinksExampleModule } from './components/links-example/links-example.module';
 
 @NgModule({
     declarations: [
@@ -30,7 +31,8 @@ import { IconsExampleModule } from './components/icons-example/icons-example.mod
         FormFieldExampleModule,
         FormValidationExampleModule,
         HeadersExampleModule,
-        IconsExampleModule
+        IconsExampleModule,
+        LinksExampleModule,
     ],
     exports: [
     ]

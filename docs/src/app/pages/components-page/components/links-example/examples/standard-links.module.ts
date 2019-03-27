@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { StandardLinksComponent } from './standard-links';
+import { StandardLinksComponent } from './standard-links.component';
 
 @NgModule({
     declarations: [
@@ -13,5 +13,5 @@ import { StandardLinksComponent } from './standard-links';
         StandardLinksComponent
     ]
 })
-export class LinksExamplesModule {
+export class StandardLinksModule {
 }

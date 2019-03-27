@@ -9,9 +9,10 @@ declare const require;
 })
 export class LinksExampleComponent implements OnInit {
     exampleFiles = {
-        'standard-links.html': require('!raw-loader!./examples/standard-links.html'),
-        'standard-links.ts': require('!raw-loader!./examples/standard-links.ts'),
-        'standard-links.scss': require('!raw-loader!./examples/standard-links.scss'),
+        'standard-links.component.html': require('!raw-loader!./examples/standard-links.component.html'),
+        'standard-links.component.scss': require('!raw-loader!./examples/standard-links.component.scss'),
+        'standard-links.component.ts': require('!raw-loader!./examples/standard-links.component.ts'),
+        'standard-links.module.ts': require('!raw-loader!./examples/standard-links.module.ts'),
     };
 
     constructor() {
