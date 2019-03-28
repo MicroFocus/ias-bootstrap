@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { CommonComponentsModule } from '../../../../components/common-components.module';
 import { FormValidationExampleComponent } from './form-validation-example.component';
-import { FieldByFieldModule } from './examples/field-by-field.module';
+import { FieldByFieldModule } from './field-by-field/field-by-field.module';
 
 @NgModule({
     declarations: [

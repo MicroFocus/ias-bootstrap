@@ -2,11 +2,11 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { CommonComponentsModule } from '../../../../components/common-components.module';
-import { ColumnResizingTablesModule } from './examples/column-resizing-tables.module';
+import { ColumnResizingTablesModule } from './column-resizing-tables/column-resizing-tables.module';
 import { TableExampleComponent } from './table-example.component';
-import { HoverActionsTablesModule } from './examples/hover-actions-tables.module';
-import { SimpleTableModule } from './examples/simple-table.module';
-import { StandardTablesModule } from './examples/standard-tables.module';
+import { HoverActionsTablesModule } from './hover-actions-tables/hover-actions-tables.module';
+import { SimpleTableModule } from './simple-table/simple-table.module';
+import { StandardTablesModule } from './standard-tables/standard-tables.module';
 
 @NgModule({
     declarations: [

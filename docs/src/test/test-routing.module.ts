@@ -1,17 +1,17 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { TextButtonsComponent } from '../app/pages/components-page/components/buttons-example/examples/text-buttons.component';
-import { IconButtonsComponent } from '../app/pages/components-page/components/buttons-example/examples/icon-buttons.component';
-import { IconTextButtonsComponent } from '../app/pages/components-page/components/buttons-example/examples/icon-text-buttons.component';
+import { TextButtonsComponent } from '../app/pages/components-page/components/buttons-example/text-buttons/text-buttons.component';
+import { IconButtonsComponent } from '../app/pages/components-page/components/buttons-example/icon-buttons/icon-buttons.component';
+import { IconTextButtonsComponent } from '../app/pages/components-page/components/buttons-example/icon-text-buttons/icon-text-buttons.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
-import { CheckboxesComponent } from '../app/pages/components-page/components/form-field-example/examples/checkboxes.component';
-import { RadioButtonsComponent } from '../app/pages/components-page/components/form-field-example/examples/radio-buttons.component';
-import { AccordionBasicComponent } from '../app/pages/components-page/components/accordion-example/examples/accordion-basic.component';
-import { PanelExamplesComponent } from '../app/pages/components-page/components/panels-example/examples/panel-examples.component';
-import { StandardTabsComponent } from '../app/pages/components-page/components/tabs-example/examples/standard-tabs.component';
-import { SearchFieldComponent } from '../app/pages/components-page/components/form-field-example/examples/search-field.component';
-import { SimpleTableComponent } from '../app/pages/components-page/components/table-example/examples/simple-table.component';
-import { BasicFormComponent } from '../app/pages/components-page/components/form-field-example/examples/basic-form.component';
+import { CheckboxesComponent } from '../app/pages/components-page/components/form-field-example/checkboxes/checkboxes.component';
+import { RadioButtonsComponent } from '../app/pages/components-page/components/form-field-example/radio-buttons/radio-buttons.component';
+import { AccordionBasicComponent } from '../app/pages/components-page/components/accordion-example/accordion-basic/accordion-basic.component';
+import { PanelExamplesComponent } from '../app/pages/components-page/components/panels-example/panel-examples/panel-examples.component';
+import { StandardTabsComponent } from '../app/pages/components-page/components/tabs-example/standard-tabs/standard-tabs.component';
+import { SearchFieldComponent } from '../app/pages/components-page/components/form-field-example/search-field/search-field.component';
+import { SimpleTableComponent } from '../app/pages/components-page/components/table-example/simple-table/simple-table.component';
+import { BasicFormComponent } from '../app/pages/components-page/components/form-field-example/basic-form/basic-form.component';
 
 
 const routes: Routes = [

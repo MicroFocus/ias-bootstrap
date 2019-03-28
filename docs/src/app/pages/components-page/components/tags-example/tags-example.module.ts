@@ -3,9 +3,9 @@ import { CommonModule } from '@angular/common';
 
 import { CommonComponentsModule } from '../../../../components/common-components.module';
 import { TagsExampleComponent } from './tags-example.component';
-import { TagsInComboboxModule } from './examples/tags-in-combobox.module';
-import { TagsInDropdownModule } from './examples/tags-in-dropdown.module';
-import { TagsMicrofocusModule } from './examples/tags-microfocus.module';
+import { TagsInComboboxModule } from './tags-in-combobox/tags-in-combobox.module';
+import { TagsInDropdownModule } from './tags-in-dropdown/tags-in-dropdown.module';
+import { TagsMicrofocusModule } from './tags-microfocus/tags-microfocus.module';
 
 @NgModule({
     declarations: [

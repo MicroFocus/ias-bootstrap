@@ -1,11 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { ModalModule } from 'ngx-bootstrap/modal';
+import { NavigationModule, PageHeaderModule, SidePanelModule, TabsetModule } from '@ux-aspects/ux-aspects';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { ModalModule } from 'ngx-bootstrap/modal';
-import { NavigationModule, PageHeaderModule, SidePanelModule, TabsetModule } from '@ux-aspects/ux-aspects';
 import { ComponentsPageComponent } from './pages/components-page/components-page.component';
 import { TipsPageComponent } from './pages/tips-page/tips-page.component';
 import { GettingStartedComponent } from './pages/getting-started/getting-started.component';

@@ -9,10 +9,10 @@ declare const require;
 })
 export class TabsExampleComponent implements OnInit {
     exampleFiles = {
-        'standard-tabs.component.html': require('!raw-loader!./examples/standard-tabs.component.html'),
-        'standard-tabs.component.scss': require('!raw-loader!./examples/standard-tabs.component.scss'),
-        'standard-tabs.component.ts': require('!raw-loader!./examples/standard-tabs.component.ts'),
-        'standard-tabs.module.ts': require('!raw-loader!./examples/standard-tabs.module.ts'),
+        'standard-tabs.component.html': require('!raw-loader!./standard-tabs/standard-tabs.component.html'),
+        'standard-tabs.component.scss': require('!raw-loader!./standard-tabs/standard-tabs.component.scss'),
+        'standard-tabs.component.ts': require('!raw-loader!./standard-tabs/standard-tabs.component.ts'),
+        'standard-tabs.module.ts': require('!raw-loader!./standard-tabs/standard-tabs.module.ts'),
     };
 
     constructor() {

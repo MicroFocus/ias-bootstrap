@@ -9,25 +9,25 @@ declare const require;
 })
 export class FormFieldExampleComponent implements OnInit {
     exampleFiles = {
-        'basic-form.component.html': require('!raw-loader!./examples/basic-form.component.html'),
-        'basic-form.component.scss': require('!raw-loader!./examples/basic-form.component.scss'),
-        'basic-form.component.ts': require('!raw-loader!./examples/basic-form.component.ts'),
-        'basic-form.module.ts': require('!raw-loader!./examples/basic-form.module.ts'),
+        'basic-form.component.html': require('!raw-loader!./basic-form/basic-form.component.html'),
+        'basic-form.component.scss': require('!raw-loader!./basic-form/basic-form.component.scss'),
+        'basic-form.component.ts': require('!raw-loader!./basic-form/basic-form.component.ts'),
+        'basic-form.module.ts': require('!raw-loader!./basic-form/basic-form.module.ts'),
 
-        'search-field.component.html': require('!raw-loader!./examples/search-field.component.html'),
-        'search-field.component.scss': require('!raw-loader!./examples/search-field.component.scss'),
-        'search-field.component.ts': require('!raw-loader!./examples/search-field.component.ts'),
-        'search-field.module.ts': require('!raw-loader!./examples/search-field.module.ts'),
+        'search-field.component.html': require('!raw-loader!./search-field/search-field.component.html'),
+        'search-field.component.scss': require('!raw-loader!./search-field/search-field.component.scss'),
+        'search-field.component.ts': require('!raw-loader!./search-field/search-field.component.ts'),
+        'search-field.module.ts': require('!raw-loader!./search-field/search-field.module.ts'),
 
-        'checkboxes.component.html': require('!raw-loader!./examples/checkboxes.component.html'),
-        'checkboxes.component.scss': require('!raw-loader!./examples/checkboxes.component.scss'),
-        'checkboxes.component.ts': require('!raw-loader!./examples/checkboxes.component.ts'),
-        'checkboxes.module.ts': require('!raw-loader!./examples/checkboxes.module.ts'),
+        'checkboxes.component.html': require('!raw-loader!./checkboxes/checkboxes.component.html'),
+        'checkboxes.component.scss': require('!raw-loader!./checkboxes/checkboxes.component.scss'),
+        'checkboxes.component.ts': require('!raw-loader!./checkboxes/checkboxes.component.ts'),
+        'checkboxes.module.ts': require('!raw-loader!./checkboxes/checkboxes.module.ts'),
 
-        'radio-buttons.component.html': require('!raw-loader!./examples/radio-buttons.component.html'),
-        'radio-buttons.component.scss': require('!raw-loader!./examples/radio-buttons.component.scss'),
-        'radio-buttons.component.ts': require('!raw-loader!./examples/radio-buttons.component.ts'),
-        'radio-buttons.module.ts': require('!raw-loader!./examples/radio-buttons.module.ts'),
+        'radio-buttons.component.html': require('!raw-loader!./radio-buttons/radio-buttons.component.html'),
+        'radio-buttons.component.scss': require('!raw-loader!./radio-buttons/radio-buttons.component.scss'),
+        'radio-buttons.component.ts': require('!raw-loader!./radio-buttons/radio-buttons.component.ts'),
+        'radio-buttons.module.ts': require('!raw-loader!./radio-buttons/radio-buttons.module.ts'),
     };
 
     constructor() {

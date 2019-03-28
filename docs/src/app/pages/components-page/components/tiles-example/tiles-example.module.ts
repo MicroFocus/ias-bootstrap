@@ -3,11 +3,11 @@ import { CommonModule } from '@angular/common';
 
 import { CommonComponentsModule } from '../../../../components/common-components.module';
 import { TilesExampleComponent } from './tiles-example.component';
-import { BasicTilesModule } from './examples/basic-tiles.module';
-import { LargeTilesModule } from './examples/large-tiles.module';
-import { MediumTilesModule } from './examples/medium-tiles.module';
-import { SmallTilesModule } from './examples/small-tiles.module';
-import { TileGridModule } from './examples/tile-grid.module';
+import { BasicTilesModule } from './basic-tiles/basic-tiles.module';
+import { LargeTilesModule } from './large-tiles/large-tiles.module';
+import { MediumTilesModule } from './medium-tiles/medium-tiles.module';
+import { SmallTilesModule } from './small-tiles/small-tiles.module';
+import { TileGridModule } from './tile-grid/tile-grid.module';
 
 @NgModule({
     declarations: [

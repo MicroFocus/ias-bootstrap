@@ -15,10 +15,10 @@ import {
 } from '@ux-aspects/ux-aspects';
 import { A11yModule } from '@angular/cdk/a11y';
 import { ButtonsModule } from 'ngx-bootstrap/buttons';
-import { ColumnResizingTablesComponent } from './column-resizing-tables.component';
-import { HoverActionsTablesComponent } from './hover-actions-tables.component';
+import { ColumnResizingTablesComponent } from '../column-resizing-tables/column-resizing-tables.component';
+import { HoverActionsTablesComponent } from '../hover-actions-tables/hover-actions-tables.component';
 import { StandardTablesComponent } from './standard-tables.component';
-import { SimpleTableComponent } from './simple-table.component';
+import { SimpleTableComponent } from '../simple-table/simple-table.component';
 
 @NgModule({
     declarations: [

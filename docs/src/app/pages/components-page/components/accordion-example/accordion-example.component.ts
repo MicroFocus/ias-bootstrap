@@ -9,9 +9,9 @@ declare const require;
 })
 export class AccordionExampleComponent implements OnInit {
     exampleFiles = {
-        'accordion-basic.component.html': require('!raw-loader!./examples/accordion-basic.component.html'),
-        'accordion-basic.component.ts': require('!raw-loader!./examples/accordion-basic.component.ts'),
-        'accordion-basic.module.ts': require('!raw-loader!./examples/accordion-basic.module.ts'),
+        'accordion-basic.component.html': require('!raw-loader!./accordion-basic/accordion-basic.component.html'),
+        'accordion-basic.component.ts': require('!raw-loader!./accordion-basic/accordion-basic.component.ts'),
+        'accordion-basic.module.ts': require('!raw-loader!./accordion-basic/accordion-basic.module.ts'),
     };
 
     constructor() {

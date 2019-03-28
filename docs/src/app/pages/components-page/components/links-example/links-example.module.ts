@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { CommonComponentsModule } from '../../../../components/common-components.module';
 import { LinksExampleComponent } from './links-example.component';
-import { StandardLinksModule } from './examples/standard-links.module';
+import { StandardLinksModule } from './standard-links/standard-links.module';
 
 @NgModule({
     declarations: [

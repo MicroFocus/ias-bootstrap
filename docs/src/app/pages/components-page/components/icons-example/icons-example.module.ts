@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { CommonComponentsModule } from '../../../../components/common-components.module';
-import { IconSizesModule } from './examples/icon-sizes.module';
+import { IconSizesModule } from './icon-sizes/icon-sizes.module';
 import { IconsExampleComponent } from './icons-example.component';
 
 @NgModule({

@@ -9,10 +9,10 @@ declare const require;
 })
 export class StatusMessagesExampleComponent implements OnInit {
     exampleFiles = {
-        'standard-messages.component.html': require('!raw-loader!./examples/standard-messages.component.html'),
-        'standard-messages.component.scss': require('!raw-loader!./examples/standard-messages.component.scss'),
-        'standard-messages.component.ts': require('!raw-loader!./examples/standard-messages.component.ts'),
-        'standard-messages.module.ts': require('!raw-loader!./examples/standard-messages.module.ts'),
+        'standard-messages.component.html': require('!raw-loader!./standard-messages/standard-messages.component.html'),
+        'standard-messages.component.scss': require('!raw-loader!./standard-messages/standard-messages.component.scss'),
+        'standard-messages.component.ts': require('!raw-loader!./standard-messages/standard-messages.component.ts'),
+        'standard-messages.module.ts': require('!raw-loader!./standard-messages/standard-messages.module.ts'),
     };
 
     constructor() {

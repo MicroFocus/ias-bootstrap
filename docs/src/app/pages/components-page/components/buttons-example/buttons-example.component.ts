@@ -9,16 +9,16 @@ declare const require;
 })
 export class ButtonsExampleComponent {
     exampleFiles = {
-        'text-buttons.component.html': require('!raw-loader!./examples/text-buttons.component.html'),
-        'text-buttons.component.ts': require('!raw-loader!./examples/text-buttons.component.ts'),
-        'text-buttons.module.ts': require('!raw-loader!./examples/text-buttons.module.ts'),
+        'text-buttons.component.html': require('!raw-loader!./text-buttons/text-buttons.component.html'),
+        'text-buttons.component.ts': require('!raw-loader!./text-buttons/text-buttons.component.ts'),
+        'text-buttons.module.ts': require('!raw-loader!./text-buttons/text-buttons.module.ts'),
 
-        'icon-buttons.component.html': require('!raw-loader!./examples/icon-buttons.component.html'),
-        'icon-buttons.component.ts': require('!raw-loader!./examples/icon-buttons.component.ts'),
-        'icon-buttons.module.ts': require('!raw-loader!./examples/icon-buttons.module.ts'),
+        'icon-buttons.component.html': require('!raw-loader!./icon-buttons/icon-buttons.component.html'),
+        'icon-buttons.component.ts': require('!raw-loader!./icon-buttons/icon-buttons.component.ts'),
+        'icon-buttons.module.ts': require('!raw-loader!./icon-buttons/icon-buttons.module.ts'),
 
-        'icon-text-buttons.component.html': require('!raw-loader!./examples/icon-text-buttons.component.html'),
-        'icon-text-buttons.component.ts': require('!raw-loader!./examples/icon-text-buttons.component.ts'),
-        'icon-text-buttons.module.ts': require('!raw-loader!./examples/icon-text-buttons.module.ts'),
+        'icon-text-buttons.component.html': require('!raw-loader!./icon-text-buttons/icon-text-buttons.component.html'),
+        'icon-text-buttons.component.ts': require('!raw-loader!./icon-text-buttons/icon-text-buttons.component.ts'),
+        'icon-text-buttons.module.ts': require('!raw-loader!./icon-text-buttons/icon-text-buttons.module.ts'),
     };
 }

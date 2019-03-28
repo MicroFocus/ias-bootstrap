@@ -3,9 +3,9 @@ import { CommonModule } from '@angular/common';
 
 import { CommonComponentsModule } from '../../../../components/common-components.module';
 import { MenuExampleComponent } from './menu-example.component';
-import { ComplexMenusModule } from './examples/complex-menus.module';
-import { SplitButtonMenusModule } from './examples/split-button-menus.module';
-import { StandardMenusModule } from './examples/standard-menus.module';
+import { ComplexMenusModule } from './complex-menus/complex-menus.module';
+import { SplitButtonMenusModule } from './split-button-menus/split-button-menus.module';
+import { StandardMenusModule } from './standard-menus/standard-menus.module';
 
 @NgModule({
     declarations: [

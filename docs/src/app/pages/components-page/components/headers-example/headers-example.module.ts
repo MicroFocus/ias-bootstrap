@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { CommonComponentsModule } from '../../../../components/common-components.module';
 import { HeadersExampleComponent } from './headers-example.component';
-import { StandardHeadersModule } from './examples/standard-headers.module';
+import { StandardHeadersModule } from './standard-headers/standard-headers.module';
 
 @NgModule({
     declarations: [

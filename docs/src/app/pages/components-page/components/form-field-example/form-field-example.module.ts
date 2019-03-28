@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 
-import { BasicFormModule } from './examples/basic-form.module';
+import { BasicFormModule } from './basic-form/basic-form.module';
 import { FormFieldExampleComponent } from './form-field-example.component';
 import { CommonComponentsModule } from '../../../../components/common-components.module';
 import { CommonModule } from '@angular/common';
-import { CheckboxesModule } from './examples/checkboxes.module';
-import { RadioButtonsModule } from './examples/radio-buttons.module';
-import { SearchFieldModule } from './examples/search-field.module';
+import { CheckboxesModule } from './checkboxes/checkboxes.module';
+import { RadioButtonsModule } from './radio-buttons/radio-buttons.module';
+import { SearchFieldModule } from './search-field/search-field.module';
 
 @NgModule({
     declarations: [
