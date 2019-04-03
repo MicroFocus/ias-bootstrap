@@ -34,4 +34,14 @@
         border-bottom-right-radius: 0;
         border-bottom-left-radius: 0;
     }
+
+    // How this panel is displayed when it is being reordered among other panels
+    &.ux-reorderable-moving {
+        border: 3px dashed #01a9e7;
+        background-color: transparent;
+
+        > * {
+            visibility: hidden;
+        }
+    }
 }

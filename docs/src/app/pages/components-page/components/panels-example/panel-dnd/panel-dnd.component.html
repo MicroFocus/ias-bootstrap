@@ -1,0 +1,11 @@
+<div uxReorderable [(reorderableModel)]="panels" (reorderableModelChange)="reordered($event)">
+    <div class="panel ias-panel" *ngFor="let panel of panels" [uxReorderableModel]="panel">
+        <div class="panel-heading">
+            <h4 class="panel-title">{{ panel.title }}</h4>
+            <div class="move-icon"><i uxReorderableHandle class="ias-icon ias-icon-move"></i></div>
+        </div>
+        <div class="panel-body">
+            {{ panel.body }}
+        </div>
+    </div>
+</div>

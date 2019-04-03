@@ -1,0 +1,12 @@
+.panel-heading {
+    display: flex;
+
+    > .move-icon {
+        flex-grow: 1;
+        text-align: right;
+
+        > i {
+            cursor: grab;
+        }
+    }
+}
