@@ -23,6 +23,7 @@ import { TableExampleModule } from './components/table-example/table-example.mod
 import { TabsExampleModule } from './components/tabs-example/tabs-example.module';
 import { TagsExampleModule } from './components/tags-example/tags-example.module';
 import { TilesExampleModule } from './components/tiles-example/tiles-example.module';
+import { SidePanelsExampleModule } from './components/side-panels-example/side-panels-example.module';
 
 @NgModule({
     declarations: [
@@ -48,6 +49,7 @@ import { TilesExampleModule } from './components/tiles-example/tiles-example.mod
         PanelsExampleModule,
         ProgressExampleModule,
         SideNavsExampleModule,
+        SidePanelsExampleModule,
         StatusMessagesExampleModule,
         TableExampleModule,
         TabsExampleModule,

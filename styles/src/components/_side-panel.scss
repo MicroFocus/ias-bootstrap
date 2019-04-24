@@ -1,0 +1,16 @@
+.ux-side-panel > .ux-side-panel-host {
+    .ux-side-panel-header {
+        &::before {
+            box-shadow: none;
+            all: unset;
+        }
+
+        > h3 {
+            margin: 0;
+        }
+    }
+
+    .ux-side-panel-footer.btn-container {
+        justify-content: flex-start;
+    }
+}

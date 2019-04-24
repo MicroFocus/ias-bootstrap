@@ -31,7 +31,12 @@
         .ias-icon {
             vertical-align: middle;
         }
+    }
 
+    // When dropdown menus are right-aligned, they tend to pile up. This at least adds a border so they don't bleed into
+    // each other. Need to work with the ux-aspects team for a better solution.
+    .dropdown-menu.dropdown-menu-right {
+        border-color: #1f1f1f;
     }
 }
 
@@ -39,4 +44,3 @@
     padding-left: 8px;
     padding-top: 2px;
 }
-

@@ -27,6 +27,7 @@ import { EmptyContentComponent } from './components/empty-content/empty-content.
 import { StandardLayoutComponent } from './pages/tips-page/components/standard-layout/standard-layout.component';
 import { LoginPageComponent } from './pages/tips-page/components/login-page/login-page.component';
 import { FormFieldAdvancedExampleComponent } from './pages/components-page/components/form-field-advanced-example/form-field-advanced-example.component';
+import { SidePanelsExampleComponent } from './pages/components-page/components/side-panels-example/side-panels-example.component';
 
 const routes: Routes = [
     { path: '', redirectTo: 'components', pathMatch: 'full' },
@@ -82,6 +83,7 @@ const routes: Routes = [
                         data: { content: 'Content for the Favorites page' } },
                 ]
             },
+            { path: 'side-panels', component: SidePanelsExampleComponent },
             { path: 'status-messages', component: StatusMessagesExampleComponent },
             { path: 'table', component: TableExampleComponent },
             { path: 'tabs', component: TabsExampleComponent },
