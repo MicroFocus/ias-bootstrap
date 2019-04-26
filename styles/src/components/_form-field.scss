@@ -17,6 +17,7 @@ label.disabled, .disable-labels label:not(.ias-checkbox):not(.ias-radio-button) 
 .form-control {
     border-radius: 3px;
     border-color: $ias-border-gray;
+    font-size: 1rem;
 
     &:focus {
         border-color: $ias-blue-4;
@@ -27,6 +28,16 @@ label.disabled, .disable-labels label:not(.ias-checkbox):not(.ias-radio-button) 
     background-color: transparent;
     color: $ias-medium-gray;
     opacity: $disabled-opacity;
+}
+
+.login-form {
+    margin-left: 25px;
+    padding: 25px;
+    position: relative;
+
+    .btn-primary {
+        margin-right: 10px;
+    }
 }
 
 // Common code for checkboxes and radio buttons (things that have a "checked" state)

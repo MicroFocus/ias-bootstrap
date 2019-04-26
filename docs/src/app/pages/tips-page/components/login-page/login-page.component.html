@@ -5,7 +5,9 @@
     </p>
 
     <app-example [heading]="'Standard Login Page'" [fileNameToContentsMap]="exampleFiles">
-        <app-standard-login-page></app-standard-login-page>
+        <app-example-page-boundary>
+            <app-standard-login-page></app-standard-login-page>
+        </app-example-page-boundary>
         <app-example-file [name]="'standard-login-page.html'" [lang]="'markup'"></app-example-file>
         <app-example-file [name]="'standard-login-page.ts'" [lang]="'typescript'"></app-example-file>
     </app-example>
