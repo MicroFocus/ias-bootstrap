@@ -16,6 +16,7 @@ import { StandardLayoutsModule } from './pages/tips-page/components/standard-lay
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { CommonComponentsModule } from './components/common-components.module';
 import { ComponentsPageModule } from './pages/components-page/components-page.module';
+import { ExamplePageBoundaryComponent } from './pages/tips-page/components/example-page-boundary/example-page-boundary.component';
 
 @NgModule({
     declarations: [
@@ -25,6 +26,7 @@ import { ComponentsPageModule } from './pages/components-page/components-page.mo
         GettingStartedComponent,
         StandardLayoutComponent,
         LoginPageComponent,
+        ExamplePageBoundaryComponent,
     ],
     imports: [
         BrowserModule,
