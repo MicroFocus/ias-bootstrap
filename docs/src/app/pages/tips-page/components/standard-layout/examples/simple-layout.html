@@ -1,1 +1,18 @@
-TODO: Simple layout
+<div >
+    <h2 class="inline-block">Page Title</h2>
+    <button class="btn ias-btn-icon btn-default pull-right" (click)="closeButtonPressed()" aria-label="Close">
+        <span class="ias-icon ias-icon-close_thick" aria-hidden="true"></span>
+    </button>
+    <p class="ias-page-instructions">
+        Each page should have a brief introductory description for the elements and actions available on a page.
+        These should not be extensive, keep them brief and to the point. The user will resort to this section if the
+        content of the page is not clear.
+    </p>
+    <div id="placeholder">
+        <p class="ias-page-instructions">Placeholder for main content</p>
+    </div>
+    <div class="btn-container">
+        <button class="btn btn-default" (click)="saveButtonPressed()">Save</button>
+        <button class="btn btn-default" (click)="cancelButtonPressed()">Cancel</button>
+    </div>
+</div>
