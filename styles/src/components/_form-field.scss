@@ -14,7 +14,7 @@ label.disabled, .disable-labels label:not(.ias-checkbox):not(.ias-radio-button) 
     opacity: $disabled-opacity;
 }
 
-.form-control {
+.form-control, select.form-control {
     border-radius: 3px;
     border-color: $ias-border-gray;
     font-size: 1rem;
