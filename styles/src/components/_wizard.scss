@@ -1,0 +1,38 @@
+ux-wizard .wizard-body {
+  .wizard-steps {
+    .wizard-step {
+      background-color: $ias-light-gray;
+      border: 1px solid $ias-border-gray;
+      border-radius: 3px;
+      color: $ias-dark-gray;
+      opacity: 0.5;
+
+      &.visited {
+        background-color: $ias-light-gray;
+        color: $ias-dark-gray;
+        opacity: 1.0;
+
+        &:hover {
+          border: 1px solid $ias-blue-4;
+          color: $ias-blue-4;
+        }
+      }
+
+      &.active {
+        background-color: $ias-light-gray;
+        border: 2px solid $ias-blue-4;
+        font-weight: 600;
+
+        &:hover {
+          border: 2px solid $ias-blue-4;
+          color: $ias-blue-4;
+        }
+      }
+    }
+  }
+
+  .wizard-content {
+    border-radius: 3px;
+    background-color: $ias-panel-gray;
+  }
+}

@@ -20,7 +20,7 @@
       filter: alpha(opacity=50);
     }
 
-    &.btn-default {
+    &.btn-default, &.button-secondary {
         @mixin default-look {
             background-color: $ias-light-gray;
             border: 1px solid $ias-border-gray;
@@ -40,7 +40,7 @@
         }
     }
 
-    &.btn-primary {
+    &.btn-primary, &.button-primary {
         @mixin default-look {
             background-color: $ias-blue-2;
             border-color: $ias-blue-2;

@@ -33,6 +33,7 @@ export class ComponentsPageComponent implements OnInit {
         { title: 'Tabs', routerLink: '/components/tabs' },
         { title: 'Tags', routerLink: '/components/tags' },
         { title: 'Tiles', routerLink: '/components/tiles' },
+        { title: 'Wizard', routerLink: '/components/wizard'}
     ];
 
     constructor() {

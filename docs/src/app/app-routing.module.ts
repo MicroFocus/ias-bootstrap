@@ -27,6 +27,7 @@ import { EmptyContentComponent } from './components/empty-content/empty-content.
 import { StandardLayoutComponent } from './pages/tips-page/components/standard-layout/standard-layout.component';
 import { LoginPageComponent } from './pages/tips-page/components/login-page/login-page.component';
 import { FormFieldAdvancedExampleComponent } from './pages/components-page/components/form-field-advanced-example/form-field-advanced-example.component';
+import {WizardExampleComponent} from './pages/components-page/components/wizard-example/wizard-example.component';
 
 const routes: Routes = [
     { path: '', redirectTo: 'components', pathMatch: 'full' },
@@ -87,6 +88,7 @@ const routes: Routes = [
             { path: 'tabs', component: TabsExampleComponent },
             { path: 'tags', component: TagsExampleComponent },
             { path: 'tiles', component: TilesExampleComponent },
+            { path: 'wizard', component: WizardExampleComponent }
         ]
     },
     {
