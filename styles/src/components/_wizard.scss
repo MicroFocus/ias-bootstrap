@@ -1,69 +1,141 @@
-ux-wizard .wizard-body {
-  .wizard-steps {
-    .wizard-step {
-      background-color: $ias-light-gray;
-      border: 1px solid $ias-border-gray;
-      border-radius: 3px;
-      color: $ias-dark-gray;
-      opacity: 0.5;
-
-      &.visited {
+ux-wizard {
+  .wizard-body {
+    .wizard-steps {
+      .wizard-step {
         background-color: $ias-light-gray;
+        border: 1px solid $ias-border-gray;
+        border-radius: 3px;
         color: $ias-dark-gray;
-        opacity: 1.0;
+        opacity: 0.5;
 
-        &:hover {
-          border: 1px solid $ias-blue-4;
-          color: $ias-blue-4;
+        &.visited {
+          background-color: $ias-light-gray;
+          color: $ias-dark-gray;
+          opacity: 1.0;
+
+          &:hover {
+            border: 1px solid $ias-blue-4;
+            color: $ias-blue-4;
+          }
         }
-      }
 
-      &.active {
-        background-color: $ias-light-gray;
-        border: 2px solid $ias-blue-4;
-        font-weight: 600;
-
-        &:hover {
+        &.active {
+          background-color: $ias-white;
           border: 2px solid $ias-blue-4;
-          color: $ias-blue-4;
+          font-weight: 600;
+
+          &:hover {
+            border: 2px solid $ias-blue-4;
+            color: $ias-blue-4;
+          }
         }
       }
     }
-  }
 
-  .wizard-content {
-    border-radius: 3px;
-    background-color: $ias-panel-gray;
+    .wizard-content {
+      border-radius: 3px;
+      background-color: $ias-panel-gray;
+    }
+  }
+  .wizard-footer {
+    justify-content: flex-start;
+    margin: 0;
+
+    .btn {
+      margin: 15px 5px 0 0;
+
+      &:first-child {
+        &::before {
+          content: "\E90C";
+          font-family: "ias-icons";
+          padding-right: 5px;
+        }
+
+        + .btn::after {
+          content: "\E90E";
+          font-family: "ias-icons";
+          padding-left: 5px;
+        }
+      }
+
+      &:last-of-type {
+        margin-left: 20px;
+      }
+    }
+
+    .button-primary {
+      background-color: $ias-light-gray;
+      border: 1px solid $ias-border-gray;
+      color: $ias-dark-gray;
+    }
   }
 }
 
 ux-marquee-wizard {
   .marquee-wizard-side-panel {
     background-color: $ias-blue-2;
+
     .marquee-wizard-description-container {
       align-items: center;
       display: flex;
       font-size: 20px;
       padding: 25px 20px 20px 20px;
+
       .ias-icon{
         font-size: 35px;
         margin-right: 5px;
       }
     }
   }
+
   .marquee-wizard-content-panel {
+    border-radius: 5px;
+
     .marquee-wizard-content {
       padding: 25px;
     }
+
     .modal-footer {
       display: inline-flex;
       padding: 25px;
+
+      .btn {
+        margin: 15px 5px 0 0;
+
+        &:first-child {
+          &::before {
+            content: "\E90C";
+            font-family: "ias-icons";
+            padding-right: 5px;
+          }
+
+          + .btn::after {
+            content: "\E90E";
+            font-family: "ias-icons";
+            padding-left: 5px;
+          }
+        }
+
+        &:last-of-type {
+          margin-left: 20px;
+        }
+      }
+
+      .button-primary {
+        background-color: $ias-light-gray;
+        border: 1px solid $ias-border-gray;
+        color: $ias-dark-gray;
+      }
     }
   }
 }
 .marquee-modal-window {
-  .modal-dialog .modal-content .dismiss {
-    right: 25px;
-    top: 25px;
+  .modal-dialog .modal-content {
+    border-radius: 5px;
+
+    .dismiss {
+      right: 25px;
+      top: 25px;
+    }
   }
 }
