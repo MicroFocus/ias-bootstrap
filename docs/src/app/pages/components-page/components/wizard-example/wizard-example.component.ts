@@ -12,10 +12,12 @@ export class WizardExampleComponent implements OnInit {
         'simple-wizard.component.html': require('!raw-loader!./simple-wizard/simple-wizard.component.html'),
         'simple-wizard.component.scss': require('!raw-loader!./simple-wizard/simple-wizard.component.scss'),
         'simple-wizard.component.ts': require('!raw-loader!./simple-wizard/simple-wizard.component.ts'),
+        'simple-wizard.module.ts': require('!raw-loader!./simple-wizard/simple-wizard.module.ts'),
 
         'marquee-wizard.component.html': require('!raw-loader!./marquee-wizard/marquee-wizard.component.html'),
         'marquee-wizard.component.scss': require('!raw-loader!./marquee-wizard/marquee-wizard.component.scss'),
         'marquee-wizard.component.ts': require('!raw-loader!./marquee-wizard/marquee-wizard.component.ts'),
+        'marquee-wizard.module.ts': require('!raw-loader!./marquee-wizard/marquee-wizard.module.ts'),
     };
 
   constructor() { }
