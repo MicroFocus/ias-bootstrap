@@ -36,3 +36,34 @@ ux-wizard .wizard-body {
     background-color: $ias-panel-gray;
   }
 }
+
+ux-marquee-wizard {
+  .marquee-wizard-side-panel {
+    background-color: $ias-blue-2;
+    .marquee-wizard-description-container {
+      align-items: center;
+      display: flex;
+      font-size: 20px;
+      padding: 25px 20px 20px 20px;
+      .ias-icon{
+        font-size: 35px;
+        margin-right: 5px;
+      }
+    }
+  }
+  .marquee-wizard-content-panel {
+    .marquee-wizard-content {
+      padding: 25px;
+    }
+    .modal-footer {
+      display: inline-flex;
+      padding: 25px;
+    }
+  }
+}
+.marquee-modal-window {
+  .modal-dialog .modal-content .dismiss {
+    right: 25px;
+    top: 25px;
+  }
+}

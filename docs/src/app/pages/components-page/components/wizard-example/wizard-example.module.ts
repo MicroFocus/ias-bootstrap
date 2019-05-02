@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { CommonComponentsModule } from '../../../../components/common-components.module';
 import { WizardExampleComponent } from './wizard-example.component';
 import { SimpleWizardModule } from './simple-wizard/simple-wizard.module';
+import { IASMarqueeWizardModule } from './marquee-wizard/marquee-wizard.module';
 
 @NgModule({
     declarations: [
@@ -14,6 +15,7 @@ import { SimpleWizardModule } from './simple-wizard/simple-wizard.module';
         CommonComponentsModule,
 
         SimpleWizardModule,
+        IASMarqueeWizardModule,
     ],
     exports: [
         WizardExampleComponent
