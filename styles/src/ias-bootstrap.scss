@@ -15,6 +15,7 @@
 @import 'components/progress';
 @import 'components/head-nav';
 @import 'components/side-navs';
+@import 'components/side-panel';
 @import 'components/tables';
 @import 'components/tabs';
 @import 'components/tags';
@@ -28,4 +29,3 @@ body {
   color: $ias-dark-gray;
   font-family: $ias-font-family;
 }
-

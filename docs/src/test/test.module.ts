@@ -12,6 +12,8 @@ import { AccordionBasicModule } from '../app/pages/components-page/components/ac
 import { ButtonsExampleModule } from '../app/pages/components-page/components/buttons-example/buttons-example.module';
 import { TableExampleModule } from '../app/pages/components-page/components/table-example/table-example.module';
 import { TabsExampleModule } from '../app/pages/components-page/components/tabs-example/tabs-example.module';
+import { PanelsExampleModule } from '../app/pages/components-page/components/panels-example/panels-example.module';
+import { SidePanelsExampleModule } from '../app/pages/components-page/components/side-panels-example/side-panels-example.module';
 
 @NgModule({
     declarations: [
@@ -28,7 +30,9 @@ import { TabsExampleModule } from '../app/pages/components-page/components/tabs-
 
         FormFieldExampleModule,
         AccordionBasicModule,
-        ButtonsExampleModule
+        ButtonsExampleModule,
+        PanelsExampleModule,
+        SidePanelsExampleModule,
     ],
     providers: [
     ],

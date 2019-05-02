@@ -12,6 +12,7 @@ import { StandardTabsComponent } from '../app/pages/components-page/components/t
 import { SearchFieldComponent } from '../app/pages/components-page/components/form-field-example/search-field/search-field.component';
 import { SimpleTableComponent } from '../app/pages/components-page/components/table-example/simple-table/simple-table.component';
 import { BasicFormComponent } from '../app/pages/components-page/components/form-field-example/basic-form/basic-form.component';
+import { StandardSidePanelComponent } from '../app/pages/components-page/components/side-panels-example/standard-side-panel/standard-side-panel.component';
 
 
 const routes: Routes = [
@@ -23,6 +24,7 @@ const routes: Routes = [
     { path: 'checkboxes', component: CheckboxesComponent },
     { path: 'panels', component: PanelExamplesComponent },
     { path: 'radio-buttons', component: RadioButtonsComponent },
+    { path: 'side-panels', component: StandardSidePanelComponent },
     { path: 'tabs', component: StandardTabsComponent },
     { path: 'tables', children: [
         { path: 'simple', component: SimpleTableComponent },

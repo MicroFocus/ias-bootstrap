@@ -1,0 +1,18 @@
+<button type="button" class="btn btn-default" (click)="openSidePanel()">Show Side Panel</button>
+
+<ux-side-panel #standardSidePanel="ux-side-panel">
+    <div class="ux-side-panel-header">
+        <h3>Custom Side Panel Header</h3>
+        <button uxSidePanelClose type="button" class="btn ias-btn-icon btn-default" aria-label="Add">
+            <span class="ias-icon ias-icon-close_thick" aria-hidden="true"></span>
+        </button>
+    </div>
+    <div class="ux-side-panel-content">
+        Custom side panel content
+    </div>
+    <div class="ux-side-panel-footer btn-container">
+        <button type="button" class="btn btn-default" (click)="closeSidePanel()">
+            Close
+        </button>
+    </div>
+</ux-side-panel>

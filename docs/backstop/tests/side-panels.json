@@ -1,0 +1,14 @@
+{
+    "scenarios": [
+        {
+            "label": "side-panels",
+            "url": "http://localhost:4444/ias-bootstrap/side-panels"
+        },
+        {
+            "label": "side-panels-opened",
+            "url": "http://localhost:4444/ias-bootstrap/side-panels",
+            "clickSelector": "button",
+            "postInteractionWait": 200
+        }
+    ]
+}
