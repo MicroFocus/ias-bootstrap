@@ -1,14 +1,40 @@
 .indicator-primary, .indicator-primary-large {
+  animation: load8 2.5s infinite linear;
+  align-items: center;
   border-top: 1.1em solid $ias-blue-2;
   border-right: 1.1em solid $ias-blue-2;
-  border-bottom: 1.1em solid $ias-blue-2;
+  border-bottom: 1.1em solid transparent;
   border-left: 1.1em solid transparent;
+  display: flex;
+  justify-content: center;
 }
 .indicator, .indicator-large {
+  animation: load8 2.5s infinite linear;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-top: 1.1em solid $ias-icon-gray;
   border-right: 1.1em solid $ias-icon-gray;
-  border-bottom: 1.1em solid $ias-icon-gray;
+  border-bottom: 1.1em solid transparent;
   border-left: 1.1em solid transparent;
+}
+.indicator-flow {
+  border-top: 1em solid inherit;
+  border-right: 1em solid inherit;
+  border-bottom: 1em solid inherit;
+  border-left: 1em solid inherit;
+  font-size: 1em;
+  animation: load8 2s infinite linear;
+  position: absolute;
+}
+.indicator-inner {
+  border-top: 1.1em solid inherit;
+  border-right: 1.1em solid inherit;
+  border-bottom: 1.1em solid transparent;
+  border-left: 1.1em solid transparent;
+  font-size: 0.55em;
+  animation: load8 3s infinite linear;
+  position: absolute;
 }
 .spinner, .spinner:before, .spinner:after,
 .spinner.spinner-accent, .spinner.spinner-accent:before, .spinner.spinner-accent:after {
