@@ -11,6 +11,7 @@ export class ComponentsPageComponent implements OnInit {
 
     navigation: NavigationItem[] = [
         { title: 'Accordion', routerLink: '/components/accordion' },
+        { title: 'Activity Indicator', routerLink: '/components/activity-indicator' },
         { title: 'App Bar (Masthead)', routerLink: '/components/app-bar' },
         { title: 'Buttons', routerLink: '/components/buttons' },
         // { title: 'Comments', routerLink: '/components/comments' },

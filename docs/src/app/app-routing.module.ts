@@ -27,8 +27,9 @@ import { EmptyContentComponent } from './components/empty-content/empty-content.
 import { StandardLayoutComponent } from './pages/tips-page/components/standard-layout/standard-layout.component';
 import { LoginPageComponent } from './pages/tips-page/components/login-page/login-page.component';
 import { FormFieldAdvancedExampleComponent } from './pages/components-page/components/form-field-advanced-example/form-field-advanced-example.component';
-import {WizardExampleComponent} from './pages/components-page/components/wizard-example/wizard-example.component';
+import { WizardExampleComponent } from './pages/components-page/components/wizard-example/wizard-example.component';
 import { SidePanelsExampleComponent } from './pages/components-page/components/side-panels-example/side-panels-example.component';
+import { ActivityIndicatorExampleComponent } from './pages/components-page/components/activity-indicator-example/activity-indicator-example.component';
 
 const routes: Routes = [
     { path: '', redirectTo: 'components', pathMatch: 'full' },
@@ -39,6 +40,7 @@ const routes: Routes = [
         children: [
             { path: '', redirectTo: 'accordion', pathMatch: 'full' },
             { path: 'accordion', component: AccordionExampleComponent },
+            { path: 'activity-indicator', component: ActivityIndicatorExampleComponent },
             {
                 path: 'app-bar', component: AppBarExampleComponent, children: [
                     { path: '', redirectTo: 'link1', pathMatch: 'full' },

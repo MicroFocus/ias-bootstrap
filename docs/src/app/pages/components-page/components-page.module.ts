@@ -25,6 +25,7 @@ import { TagsExampleModule } from './components/tags-example/tags-example.module
 import { TilesExampleModule } from './components/tiles-example/tiles-example.module';
 import { SidePanelsExampleModule } from './components/side-panels-example/side-panels-example.module';
 import { WizardExampleModule } from './components/wizard-example/wizard-example.module';
+import { ActivityIndicatorExampleModule } from './components/activity-indicator-example/activity-indicator-example.module';
 
 @NgModule({
     declarations: [
@@ -35,6 +36,7 @@ import { WizardExampleModule } from './components/wizard-example/wizard-example.
 
         // Component example modules:
         AccordionExampleModule,
+        ActivityIndicatorExampleModule,
         AppBarExampleModule,
         ButtonsExampleModule,
         DatePickerExampleModule,
