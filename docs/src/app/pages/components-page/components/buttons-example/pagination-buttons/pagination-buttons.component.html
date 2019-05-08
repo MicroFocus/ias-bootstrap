@@ -1,0 +1,9 @@
+<ux-pagination
+    [(ngModel)]="currentPage"
+    [totalItems]="totalItems"
+    [itemsPerPage]="itemsPerPage"
+    [maxSize]="maxSize"
+    (numPages)="totalPages = $event">
+</ux-pagination>
+
+<p>Page {{ currentPage }} of {{ totalPages }}</p>

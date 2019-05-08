@@ -5,6 +5,7 @@ import { CommonModule } from '@angular/common';
 import { ButtonsExampleComponent } from './buttons-example.component';
 import { IconButtonsModule } from './icon-buttons/icon-buttons.module';
 import { IconTextButtonsModule } from './icon-text-buttons/icon-text-buttons.module';
+import { PaginationButtonsModule } from './pagination-buttons/pagination-buttons.module';
 import { TextButtonsModule } from './text-buttons/text-buttons.module';
 
 @NgModule({
@@ -16,6 +17,7 @@ import { TextButtonsModule } from './text-buttons/text-buttons.module';
         CommonComponentsModule,
         IconButtonsModule,
         IconTextButtonsModule,
+        PaginationButtonsModule,
         TextButtonsModule,
     ],
     exports: [

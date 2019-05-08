@@ -20,5 +20,9 @@ export class ButtonsExampleComponent {
         'icon-text-buttons.component.html': require('!raw-loader!./icon-text-buttons/icon-text-buttons.component.html'),
         'icon-text-buttons.component.ts': require('!raw-loader!./icon-text-buttons/icon-text-buttons.component.ts'),
         'icon-text-buttons.module.ts': require('!raw-loader!./icon-text-buttons/icon-text-buttons.module.ts'),
+
+        'pagination-buttons.component.html': require('!raw-loader!./pagination-buttons/pagination-buttons.component.html'),
+        'pagination-buttons.component.ts': require('!raw-loader!./pagination-buttons/pagination-buttons.component.ts'),
+        'pagination-buttons.module.ts': require('!raw-loader!./pagination-buttons/pagination-buttons.module.ts'),
     };
 }
