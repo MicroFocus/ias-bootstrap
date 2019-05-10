@@ -24,5 +24,14 @@ export class ButtonsExampleComponent {
         'pagination-buttons.component.html': require('!raw-loader!./pagination-buttons/pagination-buttons.component.html'),
         'pagination-buttons.component.ts': require('!raw-loader!./pagination-buttons/pagination-buttons.component.ts'),
         'pagination-buttons.module.ts': require('!raw-loader!./pagination-buttons/pagination-buttons.module.ts'),
+
+        'floating-action-buttons.component.html':
+            require('!raw-loader!./floating-action-buttons/floating-action-buttons.component.html'),
+        'floating-action-buttons.component.scss':
+            require('!raw-loader!./floating-action-buttons/floating-action-buttons.component.scss'),
+        'floating-action-buttons.component.ts':
+            require('!raw-loader!./floating-action-buttons/floating-action-buttons.component.ts'),
+        'floating-action-buttons.module.ts':
+            require('!raw-loader!./floating-action-buttons/floating-action-buttons.module.ts'),
     };
 }

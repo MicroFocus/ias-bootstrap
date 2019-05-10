@@ -1,0 +1,49 @@
+<div class="p-sm">
+    <ux-floating-action-buttons [ngClass]="direction" [direction]="direction">
+
+        <ux-floating-action-button fab-primary
+                                   icon="ias-icon-circle_horz_menu_fill"
+                                   uxTooltip="Show Actions"
+                                   aria-label="Show Actions"
+                                   [placement]="placement">
+        </ux-floating-action-button>
+
+        <ux-floating-action-button icon="ias-icon-new_thick"
+                                   class="ias-icon ias-btn-icon"
+                                   uxTooltip="Add New Item"
+                                   aria-label="Add New Item"
+                                   [placement]="placement">
+        </ux-floating-action-button>
+
+        <ux-floating-action-button icon="ias-icon-reload_refresh_thick"
+                                   uxTooltip="Refresh Items"
+                                   aria-label="Refresh Items"
+                                   [placement]="placement">
+        </ux-floating-action-button>
+
+        <ux-floating-action-button icon="ias-icon-chart"
+                                   uxTooltip="Show Analytics"
+                                   aria-label="Show Analytics"
+                                   [placement]="placement">
+        </ux-floating-action-button>
+
+    </ux-floating-action-buttons>
+</div>
+
+<div class="row uxd-customize-example">
+    <div class="col-md-12">
+        <ux-accordion>
+            <ux-accordion-panel class="accordion-chevron" heading="Customize Example...">
+                <div class="row uxd-customize-row">
+                    <div class="col-md-12">
+                        <label>direction</label>
+                        <ux-radio-button [(ngModel)]="direction" option="top">top</ux-radio-button>
+                        <ux-radio-button [(ngModel)]="direction" option="right">right</ux-radio-button>
+                        <ux-radio-button [(ngModel)]="direction" option="bottom">bottom</ux-radio-button>
+                        <ux-radio-button [(ngModel)]="direction" option="left">left</ux-radio-button>
+                    </div>
+                </div>
+            </ux-accordion-panel>
+        </ux-accordion>
+    </div>
+</div>

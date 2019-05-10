@@ -66,13 +66,13 @@
         }
     }
 
-    &.ias-btn-icon {
+    &.ias-btn-icon, &.floating-action-button {
         min-width: auto;
         padding: 0;
         width: 30px;
         height: 30px;
 
-        &.btn-default {
+        &.btn-default, &.button-secondary {
             border-color: transparent;
             background-color: transparent;
         }
@@ -132,3 +132,25 @@
     border-bottom-right-radius: 3px !important;
   }
 }
+
+.floating-action-buttons, ux-floating-action-buttons {
+  .floating-action-button-list, ux-floating-action-button {
+    &.left > *, &.right > * {
+      margin: 0 8px;
+    }
+
+    &.top > *, &.bottom > * {
+      margin: 8px 0;
+    }
+
+    .floating-action-button.button-secondary {
+      box-shadow: none;
+    }
+
+    .floating-action-button-icon{
+      font-family: ias-icons, hpe-icons;
+      font-size: 25px;
+    }
+  }
+}
+

@@ -7,6 +7,7 @@ import { IconButtonsModule } from './icon-buttons/icon-buttons.module';
 import { IconTextButtonsModule } from './icon-text-buttons/icon-text-buttons.module';
 import { PaginationButtonsModule } from './pagination-buttons/pagination-buttons.module';
 import { TextButtonsModule } from './text-buttons/text-buttons.module';
+import { IASFloatingActionButtonsModule } from './floating-action-buttons/floating-action-buttons.module';
 
 @NgModule({
     declarations: [
@@ -15,6 +16,7 @@ import { TextButtonsModule } from './text-buttons/text-buttons.module';
     imports: [
         CommonModule,
         CommonComponentsModule,
+        IASFloatingActionButtonsModule,
         IconButtonsModule,
         IconTextButtonsModule,
         PaginationButtonsModule,
