@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./floating-action-buttons.component.scss']
 })
 export class FloatingActionButtonsComponent implements OnInit {
-    direction = 'right';
+    direction = 'bottom';
 
     get placement(): string {
         return this.direction === 'top' || this.direction === 'bottom' ? 'right' : 'top';

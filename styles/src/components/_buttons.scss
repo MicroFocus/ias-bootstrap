@@ -136,15 +136,24 @@
 .floating-action-buttons, ux-floating-action-buttons {
   .floating-action-button-list, ux-floating-action-button {
     &.left > *, &.right > * {
-      margin: 0 8px;
+      margin: 0 4px;
     }
 
     &.top > *, &.bottom > * {
-      margin: 8px 0;
+      margin: 4px 0;
     }
 
-    .floating-action-button.button-secondary {
-      box-shadow: none;
+
+    .floating-action-button {
+      &.button-primary {
+        background-color: transparent;
+        border-color: transparent;
+        color: $ias-dark-gray;
+      }
+
+      &.button-secondary {
+        box-shadow: none;
+      }
     }
 
     .floating-action-button-icon{
@@ -153,4 +162,3 @@
     }
   }
 }
-
