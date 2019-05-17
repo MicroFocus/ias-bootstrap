@@ -30,6 +30,7 @@ import { FormFieldAdvancedExampleComponent } from './pages/components-page/compo
 import { WizardExampleComponent } from './pages/components-page/components/wizard-example/wizard-example.component';
 import { SidePanelsExampleComponent } from './pages/components-page/components/side-panels-example/side-panels-example.component';
 import { ActivityIndicatorExampleComponent } from './pages/components-page/components/activity-indicator-example/activity-indicator-example.component';
+import { ColorPickerExampleComponent } from './pages/components-page/components/color-picker-example/color-picker-example.component';
 
 const routes: Routes = [
     { path: '', redirectTo: 'components', pathMatch: 'full' },
@@ -50,6 +51,7 @@ const routes: Routes = [
                 ]
             },
             { path: 'buttons', component: ButtonsExampleComponent },
+            { path: 'color-picker', component: ColorPickerExampleComponent },
             { path: 'date-picker', component: DatePickerExampleComponent },
             { path: 'dialogs', component: DialogsExampleComponent },
             { path: 'form-field', component: FormFieldExampleComponent },

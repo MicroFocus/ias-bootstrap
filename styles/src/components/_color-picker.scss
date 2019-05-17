@@ -1,0 +1,33 @@
+.ux-color-picker-button-preview {
+  border-radius: 3px;
+}
+.ux-color-picker {
+  .ux-color-picker-swatch-row {
+    .ux-color-picker-color {
+      > button {
+        box-shadow: none;
+      }
+    }
+  }
+  .ux-color-picker-input-panel {
+    border-top: 1px solid $ias-dim-gray;
+
+    .ux-color-picker-input-header {
+      .ux-color-picker-preview {
+        box-shadow: none;
+
+        &:not(.ux-circle){
+          border-radius: 3px;
+        }
+      }
+
+      .ux-color-picker-input-toggle {
+        border-radius: 3px;
+
+        &:focus {
+          background-color: $ias-light-gray;
+        }
+      }
+    }
+  }
+}
