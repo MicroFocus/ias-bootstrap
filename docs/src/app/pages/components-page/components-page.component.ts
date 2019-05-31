@@ -16,6 +16,7 @@ export class ComponentsPageComponent implements OnInit {
         { title: 'Buttons', routerLink: '/components/buttons' },
         // { title: 'Comments', routerLink: '/components/comments' },
         { title: 'Color Picker', routerLink: '/components/color-picker' },
+        { title: 'Dashboard', routerLink: '/components/dashboard' },
         { title: 'Date Picker', routerLink: '/components/date-picker' },
         { title: 'Dialogs (Modals)', routerLink: '/components/dialogs' },
         { title: 'Form Fields', routerLink: '/components/form-field' },

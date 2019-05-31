@@ -31,6 +31,7 @@ import { WizardExampleComponent } from './pages/components-page/components/wizar
 import { SidePanelsExampleComponent } from './pages/components-page/components/side-panels-example/side-panels-example.component';
 import { ActivityIndicatorExampleComponent } from './pages/components-page/components/activity-indicator-example/activity-indicator-example.component';
 import { ColorPickerExampleComponent } from './pages/components-page/components/color-picker-example/color-picker-example.component';
+import { DashboardExampleComponent } from "./pages/components-page/components/dashboard-example/dashboard-example.component";
 
 const routes: Routes = [
     { path: '', redirectTo: 'components', pathMatch: 'full' },
@@ -52,6 +53,7 @@ const routes: Routes = [
             },
             { path: 'buttons', component: ButtonsExampleComponent },
             { path: 'color-picker', component: ColorPickerExampleComponent },
+            { path: 'dashboard', component: DashboardExampleComponent },
             { path: 'date-picker', component: DatePickerExampleComponent },
             { path: 'dialogs', component: DialogsExampleComponent },
             { path: 'form-field', component: FormFieldExampleComponent },

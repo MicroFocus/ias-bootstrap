@@ -27,6 +27,7 @@ import { SidePanelsExampleModule } from './components/side-panels-example/side-p
 import { WizardExampleModule } from './components/wizard-example/wizard-example.module';
 import { ActivityIndicatorExampleModule } from './components/activity-indicator-example/activity-indicator-example.module';
 import { ColorPickerExampleModule } from './components/color-picker-example/color-picker-example.module';
+import { DashboardExampleModule } from './components/dashboard-example/dashboard-example.module';
 
 @NgModule({
     declarations: [
@@ -41,6 +42,7 @@ import { ColorPickerExampleModule } from './components/color-picker-example/colo
         AppBarExampleModule,
         ButtonsExampleModule,
         ColorPickerExampleModule,
+        DashboardExampleModule,
         DatePickerExampleModule,
         DialogsExampleModule,
         FormFieldAdvancedExampleModule,
