@@ -5,8 +5,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DashboardBasicComponent } from './dashboard-basic.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AccessibilityModule, ColorServiceModule, DashboardModule, SparkModule } from '@ux-aspects/ux-aspects';
-import 'chance';
-import 'chart.js';
 import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
