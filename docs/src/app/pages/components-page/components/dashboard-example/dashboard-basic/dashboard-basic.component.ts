@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ColorService, DashboardOptions } from '@ux-aspects/ux-aspects';
-import * as chance from 'chance';
-import * as Chart from 'chart.js';
 
+declare const chance;
 
 @Component({
   selector: 'app-dashboard-basic',
