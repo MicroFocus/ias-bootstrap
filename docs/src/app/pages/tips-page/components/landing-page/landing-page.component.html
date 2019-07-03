@@ -1,0 +1,22 @@
+<div class="ias-max-content-width">
+    <h2>Landing Page</h2>
+    <p class="ias-page-instructions">
+        The following page demonstrates how to compose a typical landing page for IAS products.
+    </p>
+
+    <app-example [heading]="'Standard Landing Page'" [fileNameToContentsMap]="exampleFiles">
+        <app-example-page-boundary>
+            <app-standard-landing-page></app-standard-landing-page>
+        </app-example-page-boundary>
+        <app-example-file [name]="'standard-landing-page.html'" [lang]="'markup'"></app-example-file>
+        <app-example-file [name]="'standard-landing-page.ts'" [lang]="'typescript'"></app-example-file>
+    </app-example>
+
+    <app-example [heading]="'Minimal Landing Page'" [fileNameToContentsMap]="exampleFiles">
+        <app-example-page-boundary>
+            <app-min-landing-page></app-min-landing-page>
+        </app-example-page-boundary>
+        <app-example-file [name]="'min-landing-page.html'" [lang]="'markup'"></app-example-file>
+        <app-example-file [name]="'min-landing-page.ts'" [lang]="'typescript'"></app-example-file>
+    </app-example>
+</div>

@@ -17,6 +17,8 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { CommonComponentsModule } from './components/common-components.module';
 import { ComponentsPageModule } from './pages/components-page/components-page.module';
 import { ExamplePageBoundaryComponent } from './pages/tips-page/components/example-page-boundary/example-page-boundary.component';
+import { LandingPageComponent } from './pages/tips-page/components/landing-page/landing-page.component';
+import { LandingPageExamplesModule } from './pages/tips-page/components/landing-page/examples/_examples.module';
 
 @NgModule({
     declarations: [
@@ -25,6 +27,7 @@ import { ExamplePageBoundaryComponent } from './pages/tips-page/components/examp
         TipsPageComponent,
         GettingStartedComponent,
         StandardLayoutComponent,
+        LandingPageComponent,
         LoginPageComponent,
         ExamplePageBoundaryComponent,
     ],
@@ -40,6 +43,7 @@ import { ExamplePageBoundaryComponent } from './pages/tips-page/components/examp
 
         CommonComponentsModule,
         ComponentsPageModule,
+        LandingPageExamplesModule,
         LoginPageExamplesModule,
         StandardLayoutsModule,
     ],
