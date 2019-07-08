@@ -19,6 +19,8 @@ import { ComponentsPageModule } from './pages/components-page/components-page.mo
 import { ExamplePageBoundaryComponent } from './pages/tips-page/components/example-page-boundary/example-page-boundary.component';
 import { LandingPageComponent } from './pages/tips-page/components/landing-page/landing-page.component';
 import { LandingPageExamplesModule } from './pages/tips-page/components/landing-page/examples/_examples.module';
+import { PanelLayoutComponent } from './pages/tips-page/components/panel-layout/panel-layout.component';
+import { PanelLayoutExampleModule } from './pages/tips-page/components/panel-layout/examples/_example.module';
 
 @NgModule({
     declarations: [
@@ -30,6 +32,7 @@ import { LandingPageExamplesModule } from './pages/tips-page/components/landing-
         LandingPageComponent,
         LoginPageComponent,
         ExamplePageBoundaryComponent,
+        PanelLayoutComponent,
     ],
     imports: [
         BrowserModule,
@@ -45,7 +48,8 @@ import { LandingPageExamplesModule } from './pages/tips-page/components/landing-
         ComponentsPageModule,
         LandingPageExamplesModule,
         LoginPageExamplesModule,
-        StandardLayoutsModule,
+        PanelLayoutExampleModule,
+        StandardLayoutsModule
     ],
     providers: [
     ],

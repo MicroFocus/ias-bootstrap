@@ -33,6 +33,7 @@ import { ActivityIndicatorExampleComponent } from './pages/components-page/compo
 import { ColorPickerExampleComponent } from './pages/components-page/components/color-picker-example/color-picker-example.component';
 import { DashboardExampleComponent } from './pages/components-page/components/dashboard-example/dashboard-example.component';
 import { LandingPageComponent } from './pages/tips-page/components/landing-page/landing-page.component';
+import {PanelLayoutComponent} from './pages/tips-page/components/panel-layout/panel-layout.component';
 
 const routes: Routes = [
     { path: '', redirectTo: 'components', pathMatch: 'full' },
@@ -108,6 +109,7 @@ const routes: Routes = [
             { path: 'standard-layout', component: StandardLayoutComponent },
             { path: 'login-page', component: LoginPageComponent },
             { path: 'landing-page', component: LandingPageComponent },
+            { path: 'panel-layout', component: PanelLayoutComponent },
         ]
     }
 ];
