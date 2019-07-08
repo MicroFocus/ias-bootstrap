@@ -5,10 +5,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DashboardBasicComponent } from './dashboard-basic.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AccessibilityModule, ColorServiceModule, DashboardModule, SparkModule } from '@ux-aspects/ux-aspects';
-import { ChartsModule } from 'ng2-charts';
-
-import 'chance';
-import 'chart.js';
+// import 'chance';
+// import 'chart.js';
+// import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
     declarations: [
@@ -18,7 +17,7 @@ import 'chart.js';
         AccessibilityModule,
         BrowserModule,
         BrowserAnimationsModule,
-        ChartsModule,
+        // ChartsModule,
         ColorServiceModule,
         CommonModule,
         DashboardModule,

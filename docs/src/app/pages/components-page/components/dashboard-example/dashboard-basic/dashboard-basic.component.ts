@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ColorService, DashboardOptions } from '@ux-aspects/ux-aspects';
-
-declare const chance;
+// import 'chance';
 
 @Component({
   selector: 'app-dashboard-basic',
@@ -76,33 +75,33 @@ export class DashboardBasicComponent implements OnInit {
     constructor(public colorService: ColorService) {
 
         // generate the chart data
-        for (let idx = 0; idx < 50; idx++) {
-
-            let label = '';
-
-            if (idx === 0) {
-                label = 'Jan 1, 2017';
-            }
-
-            if (idx === 49) {
-                label = 'Mar 30, 2017';
-            }
-
-            this.lineChartLabels.push(label);
-
-            const dataset1 = this.lineChartData[0].data as Chart.ChartPoint[];
-            const dataset2 = this.lineChartData[1].data as Chart.ChartPoint[];
-
-            dataset1.push({
-                x: idx,
-                y: chance.integer({ min: 280, max: 460 })
-            });
-
-            dataset2.push({
-                x: idx,
-                y: chance.integer({ min: 50, max: 250 })
-            });
-        }
+        // for (let idx = 0; idx < 50; idx++) {
+        //
+        //     let label = '';
+        //
+        //     if (idx === 0) {
+        //         label = 'Jan 1, 2017';
+        //     }
+        //
+        //     if (idx === 49) {
+        //         label = 'Mar 30, 2017';
+        //     }
+        //
+        //     this.lineChartLabels.push(label);
+        //
+        //     const dataset1 = this.lineChartData[0].data as Chart.ChartPoint[];
+        //     const dataset2 = this.lineChartData[1].data as Chart.ChartPoint[];
+        //
+        //     dataset1.push({
+        //         x: idx,
+        //         y: chance.integer({ min: 280, max: 460 })
+        //     });
+        //
+        //     dataset2.push({
+        //         x: idx,
+        //         y: chance.integer({ min: 50, max: 250 })
+        //     });
+        // }
     }
 
     ngOnInit() {
