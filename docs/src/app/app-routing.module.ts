@@ -34,6 +34,7 @@ import { ColorPickerExampleComponent } from './pages/components-page/components/
 import { DashboardExampleComponent } from './pages/components-page/components/dashboard-example/dashboard-example.component';
 import { LandingPageComponent } from './pages/tips-page/components/landing-page/landing-page.component';
 import {PanelLayoutComponent} from './pages/tips-page/components/panel-layout/panel-layout.component';
+import {GroupLayoutComponent} from './pages/tips-page/components/group-layout/group-layout.component';
 
 const routes: Routes = [
     { path: '', redirectTo: 'components', pathMatch: 'full' },
@@ -110,6 +111,7 @@ const routes: Routes = [
             { path: 'login-page', component: LoginPageComponent },
             { path: 'landing-page', component: LandingPageComponent },
             { path: 'panel-layout', component: PanelLayoutComponent },
+            { path: 'group-layout', component: GroupLayoutComponent },
         ]
     }
 ];

@@ -14,6 +14,7 @@ export class TipsPageComponent implements OnInit {
         { title: 'Login Page', routerLink: '/tips-and-tricks/login-page' },
         { title: 'Landing Page', routerLink: '/tips-and-tricks/landing-page' },
         { title: 'Panel Layouts', routerLink: '/tips-and-tricks/panel-layout' },
+        { title: 'Group Layouts', routerLink: '/tips-and-tricks/group-layout' },
     ];
 
     constructor() {

@@ -21,6 +21,8 @@ import { LandingPageComponent } from './pages/tips-page/components/landing-page/
 import { LandingPageExamplesModule } from './pages/tips-page/components/landing-page/examples/_examples.module';
 import { PanelLayoutComponent } from './pages/tips-page/components/panel-layout/panel-layout.component';
 import { PanelLayoutExampleModule } from './pages/tips-page/components/panel-layout/examples/_example.module';
+import { GroupLayoutComponent } from './pages/tips-page/components/group-layout/group-layout.component';
+import { GroupLayoutExamplesModule } from './pages/tips-page/components/group-layout/examples/_example.module';
 
 @NgModule({
     declarations: [
@@ -33,6 +35,7 @@ import { PanelLayoutExampleModule } from './pages/tips-page/components/panel-lay
         LoginPageComponent,
         ExamplePageBoundaryComponent,
         PanelLayoutComponent,
+        GroupLayoutComponent,
     ],
     imports: [
         BrowserModule,
@@ -46,6 +49,7 @@ import { PanelLayoutExampleModule } from './pages/tips-page/components/panel-lay
 
         CommonComponentsModule,
         ComponentsPageModule,
+        GroupLayoutExamplesModule,
         LandingPageExamplesModule,
         LoginPageExamplesModule,
         PanelLayoutExampleModule,
