@@ -17,6 +17,12 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { CommonComponentsModule } from './components/common-components.module';
 import { ComponentsPageModule } from './pages/components-page/components-page.module';
 import { ExamplePageBoundaryComponent } from './pages/tips-page/components/example-page-boundary/example-page-boundary.component';
+import { LandingPageComponent } from './pages/tips-page/components/landing-page/landing-page.component';
+import { LandingPageExamplesModule } from './pages/tips-page/components/landing-page/examples/_examples.module';
+import { PanelLayoutComponent } from './pages/tips-page/components/panel-layout/panel-layout.component';
+import { PanelLayoutExampleModule } from './pages/tips-page/components/panel-layout/examples/_example.module';
+import { GroupLayoutComponent } from './pages/tips-page/components/group-layout/group-layout.component';
+import { GroupLayoutExamplesModule } from './pages/tips-page/components/group-layout/examples/_example.module';
 
 @NgModule({
     declarations: [
@@ -25,8 +31,11 @@ import { ExamplePageBoundaryComponent } from './pages/tips-page/components/examp
         TipsPageComponent,
         GettingStartedComponent,
         StandardLayoutComponent,
+        LandingPageComponent,
         LoginPageComponent,
         ExamplePageBoundaryComponent,
+        PanelLayoutComponent,
+        GroupLayoutComponent,
     ],
     imports: [
         BrowserModule,
@@ -40,8 +49,11 @@ import { ExamplePageBoundaryComponent } from './pages/tips-page/components/examp
 
         CommonComponentsModule,
         ComponentsPageModule,
+        GroupLayoutExamplesModule,
+        LandingPageExamplesModule,
         LoginPageExamplesModule,
-        StandardLayoutsModule,
+        PanelLayoutExampleModule,
+        StandardLayoutsModule
     ],
     providers: [
     ],

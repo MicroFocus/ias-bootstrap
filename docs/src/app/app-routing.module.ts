@@ -31,7 +31,10 @@ import { WizardExampleComponent } from './pages/components-page/components/wizar
 import { SidePanelsExampleComponent } from './pages/components-page/components/side-panels-example/side-panels-example.component';
 import { ActivityIndicatorExampleComponent } from './pages/components-page/components/activity-indicator-example/activity-indicator-example.component';
 import { ColorPickerExampleComponent } from './pages/components-page/components/color-picker-example/color-picker-example.component';
-import { DashboardExampleComponent } from "./pages/components-page/components/dashboard-example/dashboard-example.component";
+import { DashboardExampleComponent } from './pages/components-page/components/dashboard-example/dashboard-example.component';
+import { LandingPageComponent } from './pages/tips-page/components/landing-page/landing-page.component';
+import {PanelLayoutComponent} from './pages/tips-page/components/panel-layout/panel-layout.component';
+import {GroupLayoutComponent} from './pages/tips-page/components/group-layout/group-layout.component';
 
 const routes: Routes = [
     { path: '', redirectTo: 'components', pathMatch: 'full' },
@@ -106,6 +109,9 @@ const routes: Routes = [
             { path: '', redirectTo: 'standard-layout', pathMatch: 'full' },
             { path: 'standard-layout', component: StandardLayoutComponent },
             { path: 'login-page', component: LoginPageComponent },
+            { path: 'landing-page', component: LandingPageComponent },
+            { path: 'panel-layout', component: PanelLayoutComponent },
+            { path: 'group-layout', component: GroupLayoutComponent },
         ]
     }
 ];

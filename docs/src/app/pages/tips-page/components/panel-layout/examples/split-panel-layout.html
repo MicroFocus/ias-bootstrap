@@ -1,0 +1,40 @@
+<div class="panel ias-panel">
+    <div class="panel-heading">
+        <h4 class="panel-title">Feature Development Progress</h4>
+    </div>
+    <div class="panel-body">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div>
+                        <canvas aria-label="Stacked bar chart showing commits breakdown"
+                                baseChart
+                                [datasets]="barChartData"
+                                [labels]="barChartLabels"
+                                [options]="barChartOptions"
+                                [legend]="barChartLegend"
+                                [colors]="barChartColors"
+                                chartType="bar">
+                        </canvas>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item">Sprint 1 Breakdown</a>
+                        <a href="#" class="list-group-item">Sprint 2 Breakdown</a>
+                        <a href="#" class="list-group-item">Sprint 3 Breakdown</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <p class="panel-text">
+                        Above is an example of a split panel design.  This layout allows for two content areas which
+                        compliment each other.  This lower section can be used to create a brief description for the
+                        content above.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

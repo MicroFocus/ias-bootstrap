@@ -7,6 +7,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AccessibilityModule, ColorServiceModule, DashboardModule, SparkModule } from '@ux-aspects/ux-aspects';
 import { ChartsModule } from 'ng2-charts';
 
+import 'chance';
+import 'chart.js';
+
 @NgModule({
     declarations: [
         DashboardBasicComponent
