@@ -12,8 +12,8 @@
     }
 
     &:focus, &.focus, &:active:focus, &:active.focus, &.active:focus, &.active.focus {
-        outline: none;
-        box-shadow: none;
+        outline: none !important;
+        box-shadow: none !important;
     }
     &[disabled] {
       opacity: .5;
