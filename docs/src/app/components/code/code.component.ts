@@ -10,7 +10,7 @@ import { CodeHighlightService } from '../../services/code-highlight.service';
 })
 export class CodeComponent implements AfterViewInit {
 
-    @ViewChild('code') codeEl: ElementRef<HTMLElement>;
+    @ViewChild('code', { static: true }) codeEl: ElementRef<HTMLElement>;
 
     @Input() code = '';
     @Input() lang = '';

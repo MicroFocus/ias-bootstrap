@@ -17,8 +17,8 @@ export class ColorPickerBasicComponent implements OnInit {
 
     isPickerOpen = false;
 
-    @ViewChild('toggleButton') toggleButton: ElementRef;
-    @ViewChild('dropdownMenu') dropdownMenu: ElementRef;
+    @ViewChild('toggleButton', { static: true }) toggleButton: ElementRef;
+    @ViewChild('dropdownMenu', { static: false }) dropdownMenu: ElementRef;
 
     private _colorNames = [
         ['#0073e7', '#0067ad', '#007cd0', '#0090da', '#01a9e7', '#29ceff', '#e4f9ff'],

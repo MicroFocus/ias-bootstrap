@@ -7,7 +7,7 @@ import { SidePanelComponent } from '@ux-aspects/ux-aspects';
     styleUrls: ['./standard-side-panel.component.scss']
 })
 export class StandardSidePanelComponent implements OnInit {
-    @ViewChild('standardSidePanel') standardSidePanel: SidePanelComponent;
+    @ViewChild('standardSidePanel', { static: true }) standardSidePanel: SidePanelComponent;
 
     constructor() {
     }

@@ -9,7 +9,7 @@ import { debounce } from 'rxjs/operators';
     styleUrls: ['./date-picker-advanced.component.scss']
 })
 export class DatePickerAdvancedComponent implements AfterViewInit, OnDestroy {
-    @ViewChild('input') dateInput: ElementRef;
+    @ViewChild('input', { static: true }) dateInput: ElementRef;
 
     date: Date = new Date();
     timezone: DateTimePickerTimezone = { name: 'GMT', offset: 0 };
