@@ -1,4 +1,4 @@
-<div uxReorderable [(reorderableModel)]="panels" (reorderableModelChange)="reordered($event)">
+<div uxReorderable [(reorderableModel)]="panels" (reorderableModelChange)="reordered()">
     <div class="panel ias-panel" *ngFor="let panel of panels" [uxReorderableModel]="panel">
         <div class="panel-heading">
             <h4 class="panel-title">{{ panel.title }}</h4>

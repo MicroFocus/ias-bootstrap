@@ -5,7 +5,7 @@
         "ng": "ng",
         "start": "ng serve --serve-path ias-bootstrap --port 8888",
         "start:for-backstop-testing": "ng serve --configuration test --serve-path ias-bootstrap --port 4444",
-        "build": "ng build",
+        "build": "ng build --configuration=production",
         "test": "ng test",
         "test:doc": "npx live-server --port=8085 --open=/ias-bootstrap --mount=/ias-bootstrap:./dist/docs",
         "lint": "ng lint",
