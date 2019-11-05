@@ -4,7 +4,7 @@ import { ColorService } from '@ux-aspects/ux-aspects';
 @Component({
     selector: 'app-split-panel-layout',
     templateUrl: './split-panel-layout.html',
-    styleUrls: ['./split-panel-layout.html']
+    styleUrls: ['./split-panel-layout.scss']
 })
 export class SplitPanelLayoutComponent {
     // configure the directive data

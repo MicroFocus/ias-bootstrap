@@ -21,6 +21,10 @@ export class CodeComponent implements AfterViewInit {
     }
 
     ngAfterViewInit() {
+        if (typeof this.code === 'object') {
+            this.code = (this.code as any).default;
+        }
+
         this.codeEl.nativeElement.innerHTML = this._service.highlight(this.code, this.lang);
     }
 }
