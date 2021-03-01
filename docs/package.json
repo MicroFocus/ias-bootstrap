@@ -33,7 +33,7 @@
         "chance": "^1.0.18",
         "core-js": "^2.5.4",
         "ngx-bootstrap": "^5.2.0",
-        "prismjs": "^1.15.0",
+        "prismjs": "^1.23.0",
         "rxjs": "~6.5.3",
         "rxjs-compat": "^6.4.0",
         "strip-indent": "^2.0.0",
