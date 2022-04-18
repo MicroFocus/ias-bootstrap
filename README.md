@@ -1,3 +1,5 @@
+Copyright 2018-2022 Micro Focus, Inc. All rights reserved.
+
 # IAS Bootstrap
 
 Provides a stylesheet for use with
