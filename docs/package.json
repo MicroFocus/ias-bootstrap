@@ -29,7 +29,7 @@
         "@angular/upgrade": "^8.2.13",
         "@microfocus/ias-icons": "^1.0.4",
         "@ux-aspects/ux-aspects": "^1.8.8",
-        "backstopjs": "^3.8.5",
+        "backstopjs": "^6.1.4",
         "chance": "^1.0.18",
         "core-js": "^2.5.4",
         "ngx-bootstrap": "^5.2.0",
