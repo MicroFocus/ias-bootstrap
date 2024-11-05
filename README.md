@@ -1,3 +1,6 @@
+# THIS PROJECT IS DEPRECATED!  PLEASE REMOVE IT FROM ANY OPENTEXT PACKAGE.JSON FILES IN YOUR PROJECT!
+Many of our Microfocus and Opentext projects already include CSS stylesheets to cover the styles in this project.
+
 Copyright 2018-2022 Micro Focus, Inc. All rights reserved.
 
 # IAS Bootstrap
